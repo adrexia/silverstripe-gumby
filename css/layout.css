@@ -42,6 +42,18 @@
   box-sizing: border-box;
 }
 
+/* CSS3 Two Tone borders - IE9+ */
+/* Fix for responsive images - use on IMG tag */
+/* Mobile icons for retina display */
+/** 
+ * Mixin divides width of parent between children. It requires the parent to 
+ * have a size class representing the number of children (eg: class="size_3"). 
+ * It will take this and divide the width by that number of elements.
+ *
+ * Note: In silverstripe templates you can use $Count on a set of items you 
+ * are about to loop throught to get the total number. EG:
+ * <ul class="size_{$Menu.Count}">
+ */
 article,
 aside,
 details,
@@ -5364,6 +5376,18 @@ a.label:hover, a.badge:hover {
   box-sizing: border-box;
 }
 
+/* CSS3 Two Tone borders - IE9+ */
+/* Fix for responsive images - use on IMG tag */
+/* Mobile icons for retina display */
+/** 
+ * Mixin divides width of parent between children. It requires the parent to 
+ * have a size class representing the number of children (eg: class="size_3"). 
+ * It will take this and divide the width by that number of elements.
+ *
+ * Note: In silverstripe templates you can use $Count on a set of items you 
+ * are about to loop throught to get the total number. EG:
+ * <ul class="size_{$Menu.Count}">
+ */
 .hidden {
   display: none;
   visibility: hidden;
@@ -7179,9 +7203,22 @@ iframe {
 /* ============================= */
 /* Landscape phones and down */
 @media (max-width: 480px) {
+  body {
+    padding: 0;
+  }
   body #SearchGroup {
     float: none;
     width: 100%;
+  }
+
+  header, .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .navbar-fixed-top, .navbar-fixed-bottom {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   #SearchGroup {
@@ -7256,9 +7293,22 @@ iframe {
 }
 /* Opera mobile high-res  */
 @media handheld, only screen and (max-device-width: 800px) {
+  body {
+    padding: 0;
+  }
   body #SearchGroup {
     float: none;
     width: 100%;
+  }
+
+  header, .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .navbar-fixed-top, .navbar-fixed-bottom {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   #SearchGroup {
@@ -7333,9 +7383,22 @@ iframe {
 }
 /* Landscape phone to portrait tablet  */
 @media (max-width: 600px) {
+  body {
+    padding: 0;
+  }
   body #SearchGroup {
     float: none;
     width: 100%;
+  }
+
+  header, .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .navbar-fixed-top, .navbar-fixed-bottom {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   #SearchGroup {
@@ -7410,9 +7473,22 @@ iframe {
 }
 /* Portrait tablet to landscape and desktop  */
 @media (min-width: 500px) and (max-width: 600px) {
+  body {
+    padding: 0;
+  }
   body #SearchGroup {
     float: none;
     width: 100%;
+  }
+
+  header, .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .navbar-fixed-top, .navbar-fixed-bottom {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   #SearchGroup {
@@ -7487,9 +7563,22 @@ iframe {
 }
 /* For ipad  */
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    padding: 0;
+  }
   body #SearchGroup {
     float: none;
     width: 100%;
+  }
+
+  header, .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .navbar-fixed-top, .navbar-fixed-bottom {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   #SearchGroup {
@@ -7564,9 +7653,22 @@ iframe {
 }
 /* Large mobile */
 @media (max-width: 979px) {
+  body {
+    padding: 0;
+  }
   body #SearchGroup {
     float: none;
     width: 100%;
+  }
+
+  header, .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .navbar-fixed-top, .navbar-fixed-bottom {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   #SearchGroup {
