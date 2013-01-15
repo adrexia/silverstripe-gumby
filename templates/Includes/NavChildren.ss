@@ -1,11 +1,11 @@
 <% loop Menu(1) %>
-	<li class="$LinkingMode  <% if $LinkingMode = current %>active<% end_if %> <% if MenuChildren %> dropdown <% end_if %>">
-		<a href="$Link" title="Go to the $Title.XML page" class="$LinkingMode <% if MenuChildren %> dropdown-toggle" data-toggle="dropdown"<% else %>"<% end_if %>>
-			$MenuTitle.XML <% if MenuChildren %><span class="showChildren"><b class="caret"></b></span><% end_if %>
+	<li class="$LinkingMode  <% if $LinkingMode = current %>active<% end_if %> <% if Children %> dropdown <% end_if %>">
+		<a href="$Link" title="Go to the $Title.XML page" class="$LinkingMode <% if Children %> dropdown-toggle" data-toggle="dropdown"<% else %>"<% end_if %>>
+			$MenuTitle.XML <% if Children %><span class="showChildren"><b class="caret"></b></span><% end_if %>
 		</a>
-		<% if MenuChildren %>
+		<% if Children %>
 			<ul class="dropdown-menu">
-				<% control MenuChildren %>
+				<% control Children %>
 					<li>
 						<a href="$Link" title="Go to the $Title.XML page">$MenuTitle.XML</a>
 					</li>
