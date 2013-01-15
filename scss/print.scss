@@ -23,6 +23,11 @@ div, article{
 	clear:both;
 }
 
+/* this fixes disappearing print content in IE */
+.row {
+	margin-left: 1px;
+}
+
 .carousel{
 	@include clearAfter;
 	.item{
