@@ -1,12 +1,12 @@
 {
-	"name": "silverstripe-themes/express",
-	"description": "The SilverStripe Express default theme",
+	"name": "cwsp-themes/default",
+	"description": "CWSP Default Theme",
 	"type": "silverstripe-theme",
 	"require": {
 		"composer/installers": "*",
 		"silverstripe/cms": ">=3.0",
 		"silverstripe/framework": ">=3.0",
-		"silverstripe/express": "dev-master",
+		"cwsp/cwsp": "dev-master",
 		"silverstripe-themes/module_bootstrap": "dev-ssexpress"
 	},
 	"extra": {
