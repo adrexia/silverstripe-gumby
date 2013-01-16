@@ -43,4 +43,3 @@
 	
 	<p><small>$SiteConfig.Title &copy; 2012</small></p>
 </footer>
-<% include AccessKeys %>
