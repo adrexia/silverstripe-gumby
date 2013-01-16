@@ -5,7 +5,7 @@
 	</a>
 	</div>
 <% end_if %> 
-<a href="$Link" class="sitemap-link"><span class="sitetree-icon"><img src="{$BaseHref}/cwsp/<%if $pageIcon %>$pageIcon<% else %>images/icons/sitetree_images/page.png<% end_if %>" alt="$ClassName"></span>$Title</a>
+<a href="$Link" class="sitemap-link"><span class="sitetree-icon"><img src="{$BaseHref}/cwp/<%if $pageIcon %>$pageIcon<% else %>images/icons/sitetree_images/page.png<% end_if %>" alt="$ClassName"></span>$Title</a>
 
 <% if Children %>
 	<div id="children-$ID" class="collapse"> 
