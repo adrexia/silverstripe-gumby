@@ -203,9 +203,7 @@ a:hover {
   margin-left: 20px;
 }
 
-.container,
-.navbar-fixed-top .container,
-.navbar-fixed-bottom .container {
+.container {
   width: 940px;
 }
 
@@ -5584,9 +5582,7 @@ a.label:hover, a.badge:hover {
     margin-left: 20px;
   }
 
-  .container,
-  .navbar-fixed-top .container,
-  .navbar-fixed-bottom .container {
+  .container {
     width: 724px;
   }
 
@@ -5857,9 +5853,7 @@ a.label:hover, a.badge:hover {
     margin-left: 30px;
   }
 
-  .container,
-  .navbar-fixed-top .container,
-  .navbar-fixed-bottom .container {
+  .container {
     width: 1170px;
   }
 
@@ -6636,10 +6630,6 @@ ul.nav, ul.dropdown-menu {
   padding-left: 20px;
 }
 
-#layout.fixed-padding {
-  margin-top: 60px;
-}
-
 .navbar {
   font-size: 13px;
 }
@@ -7232,11 +7222,6 @@ iframe {
     padding-right: 20px;
   }
 
-  .navbar-fixed-top, .navbar-fixed-bottom {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
   #SearchGroup {
     float: right;
     width: 200px;
@@ -7320,11 +7305,6 @@ iframe {
   header, .container {
     padding-left: 20px;
     padding-right: 20px;
-  }
-
-  .navbar-fixed-top, .navbar-fixed-bottom {
-    margin-left: 0;
-    margin-right: 0;
   }
 
   #SearchGroup {
@@ -7412,11 +7392,6 @@ iframe {
     padding-right: 20px;
   }
 
-  .navbar-fixed-top, .navbar-fixed-bottom {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
   #SearchGroup {
     float: right;
     width: 200px;
@@ -7500,11 +7475,6 @@ iframe {
   header, .container {
     padding-left: 20px;
     padding-right: 20px;
-  }
-
-  .navbar-fixed-top, .navbar-fixed-bottom {
-    margin-left: 0;
-    margin-right: 0;
   }
 
   #SearchGroup {
@@ -7592,11 +7562,6 @@ iframe {
     padding-right: 20px;
   }
 
-  .navbar-fixed-top, .navbar-fixed-bottom {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
   #SearchGroup {
     float: right;
     width: 200px;
@@ -7680,11 +7645,6 @@ iframe {
   header, .container {
     padding-left: 20px;
     padding-right: 20px;
-  }
-
-  .navbar-fixed-top, .navbar-fixed-bottom {
-    margin-left: 0;
-    margin-right: 0;
   }
 
   #SearchGroup {
