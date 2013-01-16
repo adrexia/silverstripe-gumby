@@ -41,7 +41,7 @@
 	<%-- include NavbarFixedTop --%>
 	<% include Header %>
 	
-	<div class="container typography" id="layout">
+	<div class="container typography" id="layout" role="main">
 	
 	  $Layout
 	  	

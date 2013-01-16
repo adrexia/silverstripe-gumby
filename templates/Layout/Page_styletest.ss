@@ -2,7 +2,7 @@
 	<div class="span3">
 		<% include SidebarNav %>
 	</div>
-	<section class="span9">
+	<div class="span9" role="main">
 		<header class="page-header subhead">
 			<h1>Style test-drive</h1>
 		</header>
@@ -326,7 +326,7 @@
 			
 		</div>
 
-	</section>
+	</div>
 </div>
 
 

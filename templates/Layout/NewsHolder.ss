@@ -2,10 +2,10 @@
 	<div class="span3">
 		<% include NewsCategories %>
 	</div>
-	<section class="span9 resultsList">
+	<div class="span9 resultsList" role="main">
 		<header class="page-header">
 			<% include PrintShare %>
-			<h1><span class="hidden">$SiteConfig.Title | </span>$Title</h1>
+			<h1>$Title</h1>
 		</header>
 		$Content
 	
@@ -30,5 +30,5 @@
 		$Form
 		$PageComments
 
-	</section>
+	</div>
 </div>

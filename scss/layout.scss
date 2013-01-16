@@ -84,6 +84,14 @@ header {
 
 /************************ MISC ****************************/
 
+.nonvisual-indicator {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
+  margin: -1px; padding: 0; border: 0;
+}
+
 #layout .linkSet{
 	ul{
 		list-style:none;
@@ -127,7 +135,7 @@ header {
 .typography{ //Needed to override typography styles
 
 	/*Adjust breadcrumbs*/
-	ul.breadcrumb{
+	ol.breadcrumb{
 		margin:0 0 18px;
 		padding:7px 14px;
 	}

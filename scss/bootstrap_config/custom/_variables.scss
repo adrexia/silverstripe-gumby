@@ -42,7 +42,7 @@ $textColor:             $grayDark !default;
 
 // Links
 // -------------------------
-$linkVisited: 			lighten(#08c,3%)  !default;
+$linkVisited: 			lighten(#08c,10%)  !default;
 $linkColor:             #0464EA  !default;
 $linkColorHover:        darken($linkColor, 15%) !default;
 
@@ -148,7 +148,7 @@ $hrBorder:                $grayLighter !default;
 
 // Navbar
 // -------------------------
-$navbarHeight:                    40px !default;
+$navbarHeight:                    35px !default;
 $navbarBackground:                $grayDarker !default;
 $navbarBackgroundHighlight:       $grayDark !default;
 
@@ -156,13 +156,13 @@ $navbarText:                      $grayLight !default;
 $navbarLinkColor:                 lighten($grayLight,18%) !default;
 $navbarLinkColorHover:            $white !default;
 $navbarLinkColorActive:           $navbarLinkColorHover !default;
-$navbarLinkBackgroundHover:       transparent !default;
+$navbarLinkBackgroundHover:       $gray !default;
 $navbarLinkBackgroundActive:      $navbarBackground !default;
 
-$navbarSearchBackground:          lighten($navbarBackground, 25%) !default;
+$navbarSearchBackground:          lighten($navbarBackground, 20%) !default;
 $navbarSearchBackgroundFocus:     $white !default;
-$navbarSearchBorder:              darken($navbarSearchBackground, 30%) !default;
-$navbarSearchPlaceholderColor:    #ccc !default;
+$navbarSearchBorder:              darken($navbarSearchBackground, 25%) !default;
+$navbarSearchPlaceholderColor:    #ddd !default;
 $navbarBrandColor:                $navbarLinkColor !default;
 
 

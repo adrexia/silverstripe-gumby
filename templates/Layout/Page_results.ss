@@ -1,6 +1,5 @@
 <div class="row">
-	<section class="span12 resultsList">
-		
+	<div class="span12 resultsList" role="main">
 		<% if Query %>
 			<header class="page-header">
 				<% include PrintShare %>
@@ -43,5 +42,5 @@
 		<% with Results %>
 			<% include Pagination %>
 		<% end_with %>
-	</section>
+	</div>
 </div>

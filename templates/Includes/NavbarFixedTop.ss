@@ -7,9 +7,11 @@
 				<div id="SearchGroup">
 					$SearchForm
 				</div>
-				<ul class="nav pull-right">
-					<% include NavChildren %>
-				</ul>
+				<nav role="navigation">
+					<ul class="nav pull-right">
+						<% include NavChildren %>
+					</ul>
+				</nav>
 			</div><!--/.nav-collapse -->
 		</div>
 	</div>

@@ -1,6 +1,7 @@
-<footer class="container">
+<footer class="container" role="contentinfo">
+	<h2 class="nonvisual-indicator">Footer</h2>
 	<% if SiteConfig.FacebookURL || SiteConfig.TwitterUsername %>
-		<aside class="socialLinks pull-right">
+		<aside class="socialLinks pull-right" role="complementary">
 			<% if SiteConfig.TwitterUsername %>
 				<a title="Follow us on Twitter" href="http://www.twitter.com/$SiteConfig.TwitterUsername" target="_blank" class="icon-dark icon-small icon-twitter-sign"></a>
 			<% end_if %>
@@ -10,17 +11,19 @@
 		</aside>
 	<% end_if %>
 	<% if Footer %>
-		<ul class="nav nav-pills">
-			<% with Footer %>
-				<% loop Children %>
-					<li class="$LinkingMode <% if $LinkingMode = current %>active<% end_if %>">
-						<a href="$Link" title="Go to the $Title.XML page"  class="$LinkingMode">
-							$MenuTitle.XML
-						</a>
-					</li>
-				<% end_loop %>
-			<% end_with %>
-		</ul>
+		<nav role="navigation">
+			<ul class="nav nav-pills">
+				<% with Footer %>
+					<% loop Children %>
+						<li class="$LinkingMode<% if $LinkingMode = current %> active<% end_if %>">
+							<a href="$Link" class="$LinkingMode">
+								$MenuTitle.XML
+							</a>
+						</li>
+					<% end_loop %>
+				<% end_with %>
+			</ul>
+		</nav>
 	<% end_if %>
 	<div class="pull-right">
 		<% if SiteConfig.FooterLogo %>
@@ -38,11 +41,6 @@
 		<% end_if %>
 	</div>
 	
-	<h1>
-		<a title="$SiteConfig.Title" href="$BaseHref" class="brand">
-			$SiteConfig.Title
-		</a>
-	</h1>
 	<p><small>$SiteConfig.Title &copy; 2012</small></p>
 </footer>
 <% include AccessKeys %>

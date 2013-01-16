@@ -1,10 +1,10 @@
-<header class="container">	
+<header class="container" role="banner">
 	<<% if ClassName=="HomePage" %>h1<% else %>div<% end_if %> class="brand">
 		<a title="$SiteConfig.Title" href="$BaseHref">
 			<% if SiteConfig.Logo %>
 				$SiteConfig.Logo
 			<% else %>
-				<img src="themes/default/images/logo.png" width="105px" height="119px" />
+				<img src="themes/default/images/logo.png" width="105px" height="119px" alt="" />
 			<% end_if %>
 			$SiteConfig.Title
 		</a>
@@ -14,7 +14,7 @@
 		<ul id="lang">
 			<% control Translations %>
 				<li>
-					<a href="$Link" hreflang="$Locale.RFC1766" title="$Title - $Locale.Nice">$Locale.Nice</a>
+					<a href="$Link" lang="$Locale.RFC1766" hreflang="$Locale.RFC1766" title="Read this page in $Locale.Nice">$Locale.Nice</a>
 				</li>
 			<% end_control %>
 		</ul>
@@ -24,14 +24,16 @@
 <div class="navbar noCorners">
 	<div class="navbar-inner">
 		<div class="container">
-			<% include MobileNav %>	
+			<% include MobileNav %>
 			<div class="nav-collapse collapse">
-				<div id="SearchGroup">
+				<div id="SearchGroup" role="search">
 					$SearchForm
 				</div>
-				<ul class="nav">
-					<% include NavChildren %>
-				</ul>
+				<nav role="navigation">
+					<ul class="nav">
+						<% include NavChildren %>
+					</ul>
+				</nav>
 			</div><!--/.nav-collapse -->
 		</div>
 	</div>

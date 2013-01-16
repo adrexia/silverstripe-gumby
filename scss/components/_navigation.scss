@@ -44,6 +44,12 @@ ul.nav, ul.dropdown-menu{
     }
     .nav > li > a{
 		padding: 9px 10px 9px 11px;
+
+			&:focus {
+				background-color: $navbarLinkBackgroundHover;
+				color: $navbarLinkColorHover;
+				text-decoration: none;
+			}
 	}
 
 	.nav li.dropdown .current.dropdown-toggle, 

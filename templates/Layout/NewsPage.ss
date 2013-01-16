@@ -4,10 +4,10 @@
 			<% include NewsCategories %>
 		<% end_with %>
 	</div>
-	<section class="span9">
+	<div class="span9" role="main">
 		<article>
 			<header class="page-header">
-				<h1><span class="hidden">$SiteConfig.Title | </span>$Title</h1>
+				<h1>$Title</h1>
 			</header>			
 			<% include PrintShare %>
 			<p><% if Category %><a class="label label-inverse" href="">$Category.Title</a><% end_if %> <time datetime="$Date">$Date.nice</time></p>
@@ -15,5 +15,5 @@
 			$Form
 			$PageComments
 		</article>
-	</section>
+	</div>
 </div>

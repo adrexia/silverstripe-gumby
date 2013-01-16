@@ -1,5 +1,6 @@
 <% if Pages %>
-	<ul class="breadcrumb">
+	<h2 class="nonvisual-indicator">Breadcrumbs</h2>
+	<ol class="breadcrumb">
 		<li><a href="$Baseref">Home</a> <span class="divider">/</span></li>
 		<% loop Pages %>
 			<% if Last %>
@@ -8,5 +9,5 @@
 				<li><a href="$Link">$MenuTitle.XML</a> <span class="divider">/</span></li>
 			<% end_if %>
 		<% end_loop %>
-	</ul>
+	</ol>
 <% end_if %>
