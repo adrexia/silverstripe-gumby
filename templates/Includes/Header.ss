@@ -29,7 +29,8 @@
 				<div id="SearchGroup" role="search">
 					$SearchForm
 				</div>
-				<nav role="navigation">
+				<nav role="navigation" aria-labeledby="TopLevelPagesLabel">
+					<span id="TopLevelPagesLabel" aria-hidden="true" class="nonvisual-indicator">Top level</span>
 					<ul class="nav">
 						<% include NavChildren %>
 					</ul>

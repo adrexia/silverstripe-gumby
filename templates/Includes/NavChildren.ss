@@ -1,6 +1,6 @@
 <% loop Menu(1) %>
 	<li class="$LinkingMode<% if $LinkingMode = current %> active<% end_if %><% if Children %> dropdown <% end_if %>">
-		<a href="$Link" class="$LinkingMode<% if Children %> dropdown-toggle" data-toggle="dropdown<% end_if %>">
+		<a href="$Link" class="$LinkingMode<% if Children %> dropdown-toggle" data-toggle="dropdown<% end_if %>" <% if $LinkingMode = current %>aria-selected="true"<% end_if %>>
 			$MenuTitle.XML <% if Children %><span class="showChildren"><b class="caret"></b></span><% end_if %>
 		</a>
 		<% if Children %>

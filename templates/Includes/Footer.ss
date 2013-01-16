@@ -1,5 +1,5 @@
-<footer class="container" role="contentinfo">
-	<h2 class="nonvisual-indicator">Footer</h2>
+<footer class="container" role="contentinfo" aria-labeledby="FooterLabel">
+	<span id="FooterLabel" aria-hidden="true" class="nonvisual-indicator">Footer</span>
 	<% if SiteConfig.FacebookURL || SiteConfig.TwitterUsername %>
 		<aside class="socialLinks pull-right" role="complementary">
 			<% if SiteConfig.TwitterUsername %>
@@ -11,7 +11,8 @@
 		</aside>
 	<% end_if %>
 	<% if Footer %>
-		<nav role="navigation">
+		<nav role="navigation" aria-labeledby="FooterLinksLabel">
+			<span id="FooterLinksLabel" aria-hidden="true" class="nonvisual-indicator">Footer links</span>
 			<ul class="nav nav-pills">
 				<% with Footer %>
 					<% loop Children %>

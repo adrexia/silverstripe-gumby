@@ -1,12 +1,13 @@
 <div class="sidebar-nav well">
-	<nav role="navigation">
+	<nav role="navigation" aria-labeledby="SidebarLabel">
+		<span id="SidebarLabel" aria-hidden="true" class="nonvisual-indicator">Sidebar</span>
 		<% if Menu(2) %>
 			<ul class="nav nav-list">
 				<% loop Menu(2) %>
 
 					<!-- second level pages -->
 					<li class="$LinkingMode <% if $LinkingMode = current %>active<% end_if %>">
-						<a href="$Link"><span></span>$MenuTitle</a>
+						<a href="$Link" <% if $LinkingMode = current %>aria-selected="true"<% end_if %>><span></span>$MenuTitle</a>
 						<% if LinkOrSection = section %>
 							<% if Children %>
 								<ul class="nav nav-list">
@@ -14,7 +15,7 @@
 
 										<!-- third level pages -->
 										<li class="$LinkingMode <% if $LinkingMode = current %>active<% end_if %>">
-											<a href="$Link"><span></span>$MenuTitle</a>
+											<a href="$Link" <% if $LinkingMode = current %>aria-selected="true"<% end_if %>><span></span>$MenuTitle</a>
 											<% if LinkOrSection = section %>
 												<% if Children %>
 													<ul class="nav nav-list">
@@ -22,7 +23,7 @@
 
 															<!-- fourth level pages -->
 															<li class="$LinkingMode <% if $LinkingMode = current %>active<% end_if %>">
-																<a href="$Link"><span></span>$MenuTitle</a>
+																<a href="$Link" <% if $LinkingMode = current %>aria-selected="true"<% end_if %>><span></span>$MenuTitle</a>
 																<% if LinkOrSection = section %>
 																	<% if Children %>
 																		<ul class="nav nav-list">
@@ -30,7 +31,7 @@
 
 																				<!-- fifth level pages -->
 																				<li class="$LinkingMode <% if $LinkingMode = current %>active<% end_if %>">
-																					<a href="$Link"><span></span>$MenuTitle</a>
+																					<a href="$Link" <% if $LinkingMode = current %>aria-selected="true"<% end_if %>><span></span>$MenuTitle</a>
 																				</li>
 																				<!-- end fifth level pages -->
 
