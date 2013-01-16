@@ -172,8 +172,17 @@ EXPRESS TYPOGRAPHY
 		font-size:0.9em;
 	}
 
-	table{
+	table {
 		@extend .table;
+		@extend .table-striped;
+
+		caption {
+			font-style: italic;
+		}
+		thead {
+			font-weight: 700;
+			border-bottom: 3px;
+		}
 	}
 
 }

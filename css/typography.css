@@ -1974,9 +1974,10 @@ EXPRESS TYPOGRAPHY
   border-bottom-right-radius: 4px;
   -moz-border-radius-bottomright: 4px;
 }
-.typography .table-striped tbody tr:nth-child(odd) td,
-.typography .table-striped tbody tr:nth-child(odd) th {
-  background-color: #f9f9f9;
+.typography .table-striped tbody tr:nth-child(odd) td, .typography table tbody tr:nth-child(odd) td,
+.typography .table-striped tbody tr:nth-child(odd) th,
+.typography table tbody tr:nth-child(odd) th {
+  background-color: #fcfcfc;
 }
 .typography .table tbody tr:hover td, .typography table tbody tr:hover td,
 .typography .table tbody tr:hover th,
@@ -2143,4 +2144,11 @@ EXPRESS TYPOGRAPHY
 }
 .typography time {
   font-size: 0.9em;
+}
+.typography table caption {
+  font-style: italic;
+}
+.typography table thead {
+  font-weight: 700;
+  border-bottom: 3px;
 }
