@@ -6,7 +6,7 @@
 
 					<!-- second level pages -->
 					<li class="$LinkingMode <% if $LinkingMode = current %>active<% end_if %>">
-						<a href="$Link" <% if $LinkingMode = current %>aria-selected="true"<% end_if %>><span></span>$MenuTitle</a>
+						<a href="$Link"><span></span>$MenuTitle</a>
 						<% if LinkOrSection = section %>
 							<% if Children %>
 								<ul class="nav nav-list">
@@ -14,7 +14,7 @@
 
 										<!-- third level pages -->
 										<li class="$LinkingMode <% if $LinkingMode = current %>active<% end_if %>">
-											<a href="$Link" <% if $LinkingMode = current %>aria-selected="true"<% end_if %>><span></span>$MenuTitle</a>
+											<a href="$Link"><span></span>$MenuTitle</a>
 											<% if LinkOrSection = section %>
 												<% if Children %>
 													<ul class="nav nav-list">
@@ -22,7 +22,7 @@
 
 															<!-- fourth level pages -->
 															<li class="$LinkingMode <% if $LinkingMode = current %>active<% end_if %>">
-																<a href="$Link" <% if $LinkingMode = current %>aria-selected="true"<% end_if %>><span></span>$MenuTitle</a>
+																<a href="$Link"><span></span>$MenuTitle</a>
 																<% if LinkOrSection = section %>
 																	<% if Children %>
 																		<ul class="nav nav-list">
@@ -30,7 +30,7 @@
 
 																				<!-- fifth level pages -->
 																				<li class="$LinkingMode <% if $LinkingMode = current %>active<% end_if %>">
-																					<a href="$Link" <% if $LinkingMode = current %>aria-selected="true"<% end_if %>><span></span>$MenuTitle</a>
+																					<a href="$Link"><span></span>$MenuTitle</a>
 																				</li>
 																				<!-- end fifth level pages -->
 
