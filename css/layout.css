@@ -6842,6 +6842,20 @@ header .brand {
   float: left;
   margin-top: 0.67em;
 }
+header .brand a {
+  position: relative;
+  display: block;
+}
+header .brand a img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+header .brand a span {
+  float: left;
+  margin-top: 38px;
+  margin-left: 5px;
+}
 header .brand a:visited {
   color: black;
 }

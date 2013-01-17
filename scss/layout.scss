@@ -66,8 +66,25 @@ header {
 		line-height:1em;
 		float: left;
 		margin-top: 0.67em;
-		a:visited {
-			color: black;
+		a {
+			position: relative;
+			display: block;
+
+			img {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+			}
+
+			span {
+				float: left;
+				margin-top: 38px;
+				margin-left: 5px;
+			}
+
+			&:visited {
+				color: black;
+			}
 		}
 	}
 

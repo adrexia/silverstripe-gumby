@@ -1,13 +1,20 @@
 <header class="container" role="banner">
 	<<% if ClassName=="HomePage" %>h1<% else %>div<% end_if %> class="brand">
-		<a title="$SiteConfig.Title" href="$BaseHref">
-			<% if SiteConfig.Logo %>
+		<% if $SiteConfig.Logo %>
+			<a title="Return to homepage" href="$BaseHref" style="padding-left: {$SiteConfig.Logo.Width}px; min-height: {$SiteConfig.Logo.Height}px;">
 				$SiteConfig.Logo
-			<% else %>
+				<span>
+					$SiteConfig.Title
+				</span>
+			</a>
+		<% else %>
+			<a title="Return to homepage" href="$BaseHref" style="padding-left: 105px; min-height: 119px; position: relative; display: block;">
 				<img src="themes/default/images/logo.png" width="105px" height="119px" alt="" />
-			<% end_if %>
-			$SiteConfig.Title
-		</a>
+				<span style="float: left; margin-top: 38px; margin-left: 5px;">
+					$SiteConfig.Title
+				</span>
+			</a>
+		<% end_if %>
 	</<% if ClassName=="HomePage" %>h1<% else %>div<% end_if %>>
 
 	<% if Translations %>
