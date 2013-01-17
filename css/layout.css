@@ -7015,6 +7015,9 @@ iframe {
   margin-left: 0;
   padding: 0;
 }
+.no-js #layout ul.sitemap .collapse {
+  height: auto;
+}
 #IE9 #layout ul.sitemap .open .collapse {
   height: auto;
 }
