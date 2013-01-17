@@ -39,6 +39,7 @@ EXPRESS LAYOUT
 		line-height:1.3em;
 	}
 	/* search container takes 100% width by default when floated right in IE7 */
+	#IE6 &,
 	#IE7 & {
 		width: 25%;
 	}
@@ -62,6 +63,13 @@ EXPRESS LAYOUT
 			}
 		}
 
+		input {
+			#IE6 & {
+				margin-left: 0;
+				float: none;
+			}
+		}
+
 		input.action{
 			display:none;
 		}
@@ -71,10 +79,15 @@ EXPRESS LAYOUT
 /*HEADER */
 header {
 	.brand {
+		#IE6 &,
+		#IE7 & {
+			width: 75%;
+		}
+
 		@extend h1;
 		font-size: 3em;
 		font-weight:bold;
-		margin-bottom: 18px;
+		padding-bottom: 18px;
 		overflow:visible;
 		line-height:1em;
 		float: left;
@@ -104,8 +117,14 @@ header {
 	ul#lang {
 		float: right;
 
+		#IE6 &,
+		#IE7 & {
+			width: 20%;
+			text-align: right;
+		}
+
 		li {
-			float: left;
+			display: inline;
 			margin-left: 10px;
 			list-style: none;
 		}
@@ -256,3 +275,48 @@ iframe {
 
 /*Fixes for all media sizes*/
 @include mediaSizes;
+
+
+/*IE6 bootstrap fixes*/
+#IE6 {
+	.span12,
+	.span11,
+	.span10,
+	.span9,
+	.span8,
+	.span7,
+	.span6,
+	.span5,
+	.span4,
+	.span3,
+	.span2,
+	.span1 {
+		float: left;
+		margin-left: 20px;
+	}
+
+	.breadcrumb .active {
+		background: transparent;
+	}
+
+	.nav-pills li {
+		float: left;
+
+		&.current {
+			background-color: transparent;
+		}
+
+		a {
+			margin: 2px 2px 2px 0;
+			padding: 8px 12px;
+			line-height: 14px;
+			display: block;
+			text-decoration: none;
+
+			&.current {
+				background-color: #0464EA;
+    			color: white;
+			}
+		}
+	}
+}

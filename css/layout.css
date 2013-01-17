@@ -5691,6 +5691,9 @@ ul.nav, ul.dropdown-menu {
   height: auto;
   overflow: visible;
 }
+#IE6 .nav-collapse {
+  height: 100%;
+}
 .nav-collapse .dropdown-menu {
   margin-left: 0;
   margin-right: 0;
@@ -5736,6 +5739,44 @@ ul.nav, ul.dropdown-menu {
   top: 0;
   right: 0;
   padding-right: 6px;
+}
+#IE6 .navbar .nav {
+  width: 70%;
+}
+#IE6 .navbar .nav li {
+  display: block;
+  float: left;
+  overflow: visible;
+}
+#IE6 .navbar .nav li a {
+  display: block;
+  padding: 9px 10px 9px 11px;
+}
+#IE6 .navbar .nav li a .showChildren {
+  text-align: top;
+  height: 15px;
+  overflow: hidden;
+}
+#IE6 .navbar .nav li a .showChildren .caret {
+  margin: 6px 0 0 0;
+  color: #222222;
+}
+#IE6 .navbar .nav li a,
+#IE6 .navbar .nav li a.dropdown-toggle {
+  color: #C7C7C7;
+  text-decoration: none;
+  background-color: transparent;
+}
+#IE6 .navbar .nav li.active a {
+  background-color: #222;
+  color: white;
+}
+#IE6 .navbar .nav .dropdown-menu li {
+  display: inline;
+  float: none;
+}
+#IE6 .navbar .nav .dropdown-menu li a {
+  color: #333;
 }
 
 /* Side navigation */
@@ -5889,7 +5930,7 @@ EXPRESS LAYOUT
 #SearchGroup .navbar-search .search-query {
   line-height: 1.3em;
 }
-#IE7 #SearchGroup {
+#IE6 #SearchGroup, #IE7 #SearchGroup {
   width: 25%;
 }
 #SearchGroup form {
@@ -5907,6 +5948,10 @@ EXPRESS LAYOUT
 #IE6 #SearchGroup form label, #IE7 #SearchGroup form label, #IE8 #SearchGroup form label, #IE9 #SearchGroup form label {
   display: inline-block;
 }
+#IE6 #SearchGroup form input {
+  margin-left: 0;
+  float: none;
+}
 #SearchGroup form input.action {
   display: none;
 }
@@ -5915,11 +5960,14 @@ EXPRESS LAYOUT
 header .brand {
   font-size: 3em;
   font-weight: bold;
-  margin-bottom: 18px;
+  padding-bottom: 18px;
   overflow: visible;
   line-height: 1em;
   float: left;
   margin-top: 0.67em;
+}
+#IE6 header .brand, #IE7 header .brand {
+  width: 75%;
 }
 header .brand a {
   position: relative;
@@ -5941,8 +5989,12 @@ header .brand a:visited {
 header ul#lang {
   float: right;
 }
+#IE6 header ul#lang, #IE7 header ul#lang {
+  width: 20%;
+  text-align: right;
+}
 header ul#lang li {
-  float: left;
+  display: inline;
   margin-left: 10px;
   list-style: none;
 }
@@ -6120,17 +6172,19 @@ iframe {
   position: relative;
   line-height: 35px;
 }
-#IE7 #layout ul.sitemap li .page-toggle {
+#IE6 #layout ul.sitemap li, #IE7 #layout ul.sitemap li {
+  border-top: 1px solid white;
+  border-bottom: 1px solid #eeeeee;
+  padding: 8px 0;
+}
+#IE6 #layout ul.sitemap li .page-toggle, #IE7 #layout ul.sitemap li .page-toggle {
   display: none;
 }
-#IE7 #layout ul.sitemap li .collapse {
+#IE6 #layout ul.sitemap li .collapse, #IE7 #layout ul.sitemap li .collapse {
   height: auto;
 }
 #layout ul.sitemap li #IE8 {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#99F2F2F2', endColorstr='#99FFFFFF', GradientType=0);
-}
-#IE7 #layout ul.sitemap li {
-  border-bottom: 1px solid #eeeeee;
 }
 #layout ul.sitemap li.initial.first {
   border-top: none;
@@ -6162,6 +6216,9 @@ iframe {
   width: 100%;
   height: 100%;
 }
+#IE6 #layout ul.sitemap li a.sitemap-link {
+  padding: 4px 0;
+}
 #layout ul.sitemap li a.sitemap-link img {
   border: none;
 }
@@ -6190,17 +6247,17 @@ iframe {
 #IE9 #layout ul.sitemap li ul li {
   background-color: #eeeeee;
 }
-#IE7 #layout ul.sitemap li ul li {
+#IE6 #layout ul.sitemap li ul li, #IE7 #layout ul.sitemap li ul li {
   overflow: hidden;
   border: none !important;
 }
-#IE7 #layout ul.sitemap li ul li.first, #IE7 #layout ul.sitemap li ul li.last {
+#IE6 #layout ul.sitemap li ul li.first, #IE6 #layout ul.sitemap li ul li.last, #IE7 #layout ul.sitemap li ul li.first, #IE7 #layout ul.sitemap li ul li.last {
   border: none;
 }
-#IE7 #layout ul.sitemap li ul li li {
+#IE6 #layout ul.sitemap li ul li li, #IE7 #layout ul.sitemap li ul li li {
   border: none;
 }
-#IE7 #layout ul.sitemap li ul li li.first, #IE7 #layout ul.sitemap li ul li li.last {
+#IE6 #layout ul.sitemap li ul li li.first, #IE6 #layout ul.sitemap li ul li li.last, #IE7 #layout ul.sitemap li ul li li.first, #IE7 #layout ul.sitemap li ul li li.last {
   border: none;
 }
 #layout ul.sitemap li ul li.first {
@@ -6812,4 +6869,40 @@ iframe {
   }
 
   zoom: 1;
+}
+/*IE6 bootstrap fixes*/
+#IE6 .span12,
+#IE6 .span11,
+#IE6 .span10,
+#IE6 .span9,
+#IE6 .span8,
+#IE6 .span7,
+#IE6 .span6,
+#IE6 .span5,
+#IE6 .span4,
+#IE6 .span3,
+#IE6 .span2,
+#IE6 .span1 {
+  float: left;
+  margin-left: 20px;
+}
+#IE6 .breadcrumb .active, #IE6 #layout .resultsHeader .active, #layout #IE6 .resultsHeader .active {
+  background: transparent;
+}
+#IE6 .nav-pills li {
+  float: left;
+}
+#IE6 .nav-pills li.current {
+  background-color: transparent;
+}
+#IE6 .nav-pills li a {
+  margin: 2px 2px 2px 0;
+  padding: 8px 12px;
+  line-height: 14px;
+  display: block;
+  text-decoration: none;
+}
+#IE6 .nav-pills li a.current {
+  background-color: #0464EA;
+  color: white;
 }

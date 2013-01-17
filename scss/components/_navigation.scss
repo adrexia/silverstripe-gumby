@@ -18,7 +18,11 @@ ul.nav, ul.dropdown-menu{
 	height:auto;
 	overflow: visible;
 
-	 .dropdown-menu{
+	#IE6 & {
+		height: 100%;
+	}
+
+	.dropdown-menu{
 		margin-left:0;
 		margin-right:0;		
 		li a{
@@ -65,6 +69,53 @@ ul.nav, ul.dropdown-menu{
 			top: 0;
 			right: 0;
 			padding-right: 6px;
+		}
+
+		#IE6 & {
+			width: 70%;
+
+			li {
+				display: block;
+				float: left;
+				overflow: visible;
+
+				a {
+					display: block;
+					padding: 9px 10px 9px 11px;
+
+					.showChildren {
+						text-align: top;
+						height: 15px;
+						overflow: hidden;
+
+						.caret {
+							margin: 6px 0 0 0;
+							color: $grayDarker;
+						}
+					}
+				}
+
+				a,
+				a.dropdown-toggle {
+					color: #C7C7C7;
+					text-decoration: none;
+					background-color: transparent;
+				}
+
+				&.active a {
+					background-color: #222;
+					color: white;
+				}
+			}
+
+			.dropdown-menu li {
+				display: inline;
+				float: none;
+
+				a {
+					color: #333;
+				}
+			}
 		}
 	}
 }
