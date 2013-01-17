@@ -108,12 +108,15 @@ ul.nav, ul.dropdown-menu{
 				}
 			}
 
-			.dropdown-menu li {
-				display: inline;
-				float: none;
+			.dropdown-menu {
+				li {
+					display: inline;
+					float: none;
 
-				a {
-					color: #333;
+					a {
+						color: #333;
+						background-color: transparent;
+					}
 				}
 			}
 		}
