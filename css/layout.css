@@ -4332,7 +4332,7 @@ input[type="submit"].btn.btn-mini,
 }
 .breadcrumb .divider, #layout .resultsHeader .divider {
   padding: 0 5px;
-  color: #555555;
+  color: #999999;
 }
 .breadcrumb .active a, #layout .resultsHeader .active a {
   color: #333333;
@@ -6815,9 +6815,13 @@ EXPRESS LAYOUT
 /*Customise search field */
 #SearchGroup {
   float: right;
+  /* search container takes 100% width by default when floated right in IE7 */
 }
 #SearchGroup .navbar-search .search-query {
   line-height: 1.3em;
+}
+#IE7 #SearchGroup {
+  width: 25%;
 }
 #SearchGroup form {
   padding: 0;

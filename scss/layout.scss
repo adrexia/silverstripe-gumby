@@ -35,9 +35,13 @@ EXPRESS LAYOUT
 
 /*Customise search field */	
 #SearchGroup{
-	float:right;
+	float: right;
 	.navbar-search .search-query{
 		line-height:1.3em;
+	}
+	/* search container takes 100% width by default when floated right in IE7 */
+	#IE7 & {
+		width: 25%;
 	}
 	form{
 		.field{
