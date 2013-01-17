@@ -1,6 +1,5 @@
 <% if Pages %>
-	<nav role="navigation" aria-labeledby="BreadcrumbsLabel">
-		<span id="BreadcrumbsLabel" aria-hidden="true" class="nonvisual-indicator">Breadcrumbs</span>
+	<nav role="navigation" aria-label="Breadcrumbs">
 		<ol class="breadcrumb">
 			<li><a href="$Baseref">Home</a> <span class="divider">/</span></li>
 			<% loop Pages %>

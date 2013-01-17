@@ -1,6 +1,4 @@
-<p class="pull-right printShare" role="menu" aria-labeledby="PrintShareMenu">
-	<span id="PrintShareMenu" aria-hidden="true" class="nonvisual-indicator">Print and share menu</span>
-
+<p class="pull-right printShare" role="menu" aria-label="Print and share menu">
 	<a href="#" role="menuitem" onclick="window.print(); return false;">Print</a>
 
 	<% if SiteConfig.AddThisProfileID %>

@@ -1,6 +1,5 @@
 <div class="sidebar-nav well">
-	<nav role="navigation" aria-labeledby="SidebarLabel">
-		<span id="SidebarLabel" aria-hidden="true" class="nonvisual-indicator">Sidebar</span>
+	<nav role="navigation" aria-label="Sidebar">
 		<% if Menu(2) %>
 			<ul class="nav nav-list">
 				<% loop Menu(2) %>
