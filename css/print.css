@@ -42,12 +42,32 @@
  * are about to loop throught to get the total number. EG:
  * <ul class="size_{$Menu.Count}">
  */
-div, article {
-  width: 100%;
-  margin: 0;
-  float: none;
+.container {
+  width: auto;
 }
 
+.row-fluid {
+  width: 100%;
+}
+
+.row,
+.thumbnails {
+  margin-left: 0;
+}
+
+[class*="span"],
+.row-fluid [class*="span"] {
+  float: none;
+  display: block;
+  width: auto;
+  margin-left: 0;
+}
+
+/* this fixes disappearing print content in IE
+.row {
+	margin-left: 1px;
+}
+*/
 .navbar, .sidebar-nav, .breadcrumb, .icon, .control, .btn, .carousel-control, .printShare, .resultsHeader, .pagination, #lang, footer {
   display: none;
 }
@@ -59,11 +79,6 @@ div, article {
 
 .carousel-caption {
   clear: both;
-}
-
-/* this fixes disappearing print content in IE */
-.row {
-  margin-left: 1px;
 }
 
 .carousel:after {

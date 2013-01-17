@@ -2,17 +2,45 @@
  Print stylesheet.
 */
 
-
 @import 'bootstrap_config/custom/mixins';
 
-div, article{
-	width: 100%; 
-	margin: 0; 
-	float: none;
+// GRID & CONTAINERS
+
+// Remove width from containers
+.container {
+	width: auto;
 }
+// Fluid rows
+.row-fluid {
+	width: 100%;
+}
+// Undo negative margin on rows and thumbnails
+.row,
+.thumbnails {
+	margin-left: 0;
+}
+// Make all grid-sized elements block level again
+[class*="span"],
+.row-fluid [class*="span"] {
+	float: none;
+	display: block;
+	width: auto;
+	margin-left: 0;
+}
+
+/* this fixes disappearing print content in IE
+.row {
+	margin-left: 1px;
+}
+*/
+
+// REMOVE NON-CONTENT ELEMENTS
+
 .navbar, .sidebar-nav, .breadcrumb, .icon, .control, .btn, .carousel-control, .printShare, .resultsHeader, .pagination, #lang, footer{
 	display:none;
 }
+
+// CAROUSEL
 
 .carousel img{
 	max-width:200px;
@@ -21,11 +49,6 @@ div, article{
 
 .carousel-caption{
 	clear:both;
-}
-
-/* this fixes disappearing print content in IE */
-.row {
-	margin-left: 1px;
 }
 
 .carousel{
