@@ -2032,6 +2032,9 @@ EXPRESS TYPOGRAPHY
 .typography h2 {
   line-height: 27px;
 }
+.typography h6 {
+  color: #666666;
+}
 .typography p {
   margin-bottom: 18px;
   font-size: 1.1em;
