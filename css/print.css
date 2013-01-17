@@ -44,6 +44,7 @@
  */
 .container {
   width: auto;
+  margin: 0.25em;
 }
 
 .row-fluid {
@@ -63,11 +64,6 @@
   margin-left: 0;
 }
 
-/* this fixes disappearing print content in IE
-.row {
-	margin-left: 1px;
-}
-*/
 .navbar, .sidebar-nav, .breadcrumb, .icon, .control, .btn, .carousel-control, .printShare, .resultsHeader, .pagination, #lang, footer {
   display: none;
 }

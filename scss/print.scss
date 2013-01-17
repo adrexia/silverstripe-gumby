@@ -8,7 +8,7 @@
 
 // Remove width from containers
 .container {
-	width: auto;
+	width: auto; margin: 0.25em;
 }
 // Fluid rows
 .row-fluid {
@@ -27,12 +27,6 @@
 	width: auto;
 	margin-left: 0;
 }
-
-/* this fixes disappearing print content in IE
-.row {
-	margin-left: 1px;
-}
-*/
 
 // REMOVE NON-CONTENT ELEMENTS
 
