@@ -4,14 +4,14 @@
 	</div>
 	<div class="span9">
 		$Breadcrumbs
-	</div>
-	<div class="span9" role="main">
-		<header class="page-header subhead">
-			<% include PrintShare %>
-			<h1>$Title</h1>
-		</header>
-		$Content
-		$Form
-		$PageComments
+		<div role="main">
+			<header class="page-header subhead">
+				<% include PrintShare %>
+				<h1>$Title</h1>
+			</header>
+			$Content
+			$Form
+			$PageComments
+		</div>
 	</div>
 </div>
