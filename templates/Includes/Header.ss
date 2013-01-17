@@ -31,7 +31,12 @@
 <div class="navbar noCorners">
 	<div class="navbar-inner">
 		<div class="container">
-			<% include MobileNav %>
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+
 			<div class="nav-collapse">
 				<div id="SearchGroup" role="search">
 					$SearchForm
@@ -42,7 +47,7 @@
 						<% include NavChildren %>
 					</ul>
 				</nav>
-			</div><!--/.nav-collapse -->
+			</div>
 		</div>
 	</div>
 </div>

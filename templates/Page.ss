@@ -37,8 +37,6 @@
 <!--[if lte IE 8]><div id="IE8"> <![endif]-->
 <!--[if lte IE 9]><div id="IE9"> <![endif]-->
 
-	<%-- You can use either NavbarFixedTop or Header but not both --%>
-	<%-- include NavbarFixedTop --%>
 	<% include Header %>
 	
 	<div class="container typography" id="layout">
