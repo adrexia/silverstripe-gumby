@@ -2106,6 +2106,10 @@ EXPRESS TYPOGRAPHY
   padding-left: 22px;
   background: url(../../../themes/default/images/icons/application.png) no-repeat left 0;
 }
+.typography img {
+  max-width: 100%;
+  height: auto;
+}
 .typography img.right {
   float: right;
   margin: 0 0 18px 18px;
@@ -2128,6 +2132,7 @@ EXPRESS TYPOGRAPHY
 }
 .typography .captionImage {
   width: 100%;
+  max-width: 100%;
 }
 .typography .captionImage.left {
   float: left;
