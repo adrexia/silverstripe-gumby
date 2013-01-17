@@ -36,7 +36,6 @@ EXPRESS LAYOUT
 /*Customise search field */	
 #SearchGroup{
 	float:right;
-	width:200px;
 	.navbar-search .search-query{
 		line-height:1.3em;
 	}
@@ -45,8 +44,19 @@ EXPRESS LAYOUT
 			margin:0;
 		}
 		padding:0;
-		fieldset{
-			margin:0;
+
+		label {
+			display: none;
+			vertical-align: middle;
+			color: white;
+			margin: 0 10px 0 0;
+
+			#IE6 &,
+			#IE7 &,
+			#IE8 &,
+			#IE9 & {
+				display: inline-block;
+			}
 		}
 
 		input.action{

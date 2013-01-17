@@ -6814,7 +6814,6 @@ EXPRESS LAYOUT
 /*Customise search field */
 #SearchGroup {
   float: right;
-  width: 200px;
 }
 #SearchGroup .navbar-search .search-query {
   line-height: 1.3em;
@@ -6825,8 +6824,14 @@ EXPRESS LAYOUT
 #SearchGroup form .field {
   margin: 0;
 }
-#SearchGroup form fieldset {
-  margin: 0;
+#SearchGroup form label {
+  display: none;
+  vertical-align: middle;
+  color: white;
+  margin: 0 10px 0 0;
+}
+#IE6 #SearchGroup form label, #IE7 #SearchGroup form label, #IE8 #SearchGroup form label, #IE9 #SearchGroup form label {
+  display: inline-block;
 }
 #SearchGroup form input.action {
   display: none;
