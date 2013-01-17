@@ -1,16 +1,10 @@
 <!doctype html>
 <html class="no-js" lang="$ContentLocale">
 <head>
-		
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 	<% base_tag %>
 	<title>$SiteConfig.Title | $Title</title>
 	$MetaTags(false)
 	<meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0" />
-
-	<meta name="description" content="">
-	<meta name="author" content="">
-	
 	<style type="text/css">
 	  body {
 	    /* padding-top: 60px; */ /* Required for top-fixed nav in smaller screen sizes  */
