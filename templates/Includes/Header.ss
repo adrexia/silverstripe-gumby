@@ -9,7 +9,7 @@
 			</a>
 		<% else %>
 			<a title="Return to homepage" href="$BaseHref" style="padding-left: 105px; min-height: 119px; position: relative; display: block;">
-				<img src="themes/default/images/logo.png" width="105px" height="119px" alt="" />
+				<img src="themes/default/images/logo.png" width="105" height="119" alt="" />
 				<span style="float: left; margin-top: 38px; margin-left: 5px;">
 					$SiteConfig.Title
 				</span>
