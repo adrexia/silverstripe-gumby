@@ -6,7 +6,7 @@
 <!--[if gt IE 9]><!--><html class="no-js" lang="$ContentLocale"><!--<![endif]-->
 <head>
 	<% base_tag %>
-	<title>$SiteConfig.Title | $Title</title>
+	<title>$Title | $SiteConfig.Title</title>
 	$MetaTags(false)
 	<meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0" />
 
