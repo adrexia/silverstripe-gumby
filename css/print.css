@@ -68,6 +68,90 @@
   margin-left: 0;
 }
 
+#IE6 .span12, #IE6 .row-fluid .span12 {
+  float: none;
+  display: block;
+  width: auto;
+  margin-left: 0;
+}
+
+#IE6 .span11, #IE6 .row-fluid .span11 {
+  float: none;
+  display: block;
+  width: auto;
+  margin-left: 0;
+}
+
+#IE6 .span10, #IE6 .row-fluid .span10 {
+  float: none;
+  display: block;
+  width: auto;
+  margin-left: 0;
+}
+
+#IE6 .span9, #IE6 .row-fluid .span9 {
+  float: none;
+  display: block;
+  width: auto;
+  margin-left: 0;
+}
+
+#IE6 .span8, #IE6 .row-fluid .span8 {
+  float: none;
+  display: block;
+  width: auto;
+  margin-left: 0;
+}
+
+#IE6 .span7, #IE6 .row-fluid .span7 {
+  float: none;
+  display: block;
+  width: auto;
+  margin-left: 0;
+}
+
+#IE6 .span6, #IE6 .row-fluid .span6 {
+  float: none;
+  display: block;
+  width: auto;
+  margin-left: 0;
+}
+
+#IE6 .span5, #IE6 .row-fluid .span5 {
+  float: none;
+  display: block;
+  width: auto;
+  margin-left: 0;
+}
+
+#IE6 .span4, #IE6 .row-fluid .span4 {
+  float: none;
+  display: block;
+  width: auto;
+  margin-left: 0;
+}
+
+#IE6 .span3, #IE6 .row-fluid .span3 {
+  float: none;
+  display: block;
+  width: auto;
+  margin-left: 0;
+}
+
+#IE6 .span2, #IE6 .row-fluid .span2 {
+  float: none;
+  display: block;
+  width: auto;
+  margin-left: 0;
+}
+
+#IE6 .span1, #IE6 .row-fluid .span1 {
+  float: none;
+  display: block;
+  width: auto;
+  margin-left: 0;
+}
+
 .navbar, .sidebar-nav, .breadcrumb, .icon, .control, .btn, .carousel-control, .printShare, .resultsHeader, .pagination, #lang, footer {
   display: none;
 }

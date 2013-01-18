@@ -3,6 +3,7 @@
 */
 
 @import 'bootstrap_config/custom/mixins';
+@import 'bootstrap_config/custom/variables';
 
 @page {
 	margin: 15mm 10mm 15mm 10mm;
@@ -23,6 +24,8 @@
 .thumbnails {
 	margin-left: 0;
 }
+
+
 // Make all grid-sized elements block level again
 [class*="span"],
 .row-fluid [class*="span"] {
@@ -30,6 +33,19 @@
 	display: block;
 	width: auto;
 	margin-left: 0;
+}
+
+// IE6 cant deal with class*= matchers, so we need to loop through & set too
+$i: $gridColumns;
+@while $i > 0 {
+	#IE6 .span#{$i}, #IE6 .row-fluid .span#{$i} {
+		float: none;
+		display: block;
+		width: auto;
+		margin-left: 0;
+	}
+
+	$i: $i - 1;
 }
 
 // REMOVE NON-CONTENT ELEMENTS
