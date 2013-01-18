@@ -6890,6 +6890,20 @@ iframe {
 #IE6 .breadcrumb .active, #IE6 #layout .resultsHeader .active, #layout #IE6 .resultsHeader .active {
   background: transparent;
 }
+#IE6 .nav-list li a {
+  display: block;
+}
+#IE6 .nav-list li.active {
+  background-color: transparent;
+}
+#IE6 .nav-list li.active a {
+  background-color: #0464EA;
+  color: white;
+}
+#IE6 .nav-list li.active li a {
+  background-color: transparent;
+  color: #0464EA;
+}
 #IE6 .nav-pills li {
   float: left;
 }

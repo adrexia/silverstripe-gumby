@@ -299,6 +299,28 @@ iframe {
 		background: transparent;
 	}
 
+	.nav-list
+	{
+		li {
+			a {
+				display: block;
+			}
+
+			&.active {
+				background-color: transparent;
+				a {
+					background-color: #0464EA;
+					color: white;
+				}
+
+				li a {
+					background-color: transparent;
+					color: #0464EA;
+				}
+			}
+		}
+	}
+
 	.nav-pills li {
 		float: left;
 
