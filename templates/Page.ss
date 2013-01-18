@@ -1,5 +1,9 @@
 <!doctype html>
-<html class="no-js" lang="$ContentLocale">
+<!--[if lt IE 7]><html id="IE6" class="no-js" lang="$ContentLocale"><![endif]-->
+<!--[if IE 7]><html id="IE7" class="no-js" lang="$ContentLocale"><![endif]-->
+<!--[if IE 8]><html id="IE8" class="no-js" lang="$ContentLocale"><![endif]-->
+<!--[if IE 9]><html id="IE9" class="no-js" lang="$ContentLocale"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="$ContentLocale"><!--<![endif]-->
 <head>
 	<% base_tag %>
 	<title>$SiteConfig.Title | $Title</title>
@@ -26,11 +30,6 @@
 </head>
 
 <body data-spy="scroll">
-<!--[if lte IE 6]><div id="IE6"><![endif]-->
-<!--[if IE 7]><div id="IE7"><![endif]-->
-<!--[if IE 8]><div id="IE8"><![endif]-->
-<!--[if IE 9]><div id="IE9"><![endif]-->
-
 	<% include Header %>
 	
 	<div class="container typography" id="layout">
@@ -58,10 +57,5 @@
 	<% if SiteConfig.AddThisProfileID %>
 		<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=$SiteConfig.AddThisProfileID"></script>
 	<% end_if %>
-<!--[if IE 9]></div><![endif]-->
-<!--[if IE 8]></div><![endif]-->
-<!--[if IE 7]></div><![endif]-->
-<!--[if lte IE 6]></div><![endif]-->
-
 </body>
 </html>
