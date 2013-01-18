@@ -5924,6 +5924,11 @@ ul.nav, ul.dropdown-menu {
 /*****************************
 EXPRESS LAYOUT
 ******************************/
+/* todo: this is a workaround for responsive.css including padding: 20px coming from module_bootstrap */
+body {
+  padding: 0 !important;
+}
+
 /*Customise search field */
 #SearchGroup {
   float: right;

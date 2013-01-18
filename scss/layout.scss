@@ -32,6 +32,11 @@ $experimental-support-for-svg: true; //for IE9 SVG gradient support
 EXPRESS LAYOUT
 ******************************/
 
+/* todo: this is a workaround for responsive.css including padding: 20px coming from module_bootstrap */
+body {
+	padding: 0 !important;
+}
+
 /*Customise search field */	
 #SearchGroup{
 	float: right;
