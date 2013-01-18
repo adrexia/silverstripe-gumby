@@ -9,12 +9,6 @@
 	<title>$SiteConfig.Title | $Title</title>
 	$MetaTags(false)
 	<meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0" />
-	<style type="text/css">
-	  body {
-	    /* padding-top: 60px; */ /* Required for top-fixed nav in smaller screen sizes  */
-	    padding-bottom: 20px;
-	  }
-	</style>
 
 	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements. It must be included _before_ the body element -->
 	<!--[if lt IE 9]>
