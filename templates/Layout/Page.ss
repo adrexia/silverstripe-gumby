@@ -1,8 +1,10 @@
 <div class="row">
+	<% if Menu(2) %>
 	<div class="span3">
 		<% include SidebarNav %>
 	</div>
-	<div class="span9">
+	<% end_if %>
+	<div class="<% if Menu(2) %>span9<% else %>span12<% end_if %>">
 		$Breadcrumbs
 		<div role="main">
 			<header class="page-header subhead">
