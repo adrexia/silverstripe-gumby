@@ -5724,6 +5724,7 @@ ul.nav, ul.dropdown-menu {
   text-decoration: none;
 }
 .navbar .nav li.dropdown .current.dropdown-toggle,
+.navbar .nav li.dropdown .section.dropdown-toggle,
 .navbar .nav li.open.active .current.dropdown-toggle {
   background-color: #222222;
 }
