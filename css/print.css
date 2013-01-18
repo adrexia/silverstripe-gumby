@@ -42,6 +42,10 @@
  * are about to loop throught to get the total number. EG:
  * <ul class="size_{$Menu.Count}">
  */
+@page {
+  margin: 15mm 10mm 15mm 10mm;
+}
+
 .container {
   width: auto;
   margin: 0.25em;
