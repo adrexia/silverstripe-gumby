@@ -16,7 +16,7 @@
 	  }
 	</style>
 
-	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements. It must be included _before_ the <body> element -->
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements. It must be included _before_ the body element -->
 	<!--[if lt IE 9]>
 		<script src="$Themedir/js/lib/html5shiv-printshiv.js"></script>
 	<![endif]-->
