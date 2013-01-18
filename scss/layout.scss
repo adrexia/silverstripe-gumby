@@ -37,6 +37,11 @@ body {
 	padding: 0 !important;
 }
 
+/* padding-left of 20px coming from module_boostrap, set it back to 0 */
+header.page-header {
+	padding-left: 0;
+}
+
 /*Customise search field */	
 #SearchGroup{
 	float: right;
