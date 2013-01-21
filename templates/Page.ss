@@ -12,15 +12,15 @@
 
 	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements. It must be included _before_ the body element -->
 	<!--[if lt IE 9]>
-		<script src="$Themedir/js/lib/html5shiv-printshiv.js"></script>
+		<script src="$ThemeDir/js/lib/html5shiv-printshiv.js"></script>
 	<![endif]-->
 
 	<!-- favicon and touch icons -->
-	<link rel="shortcut icon" href="$Themedir/ico/favicon.ico" />
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="$Themedir/ico/apple-touch-icon-144-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="$Themedir/ico/apple-touch-icon-114-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="$Themedir/ico/apple-touch-icon-72-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" href="$Themedir/ico/apple-touch-icon-57-precomposed.png">
+	<link rel="shortcut icon" href="$ThemeDir/ico/favicon.ico" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="$ThemeDir/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="$ThemeDir/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="$ThemeDir/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="$ThemeDir/ico/apple-touch-icon-57-precomposed.png">
 </head>
 
 <body data-spy="scroll">
