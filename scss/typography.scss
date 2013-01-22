@@ -127,10 +127,12 @@ EXPRESS TYPOGRAPHY
 
 		&.right {
 			float:right;
+			clear:right;
 			margin: 0 0 18px 18px;
 		}
 		&.left {
 			float:left;
+			clear:left;
 			margin: 0 18px 18px 0px;
 		}
 		&.leftAlone {

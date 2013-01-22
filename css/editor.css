@@ -2115,10 +2115,12 @@ EXPRESS TYPOGRAPHY
 }
 .typography img.right {
   float: right;
+  clear: right;
   margin: 0 0 18px 18px;
 }
 .typography img.left {
   float: left;
+  clear: left;
   margin: 0 18px 18px 0px;
 }
 .typography img.leftAlone {
