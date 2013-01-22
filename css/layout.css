@@ -179,7 +179,7 @@ a {
   text-decoration: none;
 }
 a:visited {
-  color: #00aaff;
+  color: #03449f;
 }
 a:hover {
   color: #03449f;
@@ -3139,29 +3139,29 @@ button.close {
 }
 
 .btn-primary, .Actions .action {
-  background-color: #0090ff;
-  background-image: -ms-linear-gradient(top, #00aaff, #006aff);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#00aaff), to(#006aff));
-  background-image: -webkit-linear-gradient(top, #00aaff, #006aff);
-  background-image: -o-linear-gradient(top, #00aaff, #006aff);
-  background-image: -moz-linear-gradient(top, #00aaff, #006aff);
-  background-image: linear-gradient(top, #00aaff, #006aff);
+  background-color: #03349f;
+  background-image: -ms-linear-gradient(top, #03449f, #031d9f);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#03449f), to(#031d9f));
+  background-image: -webkit-linear-gradient(top, #03449f, #031d9f);
+  background-image: -o-linear-gradient(top, #03449f, #031d9f);
+  background-image: -moz-linear-gradient(top, #03449f, #031d9f);
+  background-image: linear-gradient(top, #03449f, #031d9f);
   background-repeat: repeat-x;
-  border-color: #006aff #006aff #004ab3;
+  border-color: #031d9f #031d9f #010f54;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #006aff;
+  *background-color: #031d9f;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 .btn-primary #IE8, .Actions .action #IE8 {
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF00AAFF', endColorstr='#FF006AFF', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF03449F', endColorstr='#FF031D9F', GradientType=0);
 }
 .btn-primary:hover, .Actions .action:hover, .btn-primary:active, .Actions .action:active, .btn-primary.active, .Actions .active.action, .btn-primary.disabled, .Actions .disabled.action, .btn-primary[disabled], .Actions [disabled].action {
-  background-color: #006aff;
-  *background-color: #0060e6;
+  background-color: #031d9f;
+  *background-color: #021886;
 }
 .btn-primary:active, .Actions .action:active, .btn-primary.active, .Actions .active.action {
-  background-color: #0055cc \9;
+  background-color: #02146d \9;
 }
 
 .btn-warning {
@@ -3454,7 +3454,7 @@ input[type="submit"].btn.btn-mini,
   background-color: #e6e6e6;
 }
 .btn-group.open .btn-primary.dropdown-toggle, .btn-group.open .Actions .dropdown-toggle.action, .Actions .btn-group.open .dropdown-toggle.action {
-  background-color: #006aff;
+  background-color: #031d9f;
 }
 .btn-group.open .btn-warning.dropdown-toggle {
   background-color: #f89406;

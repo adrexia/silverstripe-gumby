@@ -42,8 +42,8 @@ $textColor:             $grayDark !default;
 
 // Links
 // -------------------------
-$linkVisited: 			lighten(#08c,10%)  !default;
 $linkColor:             #0464EA  !default;
+$linkVisited: 			darken($linkColor, 15%)  !default;
 $linkColorHover:        darken($linkColor, 15%) !default;
 
 
