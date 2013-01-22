@@ -2043,6 +2043,10 @@ EXPRESS TYPOGRAPHY
 .typography span.highlight {
   background: yellow;
 }
+.typography a.external {
+  padding-right: 13px;
+  background: url(../../../themes/default/images/icons/external-link.png) no-repeat right center;
+}
 .typography a img {
   border: none;
 }

@@ -48,8 +48,8 @@ EXPRESS TYPOGRAPHY
 	}
 	a {
 		&.external {
-//			padding-right: 20px;
-//			@extend .icon-external-link;
+			padding-right: 13px;
+			background: url(../../../themes/default/images/icons/external-link.png) no-repeat right center;
 		}
 		img{
 			border:none;
