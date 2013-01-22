@@ -46,7 +46,7 @@
 
 <body data-spy="scroll">
 	<% include Header %>
-	
+
 	<div class="container typography" id="layout">
 		$Layout
 		<hr>
