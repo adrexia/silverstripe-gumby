@@ -1,6 +1,6 @@
 <header class="container" role="banner">
 	<<% if ClassName=="HomePage" %>h1<% else %>div<% end_if %> class="brand">
-		<% if $SiteConfig.Logo %>
+		<% if SiteConfig.Logo %>
 			<a title="Return to homepage" href="$BaseHref" style="padding-left: {$SiteConfig.Logo.Width}px; height: {$SiteConfig.Logo.Height}px; min-height: {$SiteConfig.Logo.Height}px;">
 				$SiteConfig.Logo
 				<span>

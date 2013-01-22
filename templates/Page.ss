@@ -15,12 +15,31 @@
 		<script src="$ThemeDir/js/lib/html5shiv-printshiv.js"></script>
 	<![endif]-->
 
-	<!-- favicon and touch icons -->
-	<link rel="shortcut icon" href="$ThemeDir/ico/favicon.ico" />
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="$ThemeDir/ico/apple-touch-icon-144-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="$ThemeDir/ico/apple-touch-icon-114-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="$ThemeDir/ico/apple-touch-icon-72-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" href="$ThemeDir/ico/apple-touch-icon-57-precomposed.png">
+	<% if SiteConfig.FavIcon %>
+		<link rel="shortcut icon" href="$SiteConfig.FavIcon.URL" />
+	<% else %>
+		<link rel="shortcut icon" href="$ThemeDir/ico/favicon.ico" />
+	<% end_if %>
+	<% if SiteConfig.AppleTouchIcon144 %>
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="$SiteConfig.AppleTouchIcon144.URL">
+	<% else %>
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="$ThemeDir/ico/apple-touch-icon-144-precomposed.png">
+	<% end_if %>
+	<% if SiteConfig.AppleTouchIcon114 %>
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="$SiteConfig.AppleTouchIcon114.URL">
+	<% else %>
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="$ThemeDir/ico/apple-touch-icon-144-precomposed.png">
+	<% end_if %>
+	<% if SiteConfig.AppleTouchIcon72 %>
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="$SiteConfig.AppleTouchIcon72.URL">
+	<% else %>
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="$ThemeDir/ico/apple-touch-icon-72-precomposed.png">
+	<% end_if %>
+	<% if SiteConfig.AppleTouchIcon57 %>
+		<link rel="apple-touch-icon-precomposed" href="$SiteConfig.AppleTouchIcon57.URL">
+	<% else %>
+		<link rel="apple-touch-icon-precomposed" href="$ThemeDir/ico/apple-touch-icon-57-precomposed.png">
+	<% end_if %>
 </head>
 
 <body data-spy="scroll">
