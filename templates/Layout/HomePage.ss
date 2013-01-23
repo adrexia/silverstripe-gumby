@@ -56,3 +56,6 @@ $PageComments
 		<% end_if %>
 	</div>
 </div>
+<div class="row">
+	<% include LastEdited %>
+</div>

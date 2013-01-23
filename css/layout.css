@@ -6072,6 +6072,11 @@ header ul#lang li {
   margin: 0 0 18px;
   padding: 7px 14px;
 }
+.typography p.last-edited {
+  float: right;
+  font-size: 0.8em;
+  margin: 0;
+}
 .typography div.hero-unit.nested {
   padding: 0;
 }

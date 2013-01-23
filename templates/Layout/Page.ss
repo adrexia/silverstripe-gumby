@@ -15,5 +15,6 @@
 			$Form
 			$PageComments
 		</div>
+		<% include LastEdited %>
 	</div>
 </div>
