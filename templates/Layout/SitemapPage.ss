@@ -1,7 +1,7 @@
 <div class="row">
 	<div class="span12">
 		<h2>$Title</h2>
-		$Content
+		$Content.RichLinks
 		$Form
 
 		<ul class="sitemap">

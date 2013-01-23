@@ -11,7 +11,7 @@
 			</header>			
 			<% include PrintShare %>
 			<p><% if Category %><a class="label label-inverse" href="">$Category.Title</a><% end_if %> <time datetime="$Date">$Date.nice</time></p>
-			$Content
+			$Content.RichLinks
 			$Form
 			$PageComments
 		</article>

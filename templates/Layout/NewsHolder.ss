@@ -7,7 +7,7 @@
 			<% include PrintShare %>
 			<h1>$Title</h1>
 		</header>
-		$Content
+		$Content.RichLinks
 	
 		<% if NewsItems %>			
 			<header class="resultsHeader">

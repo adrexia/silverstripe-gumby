@@ -2,7 +2,7 @@
 	<div class="row">
 		<div class="span4">
 			<div class="content">
-			$Content
+			$Content.RichLinks
 			<% if LearnMorePage %>
 				<a class="btn btn-primary btn-large" href="$LearnMorePage.Link">Learn more &raquo;</a>
 			<% end_if %>
