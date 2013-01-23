@@ -11,7 +11,7 @@
 				<% include PrintShare %>
 				<h1>$Title</h1>
 			</header>
-			$Content
+			$Content.RichLinks
 			$Form
 			$PageComments
 		</div>
