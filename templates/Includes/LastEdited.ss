@@ -1,3 +1,3 @@
 <% if $LastEdited %>
-	<p class="last-edited">Page last edited at {$LastEdited.Format(g:ma)} on the {$LastEdited.Format(jS)} of {$LastEdited.Format(F Y)}</p>
+	<p class="last-edited">Last modified: <time datetime="$LastEdited.Format(Y-m-d)">{$LastEdited.Format(jS F Y)}</time></p>
 <% end_if %>

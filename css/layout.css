@@ -6077,6 +6077,9 @@ header ul#lang li {
   font-size: 0.8em;
   margin: 0;
 }
+.typography p.last-edited time {
+  font-size: 1.0em;
+}
 .typography div.hero-unit.nested {
   padding: 0;
 }
