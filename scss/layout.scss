@@ -37,11 +37,6 @@ body {
 	padding: 0 !important;
 }
 
-/* padding-left of 20px coming from module_boostrap, set it back to 0 */
-header.page-header {
-	padding-left: 0;
-}
-
 /*Customise search field */	
 #SearchGroup{
 	float: right;
@@ -232,6 +227,11 @@ header {
 			}
 		}
 	}
+
+	p.printShare {
+		margin-top: 21px;
+		font-size:0.9em;
+	}
 }
 
 h2 {
@@ -242,11 +242,6 @@ h2 {
 
 iframe {
 	border: 0;
-}
-
-.page-header .printShare {
-	margin-top: 21px;
-	font-size:0.9em;
 }
 
 #layout a img {

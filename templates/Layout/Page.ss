@@ -7,10 +7,8 @@
 	<div class="<% if Menu(2) %>span9<% else %>span12<% end_if %>">
 		$Breadcrumbs
 		<div role="main">
-			<header class="page-header subhead">
-				<% include PrintShare %>
-				<h1>$Title</h1>
-			</header>
+			<% include PrintShare %>
+			<h1>$Title</h1>
 			$Content.RichLinks
 			$Form
 			$PageComments

@@ -5929,11 +5929,6 @@ body {
   padding: 0 !important;
 }
 
-/* padding-left of 20px coming from module_boostrap, set it back to 0 */
-header.page-header {
-  padding-left: 0;
-}
-
 /*Customise search field */
 #SearchGroup {
   float: right;
@@ -6099,6 +6094,10 @@ header ul#lang li {
 .typography div.hero-unit.nested .carousel-container .carousel-caption p {
   color: white;
 }
+.typography p.printShare {
+  margin-top: 21px;
+  font-size: 0.9em;
+}
 
 h2 a, h2 a:visited {
   color: #000;
@@ -6106,11 +6105,6 @@ h2 a, h2 a:visited {
 
 iframe {
   border: 0;
-}
-
-.page-header .printShare {
-  margin-top: 21px;
-  font-size: 0.9em;
 }
 
 #layout a img {

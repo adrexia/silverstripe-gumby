@@ -1,4 +1,6 @@
-<footer class="container" role="contentinfo" aria-label="Footer">
+<footer class="container" role="contentinfo">
+	<h2 class="nonvisual-indicator">Footer</h2>
+
 	<% if SiteConfig.FacebookURL || SiteConfig.TwitterUsername %>
 		<aside class="socialLinks pull-right" role="complementary">
 			<% if SiteConfig.TwitterUsername %>
@@ -10,31 +12,29 @@
 		</aside>
 	<% end_if %>
 	<% if Footer %>
-		<nav role="navigation" aria-label="Footer links">
-			<ul class="nav nav-pills">
-				<% with Footer %>
-					<% loop Children %>
-						<li class="$LinkingMode<% if $LinkingMode = current %> active<% end_if %>">
-							<a href="$Link" class="$LinkingMode">
-								$MenuTitle.XML
-							</a>
-						</li>
-					<% end_loop %>
-				<% end_with %>
-			</ul>
-		</nav>
+		<ul class="nav nav-pills">
+			<% with Footer %>
+				<% loop Children %>
+					<li class="$LinkingMode<% if $LinkingMode = current %> active<% end_if %>">
+						<a href="$Link" class="$LinkingMode">
+							$MenuTitle.XML
+						</a>
+					</li>
+				<% end_loop %>
+			<% end_with %>
+		</ul>
 	<% end_if %>
 	<div class="pull-right">
 		<% if SiteConfig.FooterLogo %>
 			<% if SiteConfig.FooterLogoLink %>
-				<a href="$SiteConfig.FooterLogoLink" accesskey="/">
+				<a href="$SiteConfig.FooterLogoLink">
 			<% end_if %>
 				<img src="$SiteConfig.FooterLogo.URL" width="$SiteConfig.FooterLogo.Width" height="$SiteConfig.FooterLogo.Height"<% if SiteConfig.FooterLogoDescription %> alt="$SiteConfig.FooterLogoDescription" title="$SiteConfig.FooterLogoDescription"<% end_if %> />
 			<% if SiteConfig.FooterLogoLink %>
 				</a>
 			<% end_if %>
 		<% else %>
-			<a href="http://newzealand.govt.nz/" accesskey="/">
+			<a href="http://newzealand.govt.nz/">
 				<img src="http://newzealand.govt.nz/img/logo-btext-wbg.gif" width="150" height="40" alt="newzealand.govt.nz - connecting you to New Zealand central &amp; local government services" title="newzealand.govt.nz - connecting you to New Zealand central &amp; local government services" />
 			</a>
 		<% end_if %>

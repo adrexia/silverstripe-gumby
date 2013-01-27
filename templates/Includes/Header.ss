@@ -38,10 +38,11 @@
 			</a>
 
 			<div class="nav-collapse">
-				<div id="SearchGroup" role="search">
+				<div id="SearchGroup">
 					$SearchForm
 				</div>
-				<nav role="navigation" aria-label="Top level">
+				<nav role="navigation">
+					<h2 class="nonvisual-indicator">Main navigation</h2>
 					<ul class="nav">
 						<% loop Menu(1) %>
 							<li class="$LinkingMode<% if $LinkingMode = current %> active<% end_if %><% if Children %> dropdown <% end_if %>">
