@@ -2,7 +2,6 @@
 	<div class="span12 resultsList" role="main">
 		<% if Query %>
 			<header class="page-header">
-				<% include PrintShare %>
 				<h1 class="searchQuery">Search results</h1>
 			</header>
 		<% end_if %>
@@ -42,5 +41,6 @@
 		<% with Results %>
 			<% include Pagination %>
 		<% end_with %>
+		<% include PrintShare %>
 	</div>
 </div>

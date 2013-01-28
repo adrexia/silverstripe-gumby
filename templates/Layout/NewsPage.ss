@@ -8,12 +8,12 @@
 		<article>
 			<header class="page-header">
 				<h1>$Title</h1>
-			</header>			
-			<% include PrintShare %>
+			</header>
 			<p><% if Category %><a class="label label-inverse" href="">$Category.Title</a><% end_if %> <time datetime="$Date">$Date.nice</time></p>
 			$Content.RichLinks
 			$Form
 			$PageComments
+			<% include PrintShare %>
 		</article>
 		<% include LastEdited %>
 	</div>

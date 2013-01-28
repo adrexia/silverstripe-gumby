@@ -7,11 +7,11 @@
 	<div class="<% if Menu(2) %>span9<% else %>span12<% end_if %>">
 		$Breadcrumbs
 		<div role="main">
-			<% include PrintShare %>
 			<h1>$Title</h1>
 			$Content.RichLinks
 			$Form
 			$PageComments
+			<% include PrintShare %>
 		</div>
 		<% include LastEdited %>
 	</div>

@@ -6081,6 +6081,7 @@ header ul#lang li {
 }
 .typography p.last-edited {
   float: right;
+  clear: right;
   font-size: 0.8em;
   margin: 0;
 }
@@ -6107,7 +6108,6 @@ header ul#lang li {
   color: white;
 }
 .typography p.printShare {
-  margin-top: 21px;
   font-size: 0.9em;
   line-height: 1.0em;
 }

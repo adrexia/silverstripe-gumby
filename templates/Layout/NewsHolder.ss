@@ -4,7 +4,6 @@
 	</div>
 	<div class="span9 resultsList" role="main">
 		<header class="page-header">
-			<% include PrintShare %>
 			<h1>$Title</h1>
 		</header>
 		$Content.RichLinks
@@ -29,6 +28,6 @@
 		
 		$Form
 		$PageComments
-
+		<% include PrintShare %>
 	</div>
 </div>
