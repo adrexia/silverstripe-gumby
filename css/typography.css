@@ -2167,3 +2167,21 @@ EXPRESS TYPOGRAPHY
   border-color: #AAA;
   border-top: 0;
 }
+.typography ul {
+  list-style-type: disc;
+}
+.typography ul ul {
+  list-style-type: circle;
+}
+.typography ul ul ul {
+  list-style-type: square;
+}
+.typography ol {
+  list-style-type: decimal;
+}
+.typography ol ol {
+  list-style-type: lower-latin;
+}
+.typography ol ol ol {
+  list-style-type: lower-roman;
+}
