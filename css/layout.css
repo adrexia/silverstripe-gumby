@@ -6981,3 +6981,11 @@ iframe {
   float: right;
   margin-top: 3px;
 }
+
+/**
+ * Fix the responsive design's image-with-max-width-disappearing-on-float-right in IE8.
+ * http://www.456bereastreet.com/archive/201202/using_max-width_on_images_can_make_them_disappear_in_ie8/
+ */
+#IE8 .pull-right img {
+  max-width: none;
+}

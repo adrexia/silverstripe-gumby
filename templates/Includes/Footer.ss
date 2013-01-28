@@ -24,7 +24,12 @@
 			<% end_with %>
 		</ul>
 	<% end_if %>
-	<div class="pull-right">
+
+	<div class="pull-left footer-copyright">
+		<p><small>$SiteConfig.Title &copy; 2012</small></p>
+	</div>
+
+	<div class="pull-right footer-logo">
 		<% if SiteConfig.FooterLogo %>
 			<% if SiteConfig.FooterLogoLink %>
 				<a href="$SiteConfig.FooterLogoLink">
@@ -40,5 +45,4 @@
 		<% end_if %>
 	</div>
 	
-	<p><small>$SiteConfig.Title &copy; 2012</small></p>
 </footer>
