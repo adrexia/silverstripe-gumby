@@ -2163,3 +2163,7 @@ EXPRESS TYPOGRAPHY
 .typography table thead, .typography table tfoot {
   font-weight: 700;
 }
+.typography hr {
+  border-color: #AAA;
+  border-top: 0;
+}
