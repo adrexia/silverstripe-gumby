@@ -6006,6 +6006,18 @@ header ul#lang li {
   list-style: none;
 }
 
+.divider-right {
+  border-right: 1px solid #999999;
+  padding-right: 0.5em;
+  margin-right: 0.3em;
+}
+
+.divider-left {
+  border-left: 1px solid #999999;
+  padding-left: 0.5em;
+  margin-left: 0.3em;
+}
+
 /************************ MISC ****************************/
 .nonvisual-indicator {
   position: absolute;
