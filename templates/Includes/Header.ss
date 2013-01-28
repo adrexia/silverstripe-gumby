@@ -32,9 +32,13 @@
 	<div class="navbar-inner">
 		<div class="container">
 			<a href="#" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
+				<span class="nav-text"><% _t('MENU', 'Menu') %></span>
+
+				<span class="nav-right">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</span>
 			</a>
 
 			<div class="nav-collapse">

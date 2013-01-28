@@ -6969,3 +6969,15 @@ iframe {
   background-color: #0464EA;
   color: white;
 }
+
+.btn-navbar .nav-text {
+  float: left;
+  color: #c7c7c7;
+  margin-right: 7px;
+  text-shadow: none;
+}
+
+.btn-navbar .nav-right {
+  float: right;
+  margin-top: 3px;
+}
