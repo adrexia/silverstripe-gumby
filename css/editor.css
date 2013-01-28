@@ -1988,12 +1988,12 @@ EXPRESS TYPOGRAPHY
 .typography .table-striped tbody tr:nth-child(odd) td, .typography table tbody tr:nth-child(odd) td,
 .typography .table-striped tbody tr:nth-child(odd) th,
 .typography table tbody tr:nth-child(odd) th {
-  background-color: #fcfcfc;
+  background-color: #ebebeb;
 }
 .typography .table tbody tr:hover td, .typography table tbody tr:hover td,
 .typography .table tbody tr:hover th,
 .typography table tbody tr:hover th {
-  background-color: whitesmoke;
+  background-color: #d0d0d0;
 }
 .typography .pull-right {
   float: right;
