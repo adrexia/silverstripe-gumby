@@ -243,6 +243,33 @@ header {
 	p.printShare {
 		margin-top: 21px;
 		font-size:0.9em;
+		line-height: 1.0em;
+
+		button {
+			background: none;
+			padding: 0;
+			border: 0;
+			font-size: 1em;
+			font-weight: normal;
+			line-height: 1em;
+			vertical-align: baseline;
+			color: $linkColor;
+
+			&:hover {
+				text-decoration: underline;
+				color: $linkColorHover;
+			}
+		}
+
+		a, button {
+			border-left: 1px solid $grayLight;
+			padding-left: 3px;
+
+			&:first-child {
+				border-left: none;
+				padding-left: 0;
+			}
+		}
 	}
 }
 

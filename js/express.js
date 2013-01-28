@@ -31,5 +31,7 @@
 			$(this).toggleClass('open');
 			$(this).closest('li').toggleClass('open');
 		});
+
+		$('#print-placeholder').replaceWith('<button type="button" role="menuitem" onclick="window.print(); return false;">Print</button>');
 	})
 })(jQuery);

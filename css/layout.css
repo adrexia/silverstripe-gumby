@@ -6109,6 +6109,29 @@ header ul#lang li {
 .typography p.printShare {
   margin-top: 21px;
   font-size: 0.9em;
+  line-height: 1.0em;
+}
+.typography p.printShare button {
+  background: none;
+  padding: 0;
+  border: 0;
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1em;
+  vertical-align: baseline;
+  color: #0464ea;
+}
+.typography p.printShare button:hover {
+  text-decoration: underline;
+  color: #03449f;
+}
+.typography p.printShare a, .typography p.printShare button {
+  border-left: 1px solid #999999;
+  padding-left: 3px;
+}
+.typography p.printShare a:first-child, .typography p.printShare button:first-child {
+  border-left: none;
+  padding-left: 0;
 }
 
 h2 a, h2 a:visited {
