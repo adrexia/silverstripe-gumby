@@ -1,7 +1,7 @@
 <div class="navbar noCorners">
 	<div class="navbar-inner">
 		<div class="container">
-			<a href="#" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+			<button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" aria-haspopup="true" aria-owns="top-navigation" aria-controls="top-navigation" aria-expanded="false">
 				<span class="nav-text"><% _t('MENU', 'Menu') %></span>
 
 				<span class="nav-right">
@@ -9,10 +9,10 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</span>
-			</a>
+			</button>
 
-			<div class="nav-collapse">
-				<div id="SearchGroup">
+			<div id="top-navigation" class="nav-collapse">
+				<div id="SearchGroup" role="search">
 					$SearchForm
 				</div>
 				<h2 class="nonvisual-indicator">Main navigation</h2>
