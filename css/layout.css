@@ -5707,6 +5707,19 @@ ul.nav, ul.dropdown-menu {
   .nav-collapse.collapsed {
     display: none;
   }
+
+  .no-js .navbar .btn-navbar {
+    display: none;
+  }
+  .no-js #SearchGroup form {
+    padding-top: 0;
+    border-top: none;
+    border-bottom: 1px solid #555555;
+    box-shadow: none;
+  }
+  .no-js .nav-collapse {
+    height: auto;
+  }
 }
 .navbar {
   font-size: 13px;
@@ -6437,7 +6450,7 @@ iframe {
     line-height: 1.3em;
   }
   #SearchGroup form {
-    padding: 5px !important;
+    padding: 5px;
   }
   #SearchGroup form .field {
     margin: 0;
@@ -6522,7 +6535,7 @@ iframe {
     line-height: 1.3em;
   }
   #SearchGroup form {
-    padding: 5px !important;
+    padding: 5px;
   }
   #SearchGroup form .field {
     margin: 0;
@@ -6607,7 +6620,7 @@ iframe {
     line-height: 1.3em;
   }
   #SearchGroup form {
-    padding: 5px !important;
+    padding: 5px;
   }
   #SearchGroup form .field {
     margin: 0;
@@ -6692,7 +6705,7 @@ iframe {
     line-height: 1.3em;
   }
   #SearchGroup form {
-    padding: 5px !important;
+    padding: 5px;
   }
   #SearchGroup form .field {
     margin: 0;
@@ -6777,7 +6790,7 @@ iframe {
     line-height: 1.3em;
   }
   #SearchGroup form {
-    padding: 5px !important;
+    padding: 5px;
   }
   #SearchGroup form .field {
     margin: 0;
@@ -6862,7 +6875,7 @@ iframe {
     line-height: 1.3em;
   }
   #SearchGroup form {
-    padding: 5px !important;
+    padding: 5px;
   }
   #SearchGroup form .field {
     margin: 0;
