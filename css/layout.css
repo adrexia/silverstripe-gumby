@@ -6988,16 +6988,22 @@ iframe {
   color: white;
 }
 
-.btn-navbar .nav-text {
+.navbar .btn-navbar .nav-text {
   float: left;
   color: #c7c7c7;
   margin-right: 7px;
   text-shadow: none;
 }
-
-.btn-navbar .nav-right {
+.navbar .btn-navbar .nav-right {
   float: right;
   margin-top: 3px;
+}
+.navbar .btn-navbar:hover, .navbar .btn-navbar:focus {
+  border-color: #555555;
+  background: #333333;
+}
+.navbar .btn-navbar:hover .nav-text, .navbar .btn-navbar:focus .nav-text {
+  color: white;
 }
 
 /**

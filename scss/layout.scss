@@ -397,16 +397,27 @@ iframe {
 	}
 }
 
-.btn-navbar .nav-text {
-	float: left;
-	color: #c7c7c7;
-	margin-right: 7px;
-	text-shadow: none;
-}
+.navbar .btn-navbar {
+	.nav-text {
+		float: left;
+		color: #c7c7c7;
+		margin-right: 7px;
+		text-shadow: none;
+	}
 
-.btn-navbar .nav-right {
-	float: right;
-	margin-top: 3px;
+	.nav-right {
+		float: right;
+		margin-top: 3px;
+	}
+
+	&:hover,
+	&:focus {
+		border-color: $gray;
+		background: $grayDark;
+		.nav-text {
+			color: white;
+		}
+	}
 }
 
 /**
