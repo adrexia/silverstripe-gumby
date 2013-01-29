@@ -1,6 +1,14 @@
 (function($) {
 	$(document).ready(function() {
-		$('.nav-collapse').addClass('collapse');
+		$('.nav-collapse')
+			.addClass('collapse')
+			.addClass('collapsed')
+			.on('hidden', function(){
+				$(this).addClass('collapsed');
+			})
+			.on('show', function(){
+				$(this).removeClass('collapsed');
+			});
 
 		$('.carousel').carousel({
 			interval: 8000,

@@ -32,6 +32,12 @@ ul.nav, ul.dropdown-menu{
 	}
 }
 
+@media (max-width: 979px) {
+	.nav-collapse.collapsed {
+		display: none;
+	}
+}
+
 .navbar{
 	font-size: 13px;
 	.showChildren{

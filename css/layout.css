@@ -5703,6 +5703,11 @@ ul.nav, ul.dropdown-menu {
   padding-left: 20px;
 }
 
+@media (max-width: 979px) {
+  .nav-collapse.collapsed {
+    display: none;
+  }
+}
 .navbar {
   font-size: 13px;
 }
