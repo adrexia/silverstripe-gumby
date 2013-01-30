@@ -22,13 +22,8 @@
 				margin: 0;
 				padding: 0;
 			}
-			td#Page {
-				width: 50pt;
-			}
-			td#SiteFooter {
-				width: 505pt;
-			}
 			#SiteFooter {
+				width: 505pt;
 				text-align: left;
 			}
 			#PageNumber {
