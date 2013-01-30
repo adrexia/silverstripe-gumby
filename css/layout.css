@@ -6126,7 +6126,7 @@ header ul#lang li {
   color: white;
 }
 .typography p.printShare {
-  font-size: 0.9em;
+  font-size: 1em;
   line-height: 1.0em;
 }
 .typography p.printShare button {
@@ -6150,6 +6150,9 @@ header ul#lang li {
 .typography p.printShare a:first-child, .typography p.printShare button:first-child {
   border-left: none;
   padding-left: 0;
+}
+.typography p.printShare a.pdf, .typography p.printShare button.pdf {
+  padding-left: 18px;
 }
 
 h2 a, h2 a:visited {

@@ -10,4 +10,5 @@
 	<% else_if $DefaultRSSLink %>
 		<a href="$DefaultRSSLink" target="_blank">Subscribe</a>
 	<% end_if %>
+	<% if PdfLink %><a href="$PdfLink" class="pdf">Export PDF</a><% end_if %>
 </p>
