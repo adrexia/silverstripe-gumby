@@ -5,9 +5,11 @@
 			.addClass('collapsed')
 			.on('hidden', function(){
 				$(this).addClass('collapsed');
+				$(this).siblings('button').attr('aria-expanded', 'false');
 			})
 			.on('show', function(){
 				$(this).removeClass('collapsed');
+				$(this).siblings('button').attr('aria-expanded', 'true');
 			});
 
 		$('.carousel').carousel({
