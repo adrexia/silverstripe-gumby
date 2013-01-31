@@ -263,7 +263,8 @@ header {
 
 		a, button {
 			border-left: 1px solid $grayLight;
-			padding-left: 3px;
+			padding: 0 3px;
+			float: left;
 
 			&:first-child {
 				border-left: none;

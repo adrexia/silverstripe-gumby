@@ -6145,7 +6145,8 @@ header ul#lang li {
 }
 .typography p.printShare a, .typography p.printShare button {
   border-left: 1px solid #999999;
-  padding-left: 3px;
+  padding: 0 3px;
+  float: left;
 }
 .typography p.printShare a:first-child, .typography p.printShare button:first-child {
   border-left: none;
