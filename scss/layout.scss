@@ -244,6 +244,7 @@ header {
 	p.printShare {
 		font-size: 1em;
 		line-height: 1.0em;
+		clear: both;
 
 		button {
 			background: none;
@@ -263,7 +264,7 @@ header {
 
 		a, button {
 			border-left: 1px solid $grayLight;
-			padding: 0 3px;
+			padding: 2px 4px;
 			float: left;
 
 			&:first-child {
@@ -271,7 +272,8 @@ header {
 				padding-left: 0;
 			}
 			&.pdf {
-				padding-left: 18px;
+				padding-left: 20px;
+				background-position: 2px 1px;
 			}
 		}
 	}

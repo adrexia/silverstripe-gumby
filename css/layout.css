@@ -6128,6 +6128,7 @@ header ul#lang li {
 .typography p.printShare {
   font-size: 1em;
   line-height: 1.0em;
+  clear: both;
 }
 .typography p.printShare button {
   background: none;
@@ -6145,7 +6146,7 @@ header ul#lang li {
 }
 .typography p.printShare a, .typography p.printShare button {
   border-left: 1px solid #999999;
-  padding: 0 3px;
+  padding: 2px 4px;
   float: left;
 }
 .typography p.printShare a:first-child, .typography p.printShare button:first-child {
@@ -6153,7 +6154,8 @@ header ul#lang li {
   padding-left: 0;
 }
 .typography p.printShare a.pdf, .typography p.printShare button.pdf {
-  padding-left: 18px;
+  padding-left: 20px;
+  background-position: 2px 1px;
 }
 
 h2 a, h2 a:visited {
