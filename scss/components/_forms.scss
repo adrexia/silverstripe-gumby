@@ -73,6 +73,12 @@ fieldset{
 	margin: 0;
 }
 
+input,
+textarea,
+select,
+.uneditable-input {
+	height: 1.385em;
+}
 
 /*	Label formatting	*/
 label{
@@ -119,7 +125,7 @@ select, input.text, input.file{
 	width:100%;
 	max-width:490px;
 	@include box-sizing(border-box);
-	height:30px;
+	height:2.31em;
 	float:left;
 	@include clearAfter;
 	&.date{

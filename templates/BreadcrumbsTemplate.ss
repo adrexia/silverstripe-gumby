@@ -1,5 +1,5 @@
 <% if Pages %>
-	<ol class="breadcrumb" aria-label="Breadcrumbs">
+	<ol class="breadcrumb">
 		<li><a href="$Baseref" class="divider-right">Home</a> </li>
 		<% loop Pages %>
 			<% if Last %>

@@ -46,9 +46,13 @@
 
 <body data-spy="scroll">
 	<% include Header %>
-
-	$Layout
+	<% include MainNav %>
 	
+	<div class="container typography" id="layout">
+		$Layout
+		<hr />
+	</div>
+
 	<% include Footer %>
 
 	<% if SiteConfig.GACode %>

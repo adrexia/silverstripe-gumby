@@ -6,9 +6,9 @@
 	<% end_if %>
 
 	<% if $RSSLink %>
-		<a href="$RSSLink" target="_blank">Subscribe</a>
+		<a href="$RSSLink">Subscribe</a>
 	<% else_if $DefaultRSSLink %>
-		<a href="$DefaultRSSLink" target="_blank">Subscribe</a>
+		<a href="$DefaultRSSLink">Subscribe</a>
 	<% end_if %>
 	<% if PdfLink %><a href="$PdfLink" class="pdf">Export PDF</a><% end_if %>
 </p>

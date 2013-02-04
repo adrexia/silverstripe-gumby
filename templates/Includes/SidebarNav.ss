@@ -1,5 +1,6 @@
 <div class="sidebar-nav well">
-	<nav role="navigation" aria-label="Sidebar">
+	<nav role="navigation">
+		<h2 class="nonvisual-indicator">Secondary Navigation</h2>
 		<ul class="nav nav-list">
 			<% loop Menu(2) %>
 

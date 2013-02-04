@@ -256,9 +256,13 @@ header {
 			vertical-align: baseline;
 			color: $linkColor;
 
-			&:hover {
+			&:focus, &:hover {
 				text-decoration: underline;
 				color: $linkColorHover;
+			}
+
+			&:focus {
+				outline: 1px dotted black;
 			}
 		}
 

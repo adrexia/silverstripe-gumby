@@ -5489,6 +5489,13 @@ fieldset {
   margin: 0;
 }
 
+input,
+textarea,
+select,
+.uneditable-input {
+  height: 1.385em;
+}
+
 /*	Label formatting	*/
 label.left {
   font-weight: bold;
@@ -5540,7 +5547,7 @@ select, input.text, input.file {
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-  height: 30px;
+  height: 2.31em;
   float: left;
 }
 select:after, input.text:after, input.file:after {
@@ -6140,9 +6147,12 @@ header ul#lang li {
   vertical-align: baseline;
   color: #0464ea;
 }
-.typography p.printShare button:hover {
+.typography p.printShare button:focus, .typography p.printShare button:hover {
   text-decoration: underline;
   color: #03449f;
+}
+.typography p.printShare button:focus {
+  outline: 1px dotted black;
 }
 .typography p.printShare a, .typography p.printShare button {
   border-left: 1px solid #999999;
@@ -6438,10 +6448,6 @@ iframe {
   body {
     padding: 0;
   }
-  body #SearchGroup {
-    float: none;
-    width: 100%;
-  }
 
   header, .container {
     padding-left: 20px;
@@ -6449,8 +6455,8 @@ iframe {
   }
 
   #SearchGroup {
-    float: right;
-    width: 200px;
+    float: left;
+    width: auto;
   }
   #SearchGroup .navbar-search .search-query {
     line-height: 1.3em;
@@ -6463,6 +6469,9 @@ iframe {
   }
   #SearchGroup form fieldset {
     margin: 0;
+  }
+  #SearchGroup form input {
+    width: auto;
   }
   #SearchGroup form input.action {
     display: none;
@@ -6523,10 +6532,6 @@ iframe {
   body {
     padding: 0;
   }
-  body #SearchGroup {
-    float: none;
-    width: 100%;
-  }
 
   header, .container {
     padding-left: 20px;
@@ -6534,8 +6539,8 @@ iframe {
   }
 
   #SearchGroup {
-    float: right;
-    width: 200px;
+    float: left;
+    width: auto;
   }
   #SearchGroup .navbar-search .search-query {
     line-height: 1.3em;
@@ -6548,6 +6553,9 @@ iframe {
   }
   #SearchGroup form fieldset {
     margin: 0;
+  }
+  #SearchGroup form input {
+    width: auto;
   }
   #SearchGroup form input.action {
     display: none;
@@ -6608,10 +6616,6 @@ iframe {
   body {
     padding: 0;
   }
-  body #SearchGroup {
-    float: none;
-    width: 100%;
-  }
 
   header, .container {
     padding-left: 20px;
@@ -6619,8 +6623,8 @@ iframe {
   }
 
   #SearchGroup {
-    float: right;
-    width: 200px;
+    float: left;
+    width: auto;
   }
   #SearchGroup .navbar-search .search-query {
     line-height: 1.3em;
@@ -6633,6 +6637,9 @@ iframe {
   }
   #SearchGroup form fieldset {
     margin: 0;
+  }
+  #SearchGroup form input {
+    width: auto;
   }
   #SearchGroup form input.action {
     display: none;
@@ -6693,10 +6700,6 @@ iframe {
   body {
     padding: 0;
   }
-  body #SearchGroup {
-    float: none;
-    width: 100%;
-  }
 
   header, .container {
     padding-left: 20px;
@@ -6704,8 +6707,8 @@ iframe {
   }
 
   #SearchGroup {
-    float: right;
-    width: 200px;
+    float: left;
+    width: auto;
   }
   #SearchGroup .navbar-search .search-query {
     line-height: 1.3em;
@@ -6718,6 +6721,9 @@ iframe {
   }
   #SearchGroup form fieldset {
     margin: 0;
+  }
+  #SearchGroup form input {
+    width: auto;
   }
   #SearchGroup form input.action {
     display: none;
@@ -6778,10 +6784,6 @@ iframe {
   body {
     padding: 0;
   }
-  body #SearchGroup {
-    float: none;
-    width: 100%;
-  }
 
   header, .container {
     padding-left: 20px;
@@ -6789,8 +6791,8 @@ iframe {
   }
 
   #SearchGroup {
-    float: right;
-    width: 200px;
+    float: left;
+    width: auto;
   }
   #SearchGroup .navbar-search .search-query {
     line-height: 1.3em;
@@ -6803,6 +6805,9 @@ iframe {
   }
   #SearchGroup form fieldset {
     margin: 0;
+  }
+  #SearchGroup form input {
+    width: auto;
   }
   #SearchGroup form input.action {
     display: none;
@@ -6863,10 +6868,6 @@ iframe {
   body {
     padding: 0;
   }
-  body #SearchGroup {
-    float: none;
-    width: 100%;
-  }
 
   header, .container {
     padding-left: 20px;
@@ -6874,8 +6875,8 @@ iframe {
   }
 
   #SearchGroup {
-    float: right;
-    width: 200px;
+    float: left;
+    width: auto;
   }
   #SearchGroup .navbar-search .search-query {
     line-height: 1.3em;
@@ -6888,6 +6889,9 @@ iframe {
   }
   #SearchGroup form fieldset {
     margin: 0;
+  }
+  #SearchGroup form input {
+    width: auto;
   }
   #SearchGroup form input.action {
     display: none;
