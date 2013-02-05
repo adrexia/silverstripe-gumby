@@ -437,3 +437,21 @@ iframe {
 #IE8 .pull-right img {
 	max-width: none;
 }
+
+/**
+ * EventPage - event information
+ */
+.typography .event-information {
+	dl {
+		margin: 0;
+		padding: 0;
+	}
+
+	dd {
+		line-height: 26px;
+	}
+
+	ul.event-tags li {
+		display: inline-block;
+	}
+}

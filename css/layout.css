@@ -7023,3 +7023,17 @@ iframe {
 #IE8 .pull-right img {
   max-width: none;
 }
+
+/**
+ * EventPage - event information
+ */
+.typography .event-information dl {
+  margin: 0;
+  padding: 0;
+}
+.typography .event-information dd {
+  line-height: 26px;
+}
+.typography .event-information ul.event-tags li {
+  display: inline-block;
+}
