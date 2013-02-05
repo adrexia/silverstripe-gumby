@@ -28,6 +28,7 @@
 		<% end_if %>
 		
 		$Form
+		<% include RelatedPages %>
 		$PageComments
 		<% include PrintShare %>
 	</div>

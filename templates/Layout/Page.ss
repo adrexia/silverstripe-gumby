@@ -10,6 +10,7 @@
 			<h1>$Title</h1>
 			$Content.RichLinks
 			$Form
+			<% include RelatedPages %>
 			$PageComments
 			<% include PrintShare %>
 		</div>
