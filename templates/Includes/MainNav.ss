@@ -5,7 +5,7 @@
 				$SearchForm
 			</div>
 
-			<button type="button" data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" aria-owns="top-navigation" aria-controls="top-navigation" aria-expanded="false">
+			<button type="button" data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" role="navigation" aria-owns="top-navigation" aria-controls="top-navigation" aria-expanded="false">
 				<span class="nav-text"><% _t('MENU', 'Menu') %></span>
 
 				<span class="nav-right">
