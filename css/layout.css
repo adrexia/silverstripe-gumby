@@ -6136,6 +6136,7 @@ header ul#lang li {
   font-size: 1em;
   line-height: 1.0em;
   clear: both;
+  margin: 1.385em 0;
 }
 .typography p.printShare button {
   background: none;
@@ -7022,4 +7023,28 @@ iframe {
  */
 #IE8 .pull-right img {
   max-width: none;
+}
+
+/**
+ * EventPage - event information
+ */
+.typography .event-information dl {
+  margin: 0;
+  padding: 0;
+}
+.typography .event-information dd {
+  line-height: 26px;
+}
+.typography .event-information ul.event-tags li {
+  display: inline-block;
+}
+
+/**
+ * EventHolder.
+ */
+.typography .month-filter span.year {
+  display: block;
+  float: left;
+  padding: 8px 0;
+  margin-right: 10px;
 }
