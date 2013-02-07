@@ -18,10 +18,10 @@
 
 		$Content.RichLinks
 	
-		<% if CurrentMonths %>
+		<% if AvailableMonths %>
 			<div class="years-and-months">
 				<ul class="unstyled years">
-					<% loop CurrentMonths %>
+					<% loop AvailableMonths %>
 						<li>
 							<span class='year'>$YearName</span>
 							<ul class="nav nav-pills unstyled months">
@@ -35,13 +35,13 @@
 			</div>
 		<% end_if %>
 
-		<% if EventsWithMonth %>
+		<% if FilteredEvents %>
 			<header class="resultsHeader">
 				<h2 class="pull-left">Latest in <% if CurrentTag %>"$CurrentTag.Name"<% else %>$Title<% end_if %></h2>
-				<p class="pull-right"><% with EventsWithMonth %>Displaying $FirstItem - $LastItem of $count<% end_with %></p>
+				<p class="pull-right"><% with FilteredEvents %>Displaying $FirstItem - $LastItem of $count<% end_with %></p>
 			</header>
 		
-			<% loop EventsWithMonth %>
+			<% loop FilteredEvents %>
 				<article class="$EvenOdd">
 					<header>
 						<h3><a href="$Link">$Title</a></h3>
@@ -51,7 +51,7 @@
 				</article>
 			<% end_loop %>
 
-			<% with EventsWithMonth %>
+			<% with FilteredEvents %>
 				<% include Pagination %>
 			<% end_with %>
 		<% end_if %>
