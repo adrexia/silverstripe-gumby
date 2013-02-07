@@ -455,3 +455,15 @@ iframe {
 		display: inline-block;
 	}
 }
+
+/**
+ * EventHolder.
+ */
+.typography .years-and-months {
+	span.year {
+		display: block;
+		float: left;
+		line-height: 34px;
+		margin-right: 10px;
+	}
+}

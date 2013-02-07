@@ -5,7 +5,7 @@
 			<nav role="navigation">
 				<ul class="nav nav-list">
 					<li class="nav-header">In $Title</li>
-					<li <% if CurrentTag %><% else %>class="active"<% end_if %>><a href="$Link" title="View all news">View all news</a></li>
+					<li <% if CurrentTag %><% else %>class="active"<% end_if %>><a href="$Link" title="View all news">View all events</a></li>
 					<% loop EventTags %>
 						<li <% if $Top.CurrentTag.ID==$ID %>class="active"<% end_if %>><a href="$Top.Link?tag=$ID" title="View $Name">$Name</a></li>
 					<% end_loop %>
@@ -18,13 +18,30 @@
 
 		$Content.RichLinks
 	
-		<% if EventItems %>
+		<% if CurrentMonths %>
+			<div class="years-and-months">
+				<ul class="unstyled years">
+					<% loop CurrentMonths %>
+						<li>
+							<span class='year'>$YearName</span>
+							<ul class="nav nav-pills unstyled months">
+							<% loop Months %>
+								<li <% if Active %>class="active"<% end_if %>><a href="$MonthLink">$MonthName</a></li>
+							<% end_loop %>
+							</ul>
+						</li>
+					<% end_loop %>
+				</ul>
+			</div>
+		<% end_if %>
+
+		<% if EventsWithMonth %>
 			<header class="resultsHeader">
 				<h2 class="pull-left">Latest in <% if CurrentTag %>"$CurrentTag.Name"<% else %>$Title<% end_if %></h2>
-				<p class="pull-right">Displaying $EventItems.FirstItem - $EventItems.LastItem of $EventItems.count</p>
+				<p class="pull-right"><% with EventsWithMonth %>Displaying $FirstItem - $LastItem of $count<% end_with %></p>
 			</header>
 		
-			<% loop EventItems %>
+			<% loop EventsWithMonth %>
 				<article class="$EvenOdd">
 					<header>
 						<h3><a href="$Link">$Title</a></h3>
@@ -34,11 +51,11 @@
 				</article>
 			<% end_loop %>
 
-			<% with EventItems %>
+			<% with EventsWithMonth %>
 				<% include Pagination %>
 			<% end_with %>
 		<% end_if %>
-		
+
 		$Form
 		<% include RelatedPages %>
 		$PageComments
