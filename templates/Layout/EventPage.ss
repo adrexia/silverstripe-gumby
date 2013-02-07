@@ -6,7 +6,7 @@
 				<h2 class="nonvisual-indicator">Event information</h2>
 				<dl>
 					<dt>Date &amp; time</dt>
-					<dd><time datetime="$Date">$Date.nice</time></dd>
+					<dd><time datetime="$Date">$Date.Nice</time></dd>
 					<% if Terms %>
 						<dt>Tags</dt>
 						<dd>

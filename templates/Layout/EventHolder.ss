@@ -25,10 +25,10 @@
 				<ol class="unstyled years">
 					<% loop AvailableMonths %>
 						<li>
-							<span class='year'>$YearName:</span>
+							<span class="year">$YearName:</span>
 							<ol class="nav nav-pills unstyled months">
 							<% loop Months %>
-								<li <% if Active %>class="active"<% end_if %>><a href="$MonthLink">$MonthName</a></li>
+								<li <% if Active %>class="active"<% end_if %>><a href="$MonthLink.XML">$MonthName</a></li>
 							<% end_loop %>
 							</ol>
 						</li>
