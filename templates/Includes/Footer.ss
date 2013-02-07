@@ -26,7 +26,7 @@
 	<% end_if %>
 
 	<div class="pull-left footer-copyright">
-		<p><small>$SiteConfig.Title &copy; 2012</small></p>
+		<p><small>$SiteConfig.Title &copy; $CurrentDatetime.Format(Y)</small></p>
 	</div>
 
 	<div class="pull-right footer-logo">
