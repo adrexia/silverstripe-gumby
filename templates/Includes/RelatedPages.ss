@@ -1,5 +1,5 @@
 <% if RelatedPages %>
-	<h2>Related Pages:</h2>
+	<h2>Related pages:</h2>
 	<p>
 		<ul>
 			<% loop RelatedPages %>
