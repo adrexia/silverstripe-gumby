@@ -245,6 +245,7 @@ header {
 		font-size: 1em;
 		line-height: 1.0em;
 		clear: both;
+		margin: 1.385em 0;
 
 		button {
 			background: none;
@@ -459,11 +460,11 @@ iframe {
 /**
  * EventHolder.
  */
-.typography .years-and-months {
+.typography .month-filter {
 	span.year {
 		display: block;
 		float: left;
-		line-height: 34px;
+		padding: 8px 0;
 		margin-right: 10px;
 	}
 }

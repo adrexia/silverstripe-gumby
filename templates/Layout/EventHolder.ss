@@ -3,6 +3,7 @@
 	<div class="span3">
 		<div class="sidebar-nav well">
 			<nav role="navigation">
+				<h2 class="nonvisual-indicator">Category filter:</h2>
 				<ul class="nav nav-list">
 					<li class="nav-header">In $Title</li>
 					<li <% if CurrentTag %><% else %>class="active"<% end_if %>><a href="$Link" title="View all news">View all events</a></li>
@@ -19,19 +20,20 @@
 		$Content.RichLinks
 	
 		<% if AvailableMonths %>
-			<div class="years-and-months">
-				<ul class="unstyled years">
+			<div class="month-filter">
+				<h2 class="nonvisual-indicator">Month filter:</h2>
+				<ol class="unstyled years">
 					<% loop AvailableMonths %>
 						<li>
-							<span class='year'>$YearName</span>
-							<ul class="nav nav-pills unstyled months">
+							<span class='year'>$YearName:</span>
+							<ol class="nav nav-pills unstyled months">
 							<% loop Months %>
 								<li <% if Active %>class="active"<% end_if %>><a href="$MonthLink">$MonthName</a></li>
 							<% end_loop %>
-							</ul>
+							</ol>
 						</li>
 					<% end_loop %>
-				</ul>
+				</ol>
 			</div>
 		<% end_if %>
 
