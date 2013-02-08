@@ -29,6 +29,7 @@
 								<label class="left" for="{$FormName}_to">To:</label>
 								$Fields.dataFieldByName(to)
 							</div>
+							$Fields.dataFieldByName(tag)
 							$Fields.dataFieldByName(SecurityID)
 						</fieldset>
 
