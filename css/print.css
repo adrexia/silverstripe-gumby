@@ -178,3 +178,7 @@
 .carousel .item {
   display: block;
 }
+
+.month-filter {
+  display: none;
+}

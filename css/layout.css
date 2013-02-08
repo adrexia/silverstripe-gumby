@@ -6031,6 +6031,11 @@ header ul#lang li {
   list-style: none;
 }
 
+/* heading elements in the content shouldn't have padding by default */
+.container header {
+  padding: 0;
+}
+
 .divider-right {
   border-right: 1px solid #999999;
   padding-right: 0.5em;
