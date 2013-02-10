@@ -84,6 +84,15 @@
 			<% with FilteredEvents %>
 				<% include Pagination %>
 			<% end_with %>
+		<% else %>
+			<header class="resultsHeader">
+				<h2 class="pull-left"><% if CurrentTag %>Tagged as "$CurrentTag.Name"<% else %>Latest to earliest<% end_if %></h2>
+				<p class="pull-right">None</p>
+			</header>
+
+			<article class="">
+				<p>No events</p>
+			</article>
 		<% end_if %>
 
 		$Form
