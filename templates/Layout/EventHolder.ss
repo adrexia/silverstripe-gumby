@@ -67,8 +67,8 @@
 
 		<% if FilteredEvents %>
 			<header class="resultsHeader">
-				<h2 class="pull-left">Latest in <% if CurrentTag %>"$CurrentTag.Name"<% else %>$Title<% end_if %></h2>
-				<p class="pull-right"><% with FilteredEvents %>Displaying $FirstItem - $LastItem of $count<% end_with %></p>
+				<h2 class="pull-left"><% if CurrentTag %>Tagged as "$CurrentTag.Name"<% else %>Latest to earliest<% end_if %></h2>
+				<p class="pull-right"><% with FilteredEvents %>$FirstItem - $LastItem of $count<% end_with %></p>
 			</header>
 		
 			<% loop FilteredEvents %>
