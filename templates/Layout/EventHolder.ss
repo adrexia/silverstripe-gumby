@@ -6,7 +6,7 @@
 				<h2 class="nonvisual-indicator">Available tags filter:</h2>
 				<ul class="nav nav-list">
 					<li class="nav-header">In $Title</li>
-					<li <% if CurrentTag %><% else %>class="active"<% end_if %>><a href="$Link" title="View all news">View all events</a></li>
+					<li <% if CurrentTag %><% else %>class="active"<% end_if %>><a href="$AllTagsLink" title="View all tags">View all tags</a></li>
 					<% loop EventTagsWithLinks %>
 						<li <% if $Top.CurrentTag.ID==$ID %>class="active"<% end_if %>><a href="$Link" title="View $Name">$Name</a></li>
 					<% end_loop %>
@@ -14,31 +14,33 @@
 			</nav>
 		</div>
 
-		<div class="sidebar-nav well">
+		<div class="sidebar-nav well date-range-filter">
 			<nav role="navigation">
 				<h2 class="nonvisual-indicator">Date range filter:</h2>
 
 				<% with DateRangeForm %>
 					<form $FormAttributes>
 						<fieldset>
-							<div id="from" class="field datetime">
-								<label class="left" for="{$FormName}_from">From (at):</label>
+							<div id="from" class="field date text">
+								<label class="left" for="{$FormName}_from">From:</label>
 								$Fields.dataFieldByName(from)
 							</div>
-							<div id="to" class="field datetime">
+							<div id="to" class="field date text">
 								<label class="left" for="{$FormName}_to">To:</label>
 								$Fields.dataFieldByName(to)
+								<div class="field-note">Tip: leave "To" blank to search for a single date.</div>
 							</div>
 							$Fields.dataFieldByName(tag)
 							$Fields.dataFieldByName(SecurityID)
 						</fieldset>
 
-						<% if Actions %>
-							<% loop Actions %>$Field<% end_loop %>
-						<% end_if %>
+						<div class="actions">
+							<% if Actions %>
+								<% loop Actions %>$Field<% end_loop %>
+							<% end_if %>
+						</div>
 					</form>
 				<% end_with %>
-
 			</nav>
 		</div>
 	</div>

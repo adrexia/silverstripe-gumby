@@ -7048,3 +7048,19 @@ iframe {
   padding: 8px 0;
   margin-right: 10px;
 }
+
+.date-range-filter div.field {
+  padding: 14px;
+}
+.date-range-filter div.date label {
+  font-size: 1.0em;
+  width: 35px;
+}
+.date-range-filter div.date .field-note {
+  clear: both;
+  font-style: italic;
+  font-size: 0.9em;
+}
+.date-range-filter .actions {
+  margin: 0 20px;
+}
