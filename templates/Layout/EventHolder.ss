@@ -49,18 +49,14 @@
 		<% if AvailableMonths %>
 			<div class="month-filter">
 				<h2 class="nonvisual-indicator">Month filter:</h2>
-				<ol class="unstyled years">
-					<% loop AvailableMonths %>
-						<li>
-							<span class="year">$YearName:</span>
-							<ol class="nav nav-pills unstyled months">
-							<% loop Months %>
-								<li <% if Active %>class="active"<% end_if %>><a href="$MonthLink.XML">$MonthName</a></li>
-							<% end_loop %>
-							</ol>
-						</li>
+				<% loop AvailableMonths %>
+					<h6 class="year">$YearName:</h6>
+					<ol class="nav nav-pills unstyled months">
+					<% loop Months %>
+						<li <% if Active %>class="active"<% end_if %>><a href="$MonthLink.XML">$MonthName</a></li>
 					<% end_loop %>
-				</ol>
+					</ol>
+				<% end_loop %>
 			</div>
 		<% end_if %>
 

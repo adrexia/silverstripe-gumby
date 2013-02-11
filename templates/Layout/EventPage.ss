@@ -28,8 +28,8 @@
 			<% include RelatedPages %>
 			$PageComments
 			<% include PrintShare %>
+			<% include LastEdited %>
 		</div>
-		<% include LastEdited %>
 	</div>
 </div>
 

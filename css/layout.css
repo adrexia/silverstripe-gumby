@@ -6140,6 +6140,7 @@ header ul#lang li {
 .typography p.printShare {
   font-size: 1em;
   line-height: 1.0em;
+  height: 1em;
   clear: both;
   margin: 1.385em 0;
 }
@@ -6150,6 +6151,7 @@ header ul#lang li {
   font-size: 1em;
   font-weight: normal;
   line-height: 1em;
+  height: 1em;
   vertical-align: baseline;
   color: #0464ea;
 }
@@ -7040,18 +7042,27 @@ iframe {
 .typography .event-information dd {
   line-height: 26px;
 }
+.typography .event-information ul.event-tags {
+  overflow: auto;
+  margin: 8px 0;
+}
 .typography .event-information ul.event-tags li {
-  display: inline-block;
+  float: left;
+  margin-right: 3px;
 }
 
 /**
  * EventHolder.
  */
-.typography .month-filter span.year {
+.typography .month-filter h6.year {
   display: block;
   float: left;
   padding: 8px 0;
   margin-right: 10px;
+  margin-left: 10px;
+}
+.typography .month-filter ol {
+  margin: 0;
 }
 
 .date-range-filter h6, .tag-filter h6 {
