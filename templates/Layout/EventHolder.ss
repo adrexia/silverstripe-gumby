@@ -18,6 +18,12 @@
 
 			<% with DateRangeForm %>
 				<form $FormAttributes>
+					<% if ErrorMessage %>
+						<div id="{$FormName}_error" class="message $ErrorMessageType">$ErrorMessage</div>
+					<% else %>
+						<div id="{$FormName}_error" class="message $ErrorMessageType" style="display: none"></div>
+					<% end_if %>
+
 					<fieldset>
 						<div id="from" class="field date text">
 							<label class="left" for="{$FormName}_from">From:</label>
@@ -26,7 +32,7 @@
 						<div id="to" class="field date text">
 							<label class="left" for="{$FormName}_to">To:</label>
 							$Fields.dataFieldByName(to)
-							<div class="field-note">Tip: leave "To" blank to search for a single date.</div>
+							<div class="field-note">Tip: Leave one field blank to search for single date.</div>
 						</div>
 						$Fields.dataFieldByName(tag)
 						$Fields.dataFieldByName(SecurityID)

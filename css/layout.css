@@ -7104,6 +7104,9 @@ iframe {
   margin-left: 10px;
   float: right;
 }
+.date-range-filter .message {
+  margin: 10px;
+}
 
 .resultsList article header {
   padding: 0;
