@@ -32,7 +32,7 @@
 						<div id="to" class="field date text">
 							<label class="left" for="{$FormName}_to">To:</label>
 							$Fields.dataFieldByName(to)
-							<div class="field-note">Tip: Leave one field blank to search for single date.</div>
+							<div class="field-note">Tip: Leave one field blank to search for a single date.</div>
 						</div>
 						$Fields.dataFieldByName(tag)
 						$Fields.dataFieldByName(SecurityID)
