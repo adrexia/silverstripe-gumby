@@ -545,3 +545,14 @@ iframe {
 .resultsList article header {
 	padding: 0;
 }
+
+/**
+ * Registry page
+ */
+.resultActions {
+	clear: both;
+
+	a {
+		display: block;
+	}
+}

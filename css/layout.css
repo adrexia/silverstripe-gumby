@@ -7111,3 +7111,13 @@ iframe {
 .resultsList article header {
   padding: 0;
 }
+
+/**
+ * Registry page
+ */
+.resultActions {
+  clear: both;
+}
+.resultActions a {
+  display: block;
+}
