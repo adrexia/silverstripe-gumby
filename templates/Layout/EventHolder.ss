@@ -1,17 +1,44 @@
 <div class="row">
 	<% include Breadcrumbs %>
 	<div class="span3">
-		<div class="sidebar-nav well">
+		<div class="sidebar-nav well tag-filter">
+			<h6>Tags filter</h6>
 			<nav role="navigation">
-				<h2 class="nonvisual-indicator">Category filter:</h2>
 				<ul class="nav nav-list">
-					<li class="nav-header">In $Title</li>
-					<li <% if CurrentTag %><% else %>class="active"<% end_if %>><a href="$Link" title="View all news">View all events</a></li>
-					<% loop EventTags %>
-						<li <% if $Top.CurrentTag.ID==$ID %>class="active"<% end_if %>><a href="$Top.Link?tag=$ID" title="View $Name">$Name</a></li>
+					<li <% if CurrentTag %><% else %>class="active"<% end_if %>><a href="$AllTagsLink" title="View all tags">View all tags</a></li>
+					<% loop EventTagsWithLinks %>
+						<li <% if $Top.CurrentTag.ID==$ID %>class="active"<% end_if %>><a href="$Link" title="View $Name">$Name</a></li>
 					<% end_loop %>
 				</ul>
 			</nav>
+		</div>
+
+		<div class="sidebar-nav well date-range-filter">
+			<h6>Date range filter</h6>
+
+			<% with DateRangeForm %>
+				<form $FormAttributes>
+					<fieldset>
+						<div id="from" class="field date text">
+							<label class="left" for="{$FormName}_from">From:</label>
+							$Fields.dataFieldByName(from)
+						</div>
+						<div id="to" class="field date text">
+							<label class="left" for="{$FormName}_to">To:</label>
+							$Fields.dataFieldByName(to)
+							<div class="field-note">Tip: leave "To" blank to search for a single date.</div>
+						</div>
+						$Fields.dataFieldByName(tag)
+						$Fields.dataFieldByName(SecurityID)
+					</fieldset>
+
+					<div class="actions">
+						<% if Actions %>
+							<% loop Actions %>$Field<% end_loop %>
+						<% end_if %>
+					</div>
+				</form>
+			<% end_with %>
 		</div>
 	</div>
 	<div class="span9 resultsList" role="main">
@@ -39,8 +66,8 @@
 
 		<% if FilteredEvents %>
 			<header class="resultsHeader">
-				<h2 class="pull-left">Latest in <% if CurrentTag %>"$CurrentTag.Name"<% else %>$Title<% end_if %></h2>
-				<p class="pull-right"><% with FilteredEvents %>Displaying $FirstItem - $LastItem of $count<% end_with %></p>
+				<h2 class="pull-left"><% if CurrentTag %>Tagged as "$CurrentTag.Name"<% else %>Latest to earliest<% end_if %></h2>
+				<p class="pull-right"><% with FilteredEvents %>$FirstItem - $LastItem of $count<% end_with %></p>
 			</header>
 		
 			<% loop FilteredEvents %>
@@ -56,6 +83,15 @@
 			<% with FilteredEvents %>
 				<% include Pagination %>
 			<% end_with %>
+		<% else %>
+			<header class="resultsHeader">
+				<h2 class="pull-left"><% if CurrentTag %>Tagged as "$CurrentTag.Name"<% else %>Latest to earliest<% end_if %></h2>
+				<p class="pull-right">None</p>
+			</header>
+
+			<article class="">
+				<p>No events</p>
+			</article>
 		<% end_if %>
 
 		$Form

@@ -474,3 +474,33 @@ iframe {
 	}
 }
 
+.date-range-filter, .tag-filter {
+	h6 {
+		padding: 0 14px;
+	}
+}
+
+.date-range-filter {
+	div.field {
+		padding: 14px;
+	}
+	div.date {
+		label {
+			font-size: 1.0em;
+			width: 35px;
+			clear: left;
+		}
+		.field-note {
+			clear: both;
+			font-style: italic;
+			font-size: 0.9em;
+		}
+	}
+	.actions {
+		padding: 0 14px;
+	}
+}
+
+.resultsList article header {
+	padding: 0;
+}

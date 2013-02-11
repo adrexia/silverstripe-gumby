@@ -7053,3 +7053,28 @@ iframe {
   padding: 8px 0;
   margin-right: 10px;
 }
+
+.date-range-filter h6, .tag-filter h6 {
+  padding: 0 14px;
+}
+
+.date-range-filter div.field {
+  padding: 14px;
+}
+.date-range-filter div.date label {
+  font-size: 1.0em;
+  width: 35px;
+  clear: left;
+}
+.date-range-filter div.date .field-note {
+  clear: both;
+  font-style: italic;
+  font-size: 0.9em;
+}
+.date-range-filter .actions {
+  padding: 0 14px;
+}
+
+.resultsList article header {
+  padding: 0;
+}
