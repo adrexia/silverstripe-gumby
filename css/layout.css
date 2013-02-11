@@ -7035,6 +7035,9 @@ iframe {
 /**
  * EventPage - event information
  */
+#IE6 .typography .event-information {
+  padding-bottom: 40px;
+}
 .typography .event-information dl {
   margin: 0;
   padding: 0;
@@ -7069,6 +7072,12 @@ iframe {
   padding: 0 14px;
 }
 
+#IE6 .date-range-filter {
+  padding-bottom: 40px;
+}
+.date-range-filter form {
+  margin-bottom: 10px;
+}
 .date-range-filter div.field {
   padding: 14px;
 }
@@ -7081,9 +7090,19 @@ iframe {
   clear: both;
   font-style: italic;
   font-size: 0.9em;
+  max-width: 170px;
+}
+#IE6 .date-range-filter div.date input {
+  height: 20px;
 }
 .date-range-filter .actions {
   padding: 0 14px;
+  overflow: auto;
+}
+.date-range-filter .actions input {
+  width: 50px;
+  margin-left: 10px;
+  float: right;
 }
 
 .resultsList article header {

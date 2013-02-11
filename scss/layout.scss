@@ -450,6 +450,10 @@ iframe {
  * EventPage - event information
  */
 .typography .event-information {
+	#IE6 & {
+		padding-bottom: 40px;
+	}
+
 	dl {
 		margin: 0;
 		padding: 0;
@@ -493,6 +497,14 @@ iframe {
 }
 
 .date-range-filter {
+	#IE6 & {
+		padding-bottom: 40px;
+	}
+
+	form {
+		margin-bottom: 10px;
+	}
+
 	div.field {
 		padding: 14px;
 	}
@@ -506,10 +518,24 @@ iframe {
 			clear: both;
 			font-style: italic;
 			font-size: 0.9em;
+			max-width: 170px;
+		}
+
+		input {
+			#IE6 & {
+				height: 20px;
+			}
 		}
 	}
 	.actions {
 		padding: 0 14px;
+		overflow: auto;
+
+		input {
+			width: 50px;
+			margin-left: 10px;
+			float: right;
+		}
 	}
 }
 
