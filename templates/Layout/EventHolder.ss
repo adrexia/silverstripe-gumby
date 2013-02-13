@@ -1,6 +1,16 @@
 <div class="row">
 	<% include Breadcrumbs %>
 	<div class="span3">
+		<% if $anyFilters %>
+			<div class="sidebar-nav well">
+				<ul class="nav nav-list">
+					<li>
+						<a href="$Link">Show all events</a>
+					</li>
+				</ul>
+			</div>
+		<% end_if %>
+
 		<div class="sidebar-nav well">
 			<h6>Filter by tags</h6>
 			<nav role="navigation">
