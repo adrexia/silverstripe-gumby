@@ -21,13 +21,13 @@
 							<header>
 								<h3>
 									<a class="searchResultHeader" href="$Link">
-										$ContextualTitle
+										$Title
 									</a>
 								</h3>
 							</header>
-							<% if ContextualContent %>
+							<% if Excerpt %>
 								<p>
-									$ContextualContent
+									$Excerpt.ContextSummary
 								</p>
 							<% end_if %>
 						</article>
