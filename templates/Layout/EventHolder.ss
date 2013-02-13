@@ -78,7 +78,13 @@
 						<h3><a href="$Link">$Title</a></h3>
 					</header>
 					<p><time datetime="$Date">$Date.nice</time></p>
-					<p>$Content.LimitWordCount</p>
+					<p>
+						<% if Abstract %>
+							$Abstract
+						<% else %>
+							$Content.LimitWordCount
+						<% end_if %>
+					</p>
 				</article>
 			<% end_loop %>
 
