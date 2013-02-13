@@ -490,13 +490,16 @@ iframe {
 	}
 }
 
-.date-range-filter, .tag-filter {
+.sidebar-nav,
+.sidebar-form {
 	h6 {
 		padding: 0 14px;
 	}
 }
 
-.date-range-filter {
+.sidebar-form {
+	padding: 9px 0;
+
 	#IE6 & {
 		padding-bottom: 40px;
 	}
@@ -508,11 +511,12 @@ iframe {
 	div.field {
 		padding: 14px;
 	}
-	div.date {
+	div.field {
 		label {
 			font-size: 1.0em;
-			width: 35px;
 			clear: left;
+			float: left;
+			margin-right: 10px;
 		}
 		.field-note {
 			clear: both;
@@ -525,14 +529,36 @@ iframe {
 			#IE6 & {
 				height: 20px;
 			}
+
+			float: right;
+			width: 12em;
+			max-width: 100%;
+			margin-top: -5px;
+		}
+
+		&.date {
+			label {
+				width: 3em;
+			}
+
+			input {
+				width: 7.7em;
+				float: left;
+			}
 		}
 	}
-	.actions {
+
+	.Actions {
 		padding: 0 14px;
 		overflow: auto;
+		background: none;
+		border: none;
+
+		#IE8 & {
+			filter: none;
+		}
 
 		input {
-			width: 50px;
 			margin-left: 10px;
 			float: right;
 		}

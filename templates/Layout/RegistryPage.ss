@@ -1,8 +1,11 @@
 <div class="row">
 	<% include Breadcrumbs %>
 	<div class="span3">
-		<div id="{$DataClass}_searchform" class="searchForm">
-			$Form
+		<div class="sidebar-form well">
+			<div id="{$DataClass}_searchform" class="searchForm">
+				<h6>Search Filter</h6>
+				$RegistryFilterForm
+			</div>
 		</div>
 	</div>
 	<div class="span9">

@@ -1,7 +1,7 @@
 <div class="row">
 	<% include Breadcrumbs %>
 	<div class="span3">
-		<div class="sidebar-nav well tag-filter">
+		<div class="sidebar-nav well">
 			<h6>Tags filter</h6>
 			<nav role="navigation">
 				<ul class="nav nav-list">
@@ -13,7 +13,7 @@
 			</nav>
 		</div>
 
-		<div class="sidebar-nav well date-range-filter">
+		<div class="sidebar-form well">
 			<h6>Date range filter</h6>
 
 			<% with DateRangeForm %>
@@ -38,7 +38,7 @@
 						$Fields.dataFieldByName(SecurityID)
 					</fieldset>
 
-					<div class="actions">
+					<div class="Actions">
 						<% if Actions %>
 							<% loop Actions %>$Field<% end_loop %>
 						<% end_if %>
