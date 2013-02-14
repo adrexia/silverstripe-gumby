@@ -18,6 +18,16 @@
 		line-height:1.3em;
 		margin:0px;
 		padding:3px 0;
+		a {
+			color: $linkColor;
+			font-size: 0.7em;
+			margin-left: 1em;
+
+			&:hover,
+			&:focus {
+				color: $linkColorHover;
+			}
+		}
 	}
 	padding:0 5px;
 	margin:40px 0 10px 0;		

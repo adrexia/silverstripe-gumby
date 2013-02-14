@@ -3078,13 +3078,7 @@ button.close {
 .btn-info,
 .btn-info:hover,
 .btn-inverse,
-.carousel #pause .btn,
-.carousel #pause .Actions .action,
-.Actions .carousel #pause .action,
-.btn-inverse:hover,
-.carousel #pause .btn:hover,
-.carousel #pause .Actions .action:hover,
-.Actions .carousel #pause .action:hover {
+.btn-inverse:hover {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
@@ -3100,13 +3094,7 @@ button.close {
 .btn-info:visited,
 .btn-info:hover:visited,
 .btn-inverse:visited,
-.carousel #pause .btn:visited,
-.carousel #pause .Actions .action:visited,
-.Actions .carousel #pause .action:visited,
-.btn-inverse:hover:visited,
-.carousel #pause .btn:hover:visited,
-.carousel #pause .Actions .action:hover:visited,
-.Actions .carousel #pause .action:hover:visited {
+.btn-inverse:hover:visited {
   color: white !important;
 }
 
@@ -3115,10 +3103,7 @@ button.close {
 .btn-danger.active,
 .btn-success.active,
 .btn-info.active,
-.btn-inverse.active,
-.carousel #pause .active.btn,
-.carousel #pause .Actions .active.action,
-.Actions .carousel #pause .active.action {
+.btn-inverse.active {
   color: rgba(255, 255, 255, 0.75);
 }
 .btn-primary.active:visited, .Actions .active.action.btn-primary:visited,
@@ -3126,10 +3111,7 @@ button.close {
 .btn-danger.active:visited,
 .btn-success.active:visited,
 .btn-info.active:visited,
-.btn-inverse.active:visited,
-.carousel #pause .active.btn:visited,
-.carousel #pause .Actions .active.action:visited,
-.Actions .carousel #pause .active.action:visited {
+.btn-inverse.active:visited {
   color: rgba(255, 255, 255, 0.75);
 }
 
@@ -3153,7 +3135,7 @@ button.close {
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
-#IE8 .btn-primary, #IE8 .Actions .action.btn-primary, .Actions #IE8 .action.btn-primary {
+#IE8 .btn-primary {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF03449F', endColorstr='#FF031D9F', GradientType=0);
 }
 .btn-primary:hover, .Actions .action.btn-primary:hover, .btn-primary:active, .Actions .action.btn-primary:active, .btn-primary.active, .Actions .active.action.btn-primary, .btn-primary.disabled, .Actions .disabled.action.btn-primary, .btn-primary[disabled], .Actions [disabled].action.btn-primary {
@@ -3268,7 +3250,7 @@ button.close {
   background-color: #24748c \9;
 }
 
-.btn-inverse, .carousel #pause .btn, .carousel #pause .Actions .action, .Actions .carousel #pause .action {
+.btn-inverse {
   background-color: #404040;
   background-image: -ms-linear-gradient(top, #555555, #222222);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#555555), to(#222222));
@@ -3283,14 +3265,14 @@ button.close {
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
-#IE8 .btn-inverse, #IE8 .carousel #pause .btn, .carousel #pause #IE8 .btn, #IE8 .carousel #pause .Actions .action, .carousel #pause .Actions #IE8 .action, #IE8 .Actions .carousel #pause .action, .Actions .carousel #pause #IE8 .action {
+#IE8 .btn-inverse {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF555555', endColorstr='#FF222222', GradientType=0);
 }
-.btn-inverse:hover, .carousel #pause .btn:hover, .carousel #pause .Actions .action:hover, .Actions .carousel #pause .action:hover, .btn-inverse:active, .carousel #pause .btn:active, .carousel #pause .Actions .action:active, .Actions .carousel #pause .action:active, .btn-inverse.active, .carousel #pause .active.btn, .carousel #pause .Actions .active.action, .Actions .carousel #pause .active.action, .btn-inverse.disabled, .carousel #pause .disabled.btn, .carousel #pause .Actions .disabled.action, .Actions .carousel #pause .disabled.action, .btn-inverse[disabled], .carousel #pause [disabled].btn, .carousel #pause .Actions [disabled].action, .Actions .carousel #pause [disabled].action {
+.btn-inverse:hover, .btn-inverse:active, .btn-inverse.active, .btn-inverse.disabled, .btn-inverse[disabled] {
   background-color: #222222;
   *background-color: #151515;
 }
-.btn-inverse:active, .carousel #pause .btn:active, .carousel #pause .Actions .action:active, .Actions .carousel #pause .action:active, .btn-inverse.active, .carousel #pause .active.btn, .carousel #pause .Actions .active.action, .Actions .carousel #pause .active.action {
+.btn-inverse:active, .btn-inverse.active {
   background-color: #090909 \9;
 }
 
@@ -3468,7 +3450,7 @@ input[type="submit"].btn.btn-mini,
 .btn-group.open .btn-info.dropdown-toggle {
   background-color: #2f96b4;
 }
-.btn-group.open .btn-inverse.dropdown-toggle, .btn-group.open .carousel #pause .dropdown-toggle.btn, .carousel #pause .btn-group.open .dropdown-toggle.btn, .btn-group.open .carousel #pause .Actions .dropdown-toggle.action, .carousel #pause .Actions .btn-group.open .dropdown-toggle.action, .btn-group.open .Actions .carousel #pause .dropdown-toggle.action, .Actions .carousel #pause .btn-group.open .dropdown-toggle.action {
+.btn-group.open .btn-inverse.dropdown-toggle {
   background-color: #222222;
 }
 
@@ -3508,10 +3490,7 @@ input[type="submit"].btn.btn-mini,
 .btn-danger .caret,
 .btn-info .caret,
 .btn-success .caret,
-.btn-inverse .caret,
-.carousel #pause .btn .caret,
-.carousel #pause .Actions .action .caret,
-.Actions .carousel #pause .action .caret {
+.btn-inverse .caret {
   border-top-color: white;
   border-bottom-color: white;
   opacity: 0.75;
@@ -5127,195 +5106,6 @@ a.label:hover, a.badge:hover {
   border-top: 1px solid #e5e5e5;
 }
 
-.carousel-inner {
-  overflow: hidden;
-  width: 100%;
-  position: relative;
-}
-
-.carousel {
-  position: relative;
-  line-height: 1;
-  overflow: hidden;
-  width: 100%;
-  margin: 0 auto;
-}
-.carousel .item {
-  display: none;
-  position: relative;
-  -webkit-transition: 0.6s ease-in-out left;
-  -moz-transition: 0.6s ease-in-out left;
-  -ms-transition: 0.6s ease-in-out left;
-  -o-transition: 0.6s ease-in-out left;
-  transition: 0.6s ease-in-out left;
-}
-.carousel .item img {
-  display: block;
-  line-height: 1;
-  width: 100%;
-}
-.carousel a {
-  color: #fff;
-}
-.carousel a:visited {
-  color: #fff;
-}
-#layout .carousel a img {
-  border: none;
-}
-.carousel:hover #pause {
-  -webkit-transition-duration: 1s;
-  -moz-transition-duration: 1s;
-  -o-transition-duration: 1s;
-  transition-duration: 1s;
-  visibility: visible;
-  opacity: 1;
-}
-#IE8 .carousel:hover #pause {
-  display: block;
-}
-.carousel #pause {
-  visibility: hidden;
-  opacity: 0;
-  text-align: center;
-  width: 100%;
-  position: absolute;
-  z-index: 0;
-  top: 35%;
-  color: #fff;
-  color: rgba(255, 255, 255, 0.8);
-  text-shadow: rgba(26, 26, 26, 0.5) 1px 1px 0;
-}
-#IE8 .carousel #pause {
-  display: none;
-}
-.carousel #pause .btn, .carousel #pause .Actions .action, .Actions .carousel #pause .action {
-  z-index: 4;
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
-  border-radius: 40px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  border: 2px solid #fff;
-  position: relative;
-  font-size: 3em;
-  line-height: 1em;
-  width: 70px;
-  height: 70px;
-  padding-top: 15px;
-  opacity: 0.5;
-}
-.carousel #pause .btn .icon, .carousel #pause .Actions .action .icon, .Actions .carousel #pause .action .icon {
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  display: inline-block;
-  text-decoration: inherit;
-}
-#IE7 .carousel #pause .btn, #IE7 .carousel #pause .Actions .action, .Actions #IE7 .carousel #pause .action {
-  padding-top: 5px;
-  width: 30px;
-  height: 43px;
-}
-#IE7 .carousel #pause .btn .icon, #IE7 .carousel #pause .Actions .action .icon, .Actions #IE7 .carousel #pause .action .icon {
-  zoom: 1;
-}
-.carousel #pause .btn .icon-play-js, .carousel #pause .Actions .action .icon-play-js, .Actions .carousel #pause .action .icon-play-js {
-  padding-left: 3px;
-}
-#IE7 .carousel #pause .btn .icon-play-js, #IE7 .carousel #pause .Actions .action .icon-play-js, .Actions #IE7 .carousel #pause .action .icon-play-js {
-  padding-top: 2px;
-}
-.carousel #pause .btn:hover, .carousel #pause .Actions .action:hover, .Actions .carousel #pause .action:hover {
-  -webkit-transition-duration: 1s;
-  -moz-transition-duration: 1s;
-  -o-transition-duration: 1s;
-  transition-duration: 1s;
-  opacity: 1;
-}
-.carousel .active,
-.carousel .next,
-.carousel .prev {
-  display: block;
-}
-.carousel .active {
-  left: 0;
-}
-.carousel .next,
-.carousel .prev {
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-.carousel .next {
-  left: 100%;
-}
-.carousel .prev {
-  left: -100%;
-}
-.carousel .next.left,
-.carousel .prev.right {
-  left: 0;
-}
-.carousel .active.left {
-  left: -100%;
-}
-.carousel .active.right {
-  left: 100%;
-}
-
-.carousel-control {
-  position: absolute;
-  top: 40%;
-  left: 15px;
-  width: 40px;
-  height: 40px;
-  margin-top: -20px;
-  font-size: 60px;
-  font-weight: 100;
-  line-height: 30px;
-  color: white;
-  text-align: center;
-  background: #222222;
-  border: 3px solid white;
-  -webkit-border-radius: 23px;
-  -moz-border-radius: 23px;
-  border-radius: 23px;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-  z-index: 6;
-}
-.carousel-control.right {
-  left: auto;
-  right: 15px;
-}
-.carousel-control:hover {
-  color: white;
-  text-decoration: none;
-  opacity: 0.9;
-  filter: alpha(opacity=90);
-}
-.carousel-control:visited {
-  color: white;
-}
-
-.carousel-caption {
-  position: absolute;
-  left: 0;
-  right: 2px;
-  bottom: 0;
-  padding: 10px 15px 5px;
-  background: #333333;
-  background: rgba(0, 0, 0, 0.75);
-}
-.carousel-caption h4, .carousel-caption p {
-  font-size: 14px;
-  color: white;
-  line-height: 1.2em;
-}
-
 .pull-right {
   float: right;
 }
@@ -5895,6 +5685,14 @@ ul.nav, ul.dropdown-menu {
   line-height: 1.3em;
   margin: 0px;
   padding: 3px 0;
+}
+#layout .resultsHeader h2 a, #layout .resultsHeader p a {
+  color: #0464ea;
+  font-size: 0.7em;
+  margin-left: 1em;
+}
+#layout .resultsHeader h2 a:hover, #layout .resultsHeader h2 a:focus, #layout .resultsHeader p a:hover, #layout .resultsHeader p a:focus {
+  color: #03449f;
 }
 
 .resultsList.no-indent article {

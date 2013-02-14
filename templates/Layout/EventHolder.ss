@@ -1,16 +1,6 @@
 <div class="row">
 	<% include Breadcrumbs %>
 	<div class="span3">
-		<% if $anyFilters %>
-			<div class="sidebar-nav well">
-				<ul class="nav nav-list">
-					<li>
-						<a href="$Link">Show all events</a>
-					</li>
-				</ul>
-			</div>
-		<% end_if %>
-
 		<div class="sidebar-nav well">
 			<h6>Filter by tags</h6>
 			<nav role="navigation">
@@ -78,7 +68,7 @@
 
 		<% if FilteredEvents %>
 			<header class="resultsHeader">
-				<h2 class="pull-left"><% if CurrentTag %>Tagged as "$CurrentTag.Name"<% else %>Upcoming events<% end_if %></h2>
+				<h2 class="pull-left"><% if FilterDescription %>$FilterDescription <a href="$Link">Show all events</a><% else %>Upcoming events<% end_if %></h2>
 				<p class="pull-right"><% with FilteredEvents %>$FirstItem - $LastItem of $count<% end_with %></p>
 			</header>
 		
@@ -103,7 +93,7 @@
 			<% end_with %>
 		<% else %>
 			<header class="resultsHeader">
-				<h2 class="pull-left"><% if CurrentTag %>Tagged as "$CurrentTag.Name"<% else %>Upcoming events<% end_if %></h2>
+				<h2 class="pull-left"><% if FilterDescription %>$FilterDescription <a href="$Link">Show all events</a><% else %>Upcoming events<% end_if %></h2>
 				<p class="pull-right">None</p>
 			</header>
 
