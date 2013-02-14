@@ -18,7 +18,7 @@
 						<thead>
 							<tr>
 								<% loop Columns %>
-									<th><a href="$Top.QueryLink&amp;Sort={$Name}&amp;Dir={$Top.Direction}#results">$Title</a></th>
+									<th><a href="$Top.QueryLink&amp;Sort={$Name}&amp;Dir={$Top.OppositeDirection}#results">$Title</a></th>
 								<% end_loop %>
 							</tr>
 						</thead>
