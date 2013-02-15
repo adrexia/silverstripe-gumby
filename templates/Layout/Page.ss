@@ -7,8 +7,12 @@
 	<% end_if %>
 	<div class="<% if Menu(2) %>span9<% else %>span12<% end_if %>">
 		<div role="main">
-			<h1>$Title</h1>
-			$Content.RichLinks
+			<header class="page-header">
+				<h1>$Title</h1>
+			</header>
+			<div class="clearfix">
+				$Content.RichLinks
+			</div>
 			$Form
 			<% include RelatedPages %>
 			$PageComments

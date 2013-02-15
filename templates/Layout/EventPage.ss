@@ -21,8 +21,12 @@
 			</div>
 		</div>
 		<div class="span9">
-			<h1>$Title</h1>
-			$Content.RichLinks
+			<header class="page-header">
+				<h1>$Title</h1>
+			</header>
+			<div class="clearfix">
+				$Content.RichLinks
+			</div>
 			$Form
 			<p><a href="$Parent.Link">←  Back to the event listing</a></p>
 			<% include RelatedPages %>

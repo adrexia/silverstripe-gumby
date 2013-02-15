@@ -10,6 +10,9 @@
 	</div>
 	<div class="span9">
 		<div role="main">
+			<header class="page-header">
+				<h1>$Title</h1>
+			</header>
 			$Content.RichLinks
 
 			<div id="{$DataClass}_results" class="resultsContainer">

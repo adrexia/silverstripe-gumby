@@ -11,7 +11,9 @@
 				<h1>$Title</h1>
 			</header>
 			<p><% if Category %><a class="label label-inverse" href="">$Category.Title</a><% end_if %> <time datetime="$Date">$Date.nice</time></p>
-			$Content.RichLinks
+			<div class="clearfix">
+				$Content.RichLinks
+			</div>
 			$Form
 			<% include RelatedPages %>
 			$PageComments

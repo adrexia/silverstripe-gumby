@@ -1,6 +1,8 @@
 <div class="row">
 	<div class="span12">
-		<h2>$Title</h2>
+		<header class="page-header">
+			<h1>$Title</h1>
+		</header>
 		$Content.RichLinks
 		$Form
 

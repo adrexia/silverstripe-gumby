@@ -2026,6 +2026,9 @@ EXPRESS TYPOGRAPHY
   line-height: 1;
   margin-bottom: 18px;
 }
+.typography .page-header h1 {
+  margin-bottom: 0;
+}
 .typography h2, .typography h3 {
   margin: 18px 0 9px;
 }
