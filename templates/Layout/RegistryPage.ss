@@ -13,7 +13,9 @@
 			<header class="page-header">
 				<h1>$Title</h1>
 			</header>
-			$Content.RichLinks
+			<div class="clearfix">
+				$Content.RichLinks
+			</div>
 
 			<div id="{$DataClass}_results" class="resultsContainer">
 				<% if RegistryEntries %>

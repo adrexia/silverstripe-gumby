@@ -48,9 +48,12 @@
 		</div>
 	</div>
 	<div class="span9 resultsList" role="main">
-		<h1>$Title</h1>
-
-		$Content.RichLinks
+		<header class="page-header">
+			<h1>$Title</h1>
+		</header>
+		<div class="clearfix">
+			$Content.RichLinks
+		</div>
 	
 		<% if AvailableMonths %>
 			<div class="month-filter">

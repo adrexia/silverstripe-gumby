@@ -3,7 +3,9 @@
 		<header class="page-header">
 			<h1>$Title</h1>
 		</header>
-		$Content.RichLinks
+		<div class="clearfix">
+			$Content.RichLinks
+		</div>
 		$Form
 
 		<ul class="sitemap">
