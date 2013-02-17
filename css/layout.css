@@ -3066,9 +3066,9 @@ button.close {
   line-height: 14px;
 }
 
-.btn-primary, .Actions .action.btn-primary,
+.btn-primary, .Actions .action.primary,
 .btn-primary:hover,
-.Actions .action.btn-primary:hover,
+.Actions .action.primary:hover,
 .btn-warning,
 .btn-warning:hover,
 .btn-danger,
@@ -3082,9 +3082,9 @@ button.close {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
-.btn-primary:visited, .Actions .action.btn-primary:visited,
+.btn-primary:visited, .Actions .action.primary:visited,
 .btn-primary:hover:visited,
-.Actions .action.btn-primary:hover:visited,
+.Actions .action.primary:hover:visited,
 .btn-warning:visited,
 .btn-warning:hover:visited,
 .btn-danger:visited,
@@ -3098,7 +3098,7 @@ button.close {
   color: white !important;
 }
 
-.btn-primary.active, .Actions .active.action.btn-primary,
+.btn-primary.active, .Actions .active.action.primary,
 .btn-warning.active,
 .btn-danger.active,
 .btn-success.active,
@@ -3106,7 +3106,7 @@ button.close {
 .btn-inverse.active {
   color: rgba(255, 255, 255, 0.75);
 }
-.btn-primary.active:visited, .Actions .active.action.btn-primary:visited,
+.btn-primary.active:visited, .Actions .active.action.primary:visited,
 .btn-warning.active:visited,
 .btn-danger.active:visited,
 .btn-success.active:visited,
@@ -3120,7 +3120,7 @@ button.close {
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
 
-.btn-primary, .Actions .action.btn-primary {
+.btn-primary, .Actions .action.primary {
   background-color: #03349f;
   background-image: -ms-linear-gradient(top, #03449f, #031d9f);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#03449f), to(#031d9f));
@@ -3135,14 +3135,14 @@ button.close {
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
-#IE8 .btn-primary {
+#IE8 .btn-primary, #IE8 .Actions .action.primary, .Actions #IE8 .action.primary {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF03449F', endColorstr='#FF031D9F', GradientType=0);
 }
-.btn-primary:hover, .Actions .action.btn-primary:hover, .btn-primary:active, .Actions .action.btn-primary:active, .btn-primary.active, .Actions .active.action.btn-primary, .btn-primary.disabled, .Actions .disabled.action.btn-primary, .btn-primary[disabled], .Actions [disabled].action.btn-primary {
+.btn-primary:hover, .Actions .action.primary:hover, .btn-primary:active, .Actions .action.primary:active, .btn-primary.active, .Actions .active.action.primary, .btn-primary.disabled, .Actions .disabled.action.primary, .btn-primary[disabled], .Actions [disabled].action.primary {
   background-color: #031d9f;
   *background-color: #021886;
 }
-.btn-primary:active, .Actions .action.btn-primary:active, .btn-primary.active, .Actions .active.action.btn-primary {
+.btn-primary:active, .Actions .action.primary:active, .btn-primary.active, .Actions .active.action.primary {
   background-color: #02146d \9;
 }
 
@@ -3435,7 +3435,7 @@ input[type="submit"].btn.btn-mini,
 .btn-group.open .btn.dropdown-toggle, .btn-group.open .Actions .dropdown-toggle.action, .Actions .btn-group.open .dropdown-toggle.action {
   background-color: #e6e6e6;
 }
-.btn-group.open .btn-primary.dropdown-toggle, .btn-group.open .Actions .dropdown-toggle.action.btn-primary, .Actions .btn-group.open .dropdown-toggle.action.btn-primary {
+.btn-group.open .btn-primary.dropdown-toggle, .btn-group.open .Actions .dropdown-toggle.action.primary, .Actions .btn-group.open .dropdown-toggle.action.primary {
   background-color: #031d9f;
 }
 .btn-group.open .btn-warning.dropdown-toggle {
@@ -3485,7 +3485,7 @@ input[type="submit"].btn.btn-mini,
   border-top: 0;
 }
 
-.btn-primary .caret, .Actions .action.btn-primary .caret,
+.btn-primary .caret, .Actions .action.primary .caret,
 .btn-warning .caret,
 .btn-danger .caret,
 .btn-info .caret,
