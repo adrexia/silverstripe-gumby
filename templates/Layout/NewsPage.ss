@@ -6,19 +6,16 @@
 		<% end_with %>
 	</div>
 	<div class="span9" role="main">
-		<article>
-			<header class="page-header">
-				<h1>$Title</h1>
-			</header>
-			<p><% if Category %><a class="label label-inverse" href="">$Category.Title</a><% end_if %> <time datetime="$Date">$Date.nice</time></p>
-			<div class="clearfix">
-				$Content.RichLinks
-			</div>
-			$Form
-			<% include RelatedPages %>
-			$PageComments
-			<% include PrintShare %>
-		</article>
+		<h1 class="page-header">$Title</h1>
+
+		<p><% if Category %><a class="label label-inverse" href="">$Category.Title</a><% end_if %> <time datetime="$Date">$Date.nice</time></p>
+		<div class="clearfix">
+			$Content.RichLinks
+		</div>
+		$Form
+		<% include RelatedPages %>
+		$PageComments
+		<% include PrintShare %>
 		<% include LastEdited %>
 	</div>
 </div>

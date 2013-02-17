@@ -21,9 +21,8 @@
 			</div>
 		</div>
 		<div class="span9">
-			<header class="page-header">
-				<h1>$Title</h1>
-			</header>
+			<h1 class="page-header">$Title</h1>
+
 			<div class="clearfix">
 				$Content.RichLinks
 			</div>

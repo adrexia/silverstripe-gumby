@@ -1,16 +1,14 @@
 <div class="row">
 	<div class="span12 resultsList" role="main">
 		<% if Query %>
-			<header class="page-header">
-				<h1 class="searchQuery">Search results</h1>
-			</header>
+			<h1 class="searchQuery page-header">Search results</h1>
 		<% end_if %>
 
 		<% if Results %>
-			<header class="resultsHeader">
+			<div class="resultsHeader">
 				<h2 class="pull-left">Results for &quot;{$Query}&quot;</h2>
 				<p class="pull-right">Displaying Page $Results.CurrentPage of $Results.TotalPages</p>
-			</header>
+			</div>
 		<% end_if %>
 
 		<% if Results %>

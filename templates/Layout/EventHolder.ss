@@ -48,9 +48,8 @@
 		</div>
 	</div>
 	<div class="span9 resultsList" role="main">
-		<header class="page-header">
-			<h1>$Title</h1>
-		</header>
+		<h1 class="page-header">$Title</h1>
+
 		<div class="clearfix">
 			$Content.RichLinks
 		</div>
@@ -70,10 +69,10 @@
 		<% end_if %>
 
 		<% if FilteredEvents %>
-			<header class="resultsHeader">
+			<div class="resultsHeader">
 				<h2 class="pull-left"><% if FilterDescription %>$FilterDescription <a href="$Link">Show all events</a><% else %>Upcoming events<% end_if %></h2>
 				<p class="pull-right"><% with FilteredEvents %>$FirstItem - $LastItem of $count<% end_with %></p>
-			</header>
+			</div>
 		
 			<% loop FilteredEvents %>
 				<article class="$EvenOdd">
@@ -95,10 +94,10 @@
 				<% include Pagination %>
 			<% end_with %>
 		<% else %>
-			<header class="resultsHeader">
+			<div class="resultsHeader">
 				<h2 class="pull-left"><% if FilterDescription %>$FilterDescription <a href="$Link">Show all events</a><% else %>Upcoming events<% end_if %></h2>
 				<p class="pull-right">None</p>
-			</header>
+			</div>
 
 			<article class="">
 				<p>No events</p>
