@@ -1,8 +1,6 @@
 <div class="row">
 	<div class="span12 resultsList" role="main">
-		<% if Query %>
-			<h1 class="searchQuery page-header">Search results</h1>
-		<% end_if %>
+		<h1 class="searchQuery page-header">Search results</h1>
 
 		<% if Results %>
 			<div class="resultsHeader">
@@ -23,7 +21,7 @@
 									</a>
 								</h3>
 							</header>
-							<p><% if Excerpt %>$Excerpt.ContextSummary<% else %>$Content.ContextSummary<% end_if %></p>
+							<p>$Content.ContextSummary</p>
 						</article>
 					</li>
 				<% end_loop %>
