@@ -4158,7 +4158,7 @@ input[type="submit"].btn.btn-mini,
 
 .navbar .btn-navbar {
   display: none;
-  float: right;
+  float: left;
   padding: 7px 10px;
   margin-left: 5px;
   margin-right: 5px;
@@ -6261,7 +6261,6 @@ iframe {
   }
 
   #SearchGroup {
-    float: left;
     width: auto;
   }
   #SearchGroup .navbar-search .search-query {
@@ -6345,7 +6344,6 @@ iframe {
   }
 
   #SearchGroup {
-    float: left;
     width: auto;
   }
   #SearchGroup .navbar-search .search-query {
@@ -6429,7 +6427,6 @@ iframe {
   }
 
   #SearchGroup {
-    float: left;
     width: auto;
   }
   #SearchGroup .navbar-search .search-query {
@@ -6513,7 +6510,6 @@ iframe {
   }
 
   #SearchGroup {
-    float: left;
     width: auto;
   }
   #SearchGroup .navbar-search .search-query {
@@ -6597,7 +6593,6 @@ iframe {
   }
 
   #SearchGroup {
-    float: left;
     width: auto;
   }
   #SearchGroup .navbar-search .search-query {
@@ -6681,7 +6676,6 @@ iframe {
   }
 
   #SearchGroup {
-    float: left;
     width: auto;
   }
   #SearchGroup .navbar-search .search-query {
@@ -6804,6 +6798,9 @@ iframe {
   color: white;
 }
 
+.navbar .btn-navbar {
+  float: left;
+}
 .navbar .btn-navbar .nav-text {
   float: left;
   color: #c7c7c7;
