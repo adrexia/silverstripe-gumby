@@ -23,11 +23,7 @@
 									</a>
 								</h3>
 							</header>
-							<% if Excerpt %>
-								<p>
-									$Excerpt.ContextSummary
-								</p>
-							<% end_if %>
+							<p><% if Excerpt %>$Excerpt.ContextSummary<% else %>$Content.ContextSummary<% end_if %></p>
 						</article>
 					</li>
 				<% end_loop %>
