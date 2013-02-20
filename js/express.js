@@ -20,6 +20,16 @@
 			return false;
 		});
 
+		// Don't let the Go! button submit the search form if it's empty.
+		$('#SearchGroup input[type="submit"]').click(function(){
+			var searchInput = $(this).siblings('input[type="search"]');
+			var searchValue = $.trim(searchInput.val());
+			if (searchValue.length == 0) {
+				searchInput.focus();
+				return false;
+			}
+		});
+
 		$('form fieldset > div.field:odd').addClass('odd');
 
 		$('.page-toggle .button').click(function() {

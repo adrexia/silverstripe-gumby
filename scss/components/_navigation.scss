@@ -33,12 +33,17 @@ ul.nav, ul.dropdown-menu{
 }
 
 @media (max-width: 979px) {
+	#SearchGroup input.span2 {
+		width: auto;
+		display: inline-block;
+	}
+
 	.nav-collapse.collapsed {
 		display: none;
 	}
 
 	.no-js {
-		.navbar .btn-navbar {
+		.navbar button.btn-navbar {
 			display: none;
 		}
 
