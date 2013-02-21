@@ -70,7 +70,7 @@
 
 		<% if FilteredEvents %>
 			<div class="resultsHeader">
-				<h2 class="pull-left"><% if FilterDescription %>$FilterDescription <a href="$Link">Show all events</a><% else %>Upcoming events<% end_if %></h2>
+				<h2 class="pull-left"><% if FilterDescription %>$FilterDescription <a href="$Link">Show all upcoming events</a><% else %>Upcoming events<% end_if %></h2>
 				<p class="pull-right"><% with FilteredEvents %>$FirstItem - $LastItem of $count<% end_with %></p>
 			</div>
 		
@@ -95,7 +95,7 @@
 			<% end_with %>
 		<% else %>
 			<div class="resultsHeader">
-				<h2 class="pull-left"><% if FilterDescription %>$FilterDescription <a href="$Link">Show all events</a><% else %>Upcoming events<% end_if %></h2>
+				<h2 class="pull-left"><% if FilterDescription %>$FilterDescription <a href="$Link">Show all upcoming events</a><% else %>Upcoming events<% end_if %></h2>
 				<p class="pull-right">None</p>
 			</div>
 
