@@ -6833,7 +6833,8 @@ iframe {
   padding: 0;
 }
 .typography .event-information dd {
-  line-height: 26px;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
 }
 .typography .event-information ul.event-tags {
   overflow: auto;
