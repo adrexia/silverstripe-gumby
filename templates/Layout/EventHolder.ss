@@ -6,7 +6,7 @@
 			<nav role="navigation">
 				<ul class="nav nav-list">
 					<li <% if CurrentTag %><% else %>class="active"<% end_if %>><a href="$AllTagsLink" title="View all tags">View all tags</a></li>
-					<% loop EventTagsWithLinks %>
+					<% loop UpdateTagsWithLinks %>
 						<li <% if $Top.CurrentTag.ID==$ID %>class="active"<% end_if %>><a href="$Link" title="View $Name">$Name</a></li>
 					<% end_loop %>
 				</ul>
@@ -68,18 +68,18 @@
 			</div>
 		<% end_if %>
 
-		<% if FilteredEvents %>
+		<% if FilteredUpdates %>
 			<div class="resultsHeader">
 				<h2 class="pull-left"><% if FilterDescription %>$FilterDescription <a href="$Link">Show all upcoming events</a><% else %>Upcoming events<% end_if %></h2>
-				<p class="pull-right"><% with FilteredEvents %>$FirstItem - $LastItem of $count<% end_with %></p>
+				<p class="pull-right"><% with FilteredUpdates %>$FirstItem - $LastItem of $count<% end_with %></p>
 			</div>
 		
-			<% loop FilteredEvents %>
+			<% loop FilteredUpdates %>
 				<article class="$EvenOdd">
 					<header>
 						<h3><a href="$Link">$Title</a></h3>
 					</header>
-					<p><time datetime="$Date">$Date.nice<% if $StartTime %> $StartTime.Nice<% if $EndTime %> - $EndTime.Nice<% end_if %><% end_if %></time></p>
+					<p><time datetime="$Date">$Date.Format(d/m/Y)<% if $StartTime %> $StartTime.Nice<% if $EndTime %> - $EndTime.Nice<% end_if %><% end_if %></time></p>
 					<p>
 						<% if Abstract %>
 							$Abstract
@@ -90,7 +90,7 @@
 				</article>
 			<% end_loop %>
 
-			<% with FilteredEvents %>
+			<% with FilteredUpdates %>
 				<% include Pagination %>
 			<% end_with %>
 		<% else %>

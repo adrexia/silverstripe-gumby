@@ -2,11 +2,11 @@
 	<% include Breadcrumbs %>
 	<div role="main">
 		<div class="span3">
-			<div class="well event-information">
+			<div class="well update-information">
 				<h2 class="nonvisual-indicator">Event information</h2>
 				<dl>
 					<dt>Date &amp; time</dt>
-					<dd><time datetime="$Date">$Date.Nice<% if $StartTime %> $StartTime.Nice<% if $EndTime %> - $EndTime.Nice<% end_if %><% end_if %></time></dd>
+					<dd><time datetime="$Date">$Date.Format(d/m/Y)<% if $StartTime %> $StartTime.Nice<% if $EndTime %> - $EndTime.Nice<% end_if %><% end_if %></time></dd>
 					<% if Location %>
 						<dt>Location:</dt>
 						<dd>$NiceLocation</dd>
@@ -14,7 +14,7 @@
 					<% if Terms %>
 						<dt>Tags</dt>
 						<dd>
-							<ul class="unstyled event-tags">
+							<ul class="unstyled update-tags">
 								<% loop Terms %>
 									<li class="label">$Name</li>
 								<% end_loop %>

@@ -306,6 +306,10 @@ h2 {
 	}
 }
 
+figure.featured-image {
+	float: right;
+}
+
 iframe {
 	border: 0;
 }
@@ -457,9 +461,9 @@ iframe {
 }
 
 /**
- * EventPage - event information
+ * EventPage and NewsPage - update information
  */
-.typography .event-information {
+.typography .update-information {
 	#IE6 & {
 		padding-bottom: 40px;
 	}
@@ -474,7 +478,7 @@ iframe {
 		margin-bottom: 0.2em;
 	}
 
-	ul.event-tags {
+	ul.update-tags {
 		overflow: auto;
 		margin: 8px 0;
 		
@@ -486,7 +490,7 @@ iframe {
 }
 
 /**
- * EventHolder.
+ * EventHolder and NewsHolder.
  */
 .typography .month-filter {
 	h6.year {

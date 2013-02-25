@@ -5706,6 +5706,14 @@ ul.nav, ul.dropdown-menu {
 .resultsList article {
   padding: 5px 10px;
   border-bottom: 1px solid #f6f6f6;
+  *zoom: 1;
+}
+.resultsList article:before, .resultsList article:after {
+  display: table;
+  content: "";
+}
+.resultsList article:after {
+  clear: both;
 }
 .resultsList article.first {
   padding-top: 0;
@@ -5725,6 +5733,10 @@ ul.nav, ul.dropdown-menu {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+}
+.resultsList article figure {
+  margin-right: 13px;
+  float: right;
 }
 
 .pagination {
@@ -5989,6 +6001,10 @@ header ul#lang li {
 
 h2 a, h2 a:visited {
   color: #000;
+}
+
+figure.featured-image {
+  float: right;
 }
 
 iframe {
@@ -6823,30 +6839,30 @@ iframe {
 }
 
 /**
- * EventPage - event information
+ * EventPage and NewsPage - update information
  */
-#IE6 .typography .event-information {
+#IE6 .typography .update-information {
   padding-bottom: 40px;
 }
-.typography .event-information dl {
+.typography .update-information dl {
   margin: 0;
   padding: 0;
 }
-.typography .event-information dd {
+.typography .update-information dd {
   margin-top: 0.2em;
   margin-bottom: 0.2em;
 }
-.typography .event-information ul.event-tags {
+.typography .update-information ul.update-tags {
   overflow: auto;
   margin: 8px 0;
 }
-.typography .event-information ul.event-tags li {
+.typography .update-information ul.update-tags li {
   float: left;
   margin: 0 3px 3px 0;
 }
 
 /**
- * EventHolder.
+ * EventHolder and NewsHolder.
  */
 .typography .month-filter h6.year {
   display: block;
