@@ -105,7 +105,7 @@
 			</div>
 
 			<article class="">
-				<p>No events</p>
+				<p>No news</p>
 			</article>
 		<% end_if %>
 
