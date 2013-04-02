@@ -27,11 +27,11 @@
 									</a>
 									<% if Children %>
 										<ul class="dropdown-menu">
-											<% control Children %>
+											<% loop Children %>
 												<li>
 													<a href="$Link">$MenuTitle.XML</a>
 												</li>
-											<% end_control %>
+											<% end_loop %>
 										</ul>
 									<% end_if %>
 								</li>
