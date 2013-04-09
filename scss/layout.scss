@@ -244,15 +244,6 @@ header {
 		.span8 .content{
 			padding:30px;
 		}
-
-		.carousel-container {
-			float: right;
-
-			.carousel-caption h4,
-			.carousel-caption p {
-				color: $white;
-			}
-		}
 	}
 
 	p.printShare {
@@ -296,6 +287,104 @@ header {
 				padding-left: 20px;
 				background-position: 2px 1px;
 			}
+		}
+	}
+}
+
+// Carousel adjustments
+.carousel-container {
+	float: right;
+}
+
+.carousel {
+	a {
+		color: white;
+	}
+	
+	#layout.typography & a img {
+		border: none;
+		margin: 0;
+	}
+
+	.carousel-control {
+		z-index: 6;
+	}
+
+	.carousel-caption h4,
+	.carousel-caption p {
+		color: $white;
+	}
+
+	#pause {
+		#IE8 & {
+			display:none;
+		}
+		visibility:hidden;
+		opacity: 0;
+		
+		.btn {
+			.icon {
+				font-family: FontAwesome;
+				font-weight: normal;
+				font-style: normal;
+				display: inline-block;
+				text-decoration: inherit;
+			}
+
+			@extend .btn-inverse;
+			@include border-radius(40px);
+			@include box-sizing(border-box);
+			z-index: 4;
+			border: 2px solid #fff;
+			position: relative;
+
+			font-size: 3em;
+			line-height: 1em;
+			width: 70px;
+			height: 70px;
+			padding-top: 15px;
+			opacity: 0.5;
+
+			#IE7 & {
+				.icon {
+					zoom: 1;
+				}
+				padding-top: 5px;
+				width: 30px;
+				height: 43px;
+			}
+			
+			.icon-play-js {
+				padding-left: 3px;
+				#IE7 & {
+					padding-top: 2px;
+				}
+			}
+			&:hover {
+				@include duration(1s);
+				opacity: 1;
+			}
+		}
+		text-align: center;
+		width: 100%;
+		position: absolute; 
+		z-index: 0; 
+		top: 35%;
+		color: #fff;
+		color: rgba(#fff, 0.8);
+		text-shadow: lighten(rgba(#000, 0.5), 10%) 1px 1px 0;
+	}
+
+	&:hover {
+		#pause {
+			#IE8 & {
+				display:block;
+			}
+
+			@include duration(1s);
+
+			visibility:visible;
+			opacity:1;
 		}
 	}
 }
