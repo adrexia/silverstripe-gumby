@@ -39,7 +39,7 @@
 
 					<% if RegistryEntries.MoreThanOnePage %>
 						<div class="pagination">
-							<ul class="pageNumbers">
+							<ul id="PageNumbers">
 								<% if RegistryEntries.NotFirstPage %>
 									<li class="prev"><a href="$RegistryEntries.PrevLink" title="View the previous page">&lt;</a></li>
 								<% end_if %>
@@ -49,7 +49,7 @@
 									<% else_if PageNum %>
 										<li><a href="$Link" title="View page number $PageNum">$PageNum</a></li>
 									<% else %>
-										<li><span class="disabled">...</span></li>
+										<li><a><span class="disabled">...</span></a></li>
 									<% end_if %>
 								<% end_loop %>
 								<% if RegistryEntries.NotLastPage %>

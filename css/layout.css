@@ -7111,13 +7111,13 @@ iframe {
   font-size: 0.9em;
   max-width: 170px;
 }
-.sidebar-form div.field input {
+.sidebar-form div.field input, .sidebar-form div.field select {
   float: right;
   width: 12em;
   max-width: 100%;
   margin-top: -5px;
 }
-#IE6 .sidebar-form div.field input {
+#IE6 .sidebar-form div.field input, #IE6 .sidebar-form div.field select {
   height: 20px;
 }
 .sidebar-form div.field.date label {
