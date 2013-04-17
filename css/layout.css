@@ -7157,3 +7157,66 @@ iframe {
 .resultActions a {
   display: block;
 }
+
+/**
+ * Blog module
+ */
+#BlogContent #Sidebar h3 {
+  color: #666666;
+  font-size: 11px;
+  text-transform: uppercase;
+  line-height: 18px;
+  margin: 0;
+  padding: 0 14px;
+}
+#BlogContent #Sidebar ul {
+  list-style: none outside none;
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#BlogContent #Sidebar ul li a {
+  padding: 3px 15px;
+  margin-left: -15px;
+  margin-right: -15px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  display: block;
+}
+#BlogContent #Sidebar ul li a:hover {
+  background-color: #eee;
+  text-decoration: none;
+}
+#BlogContent #Sidebar ul li a.active {
+  background-color: #0464EA;
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+#BlogContent #Sidebar .tagcloud {
+  margin: 0 14px;
+  line-height: 1.8em;
+}
+
+/**
+ * Comments
+ */
+#comments-holder div.field {
+  clear: left;
+}
+#comments-holder .comments-holder li.comment {
+  list-style-type: none;
+  padding: 5px;
+}
+#comments-holder .comments-holder li.comment.odd {
+  background: #eee;
+}
+#comments-holder .comments-holder li.comment.unmoderated {
+  border: 2px dashed grey;
+}
+#comments-holder .comments-holder li.comment ul.action-links li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 15px;
+}
+#comments-holder .comments-holder li.comment ul.action-links li:last-of-type {
+  margin-right: 0;
+}
