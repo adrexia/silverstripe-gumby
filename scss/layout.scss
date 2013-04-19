@@ -308,6 +308,10 @@ header {
 
 	.carousel-control {
 		z-index: 6;
+
+		&:focus {
+			@extend .carousel-control:hover
+		}
 	}
 
 	.carousel-caption h4,

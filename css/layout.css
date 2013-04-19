@@ -5207,7 +5207,7 @@ a.label:hover, a.badge:hover {
   left: auto;
   right: 15px;
 }
-.carousel-control:hover {
+.carousel-control:hover, .carousel .carousel-control:focus {
   color: white;
   text-decoration: none;
   opacity: 0.9;
