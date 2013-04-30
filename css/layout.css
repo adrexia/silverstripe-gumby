@@ -1221,7 +1221,7 @@ li .icon-large:before {
 ul.icons {
   list-style-type: none;
   margin-left: 2em;
-  text-indent: -0.8em;
+  text-indent: -.8em;
 }
 ul.icons li [class^="icon-"],
 ul.icons li [class*=" icon-"] {
@@ -5943,6 +5943,7 @@ header .brand {
   line-height: 1em;
   float: left;
   margin-top: 0.67em;
+  margin-bottom: 0;
 }
 #IE6 header .brand, #IE7 header .brand {
   width: 75%;
