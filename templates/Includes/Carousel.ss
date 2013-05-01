@@ -3,7 +3,7 @@
 		<!-- Carousel items -->
 		<div class="carousel-inner">
 			<% loop CarouselItems %>
-				<% if not Archived %>
+				<% if not $Archived %>
 				<div class="<% if First %>active <% end_if %>item">
 					<a<% if Link %> href="$Link.Link"<% end_if %>>
 						$Image.CroppedImage(710, 503)
@@ -20,9 +20,19 @@
 				<% end_if %>
 			<% end_loop %>
 		</div>
-		<!-- Carousel nav -->
-		<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-		<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-		<div id="pause"><div class="btn"><span class="icon">&#xf04c;</span></div></div>
+		<div class="carousel-interface">
+			<div class="carousel-indicators">
+				<% loop CarouselItems %>
+					<% if not $Archived %>
+						<btn class="carousel-control<% if $Pos == 1 %> active<% end_if %>" data-slide-to="$Pos(0)" data-target="#myCarousel" tabindex="0">$Pos</btn>
+					<% end_if %>
+				<% end_loop %>
+			</div>
+			<div class="carousel-controls">
+				<btn class="left" href="#myCarousel" data-slide="prev" tabindex="0"><i class="icon-chevron-left"></i></btn>
+				<btn class="pause" tabindex="0"><span class="icon">&#xf04c;</span></btn>
+				<btn class="right" href="#myCarousel" data-slide="next" tabindex="0"><i class="icon-chevron-right"></i></btn>
+			</div>
+		</div>
 	</div>
 <% end_if %>

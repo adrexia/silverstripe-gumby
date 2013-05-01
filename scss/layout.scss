@@ -320,76 +320,74 @@ header {
 		color: $white;
 	}
 
-	#pause {
-		#IE8 & {
-			display:none;
-		}
-		visibility:hidden;
-		opacity: 0;
-		
-		.btn {
-			.icon {
-				font-family: FontAwesome;
-				font-weight: normal;
-				font-style: normal;
-				display: inline-block;
-				text-decoration: inherit;
+	/* Remove once we upgrade Bootstrap to 2.3.1 */
+	.carousel-interface {
+		btn.carousel-control {
+			position: static;
+			display: block;
+			float: left;
+			height: 15px;
+			width: 15px;
+			margin: 0 5px 0;
+			line-height: 21px;
+			border: 8px solid #EEEEEE;
+			outline: none;
+
+			&:first-of-type {
+				margin-left: 0px;
 			}
 
-			@extend .btn-inverse;
-			@include border-radius(40px);
-			@include box-sizing(border-box);
-			z-index: 4;
-			border: 2px solid #fff;
-			position: relative;
-
-			font-size: 3em;
-			line-height: 1em;
-			width: 70px;
-			height: 70px;
-			padding-top: 15px;
-			opacity: 0.5;
-
-			#IE7 & {
-				.icon {
-					zoom: 1;
-				}
-				padding-top: 5px;
-				width: 30px;
-				height: 43px;
-			}
-			
-			.icon-play-js {
-				padding-left: 3px;
-				#IE7 & {
-					padding-top: 2px;
-				}
-			}
-			&:hover {
-				@include duration(1s);
+			&.active {
+				background-color: $linkColorHover;
 				opacity: 1;
 			}
-		}
-		text-align: center;
-		width: 100%;
-		position: absolute; 
-		z-index: 0; 
-		top: 35%;
-		color: #fff;
-		color: rgba(#fff, 0.8);
-		text-shadow: lighten(rgba(#000, 0.5), 10%) 1px 1px 0;
-	}
 
-	&:hover {
-		#pause {
-			#IE8 & {
-				display:block;
+			&:hover, &:active, &:focus {
+				background-color: $linkColor;
+				opacity: 1;
 			}
 
-			@include duration(1s);
+			&.right {
+				padding-left: 4px;
+				width: 16px;
+			}
+		}
 
-			visibility:visible;
-			opacity:1;
+		i, .icon {
+			font-family: FontAwesome;
+			font-weight: normal;
+			font-style: normal;
+			display: inline-block;
+			text-decoration: inherit;
+		}
+
+		.carousel-indicators {
+			float: left;
+			margin-top: 8px;
+			margin-left: -8px;
+
+			btn {
+				text-indent: -9999px;
+			}
+		}
+
+		.carousel-controls {
+			float: right;
+			margin-top: 15px;
+
+			btn {
+				outline: none;
+				font-size: 1.6em;
+				margin: 0 10px 0;
+
+				&:last-of-type {
+					margin-right: 0;
+				}
+
+				&:hover, &:active, &:focus {
+					color: $linkColor;
+				}
+			}
 		}
 	}
 }

@@ -3078,13 +3078,7 @@ button.close {
 .btn-info,
 .btn-info:hover,
 .btn-inverse,
-.carousel #pause .btn,
-.carousel #pause .Actions .action,
-.Actions .carousel #pause .action,
-.btn-inverse:hover,
-.carousel #pause .btn:hover,
-.carousel #pause .Actions .action:hover,
-.Actions .carousel #pause .action:hover {
+.btn-inverse:hover {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
@@ -3100,13 +3094,7 @@ button.close {
 .btn-info:visited,
 .btn-info:hover:visited,
 .btn-inverse:visited,
-.carousel #pause .btn:visited,
-.carousel #pause .Actions .action:visited,
-.Actions .carousel #pause .action:visited,
-.btn-inverse:hover:visited,
-.carousel #pause .btn:hover:visited,
-.carousel #pause .Actions .action:hover:visited,
-.Actions .carousel #pause .action:hover:visited {
+.btn-inverse:hover:visited {
   color: white !important;
 }
 
@@ -3115,10 +3103,7 @@ button.close {
 .btn-danger.active,
 .btn-success.active,
 .btn-info.active,
-.btn-inverse.active,
-.carousel #pause .active.btn,
-.carousel #pause .Actions .active.action,
-.Actions .carousel #pause .active.action {
+.btn-inverse.active {
   color: rgba(255, 255, 255, 0.75);
 }
 .btn-primary.active:visited, .Actions .active.action.primary:visited,
@@ -3126,10 +3111,7 @@ button.close {
 .btn-danger.active:visited,
 .btn-success.active:visited,
 .btn-info.active:visited,
-.btn-inverse.active:visited,
-.carousel #pause .active.btn:visited,
-.carousel #pause .Actions .active.action:visited,
-.Actions .carousel #pause .active.action:visited {
+.btn-inverse.active:visited {
   color: rgba(255, 255, 255, 0.75);
 }
 
@@ -3268,7 +3250,7 @@ button.close {
   background-color: #24748c \9;
 }
 
-.btn-inverse, .carousel #pause .btn, .carousel #pause .Actions .action, .Actions .carousel #pause .action {
+.btn-inverse {
   background-color: #404040;
   background-image: -ms-linear-gradient(top, #555555, #222222);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#555555), to(#222222));
@@ -3283,14 +3265,14 @@ button.close {
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
-#IE8 .btn-inverse, #IE8 .carousel #pause .btn, .carousel #pause #IE8 .btn, #IE8 .carousel #pause .Actions .action, .carousel #pause .Actions #IE8 .action, #IE8 .Actions .carousel #pause .action, .Actions .carousel #pause #IE8 .action {
+#IE8 .btn-inverse {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF555555', endColorstr='#FF222222', GradientType=0);
 }
-.btn-inverse:hover, .carousel #pause .btn:hover, .carousel #pause .Actions .action:hover, .Actions .carousel #pause .action:hover, .btn-inverse:active, .carousel #pause .btn:active, .carousel #pause .Actions .action:active, .Actions .carousel #pause .action:active, .btn-inverse.active, .carousel #pause .active.btn, .carousel #pause .Actions .active.action, .Actions .carousel #pause .active.action, .btn-inverse.disabled, .carousel #pause .disabled.btn, .carousel #pause .Actions .disabled.action, .Actions .carousel #pause .disabled.action, .btn-inverse[disabled], .carousel #pause [disabled].btn, .carousel #pause .Actions [disabled].action, .Actions .carousel #pause [disabled].action {
+.btn-inverse:hover, .btn-inverse:active, .btn-inverse.active, .btn-inverse.disabled, .btn-inverse[disabled] {
   background-color: #222222;
   *background-color: #151515;
 }
-.btn-inverse:active, .carousel #pause .btn:active, .carousel #pause .Actions .action:active, .Actions .carousel #pause .action:active, .btn-inverse.active, .carousel #pause .active.btn, .carousel #pause .Actions .active.action, .Actions .carousel #pause .active.action {
+.btn-inverse:active, .btn-inverse.active {
   background-color: #090909 \9;
 }
 
@@ -3468,7 +3450,7 @@ input[type="submit"].btn.btn-mini,
 .btn-group.open .btn-info.dropdown-toggle {
   background-color: #2f96b4;
 }
-.btn-group.open .btn-inverse.dropdown-toggle, .btn-group.open .carousel #pause .dropdown-toggle.btn, .carousel #pause .btn-group.open .dropdown-toggle.btn, .btn-group.open .carousel #pause .Actions .dropdown-toggle.action, .carousel #pause .Actions .btn-group.open .dropdown-toggle.action, .btn-group.open .Actions .carousel #pause .dropdown-toggle.action, .Actions .carousel #pause .btn-group.open .dropdown-toggle.action {
+.btn-group.open .btn-inverse.dropdown-toggle {
   background-color: #222222;
 }
 
@@ -3508,10 +3490,7 @@ input[type="submit"].btn.btn-mini,
 .btn-danger .caret,
 .btn-info .caret,
 .btn-success .caret,
-.btn-inverse .caret,
-.carousel #pause .btn .caret,
-.carousel #pause .Actions .action .caret,
-.Actions .carousel #pause .action .caret {
+.btn-inverse .caret {
   border-top-color: white;
   border-bottom-color: white;
   opacity: 0.75;
@@ -6120,6 +6099,9 @@ header ul#lang li {
   float: right;
 }
 
+.carousel {
+  /* Remove once we upgrade Bootstrap to 2.3.1 */
+}
 .carousel a {
   color: white;
 }
@@ -6134,77 +6116,61 @@ header ul#lang li {
 .carousel .carousel-caption p {
   color: white;
 }
-.carousel #pause {
-  visibility: hidden;
-  opacity: 0;
-  text-align: center;
-  width: 100%;
-  position: absolute;
-  z-index: 0;
-  top: 35%;
-  color: #fff;
-  color: rgba(255, 255, 255, 0.8);
-  text-shadow: rgba(26, 26, 26, 0.5) 1px 1px 0;
+.carousel .carousel-interface btn.carousel-control {
+  position: static;
+  display: block;
+  float: left;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px 0;
+  line-height: 21px;
+  border: 8px solid #EEEEEE;
+  outline: none;
 }
-#IE8 .carousel #pause {
-  display: none;
+.carousel .carousel-interface btn.carousel-control:first-of-type {
+  margin-left: 0px;
 }
-.carousel #pause .btn, .carousel #pause .Actions .action, .Actions .carousel #pause .action {
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
-  border-radius: 40px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  z-index: 4;
-  border: 2px solid #fff;
-  position: relative;
-  font-size: 3em;
-  line-height: 1em;
-  width: 70px;
-  height: 70px;
-  padding-top: 15px;
-  opacity: 0.5;
+.carousel .carousel-interface btn.carousel-control.active {
+  background-color: #03449f;
+  opacity: 1;
 }
-.carousel #pause .btn .icon, .carousel #pause .Actions .action .icon, .Actions .carousel #pause .action .icon {
+.carousel .carousel-interface btn.carousel-control:hover, .carousel .carousel-interface btn.carousel-control:focus, .carousel .carousel-interface btn.carousel-control:active, .carousel .carousel-interface btn.carousel-control:focus {
+  background-color: #0464ea;
+  opacity: 1;
+}
+.carousel .carousel-interface btn.carousel-control.right {
+  padding-left: 4px;
+  width: 16px;
+}
+.carousel .carousel-interface i, .carousel .carousel-interface .icon {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
   display: inline-block;
   text-decoration: inherit;
 }
-#IE7 .carousel #pause .btn, #IE7 .carousel #pause .Actions .action, .Actions #IE7 .carousel #pause .action {
-  padding-top: 5px;
-  width: 30px;
-  height: 43px;
+.carousel .carousel-interface .carousel-indicators {
+  float: left;
+  margin-top: 8px;
+  margin-left: -8px;
 }
-#IE7 .carousel #pause .btn .icon, #IE7 .carousel #pause .Actions .action .icon, .Actions #IE7 .carousel #pause .action .icon {
-  zoom: 1;
+.carousel .carousel-interface .carousel-indicators btn {
+  text-indent: -9999px;
 }
-.carousel #pause .btn .icon-play-js, .carousel #pause .Actions .action .icon-play-js, .Actions .carousel #pause .action .icon-play-js {
-  padding-left: 3px;
+.carousel .carousel-interface .carousel-controls {
+  float: right;
+  margin-top: 15px;
 }
-#IE7 .carousel #pause .btn .icon-play-js, #IE7 .carousel #pause .Actions .action .icon-play-js, .Actions #IE7 .carousel #pause .action .icon-play-js {
-  padding-top: 2px;
+.carousel .carousel-interface .carousel-controls btn {
+  outline: none;
+  font-size: 1.6em;
+  margin: 0 10px 0;
 }
-.carousel #pause .btn:hover, .carousel #pause .Actions .action:hover, .Actions .carousel #pause .action:hover {
-  -webkit-transition-duration: 1s;
-  -moz-transition-duration: 1s;
-  -o-transition-duration: 1s;
-  transition-duration: 1s;
-  opacity: 1;
+.carousel .carousel-interface .carousel-controls btn:last-of-type {
+  margin-right: 0;
 }
-.carousel:hover #pause {
-  -webkit-transition-duration: 1s;
-  -moz-transition-duration: 1s;
-  -o-transition-duration: 1s;
-  transition-duration: 1s;
-  visibility: visible;
-  opacity: 1;
-}
-#IE8 .carousel:hover #pause {
-  display: block;
+.carousel .carousel-interface .carousel-controls btn:hover, .carousel .carousel-interface .carousel-controls btn:active, .carousel .carousel-interface .carousel-controls btn:focus {
+  color: #0464ea;
 }
 
 h2 a, h2 a:visited {
