@@ -27,7 +27,8 @@ $fontAwesomePath: "../../../themes/default/font/fontawesome-webfont" !default;
 
 @font-face {
   font-family: 'FontAwesome';
-  src: url('#{$fontAwesomePath}.eot?') format('eot'),
+  src: url('#{$fontAwesomePath}.eot');
+  src: url('#{$fontAwesomePath}.eot?#iefix') format('embedded-opentype'),
   url('#{$fontAwesomePath}.woff') format('woff'),
   url('#{$fontAwesomePath}.svg') format('svg'),
   url('#{$fontAwesomePath}.ttf') format('truetype');

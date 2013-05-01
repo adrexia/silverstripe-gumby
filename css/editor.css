@@ -92,7 +92,8 @@
     */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../../../themes/default/font/fontawesome-webfont.eot?") format("eot"), url("../../../themes/default/font/fontawesome-webfont.woff") format("woff"), url("../../../themes/default/font/fontawesome-webfont.svg") format("svg"), url("../../../themes/default/font/fontawesome-webfont.ttf") format("truetype");
+  src: url("../../../themes/default/font/fontawesome-webfont.eot");
+  src: url("../../../themes/default/font/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../../../themes/default/font/fontawesome-webfont.woff") format("woff"), url("../../../themes/default/font/fontawesome-webfont.svg") format("svg"), url("../../../themes/default/font/fontawesome-webfont.ttf") format("truetype");
 }
 
 /*  Font Awesome styles

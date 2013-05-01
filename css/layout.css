@@ -1172,7 +1172,8 @@ legend + .control-group {
     */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../../../themes/default/font/fontawesome-webfont.eot?") format("eot"), url("../../../themes/default/font/fontawesome-webfont.woff") format("woff"), url("../../../themes/default/font/fontawesome-webfont.svg") format("svg"), url("../../../themes/default/font/fontawesome-webfont.ttf") format("truetype");
+  src: url("../../../themes/default/font/fontawesome-webfont.eot");
+  src: url("../../../themes/default/font/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../../../themes/default/font/fontawesome-webfont.woff") format("woff"), url("../../../themes/default/font/fontawesome-webfont.svg") format("svg"), url("../../../themes/default/font/fontawesome-webfont.ttf") format("truetype");
 }
 
 /*  Font Awesome styles
@@ -1221,7 +1222,7 @@ li .icon-large:before {
 ul.icons {
   list-style-type: none;
   margin-left: 2em;
-  text-indent: -.8em;
+  text-indent: -0.8em;
 }
 ul.icons li [class^="icon-"],
 ul.icons li [class*=" icon-"] {
@@ -6109,36 +6110,29 @@ header ul#lang li {
   border: none;
   margin: 0;
 }
-.carousel .carousel-control {
-  z-index: 6;
-}
 .carousel .carousel-caption h4,
 .carousel .carousel-caption p {
   color: white;
 }
-.carousel .carousel-interface btn.carousel-control {
+.carousel .carousel-interface button.carousel-control {
   position: static;
   display: block;
   float: left;
   height: 15px;
   width: 15px;
-  margin: 0 5px 0;
-  line-height: 21px;
-  border: 8px solid #EEEEEE;
+  margin: 8px 26px 0 0;
   outline: none;
+  border: 0px;
 }
-.carousel .carousel-interface btn.carousel-control:first-of-type {
-  margin-left: 0px;
-}
-.carousel .carousel-interface btn.carousel-control.active {
+.carousel .carousel-interface button.carousel-control.active {
   background-color: #03449f;
   opacity: 1;
 }
-.carousel .carousel-interface btn.carousel-control:hover, .carousel .carousel-interface btn.carousel-control:focus, .carousel .carousel-interface btn.carousel-control:active, .carousel .carousel-interface btn.carousel-control:focus {
+.carousel .carousel-interface button.carousel-control:hover, .carousel .carousel-interface button.carousel-control:focus, .carousel .carousel-interface button.carousel-control:active, .carousel .carousel-interface button.carousel-control:focus {
   background-color: #0464ea;
   opacity: 1;
 }
-.carousel .carousel-interface btn.carousel-control.right {
+.carousel .carousel-interface button.carousel-control.right {
   padding-left: 4px;
   width: 16px;
 }
@@ -6152,24 +6146,25 @@ header ul#lang li {
 .carousel .carousel-interface .carousel-indicators {
   float: left;
   margin-top: 8px;
-  margin-left: -8px;
 }
-.carousel .carousel-interface .carousel-indicators btn {
+.carousel .carousel-interface .carousel-indicators button {
   text-indent: -9999px;
 }
 .carousel .carousel-interface .carousel-controls {
   float: right;
   margin-top: 15px;
 }
-.carousel .carousel-interface .carousel-controls btn {
+.carousel .carousel-interface .carousel-controls button {
+  background: none;
+  border: none;
   outline: none;
   font-size: 1.6em;
-  margin: 0 10px 0;
+  margin: 0 0 0 20px;
 }
-.carousel .carousel-interface .carousel-controls btn:last-of-type {
+.carousel .carousel-interface .carousel-controls button:last-of-type {
   margin-right: 0;
 }
-.carousel .carousel-interface .carousel-controls btn:hover, .carousel .carousel-interface .carousel-controls btn:active, .carousel .carousel-interface .carousel-controls btn:focus {
+.carousel .carousel-interface .carousel-controls button:hover, .carousel .carousel-interface .carousel-controls button:active, .carousel .carousel-interface .carousel-controls button:focus {
   color: #0464ea;
 }
 

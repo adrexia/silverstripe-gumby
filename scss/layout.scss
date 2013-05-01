@@ -308,8 +308,6 @@ header {
 	}
 
 	.carousel-control {
-		z-index: 6;
-
 		&:focus {
 			@extend .carousel-control:hover
 		}
@@ -322,20 +320,15 @@ header {
 
 	/* Remove once we upgrade Bootstrap to 2.3.1 */
 	.carousel-interface {
-		btn.carousel-control {
+		button.carousel-control {
 			position: static;
 			display: block;
 			float: left;
 			height: 15px;
 			width: 15px;
-			margin: 0 5px 0;
-			line-height: 21px;
-			border: 8px solid #EEEEEE;
+			margin: 8px 26px 0 0;
 			outline: none;
-
-			&:first-of-type {
-				margin-left: 0px;
-			}
+			border: 0px;
 
 			&.active {
 				background-color: $linkColorHover;
@@ -364,9 +357,8 @@ header {
 		.carousel-indicators {
 			float: left;
 			margin-top: 8px;
-			margin-left: -8px;
 
-			btn {
+			button {
 				text-indent: -9999px;
 			}
 		}
@@ -375,10 +367,12 @@ header {
 			float: right;
 			margin-top: 15px;
 
-			btn {
+			button {
+				background: none;
+				border: none;
 				outline: none;
 				font-size: 1.6em;
-				margin: 0 10px 0;
+				margin: 0 0 0 20px;
 
 				&:last-of-type {
 					margin-right: 0;
@@ -387,6 +381,10 @@ header {
 				&:hover, &:active, &:focus {
 					color: $linkColor;
 				}
+			}
+
+			#IE7 & {
+				margin-top: 5px;
 			}
 		}
 	}

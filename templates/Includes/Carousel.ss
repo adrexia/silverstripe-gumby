@@ -24,14 +24,14 @@
 			<div class="carousel-indicators">
 				<% loop CarouselItems %>
 					<% if not $Archived %>
-						<btn class="carousel-control<% if $Pos == 1 %> active<% end_if %>" data-slide-to="$Pos(0)" data-target="#myCarousel" tabindex="0">$Pos</btn>
+						<button class="carousel-control<% if $Pos == 1 %> active<% end_if %>" data-slide-to="$Pos(0)" data-target="#myCarousel" tabindex="0">$Pos</button>
 					<% end_if %>
 				<% end_loop %>
 			</div>
 			<div class="carousel-controls">
-				<btn class="left" href="#myCarousel" data-slide="prev" tabindex="0"><i class="icon-chevron-left"></i></btn>
-				<btn class="pause" tabindex="0"><span class="icon">&#xf04c;</span></btn>
-				<btn class="right" href="#myCarousel" data-slide="next" tabindex="0"><i class="icon-chevron-right"></i></btn>
+				<button class="left" href="#myCarousel" data-slide="prev" tabindex="0"><i class="icon-chevron-left"></i></button>
+				<button class="pause" tabindex="0"><span class="icon">&#xf04c;</span></button>
+				<button class="right" href="#myCarousel" data-slide="next" tabindex="0"><i class="icon-chevron-right"></i></button>
 			</div>
 		</div>
 	</div>

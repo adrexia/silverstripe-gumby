@@ -45,7 +45,7 @@
 			pause: ""
 		});
 
-		$('.carousel').on('click','btn.pause',function(){
+		$('.carousel').on('click','button.pause',function(){
 			if($(this).closest('.carousel').hasClass('play')){
 				$(this).closest('.carousel').carousel('cycle').removeClass('play');
 				$(this).find('.icon').removeClass('icon-play-js').html('&#xf04c;');
