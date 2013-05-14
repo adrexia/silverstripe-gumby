@@ -15,7 +15,7 @@
 				</span>
 			</button>
 
-			<% cached 'menu1', ID, List(Page).max(LastEdited) %>
+			<% cached 'menu1', ID, List(SiteTree).max(LastEdited) %>
 				<div id="top-navigation" class="nav-collapse">
 					<nav role="navigation">
 						<h2 class="nonvisual-indicator">Main navigation</h2>

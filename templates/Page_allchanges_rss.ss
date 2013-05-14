@@ -5,7 +5,7 @@
 		<link>$Link</link>
 		<atom:link href="$Link" rel="self" type="application/rss+xml" />
 
-		<% cached 'page_allchanges_rss', List(Page).max(LastEdited) %>
+		<% cached 'page_allchanges_rss', List(SiteTree).max(LastEdited) %>
 			<% loop Entries %>
 				<item>
 					<title>$Title.XML</title>

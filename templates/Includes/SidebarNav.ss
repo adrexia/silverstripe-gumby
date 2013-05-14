@@ -1,4 +1,4 @@
-<% cached 'menu2', ID, List(Page).max(LastEdited) %>
+<% cached 'menu2', ID, List(SiteTree).max(LastEdited) %>
 <div class="sidebar-nav well">
 	<nav role="navigation">
 		<h2 class="nonvisual-indicator">Secondary Navigation</h2>
