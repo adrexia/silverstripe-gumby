@@ -7,6 +7,7 @@
 		</div>
 		$Form
 
+		<% cached 'sitemap', List(SiteTree).max(LastEdited) %>
 		<ul class="sitemap">
 			<% loop Menu(1) %>
 				<li data-pagetype="$ClassName" class="$FirstLast initial class-$ClassName">
@@ -14,6 +15,7 @@
 				</li>
 			<% end_loop %>
 		</ul>
+		<% end_cached %>
 
 		$PageComments
 	</div>
