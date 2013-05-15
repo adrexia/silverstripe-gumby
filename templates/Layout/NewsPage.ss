@@ -30,7 +30,7 @@
 			<div class="clearfix">
 				<% if FeaturedImage %>
 					<figure class="featured-image">
-						$FeaturedImage
+						$FeaturedImage.SetWidth(300)
 					</figure>
 				<% end_if %>
 				$Content.RichLinks
