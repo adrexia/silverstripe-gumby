@@ -1222,7 +1222,7 @@ li .icon-large:before {
 ul.icons {
   list-style-type: none;
   margin-left: 2em;
-  text-indent: -0.8em;
+  text-indent: -.8em;
 }
 ul.icons li [class^="icon-"],
 ul.icons li [class*=" icon-"] {
@@ -5348,8 +5348,11 @@ form .FormHeading {
   border-radius: 3px 3px 0 0;
   padding: 10px 19px;
 }
+form fieldset {
+  margin: 0;
+}
 form fieldset > div.field {
-  padding: 19px;
+  padding: 15px;
   margin: 0;
 }
 form fieldset > div.field.checkbox {
@@ -5374,14 +5377,6 @@ form fieldset > div.field.checkbox {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFAFAFA', endColorstr='#FFFFFFFF', GradientType=0);
 }
 
-.field {
-  margin: 15px 0;
-}
-
-fieldset {
-  margin: 0;
-}
-
 input,
 textarea,
 select,
@@ -5390,6 +5385,9 @@ select,
 }
 
 /*	Label formatting	*/
+label {
+  padding-top: 3px;
+}
 label.left {
   font-weight: bold;
   font-size: 1.2em;
@@ -6166,6 +6164,9 @@ header ul#lang li {
 }
 .carousel .carousel-interface .carousel-controls button:hover, .carousel .carousel-interface .carousel-controls button:active, .carousel .carousel-interface .carousel-controls button:focus {
   color: #0464ea;
+}
+#IE7 .carousel .carousel-interface .carousel-controls {
+  margin-top: 5px;
 }
 
 h2 a, h2 a:visited {

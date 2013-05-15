@@ -46,9 +46,13 @@ form{
 		padding:10px 19px;	
 	}
 
+	fieldset {
+		margin: 0;
+	}
+
 	fieldset > div.field{
-		padding: 19px;
-		margin:0;
+		padding: 15px;
+		margin: 0;
 		&.checkbox{
 			margin-left:19px;
 		}
@@ -66,13 +70,6 @@ form{
 	}
 }
 
-.field{
-	margin: 15px 0;
-}
-fieldset{
-	margin: 0;
-}
-
 input,
 textarea,
 select,
@@ -82,6 +79,7 @@ select,
 
 /*	Label formatting	*/
 label{
+	padding-top: 3px;
 	&.left{
 		font-weight: bold;
 		font-size:1.2em;
