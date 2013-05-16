@@ -6443,6 +6443,9 @@ iframe {
 #IE8 #layout ul.sitemap .page-toggle .button .toggleIco {
   color: gray;
 }
+#layout ul.sitemap .page-toggle .button.loading span.toggleIco {
+  background: url(../images/ajax-loader.gif) center bottom no-repeat;
+}
 
 /*Fixes for all media sizes*/
 /* ============================= */

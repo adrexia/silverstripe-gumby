@@ -219,6 +219,11 @@
 						color: lighten($textColor,30%);
 					}
 				}
+				&.loading{
+					.toggleIco{
+						background: url(../images/ajax-loader.gif) center bottom no-repeat;
+					}
+				}
 				&.open{
 					.toggleIco{						
 						@extend .icon-minus;

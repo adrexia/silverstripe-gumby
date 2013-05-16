@@ -32,9 +32,32 @@
 
 		$('form fieldset > div.field:odd').addClass('odd');
 
-		$('.page-toggle .button').click(function() {
-			$(this).toggleClass('open');
-			$(this).closest('li').toggleClass('open');
+		$('.sitemap').on('click', '.button', function() {
+			var self = $(this);
+			var target = $(self.attr('data-target'));
+
+			// only do an ajax request if the content isn't loaded
+			if(target.html().length == 0) {
+				self.addClass('loading');
+
+				$.ajax({
+					url: self.attr('href'),
+					data: { ajax: true }
+				}).done(function(data) {
+					target.html(data);
+					self.removeClass('loading');
+				});
+			}
+
+			self.toggleClass('open');
+
+			if(self.hasClass('open')) {
+				target.removeClass('collapse').addClass('collapsed');
+			} else {
+				target.removeClass('collapsed').addClass('collapse');
+			}
+
+			return false;
 		});
 
 		$('#print-placeholder').replaceWith('<button type="button" onclick="window.print(); return false;">Print</button>');

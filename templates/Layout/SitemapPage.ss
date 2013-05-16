@@ -7,15 +7,21 @@
 		</div>
 		$Form
 
-		<% cached 'sitemap', List(SiteTree).max(LastEdited) %>
 		<ul class="sitemap">
-			<% loop Menu(1) %>
+			<% if SelectedPage %>
+				<% loop SelectedPage.Children %>
 				<li data-pagetype="$ClassName" class="$FirstLast initial class-$ClassName">
 				<% include SitemapNode %>
 				</li>
-			<% end_loop %>
+				<% end_loop %>
+			<% else %>
+				<% loop Menu(1) %>
+				<li data-pagetype="$ClassName" class="$FirstLast initial class-$ClassName">
+				<% include SitemapNode %>
+				</li>
+				<% end_loop %>
+			<% end_if %>
 		</ul>
-		<% end_cached %>
 
 		$PageComments
 	</div>
