@@ -5544,6 +5544,7 @@ div.date img {
 
 /*Submit button styling */
 .Actions {
+  *zoom: 1;
   margin: 0;
   border-top: 1px solid gainsboro;
   background-color: #fdfdfd;
@@ -5563,6 +5564,13 @@ div.date img {
   -webkit-border-radius: 0 0 3px 3px;
   border-radius: 0 0 3px 3px;
 }
+.Actions:before, .Actions:after {
+  display: table;
+  content: "";
+}
+.Actions:after {
+  clear: both;
+}
 #IE8 .Actions {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFFAFAFA', GradientType=0);
 }
@@ -5570,6 +5578,16 @@ div.date img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0;
+}
+.Actions #MemberLoginForm_LoginForm_action_dologin {
+  float: left;
+}
+.Actions #ForgotPassword {
+  line-height: 2em;
+  font-size: 0.9em;
+}
+.Actions #ForgotPassword a {
+  padding-left: 30px;
 }
 
 /*
