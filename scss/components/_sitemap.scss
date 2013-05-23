@@ -66,7 +66,6 @@
 			display:block;
 			width:100%;
 			height:100%;
-			border:1px solid #fff;
 			.sitetree-icon{
 				margin:0 5px 0 15px;
 			}
@@ -90,9 +89,6 @@
 				text-indent:15px;
 				background:$grayLighter;//non rgba browsers
 				background-color:rgba($gray,0.1);
-				a.sitemap-link{
-					border:none;
-				}
 				#IE6 &{
 					border:none !important;
 					&.first, &.last{
