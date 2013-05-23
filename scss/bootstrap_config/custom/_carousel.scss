@@ -5,10 +5,14 @@
 //  - replace @ with $
 //  - replace . with @include for mixins
 
-.carousel {
+.layout .carousel {
   position: relative;
   margin-bottom: $baseLineHeight;
   line-height: 1;
+  //Override hover and focus in typography 
+  a:hover img, a:focus img{
+    border: none;
+  }
 }
 
 .carousel-inner {

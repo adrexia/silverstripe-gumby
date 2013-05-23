@@ -141,7 +141,7 @@ li .icon-large:before {
 ul.icons {
   list-style-type: none;
   margin-left: 2em;
-  text-indent: -0.8em;
+  text-indent: -.8em;
 }
 ul.icons li [class^="icon-"],
 ul.icons li [class*=" icon-"] {
@@ -2060,10 +2060,11 @@ EXPRESS TYPOGRAPHY
 }
 .typography a.external {
   padding-right: 13px;
-  background: url(../../../themes/default/images/icons/external-link.png) no-repeat right center;
+  display: inline-block;
+  background: url(../../../themes/default/images/icons/external-link.png) no-repeat right 0px;
 }
-.typography a img {
-  border: none;
+.typography a:hover img, .typography a:focus img {
+  border: 1px solid #0464ea;
 }
 .typography blockquote {
   border-left: 5px solid #EEEEEE;
