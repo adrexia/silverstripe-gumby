@@ -1625,11 +1625,11 @@ ul.icons li .icon-large:before {
   content: "\f066";
 }
 
-.icon-plus:before, #layout ul.sitemap .page-toggle .button .toggleIco:before {
+.icon-plus:before, .layout ul.sitemap .page-toggle .button .toggleIco:before {
   content: "\f067";
 }
 
-.icon-minus:before, #layout ul.sitemap .page-toggle .button.open .toggleIco:before {
+.icon-minus:before, .layout ul.sitemap .page-toggle .button.open .toggleIco:before {
   content: "\f068";
 }
 
@@ -2384,10 +2384,10 @@ ul.icons li .icon-large:before {
 #IE7 .icon-resize-small {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf066;&nbsp;');
 }
-#IE7 .icon-plus, #IE7 #layout ul.sitemap .page-toggle .button .toggleIco, #layout ul.sitemap .page-toggle .button #IE7 .toggleIco {
+#IE7 .icon-plus, #IE7 .layout ul.sitemap .page-toggle .button .toggleIco, .layout ul.sitemap .page-toggle .button #IE7 .toggleIco {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf067;&nbsp;');
 }
-#IE7 .icon-minus, #IE7 #layout ul.sitemap .page-toggle .button.open .toggleIco, #layout ul.sitemap .page-toggle .button.open #IE7 .toggleIco {
+#IE7 .icon-minus, #IE7 .layout ul.sitemap .page-toggle .button.open .toggleIco, .layout ul.sitemap .page-toggle .button.open #IE7 .toggleIco {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf068;&nbsp;');
 }
 #IE7 .icon-asterisk {
@@ -2851,7 +2851,7 @@ ul.icons li .icon-large:before {
   border-radius: 4px;
 }
 
-.well, #Form_Form, #layout ul.sitemap {
+.well, #Form_Form, .layout ul.sitemap {
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
@@ -2865,7 +2865,7 @@ ul.icons li .icon-large:before {
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
-.well blockquote, #Form_Form blockquote, #layout ul.sitemap blockquote {
+.well blockquote, #Form_Form blockquote, .layout ul.sitemap blockquote {
   border-color: #ddd;
   border-color: rgba(0, 0, 0, 0.15);
 }
@@ -5763,6 +5763,230 @@ ul.nav, ul.dropdown-menu {
   margin-right: -75px;
 }
 
+.layout ul.sitemap {
+  background: #fff;
+  list-style: none;
+  margin-left: 0;
+  padding: 0;
+}
+.no-js .layout ul.sitemap .collapse {
+  height: auto;
+}
+#IE9 .layout ul.sitemap .open .collapse {
+  height: auto;
+}
+#IE9 .layout ul.sitemap .open .collapse .page-toggle {
+  display: none;
+}
+.layout ul.sitemap li {
+  background: #fafafa;
+  background-color: rgba(247, 247, 247, 0.6);
+  background-image: -ms-linear-gradient(top, rgba(242, 242, 242, 0.6), rgba(255, 255, 255, 0.6));
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(242, 242, 242, 0.6)), to(rgba(255, 255, 255, 0.6)));
+  background-image: -webkit-linear-gradient(top, rgba(242, 242, 242, 0.6), rgba(255, 255, 255, 0.6));
+  background-image: -o-linear-gradient(top, rgba(242, 242, 242, 0.6), rgba(255, 255, 255, 0.6));
+  background-image: -moz-linear-gradient(top, rgba(242, 242, 242, 0.6), rgba(255, 255, 255, 0.6));
+  background-image: linear-gradient(top, rgba(242, 242, 242, 0.6), rgba(255, 255, 255, 0.6));
+  background-repeat: repeat-x;
+  border-top: 1px solid #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid rgba(85, 85, 85, 0.1);
+  border-left: none;
+  border-right: none;
+  z-index: 0;
+  position: relative;
+  line-height: 35px;
+}
+#IE6 .layout ul.sitemap li {
+  border-top: 1px solid white;
+  border-bottom: 1px solid #eeeeee;
+  padding: 8px 0;
+}
+#IE6 .layout ul.sitemap li .page-toggle {
+  display: none;
+}
+#IE6 .layout ul.sitemap li .collapse {
+  height: auto;
+}
+#IE8 .layout ul.sitemap li {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#99F2F2F2', endColorstr='#99FFFFFF', GradientType=0);
+}
+.layout ul.sitemap li.initial.first {
+  border-top: none;
+}
+.layout ul.sitemap li.initial.first > a.sitemap-link {
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+}
+.layout ul.sitemap li.initial.last > a.sitemap-link {
+  -moz-border-radius-topleft: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+}
+.layout ul.sitemap li a.sitemap-link {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 30px;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fff;
+}
+#IE6 .layout ul.sitemap li a.sitemap-link {
+  padding: 4px 0;
+}
+.layout ul.sitemap li a.sitemap-link img {
+  border: none;
+}
+.layout ul.sitemap li a.sitemap-link .sitetree-icon {
+  margin: 0 5px 0 15px;
+}
+.layout ul.sitemap li a.sitemap-link:hover {
+  color: #000;
+  text-decoration: none;
+  background: #d9d9d9;
+  background-color: rgba(85, 85, 85, 0.2);
+}
+.layout ul.sitemap li ul {
+  margin: 0;
+  list-style: none;
+  height: auto;
+  border: none;
+}
+.layout ul.sitemap li ul li {
+  border-top-color: #fff;
+  border-top-color: rgba(255, 255, 255, 0.8);
+  border-bottom-color: #e6e6e6;
+  border-bottom-color: rgba(166, 166, 166, 0.1);
+  text-indent: 15px;
+  background: #eeeeee;
+  background-color: rgba(85, 85, 85, 0.1);
+}
+.layout ul.sitemap li ul li a.sitemap-link {
+  border: none;
+}
+#IE6 .layout ul.sitemap li ul li {
+  border: none !important;
+}
+#IE6 .layout ul.sitemap li ul li.first, #IE6 .layout ul.sitemap li ul li.last {
+  border: none;
+}
+#IE6 .layout ul.sitemap li ul li li {
+  border: none;
+}
+#IE6 .layout ul.sitemap li ul li li.first, #IE6 .layout ul.sitemap li ul li li.last {
+  border: none;
+}
+.layout ul.sitemap li ul li.first {
+  border-top: 2px solid #e6e6e6;
+  border-top: 2px solid rgba(153, 153, 153, 0.1);
+}
+.layout ul.sitemap li ul li.last {
+  border-bottom: 2px solid #e6e6e6;
+  border-bottom: 2px solid rgba(153, 153, 153, 0.1);
+}
+.layout ul.sitemap li ul li li {
+  background: none;
+  border: none;
+  text-indent: 25px;
+}
+.layout ul.sitemap li ul li li.first, .layout ul.sitemap li ul li li.last {
+  border: none;
+}
+.layout ul.sitemap li ul li li li {
+  text-indent: 35px;
+}
+.layout ul.sitemap li ul li li li li {
+  text-indent: 45px;
+}
+.layout ul.sitemap li ul li li li li li {
+  text-indent: 55px;
+}
+.layout ul.sitemap li ul li li li li li li {
+  text-indent: 65px;
+}
+.layout ul.sitemap li ul li li li li li li li {
+  text-indent: 75px;
+}
+.layout ul.sitemap li ul li li li li li li li li {
+  text-indent: 85px;
+  background-color: rgba(85, 85, 85, 0.2);
+}
+#IE9 .layout ul.sitemap li ul li li li li li li li li {
+  background: none;
+}
+#IE9 .layout ul.sitemap li ul li li li li li li li li.first, #IE9 .layout ul.sitemap li ul li li li li li li li li.last {
+  border: none;
+}
+.layout ul.sitemap li ul li li li li li li li li.first {
+  border-top: #555555;
+  border-top: 2px solid rgba(153, 153, 153, 0.5);
+}
+.layout ul.sitemap li ul li li li li li li li li.last {
+  border-bottom: 2px solid rgba(153, 153, 153, 0.5);
+}
+.layout ul.sitemap li ul li li li li li li li li .in li {
+  border: none;
+}
+.layout ul.sitemap li ul li li li li li li li li li {
+  background: none;
+  border: none;
+}
+#IE9 .layout ul.sitemap li ul li li li li li li li li li {
+  padding-left: 10px;
+}
+.layout ul.sitemap li ul li li li li li li li li li.last, .layout ul.sitemap li ul li li li li li li li li li.first {
+  border: none;
+}
+.layout ul.sitemap .page-toggle {
+  text-indent: 0;
+  left: 0px;
+  top: 0px;
+  z-index: 5;
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 36px;
+}
+.layout ul.sitemap .page-toggle .button {
+  margin-left: 10px;
+  display: block;
+}
+.layout ul.sitemap .page-toggle .button:hover {
+  cursor: pointer;
+}
+.layout ul.sitemap .page-toggle .button:hover .toggleIco {
+  opacity: 0.7;
+}
+#IE8 .layout ul.sitemap .page-toggle .button:hover .toggleIco {
+  color: #333333;
+}
+.layout ul.sitemap .page-toggle .button .toggleIco {
+  text-decoration: none;
+  color: #000;
+  margin-top: 2px;
+  opacity: 0.3;
+  height: 20px;
+  width: 20px;
+}
+#IE8 .layout ul.sitemap .page-toggle .button .toggleIco {
+  color: gray;
+}
+.layout ul.sitemap .page-toggle .button.loading .toggleIco {
+  background: url(../images/ajax-loader.gif) center bottom no-repeat;
+}
+
 /* 
 * Styling for results and pagination. 
 * Can be used on search results, news listings, etc 
@@ -6211,234 +6435,6 @@ iframe {
 
 .icon-small {
   font-size: 1em;
-}
-
-/* Include  within layout tag to override typography styles*/
-#layout {
-  /**********		Sitemap 	**************/
-}
-#layout ul.sitemap {
-  background: #fff;
-  list-style: none;
-  margin-left: 0;
-  padding: 0;
-}
-.no-js #layout ul.sitemap .collapse {
-  height: auto;
-}
-#IE9 #layout ul.sitemap .open .collapse {
-  height: auto;
-}
-#IE9 #layout ul.sitemap .open .collapse .page-toggle {
-  display: none;
-}
-#layout ul.sitemap li {
-  background: #fafafa;
-  background-color: rgba(247, 247, 247, 0.6);
-  background-image: -ms-linear-gradient(top, rgba(242, 242, 242, 0.6), rgba(255, 255, 255, 0.6));
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(242, 242, 242, 0.6)), to(rgba(255, 255, 255, 0.6)));
-  background-image: -webkit-linear-gradient(top, rgba(242, 242, 242, 0.6), rgba(255, 255, 255, 0.6));
-  background-image: -o-linear-gradient(top, rgba(242, 242, 242, 0.6), rgba(255, 255, 255, 0.6));
-  background-image: -moz-linear-gradient(top, rgba(242, 242, 242, 0.6), rgba(255, 255, 255, 0.6));
-  background-image: linear-gradient(top, rgba(242, 242, 242, 0.6), rgba(255, 255, 255, 0.6));
-  background-repeat: repeat-x;
-  border-style: solid;
-  border-width: 1px;
-  border-top-color: #fff;
-  border-top-color: rgba(255, 255, 255, 0.5);
-  border-bottom-color: #eeeeee;
-  border-bottom-color: rgba(85, 85, 85, 0.1);
-  border-left: none;
-  border-right: none;
-  z-index: 0;
-  position: relative;
-  line-height: 35px;
-}
-#IE6 #layout ul.sitemap li, #IE7 #layout ul.sitemap li {
-  border-top: 1px solid white;
-  border-bottom: 1px solid #eeeeee;
-  padding: 8px 0;
-}
-#IE6 #layout ul.sitemap li .page-toggle, #IE7 #layout ul.sitemap li .page-toggle {
-  display: none;
-}
-#IE6 #layout ul.sitemap li .collapse, #IE7 #layout ul.sitemap li .collapse {
-  height: auto;
-}
-#IE8 #layout ul.sitemap li {
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#99F2F2F2', endColorstr='#99FFFFFF', GradientType=0);
-}
-#layout ul.sitemap li.initial.first {
-  border-top: none;
-}
-#layout ul.sitemap li.initial.first > a.sitemap-link {
-  -moz-border-radius-topleft: 5px;
-  -moz-border-radius-topright: 5px;
-  -moz-border-radius-bottomright: 0;
-  -moz-border-radius-bottomleft: 0;
-  -webkit-border-radius: 5px 5px 0 0;
-  border-radius: 5px 5px 0 0;
-}
-#layout ul.sitemap li.initial.last > a.sitemap-link {
-  -moz-border-radius-topleft: 0;
-  -moz-border-radius-topright: 0;
-  -moz-border-radius-bottomright: 5px;
-  -moz-border-radius-bottomleft: 5px;
-  -webkit-border-radius: 0 0 5px 5px;
-  border-radius: 0 0 5px 5px;
-}
-#layout ul.sitemap li a.sitemap-link {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  padding-left: 30px;
-  z-index: 1;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-#IE6 #layout ul.sitemap li a.sitemap-link {
-  padding: 4px 0;
-}
-#layout ul.sitemap li a.sitemap-link img {
-  border: none;
-}
-#layout ul.sitemap li a.sitemap-link .sitetree-icon {
-  margin: 0 5px 0 15px;
-}
-#layout ul.sitemap li a.sitemap-link:hover {
-  color: #000;
-  text-decoration: none;
-  background-color: #d9d9d9;
-  background-color: rgba(85, 85, 85, 0.2);
-}
-#layout ul.sitemap li ul {
-  margin: 0;
-  list-style: none;
-  height: auto;
-  border: none;
-}
-#layout ul.sitemap li ul li {
-  border-top-color: rgba(255, 255, 255, 0.8);
-  border-bottom-color: #cccccc;
-  border-bottom-color: rgba(166, 166, 166, 0.1);
-  text-indent: 15px;
-  background-color: rgba(85, 85, 85, 0.3);
-}
-#IE9 #layout ul.sitemap li ul li {
-  background-color: #eeeeee;
-}
-#IE6 #layout ul.sitemap li ul li, #IE7 #layout ul.sitemap li ul li {
-  overflow: hidden;
-  border: none !important;
-}
-#IE6 #layout ul.sitemap li ul li.first, #IE6 #layout ul.sitemap li ul li.last, #IE7 #layout ul.sitemap li ul li.first, #IE7 #layout ul.sitemap li ul li.last {
-  border: none;
-}
-#IE6 #layout ul.sitemap li ul li li, #IE7 #layout ul.sitemap li ul li li {
-  border: none;
-}
-#IE6 #layout ul.sitemap li ul li li.first, #IE6 #layout ul.sitemap li ul li li.last, #IE7 #layout ul.sitemap li ul li li.first, #IE7 #layout ul.sitemap li ul li li.last {
-  border: none;
-}
-#layout ul.sitemap li ul li.first {
-  border-top: 2px solid #eeeeee;
-  border-top: 2px solid rgba(153, 153, 153, 0.1);
-}
-#layout ul.sitemap li ul li.last {
-  border-bottom: 2px solid #eeeeee;
-  border-bottom: 2px solid rgba(153, 153, 153, 0.1);
-}
-#layout ul.sitemap li ul li li {
-  background: none;
-  border: none;
-  text-indent: 25px;
-}
-#layout ul.sitemap li ul li li.first, #layout ul.sitemap li ul li li.last {
-  border: none;
-}
-#layout ul.sitemap li ul li li li {
-  text-indent: 35px;
-}
-#layout ul.sitemap li ul li li li li {
-  text-indent: 45px;
-}
-#layout ul.sitemap li ul li li li li li {
-  text-indent: 55px;
-}
-#layout ul.sitemap li ul li li li li li li {
-  text-indent: 65px;
-}
-#layout ul.sitemap li ul li li li li li li li {
-  text-indent: 75px;
-}
-#layout ul.sitemap li ul li li li li li li li li {
-  text-indent: 85px;
-  background-color: rgba(85, 85, 85, 0.2);
-}
-#IE9 #layout ul.sitemap li ul li li li li li li li li {
-  background: none;
-}
-#IE9 #layout ul.sitemap li ul li li li li li li li li.first, #IE9 #layout ul.sitemap li ul li li li li li li li li.last {
-  border: none;
-}
-#layout ul.sitemap li ul li li li li li li li li.first {
-  border-top: #555555;
-  border-top: 2px solid rgba(153, 153, 153, 0.5);
-}
-#layout ul.sitemap li ul li li li li li li li li.last {
-  border-bottom: 2px solid rgba(153, 153, 153, 0.5);
-}
-#layout ul.sitemap li ul li li li li li li li li .in li {
-  border: none;
-}
-#layout ul.sitemap li ul li li li li li li li li li {
-  background: none;
-  border: none;
-}
-#IE9 #layout ul.sitemap li ul li li li li li li li li li {
-  padding-left: 10px;
-}
-#layout ul.sitemap li ul li li li li li li li li li.last, #layout ul.sitemap li ul li li li li li li li li li.first {
-  border: none;
-}
-#layout ul.sitemap .page-toggle {
-  text-indent: 0;
-  left: 0px;
-  top: 0px;
-  z-index: 5;
-  position: absolute;
-  display: inline-block;
-  width: 40px;
-  height: 36px;
-}
-#layout ul.sitemap .page-toggle .button {
-  margin-left: 10px;
-  display: block;
-}
-#layout ul.sitemap .page-toggle .button:hover {
-  cursor: pointer;
-}
-#layout ul.sitemap .page-toggle .button:hover .toggleIco {
-  opacity: 0.7;
-}
-#IE8 #layout ul.sitemap .page-toggle .button:hover .toggleIco {
-  color: #333333;
-}
-#layout ul.sitemap .page-toggle .button .toggleIco {
-  text-decoration: none;
-  color: #000;
-  margin-top: 2px;
-  opacity: 0.3;
-  height: 20px;
-  width: 20px;
-}
-#IE8 #layout ul.sitemap .page-toggle .button .toggleIco {
-  color: gray;
-}
-#layout ul.sitemap .page-toggle .button.loading .toggleIco {
-  background: url(../images/ajax-loader.gif) center bottom no-repeat;
 }
 
 /*Fixes for all media sizes*/

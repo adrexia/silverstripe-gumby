@@ -433,12 +433,6 @@ iframe {
 }
 
 
-/* Include  within layout tag to override typography styles*/
-#layout{ 
-	@include sitemap;
-}
-
-
 /*Fixes for all media sizes*/
 @include mediaSizes;
 
