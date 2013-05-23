@@ -52,13 +52,13 @@ EXPRESS TYPOGRAPHY
 	a {
 		&.external {
 			padding-right: 13px;
-			background: url(../../../themes/default/images/icons/external-link.png) no-repeat right center;
+			display:inline-block;
+			background: url(../../../themes/default/images/icons/external-link.png) no-repeat right 0px;
 		}
-		img{
-			border:none;
+		&:hover img, &:focus img{
+			border: 1px solid $linkColor;
 		}
 	}
-
 
 	blockquote {
 		border-left: 5px solid #EEEEEE;
