@@ -214,6 +214,7 @@ div.date{
 
 /*Submit button styling */
 .Actions{
+	@include clearfix;
 	margin:0;
 	border-top:1px solid darken(#f5f5f5,10%);
 	@include gradient-vertical(#fff,darken(#ffffff,2%));
@@ -230,4 +231,17 @@ div.date{
 			@extend .btn-primary;
 		}
 	}
+	#MemberLoginForm_LoginForm_action_dologin{
+		float:left;
+	}
+	#ForgotPassword{
+		line-height:2em;
+		font-size:0.9em;
+		a{
+			padding-left:30px;
+		}
+		
+	}
 }
+
+
