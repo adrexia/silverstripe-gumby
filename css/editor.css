@@ -1648,6 +1648,7 @@ EXPRESS TYPOGRAPHY
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* Highlighting for search results titles and content snippets. */
   /*** LINK ICONS ***/
+  /* Media insert formatting  (Youtube embed) */
   /*** Image formatting ***/
 }
 .typography p {
@@ -2117,6 +2118,26 @@ EXPRESS TYPOGRAPHY
 .typography .application {
   padding-left: 22px;
   background: url(../../../themes/default/images/icons/application.png) no-repeat left 0;
+}
+.typography .media.center {
+  margin: 0 auto;
+  text-align: center;
+}
+.typography .media.left {
+  float: left;
+  clear: left;
+  margin: 0 18px 18px 0px;
+}
+.typography .media.leftAlone {
+  margin: 0 18px 18px 0;
+  float: none;
+  display: block;
+  clear: both;
+}
+.typography .media.right {
+  float: right;
+  clear: right;
+  margin: 0 0 18px 18px;
 }
 .typography img {
   max-width: 100%;
