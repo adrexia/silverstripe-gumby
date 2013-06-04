@@ -148,9 +148,9 @@
 								 					border:none;
 								 				}
 								 			}	
-											li{	
+											li{
 												#IE9 &{
-													padding-left:10px;					
+													padding-left:10px;
 												}	
 												background: none;
 												border:none;
@@ -164,8 +164,12 @@
 							}
 						}
 					}
-				}				
+				}
 			}
+		}
+		div.collapse a,
+		div.collapse .page-toggle a.button {
+			display: none;
 		}
 	}
 	.page-toggle{

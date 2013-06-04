@@ -1222,7 +1222,7 @@ li .icon-large:before {
 ul.icons {
   list-style-type: none;
   margin-left: 2em;
-  text-indent: -.8em;
+  text-indent: -0.8em;
 }
 ul.icons li [class^="icon-"],
 ul.icons li [class*=" icon-"] {
@@ -5962,6 +5962,10 @@ ul.nav, ul.dropdown-menu {
 }
 .layout ul.sitemap li ul li li li li li li li li li.last, .layout ul.sitemap li ul li li li li li li li li li.first {
   border: none;
+}
+.layout ul.sitemap li div.collapse a,
+.layout ul.sitemap li div.collapse .page-toggle a.button {
+  display: none;
 }
 .layout ul.sitemap .page-toggle {
   text-indent: 0;
