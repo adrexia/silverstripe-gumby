@@ -1,6 +1,6 @@
 <% if Children %>
 	<div class="page-toggle">
-		<a href="{$CurrentPage.Link}page/$ID<% loop Parents %>$ID<% end_loop %>" class="button" data-toggle="collapse" data-target="#children-$ID">
+		<a href="{$CurrentPage.Link}page/$ID<% loop Parents %>$ID<% end_loop %>" class="button" data-toggle="collapse" data-target="#children-$ID" tabindex="0" label="Expand $Title">
 			<span class="toggleIco icon-plus"></span>
 		</a>
 	</div>

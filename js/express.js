@@ -51,10 +51,14 @@
 
 			self.toggleClass('open');
 
+			var label = self.attr('label');
+			var pageName = label.substring(label.indexOf(' '));
 			if(self.hasClass('open')) {
 				target.removeClass('collapse').addClass('collapsed');
+				self.attr('label', 'Collapse ' + pageName);
 			} else {
 				target.removeClass('collapsed').addClass('collapse');
+				self.attr('label', 'Expand ' + pageName);
 			}
 
 			return false;
