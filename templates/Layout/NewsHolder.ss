@@ -47,7 +47,7 @@
 			<% end_with %>
 		</div>
 	</div>
-	<div class="span9 resultsList" role="main">
+	<div id="main" class="span9 resultsList" role="main">
 		<h1 class="page-header">$Title</h1>
 
 		<div class="clearfix">

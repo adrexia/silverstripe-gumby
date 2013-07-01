@@ -45,9 +45,10 @@
 </head>
 
 <body data-spy="scroll">
+	
 	<% include Header %>
 	<% include MainNav %>
-	
+
 	<div class="container typography layout" id="layout">
 		$Layout
 		<hr />

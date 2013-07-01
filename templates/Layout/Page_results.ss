@@ -1,5 +1,5 @@
 <div class="row">
-	<div class="span12 resultsList" role="main">
+	<div id="main" class="span12 resultsList" role="main">
 		<h1 class="searchQuery page-header">Search results</h1>
 
 		<% if Results %>

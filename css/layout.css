@@ -6192,11 +6192,11 @@ body {
 header .brand {
   font-size: 3em;
   font-weight: bold;
-  padding-bottom: 18px;
   overflow: visible;
   line-height: 1em;
   float: left;
-  margin-top: 0.67em;
+  margin-top: 18px;
+  padding-bottom: 18px;
   margin-bottom: 0;
 }
 #IE6 header .brand, #IE7 header .brand {
@@ -7244,4 +7244,31 @@ footer .socialLinks a:hover i:before {
 }
 #comments-holder .comments-holder li.comment ul.action-links li:last-of-type {
   margin-right: 0;
+}
+
+/**
+ * Accessibility Skiplinks for screen readers 
+ * allow users to bypass content recurring on every page to access the menu or the content directly
+ */
+header {
+  position: relative;
+}
+
+.skipLinks {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 20px;
+  top: 0;
+}
+.skipLinks li {
+  display: inline-block;
+  padding-right: 30px;
+}
+.skipLinks li a {
+  color: #fff;
+}
+.skipLinks li a:focus, .skipLinks li a:active {
+  color: #0464ea;
 }

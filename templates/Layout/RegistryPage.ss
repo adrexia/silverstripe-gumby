@@ -9,7 +9,7 @@
 		</div>
 	</div>
 	<div class="span9">
-		<div role="main">
+		<div id="main" role="main">
 			<h1 class="page-header">$Title</h1>
 
 			<div class="clearfix">

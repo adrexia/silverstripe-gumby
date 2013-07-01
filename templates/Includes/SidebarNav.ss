@@ -1,5 +1,5 @@
 <div class="sidebar-nav well">
-	<nav role="navigation">
+	<nav id="pageNav" role="navigation">
 		<h2 class="nonvisual-indicator">Secondary Navigation</h2>
 		<ul class="nav nav-list">
 			<% loop Menu(2) %>

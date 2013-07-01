@@ -106,11 +106,11 @@ header {
 		@extend h1;
 		font-size: 3em;
 		font-weight:bold;
-		padding-bottom: 18px;
 		overflow:visible;
 		line-height:1em;
 		float: left;
-		margin-top: 0.67em;
+		margin-top: 18px;
+		padding-bottom: 18px;
 		margin-bottom: 0;
 		a {
 			position: relative;
@@ -770,6 +770,27 @@ footer {
 					}
 				}
 			}
+		}
+	}
+}
+
+/**
+ * Accessibility Skiplinks for screen readers 
+ * allow users to bypass content recurring on every page to access the menu or the content directly
+ */
+header { position: relative; }
+.skipLinks {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left:20px;
+	top:0;
+	li { 
+		display: inline-block; 
+		padding-right: 30px; 
+		a { color: #fff; 
+			&:focus, &:active {color: $linkColor;} 
 		}
 	}
 }

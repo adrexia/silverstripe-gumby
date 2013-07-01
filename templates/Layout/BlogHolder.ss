@@ -8,7 +8,7 @@
 				<% include BlogSideBar %>
 			</div>
 		</div>
-		<div class="span9">
+		<div id="main" class="span9">
 			<% if SelectedTag %>
 				<h3><% _t('VIEWINGTAGGED', 'Viewing entries tagged with') %> '$SelectedTag'</h3>
 			<% else_if SelectedDate %>

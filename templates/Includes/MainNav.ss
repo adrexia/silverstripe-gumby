@@ -1,4 +1,4 @@
-<div class="navbar noCorners">
+<div id="mainNav" class="navbar noCorners">
 	<div class="navbar-inner">
 		<div class="container">
 			<div id="SearchGroup">

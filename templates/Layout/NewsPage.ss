@@ -1,6 +1,6 @@
 <div class="row">
 	<% include Breadcrumbs %>
-	<div role="main">
+	<div id="main" role="main">
 		<div class="span3">
 			<div class="well update-information">
 				<h2 class="nonvisual-indicator">News item information</h2>
