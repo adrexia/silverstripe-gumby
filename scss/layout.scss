@@ -409,18 +409,47 @@ iframe {
 	border: 0;
 }
 
-/* Facebook and Twitter links */
-.socialLinks{ 
-	overflow:visible;
-	font-size:2em;
-	line-height:1em;
-	a{
-		overflow:visible;
-		z-index:5;
-		position:relative;
-		text-shadow: lighten(rgba(#000,0.1), 10%) 1px 1px 0;
+
+
+footer {
+	.nav {
+		margin-top: 2px;
+	}
+	.footer-logo {
+		clear: both;
+	}
+	
+	/* Facebook and Twitter links */
+	.socialLinks {
+		margin-bottom: 20px;
+		a{
+			overflow:visible;
+			z-index:5;
+			position:relative;
+			text-shadow: lighten(rgba(#000,0.1), 10%) 1px 1px 0;
+			margin-left: 20px;
+			display: inline-block;
+			i {
+				overflow:visible;
+				font-size:2em;
+				line-height:1em;
+				margin-right: 10px;
+				&:before {
+					margin-top: 10px;
+					vertical-align: middle;
+				}
+			}
+			&:hover i {
+				text-decoration: none;
+				&:before {
+					color: $linkColorHover;
+				}
+			}
+		}
 	}
 }
+
+
 
 /*Helper classes to customise icons*/
 .icon-dark{
@@ -429,8 +458,8 @@ iframe {
 		color: $textColor;
 	}
 	&:hover{
-		color: darken($linkColor,5%);
-		text-decoration:none;
+		color: $linkColorHover;
+		text-decoration: none;
 	}
 } 
 .icon-small{

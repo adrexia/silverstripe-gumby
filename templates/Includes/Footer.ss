@@ -1,18 +1,8 @@
 <footer class="container" role="contentinfo">
 	<h2 class="nonvisual-indicator">Footer</h2>
 
-	<% if SiteConfig.FacebookURL || SiteConfig.TwitterUsername %>
-		<aside class="socialLinks pull-right" role="complementary">
-			<% if SiteConfig.TwitterUsername %>
-				<a title="Follow us on Twitter" href="http://www.twitter.com/$SiteConfig.TwitterUsername" target="_blank" class="icon-dark icon-small icon-twitter-sign"></a>
-			<% end_if %>
-			<% if SiteConfig.FacebookURL %>
-				<a title="Join us on Facebook" href="http://www.facebook.com/$SiteConfig.FacebookURL" target="_blank" class="icon-dark icon-small icon-facebook-sign"></a>
-			<% end_if %>
-		</aside>
-	<% end_if %>
 	<% if Footer %>
-		<ul class="nav nav-pills">
+		<ul class="nav nav-pills pull-left">
 			<% with Footer %>
 				<% loop Children %>
 					<li class="$LinkingMode<% if $LinkingMode = current %> active<% end_if %>">
@@ -25,11 +15,18 @@
 		</ul>
 	<% end_if %>
 
-	<div class="pull-left footer-copyright">
-		<p><small>$SiteConfig.Title &copy; $CurrentDatetime.Format(Y)</small></p>
-	</div>
+	<% if SiteConfig.FacebookURL || SiteConfig.TwitterUsername %>
+		<aside class="socialLinks pull-right" role="complementary">
+			<% if SiteConfig.TwitterUsername %>
+				<a title="Follow us on Twitter" href="http://www.twitter.com/$SiteConfig.TwitterUsername" target="_blank"><i class="icon-twitter-sign icon-dark"></i>Follow us on Twitter</a>
+			<% end_if %>
+			<% if SiteConfig.FacebookURL %>
+				<a title="Join us on Facebook" href="http://www.facebook.com/$SiteConfig.FacebookURL" target="_blank"><i class="icon-dark icon-facebook-sign"></i>Join us on Facebook</a>
+			<% end_if %>
+		</aside>
+	<% end_if %>
 
-	<div class="pull-right footer-logo">
+	<div class="footer-logo">
 		<% if SiteConfig.FooterLogo %>
 			<% if SiteConfig.FooterLogoLink %>
 				<a href="$SiteConfig.FooterLogoLink">
@@ -43,6 +40,10 @@
 				<img src="$ThemeDir/images/logo-btext-wbg.gif" width="150" height="40" alt="newzealand.govt.nz - connecting you to New Zealand central &amp; local government services" title="newzealand.govt.nz - connecting you to New Zealand central &amp; local government services" />
 			</a>
 		<% end_if %>
+	</div>
+	
+	<div class="footer-copyright">
+		<p><small>$SiteConfig.Title &copy; $CurrentDatetime.Format(Y)</small></p>
 	</div>
 	
 </footer>

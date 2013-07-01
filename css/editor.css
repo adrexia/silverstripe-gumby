@@ -2192,7 +2192,7 @@ EXPRESS TYPOGRAPHY
   margin: 0 0 5px 0;
 }
 .typography table caption {
-  font-style: italic;
+  text-align: left;
 }
 .typography table thead, .typography table tfoot {
   font-weight: 700;

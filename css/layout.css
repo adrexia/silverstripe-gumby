@@ -807,7 +807,7 @@ input[type="checkbox"][readonly] {
 .control-group.error .input-prepend .add-on,
 .control-group.error .input-append .add-on {
   color: #b94a48;
-  background-color: #f2dede;
+  background-color: #fcf6f6;
   border-color: #b94a48;
 }
 
@@ -3529,8 +3529,8 @@ input[type="submit"].btn.btn-mini,
 
 .alert-danger,
 .alert-error {
-  background-color: #f2dede;
-  border-color: #eed3d7;
+  background-color: #fcf6f6;
+  border-color: #f6e3e6;
   color: #b94a48;
 }
 
@@ -5265,8 +5265,8 @@ a.label:hover, a.badge:hover {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  background: #f2dede;
-  border: 1px solid #eed3d7;
+  background: #fcf6f6;
+  border: 1px solid #f6e3e6;
   color: #b94a48;
 }
 .message.good, .message.success {
@@ -5423,7 +5423,7 @@ label.required {
 }
 
 .requiredField label.left:after {
-  color: #9d261d;
+  color: #b94a48;
   content: "*";
   font-size: 14px;
   font-weight: normal;
@@ -5598,7 +5598,7 @@ div.date img {
   padding-left: 30px;
 }
 .Actions:after {
-  color: #9d261d;
+  color: #b94a48;
   content: "Required fields *";
   font-weight: normal;
   padding-top: 5px;
@@ -6064,7 +6064,7 @@ ul.nav, ul.dropdown-menu {
   margin-left: -10px;
 }
 .resultsList article {
-  padding: 5px 10px;
+  padding: 5px 0;
   border-bottom: 1px solid #f6f6f6;
   *zoom: 1;
 }
@@ -6457,17 +6457,41 @@ iframe {
   border: 0;
 }
 
-/* Facebook and Twitter links */
-.socialLinks {
-  overflow: visible;
-  font-size: 2em;
-  line-height: 1em;
+footer {
+  /* Facebook and Twitter links */
 }
-.socialLinks a {
+footer .nav {
+  margin-top: 2px;
+}
+footer .footer-logo {
+  clear: both;
+}
+footer .socialLinks {
+  margin-bottom: 20px;
+}
+footer .socialLinks a {
   overflow: visible;
   z-index: 5;
   position: relative;
   text-shadow: rgba(26, 26, 26, 0.1) 1px 1px 0;
+  margin-left: 20px;
+  display: inline-block;
+}
+footer .socialLinks a i {
+  overflow: visible;
+  font-size: 2em;
+  line-height: 1em;
+  margin-right: 10px;
+}
+footer .socialLinks a i:before {
+  margin-top: 10px;
+  vertical-align: middle;
+}
+footer .socialLinks a:hover i {
+  text-decoration: none;
+}
+footer .socialLinks a:hover i:before {
+  color: #03449f;
 }
 
 /*Helper classes to customise icons*/
@@ -6478,7 +6502,7 @@ iframe {
   color: #333333;
 }
 .icon-dark:hover {
-  color: #0459d1;
+  color: #03449f;
   text-decoration: none;
 }
 
@@ -7107,8 +7131,7 @@ iframe {
 .sidebar-form div.field label {
   font-size: 1.0em;
   clear: left;
-  float: left;
-  margin-right: 10px;
+  float: none;
 }
 .sidebar-form div.field .field-note {
   clear: both;
@@ -7124,9 +7147,6 @@ iframe {
 }
 #IE6 .sidebar-form div.field input, #IE6 .sidebar-form div.field select {
   height: 20px;
-}
-.sidebar-form div.field.date label {
-  width: 3em;
 }
 .sidebar-form div.field.date input {
   width: 7.7em;
