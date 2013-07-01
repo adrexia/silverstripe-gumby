@@ -42,6 +42,11 @@ body {
 	float: right;
 	.navbar-search .search-query{
 		line-height:1.3em;
+		background-color: #FFF;
+		color: $textColor; 
+		&:focus {
+			background-color: #FFF;
+		}
 	}
 	/* search container takes 100% width by default when floated right in IE7 */
 	#IE6 &,
@@ -82,7 +87,7 @@ body {
 		input.btn-navbar {
 			float: none;
 			display: inline;
-			color: #C7C7C7;
+			@include gradientBar(#FFF, #E6E6E6);
 			text-shadow: none;
 			padding-top: 4px;
 			padding-bottom: 3px;
@@ -589,24 +594,18 @@ iframe {
 
 .sidebar-form {
 	padding: 9px 0;
-
 	#IE6 & {
 		padding-bottom: 40px;
 	}
-
 	form {
 		margin-bottom: 10px;
 	}
-
 	div.field {
 		padding: 14px;
-	}
-	div.field {
 		label {
 			font-size: 1.0em;
 			clear: left;
-			float: left;
-			margin-right: 10px;
+			float: none;
 		}
 		.field-note {
 			clear: both;
@@ -614,27 +613,18 @@ iframe {
 			font-size: 0.9em;
 			max-width: 170px;
 		}
-
 		input, select {
 			#IE6 & {
 				height: 20px;
 			}
-
 			float: right;
 			width: 12em;
 			max-width: 100%;
 			margin-top: -5px;
 		}
-
-		&.date {
-			label {
-				width: 3em;
-			}
-
-			input {
-				width: 7.7em;
-				float: left;
-			}
+		&.date input {
+			width: 7.7em;
+			float: left;
 		}
 	}
 

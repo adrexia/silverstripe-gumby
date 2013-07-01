@@ -179,7 +179,7 @@ a {
   text-decoration: none;
 }
 a:visited {
-  color: #03449f;
+  color: purple;
 }
 a:hover {
   color: #03449f;
@@ -3122,29 +3122,29 @@ button.close {
 }
 
 .btn-primary, .Actions .action.primary {
-  background-color: #03349f;
-  background-image: -ms-linear-gradient(top, #03449f, #031d9f);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#03449f), to(#031d9f));
-  background-image: -webkit-linear-gradient(top, #03449f, #031d9f);
-  background-image: -o-linear-gradient(top, #03449f, #031d9f);
-  background-image: -moz-linear-gradient(top, #03449f, #031d9f);
-  background-image: linear-gradient(top, #03449f, #031d9f);
+  background-color: #800073;
+  background-image: -ms-linear-gradient(top, purple, #800060);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(purple), to(#800060));
+  background-image: -webkit-linear-gradient(top, purple, #800060);
+  background-image: -o-linear-gradient(top, purple, #800060);
+  background-image: -moz-linear-gradient(top, purple, #800060);
+  background-image: linear-gradient(top, #800080, #800060);
   background-repeat: repeat-x;
-  border-color: #031d9f #031d9f #010f54;
+  border-color: #800060 #800060 #340027;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #031d9f;
+  *background-color: #800060;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 #IE8 .btn-primary, #IE8 .Actions .action.primary, .Actions #IE8 .action.primary {
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF03449F', endColorstr='#FF031D9F', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF800080', endColorstr='#FF800060', GradientType=0);
 }
 .btn-primary:hover, .Actions .action.primary:hover, .btn-primary:active, .Actions .action.primary:active, .btn-primary.active, .Actions .active.action.primary, .btn-primary.disabled, .Actions .disabled.action.primary, .btn-primary[disabled], .Actions [disabled].action.primary {
-  background-color: #031d9f;
-  *background-color: #021886;
+  background-color: #800060;
+  *background-color: #67004d;
 }
 .btn-primary:active, .Actions .action.primary:active, .btn-primary.active, .Actions .active.action.primary {
-  background-color: #02146d \9;
+  background-color: #4d003a \9;
 }
 
 .btn-warning {
@@ -3437,7 +3437,7 @@ input[type="submit"].btn.btn-mini,
   background-color: #e6e6e6;
 }
 .btn-group.open .btn-primary.dropdown-toggle, .btn-group.open .Actions .dropdown-toggle.action.primary, .Actions .btn-group.open .dropdown-toggle.action.primary {
-  background-color: #031d9f;
+  background-color: #800060;
 }
 .btn-group.open .btn-warning.dropdown-toggle {
   background-color: #f89406;
@@ -5422,6 +5422,14 @@ label.required {
   max-width: 100%;
 }
 
+.requiredField label.left:after {
+  color: #9d261d;
+  content: "*";
+  font-size: 14px;
+  font-weight: normal;
+  padding-left: 3px;
+}
+
 /**
 * Form fields formatting
 **/
@@ -5588,6 +5596,12 @@ div.date img {
 }
 .Actions #ForgotPassword a {
   padding-left: 30px;
+}
+.Actions:after {
+  color: #9d261d;
+  content: "Required fields *";
+  font-weight: normal;
+  padding-top: 5px;
 }
 
 /*
@@ -6122,6 +6136,11 @@ body {
 }
 #SearchGroup .navbar-search .search-query {
   line-height: 1.3em;
+  background-color: #FFF;
+  color: #333333;
+}
+#SearchGroup .navbar-search .search-query:focus {
+  background-color: #FFF;
 }
 #IE6 #SearchGroup, #IE7 #SearchGroup {
   width: 25%;
@@ -6151,10 +6170,22 @@ body {
 #SearchGroup form input.btn-navbar {
   float: none;
   display: inline;
-  color: #C7C7C7;
+  background-color: whitesmoke;
+  background-image: -ms-linear-gradient(top, white, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, white, #e6e6e6);
+  background-image: -o-linear-gradient(top, white, #e6e6e6);
+  background-image: -moz-linear-gradient(top, white, #e6e6e6);
+  background-image: linear-gradient(top, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  border-color: #e6e6e6 #e6e6e6 silver;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   text-shadow: none;
   padding-top: 4px;
   padding-bottom: 3px;
+}
+#IE8 #SearchGroup form input.btn-navbar {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFE6E6E6', GradientType=0);
 }
 
 /*HEADER */

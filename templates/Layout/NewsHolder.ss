@@ -7,7 +7,7 @@
 				<ul class="nav nav-list">
 					<li <% if CurrentTag %><% else %>class="active"<% end_if %>><a href="$AllTagsLink" title="View all tags">View all tags</a></li>
 					<% loop UpdateTagsWithLinks %>
-						<li <% if $Top.CurrentTag.ID==$ID %>class="active"<% end_if %>><a href="$Link" title="View $Name">$Name</a></li>
+						<li <% if $Top.CurrentTag.ID==$ID %>class="active"<% end_if %>><a href="$Link" title="View items tagged $Name">$Name</a></li>
 					<% end_loop %>
 				</ul>
 			</nav>
@@ -26,11 +26,11 @@
 
 					<fieldset>
 						<div id="from" class="field date text">
-							<label class="left" for="{$FormName}_from">From:</label>
+							<label class="left" for="{$FormName}_from">Filter from date:</label>
 							$Fields.dataFieldByName(from)
 						</div>
 						<div id="to" class="field date text">
-							<label class="left" for="{$FormName}_to">To:</label>
+							<label class="left" for="{$FormName}_to">Filter to date:</label>
 							$Fields.dataFieldByName(to)
 							<div class="field-note">Tip: Leave one field blank to search for a single date.</div>
 						</div>

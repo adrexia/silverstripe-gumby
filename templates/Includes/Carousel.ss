@@ -26,9 +26,9 @@
 					<% end_loop %>
 				</div>
 				<div class="carousel-controls">
-					<button class="left" href="#myCarousel" data-slide="prev" tabindex="0"><i class="icon-chevron-left"></i></button>
-					<button class="pause" tabindex="0"><span class="icon">&#xf04c;</span></button>
-					<button class="right" href="#myCarousel" data-slide="next" tabindex="0"><i class="icon-chevron-right"></i></button>
+					<button class="left" href="#myCarousel" data-slide="prev" tabindex="0" type="button" name="Previous"><i class="icon-chevron-left"></i></button>
+					<button class="pause" tabindex="0" type="button" name="Pause/Play"><span class="icon">&#xf04c;</span></button>
+					<button class="right" href="#myCarousel" data-slide="next" tabindex="0" type="button" name="Next"><i class="icon-chevron-right"></i></button>
 				</div>
 			</div>
 		<% end_if %>

@@ -1,7 +1,7 @@
-<div class="hero-unit nested">
+<div class="hero-unit nested" >
 	<div class="row">
 		<div class="span4">
-			<div class="content">
+			<div class="content" role="main">
 			$Content.RichLinks
 			<% if LearnMorePage %>
 				<a class="btn btn-primary btn-large" href="$LearnMorePage.Link">Learn more &raquo;</a>

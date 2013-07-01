@@ -42,8 +42,8 @@ $textColor:             $grayDark !default;
 
 // Links
 // -------------------------
-$linkColor:             #0464EA  !default;
-$linkVisited: 			darken($linkColor, 15%)  !default;
+$linkColor:           	#0464EA !default;
+$linkVisited: 			#800080 !default;
 $linkColorHover:        darken($linkColor, 15%) !default;
 
 
@@ -180,8 +180,8 @@ $warningBackground:       #fcf8e3 !default;
 $warningBorder:           darken(adjust-hue($warningBackground, -10), 3%) !default;
 
 $errorText:               #b94a48 !default;
-$errorBackground:         #f2dede !default;
-$errorBorder:             darken(adjust-hue($errorBackground, -10), 3%) !default;
+$errorBackground:         #fcf6f6 !default;
+$errorBorder:             darken(adjust-hue($errorBackground, -10), 5%) !default;
 
 $successText:             #468847 !default;
 $successBackground:       #dff0d8 !default;

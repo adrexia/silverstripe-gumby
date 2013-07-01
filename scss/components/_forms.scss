@@ -111,6 +111,15 @@ label{
 	}
 }
 
+.requiredField label.left:after {
+    color: $errorText;
+    content: "*";
+    font-size: 14px;
+    font-weight: normal;
+    padding-left: 3px;
+}
+
+
 /**
 * Form fields formatting
 **/
@@ -241,6 +250,12 @@ div.date{
 			padding-left:30px;
 		}
 		
+	}
+	&:after {
+		color: $errorText;
+    	content: "Required fields *";
+    	font-weight: normal;
+    	padding-top: 5px;
 	}
 }
 

@@ -26,7 +26,7 @@ $PageComments
 		<% end_if %>
 		<% if $FeatureOneLink && $FeatureOneButtonText %>
 			<% if FeatureOneLink %>
-				<p><a class="btn" href="$FeatureOneLink.Link">$FeatureOneButtonText &raquo;</a></p>
+				<p><a class="btn" href="$FeatureOneLink.Link">$FeatureOneButtonText</a></p>
 			<% end_if %>
 		<% end_if %>
 
@@ -38,7 +38,7 @@ $PageComments
 		<% end_if %>
 		<% if $FeatureTwoLink && $FeatureTwoButtonText %>
 			<% if FeatureTwoLink %>
-				<p><a class="btn" href="$FeatureTwoLink.Link">$FeatureTwoButtonText &raquo;</a></p>
+				<p><a class="btn" href="$FeatureTwoLink.Link">$FeatureTwoButtonText</a></p>
 			<% end_if %>
 		<% end_if %>
 	</div>
