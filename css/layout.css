@@ -7247,28 +7247,22 @@ footer .socialLinks a:hover i:before {
 }
 
 /**
- * Accessibility Skiplinks for screen readers 
- * allow users to bypass content recurring on every page to access the menu or the content directly
+ * Accessibility Skiplinks for screen readers, allow users to bypass 
+ * content recurring on every page to access the menu 
+ * or the content directly additionally for regular users by using tab
  */
-header {
-  position: relative;
-}
-
-.skipLinks {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.skipLinks a {
+  padding: 5px 10px;
   position: absolute;
-  left: 20px;
-  top: 0;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
-.skipLinks li {
+.skipLinks a:focus, .skipLinks a:active {
   display: inline-block;
-  padding-right: 30px;
-}
-.skipLinks li a {
-  color: #fff;
-}
-.skipLinks li a:focus, .skipLinks li a:active {
-  color: #0464ea;
+  position: static;
+  width: auto;
+  height: auto;
 }

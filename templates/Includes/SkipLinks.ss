@@ -1,8 +1,8 @@
 <!-- SKIP LINKS for accessibility -->
-<ul class="skipLinks">
-	<li><a href="#mainNav">Skip to main navigation</a></li>
-	<li><a href="#main">Skip to main content</a></li>
+<div class="skipLinks">
+	<a href="#mainNav">Skip to main navigation</a>
+	<a href="#main">Skip to main content</a>
 	<% if Menu(2) %>
-		<li><a href="#pageNav">Skip to page navigation</a></li>
+		<a href="#pageNav">Skip to page navigation</a>
 	<% end_if %>
-</ul>
+</div>
