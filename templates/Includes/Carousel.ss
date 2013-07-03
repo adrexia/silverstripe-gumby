@@ -29,14 +29,14 @@
 				<div class="carousel-controls">
 					<button class="left" href="#myCarousel" data-slide="prev" tabindex="0" type="button" name="Previous">
 						<i class="icon-chevron-left"></i>
-						<span class="hidden">Previous</span>
+						<span class="nonvisual-indicator">Previous</span>
 					</button>
 					<button class="pause" tabindex="0" type="button" name="Pause/Play">							<span class="icon">&#xf04c;</span>
-						<span class="hidden">Play/Pause</span>
+						<span class="nonvisual-indicator">Play/Pause</span>
 					</button>
 					<button class="right" href="#myCarousel" data-slide="next" tabindex="0" type="button" name="Next">
 						<i class="icon-chevron-right"></i>
-						<span class="hidden">Next</span>
+						<span class="nonvisual-indicator">Next</span>
 					</button>
 				</div>
 			</div>
