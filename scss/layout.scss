@@ -192,10 +192,6 @@ header {
 					background: lighten($hrBorder, 5%);
 					border-top:1px solid $grayLighter;
 					border-bottom:1px solid $grayLighter;
-					&:hover{
-						border-top:1px solid lighten($blue, 50%);
-						border-bottom:1px solid lighten($blue, 50%);
-					}
 				}
 			}
 			a{
@@ -206,12 +202,6 @@ header {
 				line-height:1.4em;
 				border-top:1px solid transparent;
 				border-bottom:1px solid transparent;
-				&:hover{
-					padding-left:15px;
-					text-decoration:none;
-					background-color:lighten($blue, 55%);
-					@include duration(0.5s);
-				}
 			}
 		}
 	}

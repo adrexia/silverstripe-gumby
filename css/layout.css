@@ -6276,10 +6276,6 @@ header ul#lang li {
   border-top: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 }
-#layout .linkSet ul li.odd a:hover {
-  border-top: 1px solid #e0f5fe;
-  border-bottom: 1px solid #e0f5fe;
-}
 #layout .linkSet ul li a {
   display: block;
   padding: 15px 0 15px 5px;
@@ -6291,15 +6287,6 @@ header ul#lang li {
   line-height: 1.4em;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
-}
-#layout .linkSet ul li a:hover {
-  padding-left: 15px;
-  text-decoration: none;
-  background-color: #f9fdff;
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s;
 }
 
 .typography {
