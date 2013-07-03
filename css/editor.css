@@ -1647,7 +1647,8 @@ EXPRESS TYPOGRAPHY
 .typography {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* Highlighting for search results titles and content snippets. */
-  /*** LINK ICONS ***/
+  /*** FILE & LINK ICONS ***/
+  /* EXTERNAL LINKS */
   /* Media insert formatting  (Youtube embed) */
   /*** Image formatting ***/
 }
@@ -2085,23 +2086,30 @@ EXPRESS TYPOGRAPHY
 .typography .fileExt {
   font-size: 0.8em;
 }
-.typography a[href$=".pdf"],
-.typography a[href$=".PDF"],
-.typography .pdf {
-  padding-left: 22px;
-  background: url(../../../themes/default/images/icons/page_white_acrobat.png) no-repeat left 0;
+.typography a[href^="http://"],
+.typography a[href^="https"],
+.typography a.external {
+  padding-right: 13px;
 }
 .typography a[href$=".doc"],
 .typography a[href$=".DOC"],
+.typography a[href$=".docx"],
+.typography a[href$=".DOCX"],
 .typography .doc {
   padding-left: 22px;
   background: url(../../../themes/default/images/icons/page_word.png) no-repeat left 0;
+  padding-right: 0;
+  /* override external link */
 }
 .typography a[href$=".xls"],
 .typography a[href$=".XLS"],
+.typography a[href$=".xlsx"],
+.typography a[href$=".XLSX"],
 .typography .xls {
   padding-left: 22px;
   background: url(../../../themes/default/images/icons/page_excel.png) no-repeat left 0;
+  padding-right: 0;
+  /* override external link */
 }
 .typography a[href$=".gz"],
 .typography a[href$=".GZ"],
@@ -2112,12 +2120,24 @@ EXPRESS TYPOGRAPHY
 .typography .archive {
   padding-left: 22px;
   background: url(../../../themes/default/images/icons/page_white_zip.png) no-repeat left 0;
+  padding-right: 0;
+  /* override external link */
 }
 .typography a[href$=".exe"],
 .typography a[href$=".EXE"],
 .typography .application {
   padding-left: 22px;
   background: url(../../../themes/default/images/icons/application.png) no-repeat left 0;
+  padding-right: 0;
+  /* override external link */
+}
+.typography a[href$=".pdf"],
+.typography a[href$=".PDF"],
+.typography .pdf {
+  padding-left: 22px;
+  background: url(../../../themes/default/images/icons/page_white_acrobat.png) no-repeat left 0;
+  padding-right: 0;
+  /* override external link */
 }
 .typography .media.center {
   margin: 0 auto;
@@ -2193,6 +2213,7 @@ EXPRESS TYPOGRAPHY
 }
 .typography table caption {
   text-align: left;
+  padding: 4px 0;
 }
 .typography table thead, .typography table tfoot {
   font-weight: 700;

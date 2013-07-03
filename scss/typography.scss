@@ -76,28 +76,36 @@ EXPRESS TYPOGRAPHY
 		}
 	}
 
+	/*** FILE & LINK ICONS ***/
+	
 	.fileExt{
-		font-size:0.8em;
+		font-size: 0.8em;
+	}
+	
+	/* EXTERNAL LINKS */
+	a[href^="http://"],
+	a[href^="https"],
+	a.external {
+		padding-right: 13px;
 	}
 
-	/*** LINK ICONS ***/
-	a[href$=".pdf"],
-	a[href$=".PDF"],
-	.pdf {
-		padding-left: 22px;
-		background: url(../../../themes/default/images/icons/page_white_acrobat.png) no-repeat left 0;
-	}
 	a[href$=".doc"],
 	a[href$=".DOC"],
+	a[href$=".docx"],
+	a[href$=".DOCX"],
 	.doc {
 		padding-left: 22px;
 		background: url(../../../themes/default/images/icons/page_word.png) no-repeat left 0;
+		padding-right: 0; /* override external link */
 	}
 	a[href$=".xls"],
 	a[href$=".XLS"],
+	a[href$=".xlsx"],
+	a[href$=".XLSX"],
 	.xls {
 		padding-left: 22px;
 		background: url(../../../themes/default/images/icons/page_excel.png) no-repeat left 0;
+		padding-right: 0; /* override external link */
 	}
 	a[href$=".gz"],
 	a[href$=".GZ"],
@@ -108,18 +116,30 @@ EXPRESS TYPOGRAPHY
 	.archive {
 		padding-left: 22px;
 		background: url(../../../themes/default/images/icons/page_white_zip.png) no-repeat left 0;
+		padding-right: 0; /* override external link */
 	}
 	a[href$=".exe"],
 	a[href$=".EXE"],
 	.application {
 		padding-left: 22px;
 		background: url(../../../themes/default/images/icons/application.png) no-repeat left 0;
+		padding-right: 0; /* override external link */
+	}
+	
+	a[href$=".pdf"],
+	a[href$=".PDF"],
+	.pdf {
+		padding-left: 22px;
+		background: url(../../../themes/default/images/icons/page_white_acrobat.png) no-repeat left 0;	
+		padding-right: 0; /* override external link */
 	}
 	
 	a[href$="http://"],
 	.external {
 //		padding-right: 22px;
 	}
+	
+
 
 	/* Media insert formatting  (Youtube embed) */
 	.media.center{
@@ -206,6 +226,7 @@ EXPRESS TYPOGRAPHY
 
 		caption {
 			text-align: left;
+			padding: 4px 0;
 		}
 		thead, tfoot {
 			font-weight: 700;
