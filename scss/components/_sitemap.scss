@@ -193,6 +193,13 @@
 					}
 				}
 			}
+			.linkText {
+				height: 0;
+				overflow:hidden;
+				padding-top:20px;
+				display: block;
+				position: absolute;
+			}
 			.toggleIco{
 				text-decoration:none;
 				color:#000;

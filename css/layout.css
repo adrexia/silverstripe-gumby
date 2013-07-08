@@ -6004,6 +6004,13 @@ ul.nav, ul.dropdown-menu {
 #IE8 .layout ul.sitemap .page-toggle .button:hover .toggleIco {
   color: #333333;
 }
+.layout ul.sitemap .page-toggle .button .linkText {
+  height: 0;
+  overflow: hidden;
+  padding-top: 20px;
+  display: block;
+  position: absolute;
+}
 .layout ul.sitemap .page-toggle .button .toggleIco {
   text-decoration: none;
   color: #000;
