@@ -2,9 +2,9 @@
 	<div id="" class="pagination clear">
 	<ul id="PageNumbers">
 	<% if NotFirstPage %>
-		<li class="prev"><a class="prev paginate-left" href="$PrevLink">&lt;</a></li>
+		<li class="prev"><a class="prev paginate-left" href="$PrevLink">&lt; Prev</a></li>
 	<% else %>	
-		<li class="prev disabled"><a class="prev paginate-left disabled">&lt;</a></li>
+		<li class="prev disabled"><a class="prev paginate-left disabled">&lt; Prev</a></li>
 	<% end_if %>
 	
 	<% loop PaginationSummary(4) %>
@@ -19,9 +19,9 @@
 		<% end_if %>
 	<% end_loop %>
 	<% if NotLastPage %>
-		<li class="next"><a class="next paginate-right" href="$NextLink">&gt;</a></li>
+		<li class="next"><a class="next paginate-right" href="$NextLink">Next &gt;</a></li>
 	<% else %>
-		<li class="next disabled"><a class="next paginate-right disabled">&gt;</a></li>
+		<li class="next disabled"><a class="next paginate-right disabled">Next &gt;</a></li>
 	
 	<% end_if %>
 	</ul>
