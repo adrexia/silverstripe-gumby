@@ -2043,8 +2043,8 @@ EXPRESS TYPOGRAPHY
 }
 .typography p {
   margin-bottom: 18px;
-  font-size: 1.1em;
-  line-height: 1.2em;
+  font-size: 13px;
+  line-height: 18px;
 }
 .typography span.highlight {
   background: yellow;

@@ -41,9 +41,9 @@ EXPRESS TYPOGRAPHY
 		color: #666666;
 	}
 	p {
-		margin-bottom: 18px;
-		font-size:1.1em;
-		line-height:1.2em;
+		margin-bottom: $baseLineHeight;
+		font-size: $baseFontSize;
+		line-height: $baseLineHeight;
 	}
 	/* Highlighting for search results titles and content snippets. */
 	span.highlight {
