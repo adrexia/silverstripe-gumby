@@ -6039,7 +6039,7 @@ ul.nav, ul.dropdown-menu {
 #layout .resultsHeader {
   *zoom: 1;
   padding: 0 5px;
-  margin: 40px 0 10px 0;
+  margin: 10px 0;
   height: auto;
   border-bottom: 1px solid #eeeeee;
 }
@@ -6072,7 +6072,7 @@ ul.nav, ul.dropdown-menu {
 }
 .resultsList article {
   padding: 5px 0;
-  border-bottom: 1px solid #f6f6f6;
+  border-bottom: 1px solid #eeeeee;
   *zoom: 1;
 }
 .resultsList article:before, .resultsList article:after {
@@ -6270,30 +6270,13 @@ header ul#lang li {
 
 #layout .linkSet ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 20px;
-}
-#layout .linkSet ul li {
-  margin: 0;
-  padding: 0;
-}
-#layout .linkSet ul li.odd a {
-  background: #fbfbfb;
-  border-top: 1px solid #eeeeee;
+  margin-left: 0;
   border-bottom: 1px solid #eeeeee;
 }
 #layout .linkSet ul li a {
   display: block;
-  padding: 15px 0 15px 5px;
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  font-size: 1.1em;
-  line-height: 1.4em;
-  border-top: 1px solid transparent;
-  border-bottom: 1px solid transparent;
+  padding: 15px 0;
+  border-top: 1px solid #eeeeee;
 }
 
 .typography {
@@ -6351,8 +6334,8 @@ header ul#lang li {
   outline: 1px dotted black;
 }
 .typography p.printShare a, .typography p.printShare button {
-  border-left: 1px solid #999999;
   padding: 2px 4px;
+  margin-left: 18px;
   float: left;
 }
 .typography p.printShare a:first-child, .typography p.printShare button:first-child {
@@ -6386,18 +6369,18 @@ header ul#lang li {
   position: static;
   display: block;
   float: left;
-  height: 15px;
-  width: 15px;
+  height: 13px;
+  width: 13px;
   margin: 8px 26px 0 0;
   outline: none;
   border: 0px;
 }
 .carousel .carousel-interface button.carousel-control.active {
-  background-color: #03449f;
+  background-color: #0464ea;
   opacity: 1;
 }
 .carousel .carousel-interface button.carousel-control:hover, .carousel .carousel-interface button.carousel-control:focus, .carousel .carousel-interface button.carousel-control:active, .carousel .carousel-interface button.carousel-control:focus {
-  background-color: #0464ea;
+  background-color: #03449f;
   opacity: 1;
 }
 .carousel .carousel-interface button.carousel-control.right {
@@ -6469,7 +6452,7 @@ footer .socialLinks a {
   position: relative;
   text-shadow: rgba(26, 26, 26, 0.1) 1px 1px 0;
   margin-left: 20px;
-  display: inline-block;
+  display: inline;
 }
 footer .socialLinks a i {
   overflow: visible;

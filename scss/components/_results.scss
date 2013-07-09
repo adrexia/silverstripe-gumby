@@ -30,7 +30,7 @@
 		}
 	}
 	padding:0 5px;
-	margin:40px 0 10px 0;		
+	margin: 10px 0;		
 	height:auto;
 	border-bottom: 1px solid $hrBorder;
 }
@@ -41,7 +41,7 @@
 	}
 	article{
 		padding:5px 0;
-		border-bottom: 1px solid lighten($hrBorder,3%);
+		border-bottom: 1px solid $hrBorder;
 		@include clearfix;
 
 		&.first{

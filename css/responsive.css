@@ -929,3 +929,28 @@
     overflow: visible !important;
   }
 }
+/*
+@media (min-width: 1200px) {
+
+}
+*/
+/*
+@media (max-width: 979px) {
+
+}
+*/
+@media (min-width: 768px) and (max-width: 979px) {
+  .navbar .container {
+    width: 724px;
+  }
+}
+/*
+@media (max-width: 767px) {
+
+}
+*/
+/*
+@media (max-width: 480px) {
+
+}
+*/
