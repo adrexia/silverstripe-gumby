@@ -44,7 +44,7 @@ $PageComments
 	</div>
 
 	<% if NewsItems %>
-	<div class="span5 resultsList no-indent">
+	<div class="span5 resultsList">
 		<h2><i class="icon-th-list"></i> <a href="$NewsPage.Link">$NewsPage.Title</a></h2>
 		<% loop NewsItems %>
 			<article class="$EvenOdd $FirstLast">
