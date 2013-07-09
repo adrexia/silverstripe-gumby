@@ -170,7 +170,7 @@ header {
 
 /************************ MISC ****************************/
 
-.nonvisual-indicator {
+.nonvisual-indicator { // Content oftenly used by people using screenreaders 
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
@@ -181,28 +181,12 @@ header {
 #layout .linkSet{
 	ul{
 		list-style:none;
-		padding:0;
-		margin:0;
-		margin-bottom:20px;
-		li{
-			margin:0;
-			padding:0;
-			&.odd{
-				a{
-					background: lighten($hrBorder, 5%);
-					border-top:1px solid $grayLighter;
-					border-bottom:1px solid $grayLighter;
-				}
-			}
-			a{
-				display:block;
-				padding:15px 0 15px 5px;			
-				@include duration(0.5s);
-				font-size:1.1em;
-				line-height:1.4em;
-				border-top:1px solid transparent;
-				border-bottom:1px solid transparent;
-			}
+		margin-left:0;
+		border-bottom:1px solid $grayLighter;
+		li a{
+			display:block;
+			padding:15px 0;			
+			border-top:1px solid $grayLighter;
 		}
 	}
 }
@@ -271,8 +255,8 @@ header {
 		}
 
 		a, button {
-			border-left: 1px solid $grayLight;
 			padding: 2px 4px;
+			margin-left: 18px;
 			float: left;
 
 			&:first-child {
@@ -319,19 +303,19 @@ header {
 			position: static;
 			display: block;
 			float: left;
-			height: 15px;
-			width: 15px;
+			height: 13px;
+			width: 13px;
 			margin: 8px 26px 0 0;
 			outline: none;
 			border: 0px;
 
 			&.active {
-				background-color: $linkColorHover;
+				background-color: $linkColor;
 				opacity: 1;
 			}
 
 			&:hover, &:active, &:focus {
-				background-color: $linkColor;
+				background-color: $linkColorHover;
 				opacity: 1;
 			}
 
