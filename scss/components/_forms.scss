@@ -234,7 +234,7 @@ div.date{
 		@extend .btn;
 		padding-left:15px;
 		padding-right:15px;
-		margin:0;
+		margin: 0 $baseLineHeight/2 $baseLineHeight/2 0;
 
 		&.primary {
 			@extend .btn-primary;

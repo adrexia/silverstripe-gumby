@@ -5585,7 +5585,7 @@ div.date img {
 .Actions .action {
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0;
+  margin: 0 9px 9px 0;
 }
 .Actions #MemberLoginForm_LoginForm_action_dologin {
   float: left;
@@ -7117,7 +7117,6 @@ footer .socialLinks a:hover i:before {
   max-width: 170px;
 }
 .sidebar-form div.field input, .sidebar-form div.field select {
-  float: right;
   width: 12em;
   max-width: 100%;
   margin-top: -5px;
@@ -7137,10 +7136,6 @@ footer .socialLinks a:hover i:before {
 }
 #IE8 .sidebar-form .Actions {
   filter: none;
-}
-.sidebar-form .Actions input {
-  margin-left: 10px;
-  float: right;
 }
 .sidebar-form .message {
   margin: 10px;
