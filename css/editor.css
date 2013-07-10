@@ -2060,11 +2060,6 @@ EXPRESS TYPOGRAPHY
 .typography span.highlight {
   background: yellow;
 }
-.typography a.external {
-  padding-right: 13px;
-  display: inline-block;
-  background: url(../../../themes/default/images/icons/external-link.png) no-repeat right 0px;
-}
 .typography a:hover img, .typography a:focus img {
   border: 1px solid #0464ea;
 }
@@ -2090,6 +2085,8 @@ EXPRESS TYPOGRAPHY
 .typography a[href^="https"],
 .typography a.external {
   padding-right: 13px;
+  display: inline-block;
+  background: transparent url(../../../themes/default/images/icons/external-link.png) no-repeat right 0;
 }
 .typography a[href$=".doc"],
 .typography a[href$=".DOC"],

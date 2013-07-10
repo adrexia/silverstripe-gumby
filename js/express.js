@@ -81,5 +81,9 @@
 				$(this).find('.icon').addClass('icon-play-js').html('&#xf04b;');
 			}
 		});
+		
+		// Add additional title information to external links which open in an external window
+		$('.content a[target="_blank"]').attr("title", $('a[target="_blank"]').attr("title")+" - This link will open in a new window");
+		
 	})
 })(jQuery);

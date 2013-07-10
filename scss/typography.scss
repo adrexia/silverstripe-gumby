@@ -50,11 +50,6 @@ EXPRESS TYPOGRAPHY
 		background: yellow;
 	}
 	a {
-		&.external {
-			padding-right: 13px;
-			display:inline-block;
-			background: url(../../../themes/default/images/icons/external-link.png) no-repeat right 0px;
-		}
 		&:hover img, &:focus img{
 			border: 1px solid $linkColor;
 		}
@@ -87,6 +82,8 @@ EXPRESS TYPOGRAPHY
 	a[href^="https"],
 	a.external {
 		padding-right: 13px;
+		display:inline-block;
+		background: transparent url(../../../themes/default/images/icons/external-link.png) no-repeat right 0; 
 	}
 
 	a[href$=".doc"],
