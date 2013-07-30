@@ -5,23 +5,21 @@
 		<link>$Link</link>
 		<atom:link href="$Link" rel="self" type="application/rss+xml" />
 
-		<% cached 'page_allchanges_rss', List(SiteTree).max(LastEdited) %>
-			<% loop Entries %>
-				<item>
-					<title>$Title.XML</title>
-					<link>$AbsoluteLink</link>
-					<description>
-						<% if DiffTitle %>
-							$DiffTitle.XML
-						<% end_if %>
-						<% if DiffContent %>
-							$DiffContent.AbsoluteLinks.XML
-						<% end_if %>
-					</description>
-					<pubDate>$LastEdited.Rfc822</pubDate>
-					<guid>$AbsoluteLink</guid>
-				</item>
-			<% end_loop %>
-		<% end_cached %>
+		<% loop Entries %>
+			<item>
+				<title>$Title.XML</title>
+				<link>$GeneratedLink</link>
+				<description>
+					<% if DiffTitle %>
+						$DiffTitle.XML
+					<% end_if %>
+					<% if DiffContent %>
+						$DiffContent.AbsoluteLinks.XML
+					<% end_if %>
+				</description>
+				<pubDate>$LastEdited.Rfc822</pubDate>
+				<guid>$GeneratedLink</guid>
+			</item>
+		<% end_loop %>
 	</channel>
 </rss>
