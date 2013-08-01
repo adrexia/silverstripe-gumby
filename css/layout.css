@@ -6346,6 +6346,11 @@ header ul#lang li {
   padding-left: 20px;
   background-position: 2px 1px;
 }
+.typography p.printShare a[href^="http://"],
+.typography p.printShare a[href^="https"],
+.typography p.printShare a.external {
+  background: none;
+}
 
 .carousel-container {
   float: right;
