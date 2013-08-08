@@ -1,13 +1,3 @@
-// Prevent iframes from different origin from displaying this content.
-var topDomain = '';
-try {
-	topDomain = top.document.domain;
-} catch(e) {}
-
-if (self.document.domain != topDomain) {
-	self.document.getElementsByTagName('html')[0].innerHTML = "For security reasons, this page cannot be displayed in an iframe.";
-}
-
 (function($) {
 	$(document).ready(function() {
 		$('.nav-collapse')
