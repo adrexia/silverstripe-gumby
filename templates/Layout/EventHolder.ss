@@ -57,20 +57,34 @@
 		<% if AvailableMonths %>
 			<div class="month-filter">
 				<h2 class="nonvisual-indicator">Month filter:</h2>
+				<% if FilteredUpdates %>
+					<% if FilterDescription %>
+						<p><a href="$Link">Show all upcoming events</a></p>
+					<% end_if %>
+				<% end_if %>
 				<% loop AvailableMonths %>
 					<h6 class="year">$YearName:</h6>
 					<ol class="nav nav-pills unstyled months">
-					<% loop Months %>
-						<li <% if Active %>class="active"<% end_if %>><a href="$MonthLink.XML">$MonthName</a></li>
-					<% end_loop %>
+						<% loop Months %>
+							<li <% if Active %>class="active"<% end_if %>><a href="$MonthLink.XML">$MonthName</a></li>
+						<% end_loop %>
+						
 					</ol>
 				<% end_loop %>
+				
 			</div>
 		<% end_if %>
 
 		<% if FilteredUpdates %>
 			<div class="resultsHeader">
-				<h2 class="pull-left"><% if FilterDescription %>$FilterDescription <a href="$Link">Show all upcoming events</a><% else %>Upcoming events<% end_if %></h2>
+			
+				<% if FilterDescription %>
+					<h2 class="pull-left">$FilterDescription</h2> 
+					<p class="pull-left"><a href="$Link">Show all upcoming events</a></p>
+				<% else %>
+					<h2 class="pull-left">Upcoming events</h2>
+				<% end_if %>
+
 				<p class="pull-right"><% with FilteredUpdates %>$FirstItem - $LastItem of $count<% end_with %></p>
 			</div>
 		
@@ -95,7 +109,7 @@
 			<% end_with %>
 		<% else %>
 			<div class="resultsHeader">
-				<h2 class="pull-left"><% if FilterDescription %>$FilterDescription <a href="$Link">Show all upcoming events</a><% else %>Upcoming events<% end_if %></h2>
+				<h2 class="pull-left"><% if FilterDescription %>$FilterDescription<% else %>Upcoming events<% end_if %></h2>
 				<p class="pull-right">None</p>
 			</div>
 
