@@ -31,8 +31,8 @@
 						<i class="icon-chevron-left"></i>
 						<span class="nonvisual-indicator">Previous</span>
 					</button>
-					<button class="pause" tabindex="0" type="button" name="Pause/Play">							<span class="icon">&#xf04c;</span>
-						<span class="nonvisual-indicator">Play/Pause</span>
+					<button class="pause" tabindex="0" type="button" name="Pause">							<span class="icon" aria-hidden=”true”>&#xf04c;</span>
+						<span class="nonvisual-indicator">Pause</span>
 					</button>
 					<button class="right" href="#myCarousel" data-slide="next" tabindex="0" type="button" name="Next">
 						<i class="icon-chevron-right"></i>

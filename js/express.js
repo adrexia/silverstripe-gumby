@@ -76,14 +76,18 @@
 			if($(this).closest('.carousel').hasClass('play')){
 				$(this).closest('.carousel').carousel('cycle').removeClass('play');
 				$(this).find('.icon').removeClass('icon-play-js').html('&#xf04c;');
+				$(this).find('.nonvisual-indicator').html('Pause');
 			}else{
 				$(this).closest('.carousel').carousel('pause').addClass('play');
 				$(this).find('.icon').addClass('icon-play-js').html('&#xf04b;');
+				$(this).find('.nonvisual-indicator').html('Play');
 			}
 		});
 		
 		// Add additional title information to external links which open in an external window
 		$('.content a[target="_blank"]').attr("title", $('a[target="_blank"]').attr("title")+" - This link will open in a new window");
 		
+		// Maori language class to add lang type
+		$('.maori').attr('lang', 'mi');
 	})
 })(jQuery);

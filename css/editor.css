@@ -8,6 +8,9 @@
 .typography table, .typography tr, .typography td {
   font-size: 13px;
 }
+.typography .maori {
+  background: #EEE;
+}
 
 /**
  * Typography related stylesheet.
@@ -2236,4 +2239,7 @@ EXPRESS TYPOGRAPHY
 }
 .typography ol ol ol {
   list-style-type: lower-roman;
+}
+.typography .maori {
+  background: transparent;
 }

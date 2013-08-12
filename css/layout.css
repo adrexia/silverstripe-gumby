@@ -6278,6 +6278,9 @@ header ul#lang li {
   padding: 15px 0;
   border-top: 1px solid #eeeeee;
 }
+#layout .linkSet ul li a[href^="http://"], #layout .linkSet ul li a[href^="https"], #layout .linkSet ul li a.external {
+  background-position: right 16px;
+}
 
 .typography {
   /*Adjust breadcrumbs*/
@@ -6362,8 +6365,12 @@ header ul#lang li {
 .carousel a {
   color: white;
 }
+.carousel .carousel-inner {
+  background-color: #000;
+}
 #layout.typography .carousel a img {
   border: none;
+  color: #fff;
   margin: 0;
 }
 .carousel .carousel-caption h4,
@@ -7120,6 +7127,7 @@ footer .socialLinks a:hover i:before {
   font-style: italic;
   font-size: 0.9em;
   max-width: 170px;
+  font-weight: normal;
 }
 .sidebar-form div.field input, .sidebar-form div.field select {
   width: 12em;

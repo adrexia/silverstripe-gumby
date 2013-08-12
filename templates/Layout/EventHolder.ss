@@ -26,11 +26,11 @@
 
 					<fieldset>
 						<div id="from" class="field date text">
-							<label class="left" for="{$FormName}_from">Filter from date:</label>
+							<label class="left" for="{$FormName}_from">Filter from date <span class="field-note">(example: 31/12/13)</span></label>
 							$Fields.dataFieldByName(from)
 						</div>
 						<div id="to" class="field date text">
-							<label class="left" for="{$FormName}_to">Filter to date:</label>
+							<label class="left" for="{$FormName}_to">Filter to date <span class="field-note">(example: 31/12/13)</span></label>
 							$Fields.dataFieldByName(to)
 							<div class="field-note">Tip: Leave one field blank to search for a single date.</div>
 						</div>

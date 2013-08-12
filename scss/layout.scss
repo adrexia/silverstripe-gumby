@@ -187,6 +187,9 @@ header {
 			display:block;
 			padding:15px 0;			
 			border-top:1px solid $grayLighter;
+			&[href^="http://"], &[href^="https"], &.external {
+				background-position: right 16px;
+			}
 		}
 	}
 }
@@ -285,18 +288,19 @@ header {
 	a {
 		color: white;
 	}
-	
+	.carousel-inner {
+		background-color: #000;
+	}
 	#layout.typography & a img {
 		border: none;
+		color: #fff;
 		margin: 0;
 	}
-
 	.carousel-control {
 		&:focus {
 			@extend .carousel-control:hover
 		}
 	}
-
 	.carousel-caption h4,
 	.carousel-caption p {
 		color: $white;
@@ -620,6 +624,7 @@ footer {
 			font-style: italic;
 			font-size: 0.9em;
 			max-width: 170px;
+			font-weight: normal;
 		}
 		input, select {
 			#IE6 & {
