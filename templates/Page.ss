@@ -6,7 +6,10 @@
 <!--[if gt IE 9]><!--><html class="no-js" lang="$ContentLocale"><!--<![endif]-->
 <head>
 	<% base_tag %>
-	<title>$Title | $SiteConfig.Title</title>
+	
+	<%-- $FilterDescription adds additional information from the news and events areas --%>
+	<title>$Title <% if FilterDescription %>- $FilterDescription<% end_if %>| $SiteConfig.Title</title>
+	
 	$MetaTags(false)
 	<meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0" />
 
