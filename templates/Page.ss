@@ -7,7 +7,7 @@
 <head>
 	<% base_tag %>
 	
-	<%-- $FilterDescription adds additional information from the news and events areas --%>
+	<%-- $FilterDescription adds another additional information from the news and events areas --%>
 	<title>$Title <% if FilterDescription %>- $FilterDescription<% end_if %>| $SiteConfig.Title</title>
 	
 	$MetaTags(false)
