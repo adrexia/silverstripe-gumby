@@ -70,6 +70,14 @@ EXPRESS TYPOGRAPHY
 	    	}
 		}
 	}
+	
+	// Quotes
+	q:before,
+	q:after,
+	blockquote:before,
+	blockquote:after {
+		content: '"';
+	}
 
 	/*** FILE & LINK ICONS ***/
 	
@@ -210,10 +218,10 @@ EXPRESS TYPOGRAPHY
 			margin: 0 0 5px 0;
 		}
 	}
-
+	
+	// Table styles
 	table {
 		@extend .table;
-		@extend .table-striped;
 
 		caption {
 			text-align: left;
@@ -223,6 +231,34 @@ EXPRESS TYPOGRAPHY
 			font-weight: 700;
 		}
 	}
+	
+	// Additional bootstrap table styles available in the STYLES dropdown in the editor 
+	.table-striped {
+		@extend .table-striped;
+	}
+	.table-bordered {
+		@extend .table-bordered;
+		border-top: none;
+	}
+	.table-bordered-striped {
+		@extend .table-striped;
+		@extend .table-bordered;
+	}
+	.table-condensed {
+		@extend .table-condensed;
+	}
+	.table-condensed-striped {
+		@extend .table-condensed;
+		@extend .table-striped;
+	}
+	.table-striped, .table-bordered-striped {
+		tbody tr:hover {
+			td, th {
+		      background-color: $tableBackgroundHover;
+		    }
+		}
+	}
+
 
 	// Make the hr darker.
 	hr {
