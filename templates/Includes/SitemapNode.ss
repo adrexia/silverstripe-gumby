@@ -9,7 +9,7 @@
 
 <a href="$Link" class="sitemap-link" title="Go to $MenuTitle page">
 	<span class="sitetree-icon">
-	<img src="{$baseURL}cwp/<% if $pageIcon %>$pageIcon<% else %>images/icons/sitetree_images/page.png<% end_if %>" alt="$ClassName"></span>
+	<img src="{$baseURL}cwp/<% if $pageIcon %>$pageIcon<% else %>images/icons/sitetree_images/page.png<% end_if %>" alt=""></span>
 	<span class="title">$MenuTitle</span>
 </a>
 
