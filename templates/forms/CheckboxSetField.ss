@@ -2,8 +2,10 @@
 	<% if Options.Count %>
 		<% loop Options %>
 			<li class="$Class">
-				<input id="$ID" class="checkbox" name="$Name" type="checkbox" value="$Value"<% if isChecked %> checked="checked"<% end_if %><% if isDisabled %> disabled="disabled"<% end_if %>>
-				<label class="inline" for="$ID">$Title</label>
+				<label class="checkbox" for="$ID">
+					<input id="$ID" name="$Name" type="checkbox" value="$Value"<% if isChecked %> checked="checked"<% end_if %><% if isDisabled %> disabled="disabled"<% end_if %>>
+					$Title
+				</label>
 			</li> 
 		<% end_loop %>
 	<% else %>

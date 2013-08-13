@@ -1,8 +1,25 @@
 /*
 *	Styling for form related components
-*
+*	Userforms module styling includes a little more than custom forms
+*	so that they look finished without needing to modify any code.
+*	Extend this style to apply userforms styling to your custom forms, 
+*	or modify it to change the look of your userforms
 */
 
+/*	General 	*/
+form{
+	div.field {
+		margin-bottom: 10px;
+		@include clearAfter;
+	}
+}
+
+input,
+textarea,
+select,
+.uneditable-input {
+	height: 1.385em;
+}
 
 /* Styling for messages */
 .message{
@@ -20,82 +37,18 @@
 		@include message('info');
 	}
 }
-
 .required{
 	@include formValidation($errorText, $errorText, $errorBackground);
 }
 
-/* 
-*	User forms styling includes a little more than custom forms
-*	so that they look finished without needing to modify any code.
-*	Extend this style to apply userforms styling to your custom forms, 
-*	or modify it to change the look of your userforms
-*/
-#Form_Form{
-	@extend .well;
-	background: #fff;
-	padding:0;
-}
 
-
-/*	General 	*/
-form{
-	.FormHeading{
-		margin:0;
-		@include roundTopCorners(3px);
-		padding:10px 19px;	
-	}
-
-	fieldset {
-		margin: 0;
-	}
-
-	fieldset > div.field{
-		padding: 15px;
-		margin: 0;
-		&.checkbox{
-			margin-left:19px;
-		}
-	}
-
-	.typography &{
-		h1,h2,h3{
-			margin:0;
-			&.FormHeading{
-				@include gradient-vertical(darken(#ffffff,2%),#fff);
-				border-bottom:1px solid $hrBorder;
-				border-top:1px solid darken(#f5f5f5,10%);
-			}
-		}
-	}
-}
-
-input,
-textarea,
-select,
-.uneditable-input {
-	height: 1.385em;
-}
-
-/*	Label formatting	*/
+/* Label formatting */
 label{
-	padding-top: 3px;
-	&.left{
+	&.left {
 		font-weight: bold;
-		font-size:1.2em;
-		line-height:1.2em;
-		padding-bottom:5px;
 	}
-	&.extra{
-		color: lighten($textColor, 12%);
-
-		font-weight: normal;
-		width:100%;
-		max-width:490px;
-		text-align:left;
+	&.extra {
 		font-style:italic;	
-		font-size:1em;
-		line-height:1.5em;
 	}
 	&.required{
 		@include box-sizing(border-box);
@@ -120,9 +73,7 @@ label{
 }
 
 
-/**
-* Form fields formatting
-**/
+/* Form fields formatting */
 textarea{
 	width:100%;
 	height:200px;
@@ -131,10 +82,8 @@ textarea{
 select, input.text, input.file{
 	width:100%;
 	max-width:490px;
-	@include box-sizing(border-box);
 	height:2.31em;
-	float:left;
-	@include clearAfter;
+	@include box-sizing(border-box);
 	&.date{
 		width:100px;
 		max-width:100%;
@@ -148,66 +97,30 @@ select, input.text, input.file{
 		line-height:20px;
 	}
 }
-/*	Checkboxes and radio buttons	*/
-.checkbox{
-	label{
-		color: $grayDark;
-		font-weight: normal;
-		font-style:normal;
-		position:static;
-		&.required{
-			color: $errorText;
-			float:left;
-			margin-top:10px;
-			margin-left:-20px;
-		}
+
+
+/* Checkboxes and radio buttons */
+form ul.optionset{
+	list-style: none;
+	margin-left: 0;
+}
+div.checkbox {
+	padding-left: 0;
+	input.checkbox {
+		min-height: 9px;
 	}
-}
-div.optionset{
-	position: relative;
-}
-
-form ul{
-	&.optionset{
-		label{
-			font-weight: normal;
-			@include clearfix;
-			#IE7 &{
-				float:left;
-				width:200px;
-				//margin-top:-20px;
-			}
-		}
-		list-style: none;
-		margin-left: 0;
-		input{
-			clear:both;
-			float: left;
-			margin-right: 5px;
-
-		}
+	label.required {
+		float: left;
+		margin-top: 5px;
+		margin-left: -20px;
 	}
 }
 
 
 /*	Date styles	*/
 div.date{
-	padding-right:30px;
-	label{
-		float:left;
-		margin-right:10px;
-	}
-	input{
-		margin-top:-5px;
-		margin-right:5px;
-	}
-	img{
-		background:transparent url(../../../themes/default/images/icons/sitetree_images/date.png) no-repeat top left;
-		height:0;
-		overflow:hidden;
-		padding-top: 15px; /* height of icon for screen */
-		width: 15px; /* width of icon for screen */
-		
+	input {
+		margin-right: 5px;
 	}
 }
 .ui-datepicker{	
@@ -220,22 +133,16 @@ div.date{
 }
 
 
-
-/*Submit button styling */
+/* Submit button styling */
 .Actions{
-	@include clearfix;
-	margin:0;
 	border-top:1px solid darken(#f5f5f5,10%);
-	@include gradient-vertical(#fff,darken(#ffffff,2%));
-	padding: 15px 19px;
-	padding: 15px 19px;
-	@include roundBottomCorners(3px);
+	padding: 15px 0;
+	@include clearfix;
 	.action{
 		@extend .btn;
 		padding-left:15px;
 		padding-right:15px;
 		margin: 0 $baseLineHeight/2 $baseLineHeight/2 0;
-
 		&.primary {
 			@extend .btn-primary;
 		}
@@ -249,7 +156,6 @@ div.date{
 		a{
 			padding-left:30px;
 		}
-		
 	}
 	&:after {
 		color: $errorText;
@@ -258,5 +164,3 @@ div.date{
     	padding-top: 5px;
 	}
 }
-
-
