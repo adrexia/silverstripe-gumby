@@ -53,10 +53,17 @@
 		<div class="clearfix">
 			$Content.RichLinks
 		</div>
-	
+		
 		<% if AvailableMonths %>
 			<div class="month-filter">
 				<h2 class="nonvisual-indicator">Month filter:</h2>
+				
+				<% if FilteredUpdates %>
+					<% if FilterDescription %>
+						<p><a href="$Link">Show all news</a></p>
+					<% end_if %>
+				<% end_if %>
+				
 				<% loop AvailableMonths %>
 					<h6 class="year">$YearName:</h6>
 					<ol class="nav nav-pills unstyled months">
@@ -70,7 +77,7 @@
 
 		<% if FilteredUpdates %>
 			<div class="resultsHeader">
-				<h2 class="pull-left"><% if FilterDescription %>$FilterDescription <a href="$Link">Show all news</a><% else %>News<% end_if %></h2>
+				<h2 class="pull-left"><% if FilterDescription %>$FilterDescription<% else %>News<% end_if %></h2>
 				<p class="pull-right"><% with FilteredUpdates %>$FirstItem - $LastItem of $count<% end_with %></p>
 			</div>
 		
