@@ -30,8 +30,6 @@
 			}
 		});
 
-		$('form fieldset > div.field:odd').addClass('odd');
-
 		$('.sitemap').on('click', '.button', function() {
 			var self = $(this);
 			var target = $(self.attr('data-target'));
