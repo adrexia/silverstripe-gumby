@@ -1645,13 +1645,12 @@ ul.icons li .icon-large:before {
 }
 
 /*****************************
-EXPRESS TYPOGRAPHY 
+TYPOGRAPHY 
 ******************************/
 .typography {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* Highlighting for search results titles and content snippets. */
   /*** FILE & LINK ICONS ***/
-  /* EXTERNAL LINKS */
   /* Media insert formatting  (Youtube embed) */
   /*** Image formatting ***/
 }
@@ -1781,7 +1780,7 @@ EXPRESS TYPOGRAPHY
 .typography hr {
   margin: 18px 0;
   border: 0;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #dddddd;
   border-bottom: 1px solid white;
 }
 .typography strong {
@@ -2069,52 +2068,40 @@ EXPRESS TYPOGRAPHY
 }
 .typography h1 {
   font-size: 40px;
-  font-weight: bold;
   line-height: 1;
-  margin-bottom: 18px;
-}
-.typography .page-header h1 {
-  margin-bottom: 0;
 }
 .typography h2, .typography h3 {
   margin: 18px 0 9px;
 }
-.typography h2 {
-  line-height: 27px;
-}
 .typography h6 {
-  color: #666666;
+  color: #555555;
 }
 .typography p {
   margin-bottom: 18px;
   font-size: 13px;
   line-height: 18px;
 }
-.typography span.highlight {
-  background: yellow;
-}
 .typography a:hover img, .typography a:focus img {
   border: 1px solid #0464ea;
 }
-.typography blockquote {
-  border-left: 5px solid #EEEEEE;
-  margin: 0 0 18px;
-  padding: 0 0 0 15px;
+.typography span.highlight {
+  background: yellow;
 }
-.typography blockquote .blockquote-author {
-  margin-top: -18px;
-  color: #999999;
+.typography blockquote p {
+  margin-bottom: 10px;
+}
+.typography blockquote small, .typography blockquote .blockquote-author {
+  color: #555555;
   display: block;
   line-height: 18px;
-  font-size: 100%;
+  font-size: .8em;
+  margin-bottom: 0;
 }
-.typography blockquote .blockquote-author:before {
-  content: "— ";
+.typography blockquote small:before, .typography blockquote .blockquote-author:before {
+  content: '\2014 \00A0';
 }
 .typography q:before,
-.typography q:after,
-.typography blockquote:before,
-.typography blockquote:after {
+.typography q:after {
   content: '"';
 }
 .typography .fileExt {
@@ -2259,10 +2246,6 @@ EXPRESS TYPOGRAPHY
 }
 .typography .table-striped tbody tr:hover td, .typography .table-striped tbody tr:hover td, .typography .table-bordered-striped tbody tr:hover td, .typography .table-condensed-striped tbody tr:hover td, .typography .table-striped tbody tr:hover th, .typography .table-striped tbody tr:hover th, .typography .table-bordered-striped tbody tr:hover th, .typography .table-condensed-striped tbody tr:hover th, .typography .table-bordered-striped tbody tr:hover td, .typography .table-bordered-striped tbody tr:hover th {
   background-color: #ebebeb;
-}
-.typography hr {
-  border-color: #AAA;
-  border-top: 0;
 }
 .typography ul {
   list-style-type: disc;
