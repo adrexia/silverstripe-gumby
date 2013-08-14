@@ -16,14 +16,14 @@
 	<% end_if %>
 
 	<% if SiteConfig.FacebookURL || SiteConfig.TwitterUsername %>
-		<aside class="socialLinks pull-right" role="complementary">
+		<div class="socialLinks pull-right" role="complementary">
 			<% if SiteConfig.TwitterUsername %>
 				<a href="http://www.twitter.com/$SiteConfig.TwitterUsername" target="_blank"><i class="icon-twitter-sign icon-dark"></i>Follow us on Twitter</a>
 			<% end_if %>
 			<% if SiteConfig.FacebookURL %>
 				<a href="http://www.facebook.com/$SiteConfig.FacebookURL" target="_blank"><i class="icon-dark icon-facebook-sign"></i>Join us on Facebook</a>
 			<% end_if %>
-		</aside>
+		</div>
 	<% end_if %>
 
 	<div class="footer-logo">
