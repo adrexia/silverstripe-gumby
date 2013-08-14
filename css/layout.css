@@ -4281,43 +4281,6 @@ input[type="submit"].btn.btn-mini,
   right: 13px;
 }
 
-.breadcrumb, #layout .resultsHeader {
-  padding: 7px 14px;
-  margin: 0 0 18px;
-  list-style: none;
-  background-color: #fbfbfb;
-  background-image: -ms-linear-gradient(top, white, whitesmoke);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(whitesmoke));
-  background-image: -webkit-linear-gradient(top, white, whitesmoke);
-  background-image: -o-linear-gradient(top, white, whitesmoke);
-  background-image: -moz-linear-gradient(top, white, whitesmoke);
-  background-image: linear-gradient(top, #ffffff, #f5f5f5);
-  background-repeat: repeat-x;
-  border: 1px solid #ddd;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  -webkit-box-shadow: inset 0 1px 0 white;
-  -moz-box-shadow: inset 0 1px 0 white;
-  box-shadow: inset 0 1px 0 white;
-}
-#IE8 .breadcrumb, #IE8 #layout .resultsHeader, #layout #IE8 .resultsHeader {
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFF5F5F5', GradientType=0);
-}
-.breadcrumb li, #layout .resultsHeader li {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  text-shadow: 0 1px 0 white;
-}
-.breadcrumb .divider, #layout .resultsHeader .divider {
-  padding: 0 5px;
-  color: #999999;
-}
-.breadcrumb .active a, #layout .resultsHeader .active a {
-  color: #333333;
-}
-
 .pagination {
   height: 36px;
   margin: 18px 0;
@@ -5917,8 +5880,27 @@ ul.nav, ul.dropdown-menu {
 
 /*For news and search results*/
 #layout .resultsHeader {
+  padding: 7px 14px;
+  margin: 9px 0 18px;
+  border: 1px solid #ddd;
+  background-color: #fbfbfb;
+  background-image: -ms-linear-gradient(top, white, whitesmoke);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(whitesmoke));
+  background-image: -webkit-linear-gradient(top, white, whitesmoke);
+  background-image: -o-linear-gradient(top, white, whitesmoke);
+  background-image: -moz-linear-gradient(top, white, whitesmoke);
+  background-image: linear-gradient(top, #ffffff, #f5f5f5);
+  background-repeat: repeat-x;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 0 white;
+  -moz-box-shadow: inset 0 1px 0 white;
+  box-shadow: inset 0 1px 0 white;
   *zoom: 1;
-  margin-top: 10px;
+}
+#IE8 #layout .resultsHeader {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFF5F5F5', GradientType=0);
 }
 #layout .resultsHeader:before, #layout .resultsHeader:after {
   display: table;
@@ -6128,12 +6110,47 @@ header ul#lang li {
 }
 
 .typography {
-  /*Adjust breadcrumbs*/
-  /* Hero Unit adjustments */
+  /* Needed to override typography styles */
 }
-.typography ol.breadcrumb, .typography #layout ol.resultsHeader, #layout .typography ol.resultsHeader {
-  margin: 0 0 18px;
+.typography .breadcrumb {
   padding: 7px 14px;
+  margin: 0 0 18px;
+  list-style: none;
+  background-color: #fbfbfb;
+  background-image: -ms-linear-gradient(top, white, whitesmoke);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(whitesmoke));
+  background-image: -webkit-linear-gradient(top, white, whitesmoke);
+  background-image: -o-linear-gradient(top, white, whitesmoke);
+  background-image: -moz-linear-gradient(top, white, whitesmoke);
+  background-image: linear-gradient(top, #ffffff, #f5f5f5);
+  background-repeat: repeat-x;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 0 white;
+  -moz-box-shadow: inset 0 1px 0 white;
+  box-shadow: inset 0 1px 0 white;
+}
+#IE8 .typography .breadcrumb {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFF5F5F5', GradientType=0);
+}
+.typography .breadcrumb li {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  text-shadow: 0 1px 0 white;
+}
+.typography .breadcrumb .divider {
+  padding: 0 5px;
+  color: #999999;
+}
+.typography .breadcrumb .active a {
+  color: #333333;
+}
+.typography .breadcrumb .divider {
+  color: #555555;
+  /* adjust color to meet accessibility standards */
 }
 .typography p.last-edited {
   float: right;
@@ -6204,9 +6221,6 @@ header ul#lang li {
   float: right;
 }
 
-.carousel {
-  /* Remove once we upgrade Bootstrap to 2.3.1 */
-}
 .carousel a {
   color: white;
 }
@@ -6844,7 +6858,7 @@ footer .socialLinks a:hover i:before {
   float: left;
   margin-left: 20px;
 }
-#IE6 .breadcrumb .active, #IE6 #layout .resultsHeader .active, #layout #IE6 .resultsHeader .active {
+#IE6 .breadcrumb .active {
   background: transparent;
 }
 #IE6 .nav-list li a {
@@ -6911,24 +6925,25 @@ footer .socialLinks a:hover i:before {
 /**
  * EventPage and NewsPage - update information
  */
-#IE6 .typography .update-information {
-  padding-bottom: 40px;
-}
 .typography .update-information dl {
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
 }
 .typography .update-information dd {
   margin-top: 0.2em;
   margin-bottom: 0.2em;
 }
-.typography .update-information ul.update-tags {
+.typography .update-information .update-tags {
   overflow: auto;
   margin: 8px 0;
 }
-.typography .update-information ul.update-tags li {
+.typography .update-information .update-tags .label {
   float: left;
   margin: 0 3px 3px 0;
+}
+
+.label,
+.badge {
+  background-color: #555555;
 }
 
 /**

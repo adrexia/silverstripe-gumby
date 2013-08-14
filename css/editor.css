@@ -2084,6 +2084,10 @@ TYPOGRAPHY
 .typography a:hover img, .typography a:focus img {
   border: 1px solid #0464ea;
 }
+.typography .metaInfo {
+  margin-bottom: 9px;
+  color: #555555;
+}
 .typography span.highlight {
   background: yellow;
 }
