@@ -3,7 +3,7 @@
 	<div class="span3">
 		<div class="sidebar-form well">
 			<div id="{$DataClass}_searchform" class="searchForm">
-				<h2>Search Filter</h2>
+				<h2 class="h6-style">Search Filter</h2>
 				$RegistryFilterForm
 			</div>
 		</div>
