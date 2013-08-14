@@ -582,7 +582,7 @@ footer {
 }
 
 /**
- * EventHolder and NewsHolder.
+ * EventHolder and NewsHolder + Registry Page.
  */
 .typography .month-filter {
 	h6.year {
@@ -596,8 +596,15 @@ footer {
 	}
 }
 
-.sidebar-nav h6 {
-	padding: 0 14px;
+.sidebar-nav {
+	.h6-style {
+		color: $gray;
+		font-size: 11px;
+		text-transform: uppercase;
+		line-height: 18px;
+		margin: 0;
+		padding: 0 14px;
+	}
 }
 
 .sidebar-form {
@@ -621,6 +628,13 @@ footer {
 	}
 	.message {
 		margin: 10px;
+	}
+	.h6-style {
+		color: $gray;
+		font-size: 11px;
+		text-transform: uppercase;
+		line-height: 18px;
+		margin: 0;
 	}
 }
 
