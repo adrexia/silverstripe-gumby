@@ -11,7 +11,7 @@
 
 
 /*****************************
-EXPRESS TYPOGRAPHY 
+TYPOGRAPHY 
 ******************************/
 
 .typography {
@@ -21,54 +21,54 @@ EXPRESS TYPOGRAPHY
 	@include bootstrapUtilities;
 	@include bootstrapHeroUnit;
 
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: $baseFontFamily;
 	h1 {
 		font-size: 40px;
-		font-weight: bold;
 		line-height: 1;
-		margin-bottom: 18px;
-	}
-	.page-header h1 {
-		margin-bottom: 0;
 	}
 	h2, h3 {
-		margin: 18px 0 9px;
-	}
-	h2 {
-		line-height: 27px;
+		margin: $baseLineHeight 0 $baseLineHeight/2;
 	}
 	h6 {
-		color: #666666;
+		color: $gray;
 	}
 	p {
 		margin-bottom: $baseLineHeight;
 		font-size: $baseFontSize;
 		line-height: $baseLineHeight;
 	}
-	/* Highlighting for search results titles and content snippets. */
-	span.highlight {
-		background: yellow;
-	}
 	a {
 		&:hover img, &:focus img{
 			border: 1px solid $linkColor;
 		}
 	}
+	
+	/* Highlighting for search results titles and content snippets. */
+	span.highlight {
+		background: yellow;
+	}
 
+	// Quotes
 	blockquote {
-		border-left: 5px solid #EEEEEE;
-		margin: 0 0 18px;
-    	padding: 0 0 0 15px;
-		.blockquote-author {
-			margin-top: -18px;
-			color: #999999;
+		p {
+     	 	margin-bottom: 10px;
+     	}
+     	
+     	// Blockquote-author available from the STYLES dropdown in the editor
+		small, .blockquote-author {
+			color: $gray;
 		    display: block;
-		    line-height: 18px;
-		    font-size: 100%;
+		    line-height: $baseLineHeight;
+		    font-size: .8em;
+		    margin-bottom: 0;
 		    &:before {
-	    		content: "— ";
+				content: '\2014 \00A0';
 	    	}
 		}
+	}
+	q:before,
+	q:after {
+		content: '"';
 	}
 
 	/*** FILE & LINK ICONS ***/
@@ -77,7 +77,7 @@ EXPRESS TYPOGRAPHY
 		font-size: 0.8em;
 	}
 	
-	/* EXTERNAL LINKS */
+	// EXTERNAL LINKS
 	a[href^="http://"],
 	a[href^="https"],
 	a.external {
@@ -122,7 +122,6 @@ EXPRESS TYPOGRAPHY
 		background: url(../../../themes/default/images/icons/application.png) no-repeat left 0;
 		padding-right: 0; /* override external link */
 	}
-	
 	a[href$=".pdf"],
 	a[href$=".PDF"],
 	.pdf {
@@ -210,11 +209,10 @@ EXPRESS TYPOGRAPHY
 			margin: 0 0 5px 0;
 		}
 	}
-
+	
+	// Table styles
 	table {
 		@extend .table;
-		@extend .table-striped;
-
 		caption {
 			text-align: left;
 			padding: 4px 0;
@@ -223,13 +221,35 @@ EXPRESS TYPOGRAPHY
 			font-weight: 700;
 		}
 	}
-
-	// Make the hr darker.
-	hr {
-		border-color: #AAA;
-		border-top: 0;
+	
+	// Additional bootstrap table styles available in the STYLES dropdown in the editor 
+	.table-striped {
+		@extend .table-striped;
+	}
+	.table-bordered {
+		@extend .table-bordered;
+		border-top: none;
+	}
+	.table-bordered-striped {
+		@extend .table-striped;
+		@extend .table-bordered;
+	}
+	.table-condensed {
+		@extend .table-condensed;
+	}
+	.table-condensed-striped {
+		@extend .table-condensed;
+		@extend .table-striped;
+	}
+	.table-striped, .table-bordered-striped {
+		tbody tr:hover {
+			td, th {
+		      background-color: $tableBackgroundHover;
+		    }
+		}
 	}
 
+	// Lists
 	ul {
 		list-style-type: disc;
 
@@ -254,6 +274,7 @@ EXPRESS TYPOGRAPHY
 		}
 	}
 	
+	// Maori language tag available in the STYLES dropdown in the editor 
 	.maori {
 		background: transparent;
 	}

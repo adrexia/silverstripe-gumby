@@ -8,66 +8,28 @@
 	margin-left: 0;
 }
 /*For news and search results*/
-#layout .resultsHeader{
+#layout .resultsHeader {
 	@extend .breadcrumb;
 	@include clearfix;
-	h2, p{
-		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-		font-weight:200;
-		font-size:1.3em;
-		line-height:1.3em;
-		margin:0px;
-		padding:3px 0;
-		a {
-			color: $linkColor;
-			font-size: 0.7em;
-			margin-left: 1em;
-
-			&:hover,
-			&:focus {
-				color: $linkColorHover;
-			}
-		}
+	margin-top: 10px;	
+	h2, p {
+		font-weight: 200;
+		font-size: 1.3em;
+		line-height: 1.3em;
+		margin: 0;
+		padding: 0;
 	}
-	padding:0 5px;
-	margin: 10px 0;		
-	height:auto;
-	border-bottom: 1px solid $hrBorder;
 }
-
-.resultsList{
-	&.no-indent article{
-		margin-left:-10px;
-	}
-	article{
-		padding:5px 0;
+.resultsList {
+	article {
 		border-bottom: 1px solid $hrBorder;
 		@include clearfix;
-
-		&.first{
-			padding-top:0;
-		}
-		p{
-			max-width:790px;
-			margin:0;
-			padding:5px 0;
-		}
-		h3{
-			line-height:1em;
-			font-size: 1.4em;
-			margin-top:5px;
-		}
-		&.even{
-			background: lighten($hrBorder, 5%);
-			@include border-radius(5px);
-		}
 		figure {
 			margin-right: 13px;
 			float: right;
 		}
 	}
 }
-
 .pagination{
 	margin-top:20px;
 	position: relative;

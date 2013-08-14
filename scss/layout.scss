@@ -596,55 +596,25 @@ footer {
 	}
 }
 
-.sidebar-nav,
-.sidebar-form {
-	h6 {
-		padding: 0 14px;
-	}
+.sidebar-nav h6 {
+	padding: 0 14px;
 }
 
 .sidebar-form {
-	padding: 9px 0;
-	#IE6 & {
-		padding-bottom: 40px;
+	padding: 9px 14px;
+	.field-note {
+		font-style: italic;
+		font-size: 0.9em;
+		font-weight: normal;
 	}
-	form {
-		margin-bottom: 10px;
-	}
-	div.field {
-		padding: 14px;
-		label {
-			font-size: 1.0em;
-			clear: left;
-			float: none;
-		}
-		.field-note {
-			clear: both;
-			font-style: italic;
-			font-size: 0.9em;
-			max-width: 170px;
-			font-weight: normal;
-		}
-		input, select {
-			#IE6 & {
-				height: 20px;
-			}
-			width: 12em;
-			max-width: 100%;
-			margin-top: -5px;
-		}
-		&.date input {
-			width: 7.7em;
-			float: left;
+	div.field.date input {
+		width: 7.7em;
+		#IE6 & {
+			height: 20px;
 		}
 	}
 
 	.Actions {
-		padding: 0 14px;
-		overflow: auto;
-		background: none;
-		border: none;
-
 		#IE8 & {
 			filter: none;
 		}

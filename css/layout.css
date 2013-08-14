@@ -2851,7 +2851,7 @@ ul.icons li .icon-large:before {
   border-radius: 4px;
 }
 
-.well, #Form_Form, .layout ul.sitemap {
+.well, .layout ul.sitemap {
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
@@ -2865,7 +2865,7 @@ ul.icons li .icon-large:before {
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
-.well blockquote, #Form_Form blockquote, .layout ul.sitemap blockquote {
+.well blockquote, .layout ul.sitemap blockquote {
   border-color: #ddd;
   border-color: rgba(0, 0, 0, 0.15);
 }
@@ -5234,8 +5234,33 @@ a.label:hover, a.badge:hover {
 
 /*
 *	Styling for form related components
-*
+*	Userforms module styling includes a little more than custom forms
+*	so that they look finished without needing to modify any code.
+*	Extend this style to apply userforms styling to your custom forms, 
+*	or modify it to change the look of your userforms
 */
+/*	General 	*/
+form div.field {
+  margin-bottom: 10px;
+}
+form div.field:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+*:first-child form div.field {
+  zoom: 1;
+}
+
+input,
+textarea,
+select,
+.uneditable-input {
+  height: 1.385em;
+}
+
 /* Styling for messages */
 .message {
   padding: 5px;
@@ -5329,83 +5354,12 @@ a.label:hover, a.badge:hover {
   box-shadow: 0 0 6px #d59392;
 }
 
-/* 
-*	User forms styling includes a little more than custom forms
-*	so that they look finished without needing to modify any code.
-*	Extend this style to apply userforms styling to your custom forms, 
-*	or modify it to change the look of your userforms
-*/
-#Form_Form {
-  background: #fff;
-  padding: 0;
-}
-
-/*	General 	*/
-form .FormHeading {
-  margin: 0;
-  -moz-border-radius-topleft: 3px;
-  -moz-border-radius-topright: 3px;
-  -moz-border-radius-bottomright: 0;
-  -moz-border-radius-bottomleft: 0;
-  -webkit-border-radius: 3px 3px 0 0;
-  border-radius: 3px 3px 0 0;
-  padding: 10px 19px;
-}
-form fieldset {
-  margin: 0;
-}
-form fieldset > div.field {
-  padding: 15px;
-  margin: 0;
-}
-form fieldset > div.field.checkbox {
-  margin-left: 19px;
-}
-.typography form h1, .typography form header .brand, header .typography form .brand, .typography form h2, .typography form h3 {
-  margin: 0;
-}
-.typography form h1.FormHeading, .typography form header .FormHeading.brand, header .typography form .FormHeading.brand, .typography form h2.FormHeading, .typography form h3.FormHeading {
-  background-color: #fcfcfc;
-  background-image: -ms-linear-gradient(top, #fafafa, white);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fafafa), to(white));
-  background-image: -webkit-linear-gradient(top, #fafafa, white);
-  background-image: -o-linear-gradient(top, #fafafa, white);
-  background-image: -moz-linear-gradient(top, #fafafa, white);
-  background-image: linear-gradient(top, #fafafa, #ffffff);
-  background-repeat: repeat-x;
-  border-bottom: 1px solid #eeeeee;
-  border-top: 1px solid gainsboro;
-}
-#IE8 .typography form h1.FormHeading, #IE8 .typography form header .FormHeading.brand, header #IE8 .typography form .FormHeading.brand, #IE8 .typography form h2.FormHeading, #IE8 .typography form h3.FormHeading {
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFAFAFA', endColorstr='#FFFFFFFF', GradientType=0);
-}
-
-input,
-textarea,
-select,
-.uneditable-input {
-  height: 1.385em;
-}
-
-/*	Label formatting	*/
-label {
-  padding-top: 3px;
-}
+/* Label formatting */
 label.left {
   font-weight: bold;
-  font-size: 1.2em;
-  line-height: 1.2em;
-  padding-bottom: 5px;
 }
 label.extra {
-  color: #525252;
-  font-weight: normal;
-  width: 100%;
-  max-width: 490px;
-  text-align: left;
   font-style: italic;
-  font-size: 1em;
-  line-height: 1.5em;
 }
 label.required {
   -webkit-box-sizing: border-box;
@@ -5430,9 +5384,7 @@ label.required {
   padding-left: 3px;
 }
 
-/**
-* Form fields formatting
-**/
+/* Form fields formatting */
 textarea {
   width: 100%;
   height: 200px;
@@ -5445,22 +5397,11 @@ textarea {
 select, input.text, input.file {
   width: 100%;
   max-width: 490px;
+  height: 2.31em;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-  height: 2.31em;
-  float: left;
-}
-select:after, input.text:after, input.file:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-*:first-child select, *:first-child input.text, *:first-child input.file {
-  zoom: 1;
 }
 select.date, input.text.date, input.file.date {
   width: 100px;
@@ -5475,69 +5416,27 @@ select.date, input.text.date, input.file.date {
   line-height: 20px;
 }
 
-/*	Checkboxes and radio buttons	*/
-.checkbox label {
-  color: #333333;
-  font-weight: normal;
-  font-style: normal;
-  position: static;
-}
-.checkbox label.required {
-  color: #b94a48;
-  float: left;
-  margin-top: 10px;
-  margin-left: -20px;
-}
-
-div.optionset {
-  position: relative;
-}
-
+/* Checkboxes and radio buttons */
 form ul.optionset {
   list-style: none;
   margin-left: 0;
 }
-form ul.optionset label {
-  font-weight: normal;
-  *zoom: 1;
+
+div.checkbox {
+  padding-left: 0;
 }
-form ul.optionset label:before, form ul.optionset label:after {
-  display: table;
-  content: "";
+div.checkbox input.checkbox {
+  min-height: 9px;
 }
-form ul.optionset label:after {
-  clear: both;
-}
-#IE7 form ul.optionset label {
+div.checkbox label.required {
   float: left;
-  width: 200px;
-}
-form ul.optionset input {
-  clear: both;
-  float: left;
-  margin-right: 5px;
+  margin-top: 5px;
+  margin-left: -20px;
 }
 
 /*	Date styles	*/
-div.date {
-  padding-right: 30px;
-}
-div.date label {
-  float: left;
-  margin-right: 10px;
-}
 div.date input {
-  margin-top: -5px;
   margin-right: 5px;
-}
-div.date img {
-  background: transparent url(../../../themes/default/images/icons/sitetree_images/date.png) no-repeat top left;
-  height: 0;
-  overflow: hidden;
-  padding-top: 15px;
-  /* height of icon for screen */
-  width: 15px;
-  /* width of icon for screen */
 }
 
 .ui-datepicker {
@@ -5550,27 +5449,11 @@ div.date img {
   line-height: 12px !important;
 }
 
-/*Submit button styling */
+/* Submit button styling */
 .Actions {
-  *zoom: 1;
-  margin: 0;
   border-top: 1px solid gainsboro;
-  background-color: #fdfdfd;
-  background-image: -ms-linear-gradient(top, white, #fafafa);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#fafafa));
-  background-image: -webkit-linear-gradient(top, white, #fafafa);
-  background-image: -o-linear-gradient(top, white, #fafafa);
-  background-image: -moz-linear-gradient(top, white, #fafafa);
-  background-image: linear-gradient(top, #ffffff, #fafafa);
-  background-repeat: repeat-x;
-  padding: 15px 19px;
-  padding: 15px 19px;
-  -moz-border-radius-topleft: 0;
-  -moz-border-radius-topright: 0;
-  -moz-border-radius-bottomright: 3px;
-  -moz-border-radius-bottomleft: 3px;
-  -webkit-border-radius: 0 0 3px 3px;
-  border-radius: 0 0 3px 3px;
+  padding: 15px 0;
+  *zoom: 1;
 }
 .Actions:before, .Actions:after {
   display: table;
@@ -5578,9 +5461,6 @@ div.date img {
 }
 .Actions:after {
   clear: both;
-}
-#IE8 .Actions {
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFFAFAFA', GradientType=0);
 }
 .Actions .action {
   padding-left: 15px;
@@ -6038,10 +5918,7 @@ ul.nav, ul.dropdown-menu {
 /*For news and search results*/
 #layout .resultsHeader {
   *zoom: 1;
-  padding: 0 5px;
-  margin: 10px 0;
-  height: auto;
-  border-bottom: 1px solid #eeeeee;
+  margin-top: 10px;
 }
 #layout .resultsHeader:before, #layout .resultsHeader:after {
   display: table;
@@ -6051,28 +5928,15 @@ ul.nav, ul.dropdown-menu {
   clear: both;
 }
 #layout .resultsHeader h2, #layout .resultsHeader p {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 200;
   font-size: 1.3em;
   line-height: 1.3em;
-  margin: 0px;
-  padding: 3px 0;
-}
-#layout .resultsHeader h2 a, #layout .resultsHeader p a {
-  color: #0464ea;
-  font-size: 0.7em;
-  margin-left: 1em;
-}
-#layout .resultsHeader h2 a:hover, #layout .resultsHeader h2 a:focus, #layout .resultsHeader p a:hover, #layout .resultsHeader p a:focus {
-  color: #03449f;
+  margin: 0;
+  padding: 0;
 }
 
-.resultsList.no-indent article {
-  margin-left: -10px;
-}
 .resultsList article {
-  padding: 5px 0;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #dddddd;
   *zoom: 1;
 }
 .resultsList article:before, .resultsList article:after {
@@ -6081,25 +5945,6 @@ ul.nav, ul.dropdown-menu {
 }
 .resultsList article:after {
   clear: both;
-}
-.resultsList article.first {
-  padding-top: 0;
-}
-.resultsList article p {
-  max-width: 790px;
-  margin: 0;
-  padding: 5px 0;
-}
-.resultsList article h3 {
-  line-height: 1em;
-  font-size: 1.4em;
-  margin-top: 5px;
-}
-.resultsList article.even {
-  background: #fbfbfb;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
 }
 .resultsList article figure {
   margin-right: 13px;
@@ -7099,52 +6944,23 @@ footer .socialLinks a:hover i:before {
   margin: 0;
 }
 
-.sidebar-nav h6,
-.sidebar-form h6 {
+.sidebar-nav h6 {
   padding: 0 14px;
 }
 
 .sidebar-form {
-  padding: 9px 0;
+  padding: 9px 14px;
 }
-#IE6 .sidebar-form {
-  padding-bottom: 40px;
-}
-.sidebar-form form {
-  margin-bottom: 10px;
-}
-.sidebar-form div.field {
-  padding: 14px;
-}
-.sidebar-form div.field label {
-  font-size: 1.0em;
-  clear: left;
-  float: none;
-}
-.sidebar-form div.field .field-note {
-  clear: both;
+.sidebar-form .field-note {
   font-style: italic;
   font-size: 0.9em;
-  max-width: 170px;
   font-weight: normal;
-}
-.sidebar-form div.field input, .sidebar-form div.field select {
-  width: 12em;
-  max-width: 100%;
-  margin-top: -5px;
-}
-#IE6 .sidebar-form div.field input, #IE6 .sidebar-form div.field select {
-  height: 20px;
 }
 .sidebar-form div.field.date input {
   width: 7.7em;
-  float: left;
 }
-.sidebar-form .Actions {
-  padding: 0 14px;
-  overflow: auto;
-  background: none;
-  border: none;
+#IE6 .sidebar-form div.field.date input {
+  height: 20px;
 }
 #IE8 .sidebar-form .Actions {
   filter: none;

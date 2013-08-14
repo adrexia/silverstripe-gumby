@@ -68,7 +68,6 @@
 						<% loop Months %>
 							<li <% if Active %>class="active"<% end_if %>><a href="$MonthLink.XML">$MonthName</a></li>
 						<% end_loop %>
-						
 					</ol>
 				<% end_loop %>
 				
@@ -77,14 +76,13 @@
 
 		<% if FilteredUpdates %>
 			<div class="resultsHeader">
-			
-				<% if FilterDescription %>
-					<h2 class="pull-left">$FilterDescription</h2> 
-					<p class="pull-left"><a href="$Link">Show all upcoming events</a></p>
-				<% else %>
-					<h2 class="pull-left">Upcoming events</h2>
-				<% end_if %>
-
+				<h2 class="pull-left">
+					<% if FilterDescription %>
+						$FilterDescription
+					<% else %>
+						Upcoming events
+					<% end_if %>
+				</h2> 
 				<p class="pull-right"><% with FilteredUpdates %>$FirstItem - $LastItem of $count<% end_with %></p>
 			</div>
 		
