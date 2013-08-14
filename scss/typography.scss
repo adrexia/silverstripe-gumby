@@ -43,6 +43,11 @@ TYPOGRAPHY
 		}
 	}
 	
+	.metaInfo {
+		margin-bottom: $baseLineHeight/2; 
+		color: $gray;
+	}
+	
 	/* Highlighting for search results titles and content snippets. */
 	span.highlight {
 		background: yellow;

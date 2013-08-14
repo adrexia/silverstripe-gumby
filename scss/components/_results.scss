@@ -7,11 +7,17 @@
 	list-style: none;
 	margin-left: 0;
 }
+
 /*For news and search results*/
-#layout .resultsHeader {
-	@extend .breadcrumb;
+#layout .resultsHeader {			// Uses similar style to breadcrumbs
+	padding: 7px 14px;
+	margin: $baseLineHeight/2 0 $baseLineHeight;
+	border: 1px solid #ddd;
+	@include gradient-vertical($white, #f5f5f5);
+	@include border-radius($inputBorderRadius);
+	@include box-shadow(inset 0 1px 0 $white);
 	@include clearfix;
-	margin-top: 10px;	
+
 	h2, p {
 		font-weight: 200;
 		font-size: 1.3em;

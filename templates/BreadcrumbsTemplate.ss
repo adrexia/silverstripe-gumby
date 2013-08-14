@@ -1,11 +1,11 @@
 <% if Pages %>
 	<ol class="breadcrumb">
-		<li><a href="$Baseref" class="divider-right">Home</a> </li>
+		<li><a href="$Baseref">Home</a> <span class="divider">/</span></li>
 		<% loop Pages %>
 			<% if Last %>
 				<li class="active">$Title.XML</li>
 			<% else %>
-				<li><a href="$Link" class="divider-right">$MenuTitle.XML</a> </li>
+				<li><a href="$Link">$MenuTitle.XML</a>  <span class="divider">/</span></li>
 			<% end_if %>
 		<% end_loop %>
 	</ol>

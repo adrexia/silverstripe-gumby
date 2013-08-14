@@ -195,12 +195,12 @@ header {
 }
 
 
-.typography{ //Needed to override typography styles
+.typography { 				/* Needed to override typography styles */
 
-	/*Adjust breadcrumbs*/
-	ol.breadcrumb{
-		margin:0 0 18px;
-		padding:7px 14px;
+	// Breadcrumbs
+	@include bootstrapBreadcrumb;
+	.breadcrumb .divider {
+	    color: $gray; 		/* adjust color to meet accessibility standards */
 	}
 
 	p.last-edited {
@@ -208,13 +208,12 @@ header {
 		clear: right;
 		font-size: 0.8em;
 		margin: 0;
-
 		time {
 			font-size: 1.0em;
 		}
 	}
 
-	/* Hero Unit adjustments */
+	// Hero Unit adjustments
 	div.hero-unit.nested {
 		padding:0;
 		h1 {
@@ -305,8 +304,6 @@ header {
 	.carousel-caption p {
 		color: $white;
 	}
-
-	/* Remove once we upgrade Bootstrap to 2.3.1 */
 	.carousel-interface {
 		button.carousel-control {
 			position: static;
@@ -556,29 +553,25 @@ footer {
  * EventPage and NewsPage - update information
  */
 .typography .update-information {
-	#IE6 & {
-		padding-bottom: 40px;
-	}
-
 	dl {
-		margin: 0;
-		padding: 0;
+		margin-top: 0;
 	}
-
 	dd {
 		margin-top: 0.2em;
 		margin-bottom: 0.2em;
 	}
-
-	ul.update-tags {
+	.update-tags {
 		overflow: auto;
 		margin: 8px 0;
-		
-		li {
+		.label {
 			float: left;
 			margin: 0 3px 3px 0;
 		}
 	}
+}
+.label,
+.badge {
+	background-color: $gray;			// make darker to meet accessibility standards
 }
 
 /**
