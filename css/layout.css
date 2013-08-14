@@ -1222,7 +1222,7 @@ li .icon-large:before {
 ul.icons {
   list-style-type: none;
   margin-left: 2em;
-  text-indent: -0.8em;
+  text-indent: -.8em;
 }
 ul.icons li [class^="icon-"],
 ul.icons li [class*=" icon-"] {
@@ -6947,7 +6947,7 @@ footer .socialLinks a:hover i:before {
 }
 
 /**
- * EventHolder and NewsHolder.
+ * EventHolder and NewsHolder + Registry Page.
  */
 .typography .month-filter h6.year {
   display: block;
@@ -6959,7 +6959,12 @@ footer .socialLinks a:hover i:before {
   margin: 0;
 }
 
-.sidebar-nav h6 {
+.sidebar-nav .h6-style {
+  color: #555555;
+  font-size: 11px;
+  text-transform: uppercase;
+  line-height: 18px;
+  margin: 0;
   padding: 0 14px;
 }
 
