@@ -66,9 +66,14 @@ TYPOGRAPHY
 	    	}
 		}
 	}
-	q:before,
-	q:after {
-		content: '"';
+	q {
+		quotes: '“' '”' '‘' '’';
+		&:after {
+			content: close-quote;
+		}
+		&:before {
+			content: open-quote;
+		}
 	}
 
 	/*** FILE & LINK ICONS ***/
