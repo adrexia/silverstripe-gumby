@@ -183,12 +183,21 @@ header {
 		list-style:none;
 		margin-left:0;
 		border-bottom:1px solid $grayLighter;
-		li a{
-			display:block;
-			padding:15px 0;			
+		li {
 			border-top:1px solid $grayLighter;
-			&[href^="http://"], &[href^="https"], &.external {
-				background-position: right 16px;
+			a{
+				display:-moz-inline-stack;
+				display:inline-block;
+				#IE6 &,
+				#IE7 & {
+					zoom:1;
+					display:inline;
+				}
+				padding:15px;
+				padding-left: 0;
+				&[href^="http://"], &[href^="https"], &.external {
+					background-position: right 12px;
+				}
 			}
 		}
 	}

@@ -6100,13 +6100,21 @@ header ul#lang li {
   margin-left: 0;
   border-bottom: 1px solid #eeeeee;
 }
-#layout .linkSet ul li a {
-  display: block;
-  padding: 15px 0;
+#layout .linkSet ul li {
   border-top: 1px solid #eeeeee;
 }
+#layout .linkSet ul li a {
+  display: -moz-inline-stack;
+  display: inline-block;
+  padding: 15px;
+  padding-left: 0;
+}
+#IE6 #layout .linkSet ul li a, #IE7 #layout .linkSet ul li a {
+  zoom: 1;
+  display: inline;
+}
 #layout .linkSet ul li a[href^="http://"], #layout .linkSet ul li a[href^="https"], #layout .linkSet ul li a.external {
-  background-position: right 16px;
+  background-position: right 12px;
 }
 
 .typography {
