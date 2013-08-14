@@ -63,7 +63,7 @@
 					<% end_if %>
 				<% end_if %>
 				<% loop AvailableMonths %>
-					<h6 class="year">$YearName:</h6>
+					<h3 class="year h6-style">$YearName:</h3>
 					<ol class="nav nav-pills unstyled months">
 						<% loop Months %>
 							<li <% if Active %>class="active"<% end_if %>><a href="$MonthLink.XML">$MonthName</a></li>
