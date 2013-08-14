@@ -18,10 +18,10 @@
 	<% if SiteConfig.FacebookURL || SiteConfig.TwitterUsername %>
 		<aside class="socialLinks pull-right" role="complementary">
 			<% if SiteConfig.TwitterUsername %>
-				<a title="Follow us on Twitter" href="http://www.twitter.com/$SiteConfig.TwitterUsername" target="_blank"><i class="icon-twitter-sign icon-dark"></i>Follow us on Twitter</a>
+				<a href="http://www.twitter.com/$SiteConfig.TwitterUsername" target="_blank"><i class="icon-twitter-sign icon-dark"></i>Follow us on Twitter</a>
 			<% end_if %>
 			<% if SiteConfig.FacebookURL %>
-				<a title="Join us on Facebook" href="http://www.facebook.com/$SiteConfig.FacebookURL" target="_blank"><i class="icon-dark icon-facebook-sign"></i>Join us on Facebook</a>
+				<a href="http://www.facebook.com/$SiteConfig.FacebookURL" target="_blank"><i class="icon-dark icon-facebook-sign"></i>Join us on Facebook</a>
 			<% end_if %>
 		</aside>
 	<% end_if %>
