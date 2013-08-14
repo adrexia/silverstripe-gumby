@@ -6983,6 +6983,13 @@ footer .socialLinks a:hover i:before {
 .sidebar-form .message {
   margin: 10px;
 }
+.sidebar-form .h6-style {
+  color: #555555;
+  font-size: 11px;
+  text-transform: uppercase;
+  line-height: 18px;
+  margin: 0;
+}
 
 .resultsList article header {
   padding: 0;

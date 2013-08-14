@@ -615,6 +615,13 @@ footer {
 	.message {
 		margin: 10px;
 	}
+	.h6-style {
+		color: $gray;
+		font-size: 11px;
+		text-transform: uppercase;
+		line-height: 18px;
+		margin: 0;
+	}
 }
 
 .resultsList article header {
