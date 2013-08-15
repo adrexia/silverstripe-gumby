@@ -28,14 +28,14 @@
 				</div>
 				<div class="carousel-controls">
 					<button class="left" href="#myCarousel" data-slide="prev" tabindex="0" type="button" name="Previous">
-						<i class="icon-chevron-left"></i>
+						<i class="icon-chevron-left" aria-hidden="true"></i>
 						<span class="nonvisual-indicator">Previous</span>
 					</button>
-					<button class="pause" tabindex="0" type="button" name="Pause">							<span class="icon" aria-hidden="true">&#xf04c;</span>
+					<button class="pause" tabindex="0" type="button" name="Pause">									<span class="icon" aria-hidden="true">&#xf04c;</span>
 						<span class="nonvisual-indicator">Pause</span>
 					</button>
 					<button class="right" href="#myCarousel" data-slide="next" tabindex="0" type="button" name="Next">
-						<i class="icon-chevron-right"></i>
+						<i class="icon-chevron-right" aria-hidden="true"></i>
 						<span class="nonvisual-indicator">Next</span>
 					</button>
 				</div>
