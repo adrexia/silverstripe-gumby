@@ -5,8 +5,10 @@
 			<div class="well update-information">
 				<h2 class="nonvisual-indicator">News item information</h2>
 				<dl>
-					<dt>Date</dt>
-					<dd><time datetime="$Date">$Date.Nice</time></dd>
+					<% if $Date %>
+						<dt>Date</dt>
+						<dd><time datetime="$Date">$Date.Nice</time></dd>
+					<% end_if %>
 					<% if Author %>
 						<dt>Author:</dt>
 						<dd>$Author</dd>

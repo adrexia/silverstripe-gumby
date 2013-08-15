@@ -91,7 +91,7 @@
 					<header>
 						<h3><a href="$Link">$Title</a></h3>
 					</header>
-					<p class="metaInfo"><time datetime="$Date">$Date.Format(d/m/Y)<% if $StartTime %> $StartTime.Nice<% if $EndTime %> - $EndTime.Nice<% end_if %><% end_if %></time></p>
+					<p class="metaInfo"><time <% if $Date %>datetime="$Date">$Date.Format(d/m/Y)<% if $StartTime %> $StartTime.Nice<% if $EndTime %> - $EndTime.Nice<% end_if %><% end_if %><% end_if %></time></p>
 					<p>
 						<% if Abstract %>
 							$Abstract
