@@ -5347,6 +5347,15 @@ label.required {
   padding-left: 3px;
 }
 
+legend {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  font-weight: bold;
+  border-bottom: 0;
+  margin-bottom: 5px;
+}
+
 /* Form fields formatting */
 textarea {
   width: 100%;
