@@ -5941,6 +5941,12 @@ ul.nav, ul.dropdown-menu {
   margin-right: 13px;
   float: right;
 }
+.resultsList article header h3 {
+  margin-top: 10px;
+}
+.resultsList article.first {
+  border-top: 1px solid #dddddd;
+}
 
 .pagination {
   margin-top: 20px;
@@ -6107,10 +6113,10 @@ header ul#lang li {
 #layout .linkSet ul {
   list-style: none;
   margin-left: 0;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #dddddd;
 }
 #layout .linkSet ul li {
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #dddddd;
 }
 #layout .linkSet ul li a {
   display: -moz-inline-stack;
@@ -6308,10 +6314,6 @@ header ul#lang li {
 }
 #IE7 .carousel .carousel-interface .carousel-controls {
   margin-top: 5px;
-}
-
-h2 a, h2 a:visited {
-  color: #000;
 }
 
 figure.featured-image {

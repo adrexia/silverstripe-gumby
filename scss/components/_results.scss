@@ -34,6 +34,12 @@
 			margin-right: 13px;
 			float: right;
 		}
+		header h3 {
+			margin-top: $baseLineHeight/2;
+		}
+		&.first {
+			border-top: 1px solid $hrBorder;
+		}
 	}
 }
 .pagination{
