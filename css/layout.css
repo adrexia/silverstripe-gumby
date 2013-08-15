@@ -1222,7 +1222,7 @@ li .icon-large:before {
 ul.icons {
   list-style-type: none;
   margin-left: 2em;
-  text-indent: -.8em;
+  text-indent: -0.8em;
 }
 ul.icons li [class^="icon-"],
 ul.icons li [class*=" icon-"] {
@@ -5345,6 +5345,15 @@ label.required {
   font-size: 14px;
   font-weight: normal;
   padding-left: 3px;
+}
+
+legend {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  font-weight: bold;
+  border-bottom: 0;
+  margin-bottom: 5px;
 }
 
 /* Form fields formatting */

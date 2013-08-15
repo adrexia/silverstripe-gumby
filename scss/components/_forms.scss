@@ -43,7 +43,7 @@ select,
 
 
 /* Label formatting */
-label{
+label {
 	&.left {
 		font-weight: bold;
 	}
@@ -63,13 +63,18 @@ label{
 		}
 	}
 }
-
 .requiredField label.left:after {
     color: $errorText;
     content: "*";
     font-size: 14px;
     font-weight: normal;
     padding-left: 3px;
+}
+legend { 		// Override bootstrap legend styles so they look like label.left
+	@include font-shorthand($baseFontSize,normal,$baseLineHeight); // Set size, weight, line-height here
+	font-weight: bold;
+	border-bottom: 0;
+	margin-bottom: 5px;
 }
 
 

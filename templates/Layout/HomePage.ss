@@ -8,7 +8,7 @@ $PageComments
 <div class="row">
 	<% if Quicklinks %>
 	<div class="span3 linkSet">
-		<h2><i class="icon-link"></i> Quicklinks</h2>
+		<h2><i class="icon-link" aria-hidden="true"></i> Quicklinks</h2>
 		<ul>
 			<% loop Quicklinks %>
 				<li class="$EvenOdd $FirstLast"><a href="$Link" class="$FirstLast">$Name</a></li>
@@ -19,7 +19,7 @@ $PageComments
 
 	<div class="span4 feature">
 		<% if $FeatureOneTitle %>
-			<h2><% if $FeatureOneCategory %><i class="icon-$FeatureOneCategory"></i> <% end_if %>$FeatureOneTitle</h2>
+			<h2><% if $FeatureOneCategory %><i class="icon-$FeatureOneCategory" aria-hidden="true"></i> <% end_if %>$FeatureOneTitle</h2>
 		<% end_if %>
 		<% if FeatureOneContent %>
 			$FeatureOneContent
@@ -31,7 +31,7 @@ $PageComments
 		<% end_if %>
 
 		<% if $FeatureTwoTitle %>
-			<h2><% if $FeatureTwoCategory %><i class="icon-$FeatureTwoCategory"></i> <% end_if %>$FeatureTwoTitle</h2>
+			<h2><% if $FeatureTwoCategory %><i class="icon-$FeatureTwoCategory" aria-hidden="true"></i> <% end_if %>$FeatureTwoTitle</h2>
 		<% end_if %>
 		<% if FeatureTwoContent %>
 			$FeatureTwoContent
@@ -45,7 +45,7 @@ $PageComments
 
 	<% if NewsItems %>
 	<div class="span5 resultsList">
-		<h2><i class="icon-th-list"></i> <a href="$NewsPage.Link">$NewsPage.Title</a></h2>
+		<h2><i class="icon-th-list" aria-hidden="true"></i> <a href="$NewsPage.Link">$NewsPage.Title</a></h2>
 		<% loop NewsItems %>
 			<article class="$EvenOdd $FirstLast">
 				<% include NewsItem %>

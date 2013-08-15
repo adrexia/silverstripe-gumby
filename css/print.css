@@ -152,7 +152,7 @@
   margin-left: 0;
 }
 
-.navbar, .sidebar-nav, .breadcrumb, .icon, .control, .btn, .carousel-control, .printShare, .resultsHeader, .pagination, #lang, footer {
+.navbar, .sidebar-nav, .breadcrumb, .icon, .control, .btn, .carousel-control, .printShare, .resultsHeader, .pagination, #lang, footer, .sidebar-form, .sidebar-nav {
   display: none;
 }
 
