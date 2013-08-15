@@ -2,7 +2,7 @@
 	<% include Breadcrumbs %>
 	<div class="span3">
 		<div class="sidebar-nav well">
-			<h2 style="h6-style">Filter by tag</h2>
+			<h2 class="h6-style">Filter by tag</h2>
 			<nav role="navigation">
 				<ul class="nav nav-list">
 					<li <% if CurrentTag %><% else %>class="active"<% end_if %>><a href="$AllTagsLink" title="View all tags">View all tags</a></li>
@@ -25,6 +25,7 @@
 					<% end_if %>
 
 					<fieldset>
+						<div class="field-note">Tip: Leave one field blank to search for a single date.</div>
 						<div id="from" class="field date text">
 							<label class="left" for="{$FormName}_from">Filter from date <span class="field-note">(example: 31/12/13)</span></label>
 							$Fields.dataFieldByName(from)
@@ -32,7 +33,6 @@
 						<div id="to" class="field date text">
 							<label class="left" for="{$FormName}_to">Filter to date <span class="field-note">(example: 31/12/13)</span></label>
 							$Fields.dataFieldByName(to)
-							<div class="field-note">Tip: Leave one field blank to search for a single date.</div>
 						</div>
 						$Fields.dataFieldByName(tag)
 						$Fields.dataFieldByName(SecurityID)
@@ -91,7 +91,7 @@
 					<header>
 						<h3><a href="$Link">$Title</a></h3>
 					</header>
-					<p class="metaInfo"><time datetime="$Date">$Date.Format(d/m/Y)<% if $StartTime %> $StartTime.Nice<% if $EndTime %> - $EndTime.Nice<% end_if %><% end_if %></time></p>
+					<p class="metaInfo"><time <% if $Date %>datetime="$Date">$Date.Format(d/m/Y)<% if $StartTime %> $StartTime.Nice<% if $EndTime %> - $EndTime.Nice<% end_if %><% end_if %><% end_if %></time></p>
 					<p>
 						<% if Abstract %>
 							$Abstract

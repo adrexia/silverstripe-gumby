@@ -6,7 +6,7 @@
 				<h2 class="nonvisual-indicator">Event information</h2>
 				<dl>
 					<dt>Date &amp; time</dt>
-					<dd><time datetime="$Date">$Date.Format(d/m/Y)<% if $StartTime %> $StartTime.Nice<% if $EndTime %> - $EndTime.Nice<% end_if %><% end_if %></time></dd>
+					<dd><time <% if $Date %>datetime="$Date">$Date.Format(d/m/Y)<% if $StartTime %> $StartTime.Nice<% if $EndTime %> - $EndTime.Nice<% end_if %><% end_if %><% end_if %></time></dd>
 					<% if Location %>
 						<dt>Location:</dt>
 						<dd>$NiceLocation</dd>

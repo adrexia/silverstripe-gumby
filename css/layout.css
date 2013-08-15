@@ -6957,27 +6957,26 @@ footer .socialLinks a:hover i:before {
 /**
  * EventHolder and NewsHolder + Registry Page.
  */
-.typography .month-filter .h6-style {
-  display: block;
-  float: left;
-  padding: 8px 0;
-  margin: 0;
-  margin-right: 10px;
+.typography .h6-style {
   color: #555555;
   font-size: 11px;
   text-transform: uppercase;
   line-height: 18px;
+  margin: 0;
+}
+
+.typography .month-filter .h6-style {
+  display: block;
+  float: left;
+  padding: 8px 0;
+  margin-right: 10px;
+  color: #555555;
 }
 .typography .month-filter ol {
   margin: 0;
 }
 
 .sidebar-nav .h6-style {
-  color: #555555;
-  font-size: 11px;
-  text-transform: uppercase;
-  line-height: 18px;
-  margin: 0;
   padding: 0 14px;
 }
 
@@ -6988,6 +6987,7 @@ footer .socialLinks a:hover i:before {
   font-style: italic;
   font-size: 0.9em;
   font-weight: normal;
+  margin: 5px 0;
 }
 .sidebar-form div.field.date input {
   width: 7.7em;
@@ -7000,13 +7000,6 @@ footer .socialLinks a:hover i:before {
 }
 .sidebar-form .message {
   margin: 10px;
-}
-.sidebar-form .h6-style {
-  color: #555555;
-  font-size: 11px;
-  text-transform: uppercase;
-  line-height: 18px;
-  margin: 0;
 }
 
 .resultsList article header {
