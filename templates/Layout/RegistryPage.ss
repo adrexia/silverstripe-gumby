@@ -38,26 +38,28 @@
 					</table>
 
 					<% if RegistryEntries.MoreThanOnePage %>
-						<div class="pagination">
+						<div class="pagination pagination-centered">
+							<h3 class="nonvisual-indicator">Page pagination</h3>
 							<ul id="PageNumbers">
 								<% if RegistryEntries.NotFirstPage %>
-									<li class="prev"><a href="$RegistryEntries.PrevLink" title="View the previous page">&lt;</a></li>
+									<li class="prev"><a href="$RegistryEntries.PrevLink" title="View the previous page of results">&laquo; Prev</a></li>
 								<% end_if %>
 								<% loop RegistryEntries.PaginationSummary(5) %>
 									<% if CurrentBool %>
-										<li class="active"><a href="$Link" title="View page number $PageNum">$PageNum</a></li>
+										<li class="active"><a href="$Link" title="Viewing page $PageNum of results">$PageNum</a></li>
 									<% else_if PageNum %>
-										<li><a href="$Link" title="View page number $PageNum">$PageNum</a></li>
+										<li><a href="$Link" title="View page $PageNum of results">$PageNum</a></li>
 									<% else %>
-										<li><a><span class="disabled">...</span></a></li>
+										<li class="disabled"><a><span class="disabled">...</span></a></li>
 									<% end_if %>
 								<% end_loop %>
 								<% if RegistryEntries.NotLastPage %>
-									<li class="next"><a href="$RegistryEntries.NextLink" title="View the next page">&gt;</a></li>
+									<li class="next"><a href="$RegistryEntries.NextLink" title="View next page of results">Next &raquo;</a></li>
 								<% end_if %>
 							</ul>
 						</div>
 					<% end_if %>
+					
 				<% else %>
 					<p class="noResults">No results to show.</p>
 				<% end_if %>
