@@ -1,6 +1,6 @@
 <% if MoreThanOnePage %>
 <div id="" class="pagination clear">
-	<span class="nonvisual-indicator">Page pagination</span>
+	<h3 class="nonvisual-indicator">Page pagination</h3>
 	<ul id="PageNumbers">
 	<% if NotFirstPage %>
 		<li class="prev"><a title="View previous page of results" class="prev paginate-left" href="$PrevLink">&lt; Prev</a></li>
