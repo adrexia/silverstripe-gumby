@@ -8,7 +8,7 @@
 	<% base_tag %>
 	
 	<%-- $FilterDescription adds additional information from the news and events areas --%>
-	<title>$Title <% if FilterDescription %>- $FilterDescription<% end_if %>| $SiteConfig.Title</title>
+	<title>$Title <% if FilterDescription %>- $FilterDescription<% end_if %> | $SiteConfig.Title</title>
 	
 	$MetaTags(false)
 	<meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0" />
