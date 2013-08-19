@@ -5216,6 +5216,13 @@ form div.field:after {
 *:first-child form div.field {
   zoom: 1;
 }
+form#Form_Form:before {
+  color: #b94a48;
+  content: "Required fields *";
+  font-weight: normal;
+  padding-top: 5px;
+  line-height: 30px;
+}
 
 input,
 textarea,
@@ -5448,12 +5455,6 @@ div.date input {
 }
 .Actions #ForgotPassword a {
   padding-left: 30px;
-}
-.Actions:after {
-  color: #b94a48;
-  content: "Required fields *";
-  font-weight: normal;
-  padding-top: 5px;
 }
 
 /*
