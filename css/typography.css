@@ -2240,11 +2240,7 @@ TYPOGRAPHY
   border-top: none;
 }
 .typography .table-striped tbody tr:hover td, .typography .table-striped tbody tr:hover td, .typography .table-bordered-striped tbody tr:hover td, .typography .table-condensed-striped tbody tr:hover td, .typography .table-striped tbody tr:hover th, .typography .table-striped tbody tr:hover th, .typography .table-bordered-striped tbody tr:hover th, .typography .table-condensed-striped tbody tr:hover th, .typography .table-bordered-striped tbody tr:hover td, .typography .table-bordered-striped tbody tr:hover th {
-<<<<<<< HEAD
-  background-color: #ebebeb;
-=======
   background-color: #f0f0f0;
->>>>>>> Minor: table hover background too dark for WCAG contrast
 }
 .typography ul {
   list-style-type: disc;
