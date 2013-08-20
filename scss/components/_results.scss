@@ -8,7 +8,7 @@
 	margin-left: 0;
 }
 
-/*For news and search results*/
+/* For news/events and search results */
 #layout .resultsHeader {			// Uses similar style to breadcrumbs
 	padding: 7px 14px;
 	margin: $baseLineHeight/2 0 $baseLineHeight;
@@ -34,19 +34,29 @@
 			margin-right: 13px;
 			float: right;
 		}
+		header h3 {
+			margin-top: $baseLineHeight/2;
+		}
+		&.first {
+			border-top: 1px solid $hrBorder;
+		}
 	}
 }
-.pagination{
-	margin-top:20px;
-	position: relative;
-	float:right;
-	left: -50%;
-	text-align: left;
-	@include clearfix;
+
+/* Serach results pages, registry page */
+.pagination {
 	#PageNumbers{
-		line-height:18px;
-		list-style: none;
-		position: relative;
-		left: 50%;
+		display: inline-block;
+  		@include ie7-inline-block();
+  		margin-left: 0;
+  		margin-bottom: 0;
+  		@include border-radius(3px);
+  		@include box-shadow(0 1px 2px rgba(0,0,0,.05));
+	}
+	.active a, .disabled a { 
+		color: $gray;
+		&:hover {
+			color: $gray;
+		}
 	}
 }

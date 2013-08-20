@@ -1,11 +1,11 @@
 <% if MoreThanOnePage %>
-<div id="" class="pagination clear">
-	<span class="nonvisual-indicator">Page pagination</span>
+<div id="" class="pagination pagination-centered clear">
+	<h3 class="nonvisual-indicator">Page pagination</h3>
 	<ul id="PageNumbers">
 	<% if NotFirstPage %>
-		<li class="prev"><a title="View previous page of results" class="prev paginate-left" href="$PrevLink">&lt; Prev</a></li>
+		<li class="prev"><a title="View previous page of results" class="prev paginate-left" href="$PrevLink">&laquo; Prev</a></li>
 	<% else %>	
-		<li class="prev disabled"><a title="View previous page of results" class="prev paginate-left disabled">&lt; Prev</a></li>
+		<li class="prev disabled"><a title="View previous page of results" class="prev paginate-left disabled">&laquo; Prev</a></li>
 	<% end_if %>
 	
 	<% loop PaginationSummary(4) %>
@@ -20,9 +20,9 @@
 		<% end_if %>
 	<% end_loop %>
 	<% if NotLastPage %>
-		<li class="next"><a title="View next page of results" class="next paginate-right" href="$NextLink">Next &gt;</a></li>
+		<li class="next"><a title="View next page of results" class="next paginate-right" href="$NextLink">Next &raquo;</a></li>
 	<% else %>
-		<li class="next disabled"><a title="View next page of results" class="next paginate-right disabled">Next &gt;</a></li>
+		<li class="next disabled"><a title="View next page of results" class="next paginate-right disabled">Next &raquo;</a></li>
 	
 	<% end_if %>
 	</ul>

@@ -1,7 +1,7 @@
 <header>
 	<h3><a href="$Link">$Title</a></h3>
 </header>
-<p>
+<p class="metaInfo">
 	<% if Category %>
 		<a class="label label-inverse" href="$Category.Link">$Category.Title</a>
 	<% end_if %> 
