@@ -7,10 +7,17 @@
 */
 
 /*	General 	*/
-form{
+form {
 	div.field {
 		margin-bottom: 10px;
 		@include clearAfter;
+	}
+	&#Form_Form:before {
+		color: $errorText;
+    	content: "Required fields *";
+    	font-weight: normal;
+    	padding-top: 5px;
+    	line-height: $baseLineHeight*1.5;
 	}
 }
 
@@ -161,11 +168,5 @@ div.date{
 		a{
 			padding-left:30px;
 		}
-	}
-	&:after {
-		color: $errorText;
-    	content: "Required fields *";
-    	font-weight: normal;
-    	padding-top: 5px;
 	}
 }

@@ -30,6 +30,7 @@
 			}
 		});
 
+		// SITEMAP
 		$('.sitemap').on('click', '.button', function() {
 			var self = $(this);
 			var target = $(self.attr('data-target'));
@@ -49,14 +50,14 @@
 
 			self.toggleClass('open');
 
-			var label = self.attr('label');
-			var pageName = label.substring(label.indexOf(' '));
 			if(self.hasClass('open')) {
 				target.removeClass('collapse').addClass('collapsed');
-				self.attr('label', 'Collapse ' + pageName);
+				$(this).attr('aria-expanded', 'true');
+				$(this).children('.linkText').replaceWith('<span class="linkText">Collapse section</span>');
 			} else {
 				target.removeClass('collapsed').addClass('collapse');
-				self.attr('label', 'Expand ' + pageName);
+				$(this).attr('aria-expanded', 'false');
+				$(this).children('.linkText').replaceWith('<span class="linkText">Expand section</span>');
 			}
 
 			return false;
