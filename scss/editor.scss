@@ -3,13 +3,13 @@
  */
 
 .typography {/* Adjust for CMS */
-	font-size:13px;
+	font-size: 14px;
 	table, tr, td{
-		font-size:13px;
+		font-size: 14px;
 	}
 	
 	.maori {
-		background: #EEE;
+		background-color: #fae5e8 !important;
 	}
 }
 @import "typography.scss";
