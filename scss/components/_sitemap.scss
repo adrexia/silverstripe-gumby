@@ -60,7 +60,7 @@
 	
 	li {
 		background: $tableBackgroundAccent;
-		border-top: 1px solid red;
+		border-top: 1px solid $tableBorder;
 		z-index: 0;
 		position: relative;
 		line-height: 40px;

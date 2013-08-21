@@ -5703,7 +5703,7 @@ ul.nav, ul.dropdown-menu {
 }
 .layout ul.sitemap li {
   background: #f4f4f4;
-  border-top: 1px solid red;
+  border-top: 1px solid #dddddd;
   z-index: 0;
   position: relative;
   line-height: 40px;
@@ -5740,7 +5740,7 @@ ul.nav, ul.dropdown-menu {
 }
 .layout ul.sitemap li a.sitemap-link:hover {
   text-decoration: none;
-  background-color: #ebebeb;
+  background-color: #f0f0f0;
 }
 .layout ul.sitemap li ul {
   margin: 0;
