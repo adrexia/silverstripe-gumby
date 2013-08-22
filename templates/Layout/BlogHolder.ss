@@ -1,14 +1,13 @@
 <div id="BlogContent" class="blogcontent typography">
 	<div class="row">
-		<div class="span12">
-			<% include BreadCrumbs %>
-		</div>
+		<% include BreadCrumbs %>
 		<div class="span3">
 			<div class="sidebar-nav well">
 				<% include BlogSideBar %>
 			</div>
 		</div>
 		<div id="main" class="span9">
+			<h1 class="page-header">$Title</h1>
 			<% if SelectedTag %>
 				<h3><% _t('VIEWINGTAGGED', 'Viewing entries tagged with') %> '$SelectedTag'</h3>
 			<% else_if SelectedDate %>
