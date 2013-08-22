@@ -5346,7 +5346,7 @@ label.required {
   max-width: 100%;
 }
 
-.requiredField label.left:after {
+.requiredField label.left:after, .requiredField legend.left:after {
   color: #b94a48;
   content: "*";
   font-size: 14px;
@@ -5360,6 +5360,12 @@ legend {
   line-height: 20px;
   font-weight: bold;
   border-bottom: 0;
+  margin-bottom: 5px;
+}
+
+span.extra {
+  font-style: italic;
+  display: block;
   margin-bottom: 5px;
 }
 
