@@ -5346,7 +5346,7 @@ label.required {
   max-width: 100%;
 }
 
-.requiredField label.left:after {
+.requiredField label.left:after, .requiredField legend.left:after {
   color: #b94a48;
   content: "*";
   font-size: 14px;
@@ -5360,6 +5360,12 @@ legend {
   line-height: 20px;
   font-weight: bold;
   border-bottom: 0;
+  margin-bottom: 5px;
+}
+
+span.extra {
+  font-style: italic;
+  display: block;
   margin-bottom: 5px;
 }
 
@@ -5703,7 +5709,7 @@ ul.nav, ul.dropdown-menu {
 }
 .layout ul.sitemap li {
   background: #f4f4f4;
-  border-top: 1px solid red;
+  border-top: 1px solid #dddddd;
   z-index: 0;
   position: relative;
   line-height: 40px;
@@ -5740,7 +5746,7 @@ ul.nav, ul.dropdown-menu {
 }
 .layout ul.sitemap li a.sitemap-link:hover {
   text-decoration: none;
-  background-color: #ebebeb;
+  background-color: #f0f0f0;
 }
 .layout ul.sitemap li ul {
   margin: 0;

@@ -8,8 +8,8 @@
 
 /*	General 	*/
 form {
-	div.field {
-		margin-bottom: 10px;
+	div.field { 				// Todo: extend bootstrap 2.3.2 .control-group
+		margin-bottom: $baseLineHeight / 2;
 		@include clearAfter;
 	}
 	&#Form_Form:before {
@@ -55,7 +55,7 @@ label {
 		font-weight: bold;
 	}
 	&.extra {
-		font-style:italic;	
+		font-style: italic;	
 	}
 	&.required{
 		@include box-sizing(border-box);
@@ -70,18 +70,24 @@ label {
 		}
 	}
 }
-.requiredField label.left:after {
+.requiredField label.left:after, .requiredField legend.left:after {
     color: $errorText;
     content: "*";
     font-size: 14px;
     font-weight: normal;
     padding-left: 3px;
 }
+// Optionset, Checkbox groups
 legend { 		// Override bootstrap legend styles so they look like label.left
 	@include font-shorthand($baseFontSize,normal,$baseLineHeight); // Set size, weight, line-height here
 	font-weight: bold;
 	border-bottom: 0;
 	margin-bottom: 5px;
+}
+span.extra { // replicates label.extra for optionset 
+	font-style: italic;	
+    display: block;
+    margin-bottom: 5px;
 }
 
 

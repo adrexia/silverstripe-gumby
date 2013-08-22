@@ -64,10 +64,12 @@
 					<p class="noResults">No results to show.</p>
 				<% end_if %>
 				<div class="resultActions">
+					<p>
 					<% if RegistryEntries %>
-						<a class="export" href="$Link(export)?$AllQueryVars" title="Export all results to a CSV spreadsheet file">Export results to CSV</a>
+						<a class="export" href="$Link(export)?$AllQueryVars" title="Export all results to a CSV spreadsheet file">Export results to CSV</a> | 
 					<% end_if %>
 					<a class="historyFeedLink" href="registry-feed/latest/{$DataClass}" title="View imported data history">View imported data history</a>
+					</p>
 				</div>
 				<% include PrintShare %>
 			</div>
