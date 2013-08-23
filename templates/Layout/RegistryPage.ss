@@ -39,7 +39,7 @@
 
 					<% if RegistryEntries.MoreThanOnePage %>
 						<div class="pagination pagination-centered">
-							<h3 class="nonvisual-indicator">Page pagination</h3>
+							<h3 class="nonvisual-indicator">Pages</h3>
 							<ul id="PageNumbers">
 								<% if RegistryEntries.NotFirstPage %>
 									<li class="prev"><a href="$RegistryEntries.PrevLink" title="View the previous page of results">&laquo; Prev</a></li>
