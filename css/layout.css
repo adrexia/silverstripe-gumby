@@ -5543,18 +5543,11 @@ ul.nav, ul.dropdown-menu {
 .navbar .nav li.open.active .current.dropdown-toggle {
   background-color: #222222;
 }
-.navbar .nav {
-  /* Dropnav arrow adjustment */
+.navbar .nav .showChildren .caret {
+  opacity: 0.5;
 }
-.navbar .nav .hasLink {
-  padding-right: 32px;
-}
-.navbar .nav .hasLinkArrow {
-  width: 16px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding-right: 6px;
+.navbar .nav .showChildren .caret:hover {
+  opacity: 1;
 }
 #IE6 .navbar .nav {
   width: 70%;

@@ -88,16 +88,11 @@ ul.nav, ul.dropdown-menu{
 	}
 
 	.nav {
-		/* Dropnav arrow adjustment */
-		.hasLink {
-			padding-right: 32px;
-		}
-		.hasLinkArrow {
-			width: 16px;
-			position: absolute;
-			top: 0;
-			right: 0;
-			padding-right: 6px;
+		.showChildren .caret {
+			opacity: 0.5;
+			&:hover {
+				opacity: 1;
+			}
 		}
 
 		#IE6 & {
