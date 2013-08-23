@@ -6234,6 +6234,7 @@ header ul#lang li {
   margin: 8px 26px 0 0;
   outline: none;
   border: 0px;
+  opacity: 0.65;
 }
 .carousel .carousel-interface button.carousel-control.active {
   background-color: #0464ea;
