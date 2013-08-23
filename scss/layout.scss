@@ -299,6 +299,10 @@ header {
 	}
 	.carousel-inner {
 		background-color: #000;
+		.item > a { // If image is missing leave enough room for title/caption and alt text to show
+			display: block;
+			min-height: 100px;		
+		}
 	}
 	#layout.typography & a img {
 		border: none;

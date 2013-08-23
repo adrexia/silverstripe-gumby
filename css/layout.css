@@ -6223,6 +6223,10 @@ header ul#lang li {
 .carousel .carousel-inner {
   background-color: #000;
 }
+.carousel .carousel-inner .item > a {
+  display: block;
+  min-height: 100px;
+}
 #layout.typography .carousel a img {
   border: none;
   color: #fff;
