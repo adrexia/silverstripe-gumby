@@ -5947,6 +5947,20 @@ body {
   background-color: #FFF;
   color: #333333;
 }
+#SearchGroup .navbar-search .search-query:-moz-placeholder {
+  color: #555555;
+  opacity: 1;
+}
+#SearchGroup .navbar-search .search-query::-moz-placeholder {
+  color: #555555;
+  opacity: 1;
+}
+#SearchGroup .navbar-search .search-query:-ms-input-placeholder {
+  color: #555555;
+}
+#SearchGroup .navbar-search .search-query::-webkit-input-placeholder {
+  color: #555555;
+}
 #SearchGroup .navbar-search .search-query:focus {
   background-color: #FFF;
 }

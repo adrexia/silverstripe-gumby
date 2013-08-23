@@ -35,6 +35,15 @@
   @include clearfix();
 }
 
+
+// Placeholder text
+@mixin customPlaceholder($color: $placeholderText) {
+	&:-moz-placeholder            { color: $color; opacity: 1; } // Firefox 4-18
+	&::-moz-placeholder           { color: $color; opacity: 1; } // Firefox 19+
+	&:-ms-input-placeholder       { color: $color; } // Internet Explorer 10+
+	&::-webkit-input-placeholder  { color: $color; } // Safari and Chrome
+}
+
 // Webkit-style focus
 // ------------------
 @mixin tab-focus() {

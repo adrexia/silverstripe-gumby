@@ -40,10 +40,11 @@ body {
 /*Customise search field */	
 #SearchGroup{
 	float: right;
-	.navbar-search .search-query{
+	.navbar-search .search-query {
 		line-height:1.3em;
 		background-color: #FFF;
 		color: $textColor; 
+		@include customPlaceholder();
 		&:focus {
 			background-color: #FFF;
 		}
