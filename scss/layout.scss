@@ -40,10 +40,11 @@ body {
 /*Customise search field */	
 #SearchGroup{
 	float: right;
-	.navbar-search .search-query{
+	.navbar-search .search-query {
 		line-height:1.3em;
 		background-color: #FFF;
 		color: $textColor; 
+		@include customPlaceholder();
 		&:focus {
 			background-color: #FFF;
 		}
@@ -298,6 +299,10 @@ header {
 	}
 	.carousel-inner {
 		background-color: #000;
+		.item > a { // If image is missing leave enough room for title/caption and alt text to show
+			display: block;
+			min-height: 100px;		
+		}
 	}
 	#layout.typography & a img {
 		border: none;
@@ -323,6 +328,7 @@ header {
 			margin: 8px 26px 0 0;
 			outline: none;
 			border: 0px;
+			opacity: 0.65;
 
 			&.active {
 				background-color: $linkColor;
@@ -356,7 +362,8 @@ header {
 				text-indent: -9999px;
 			}
 		}
-
+		
+		// Play/Pause left and right
 		.carousel-controls {
 			float: right;
 			margin-top: 15px;
