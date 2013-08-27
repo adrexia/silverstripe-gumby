@@ -91,7 +91,13 @@
 					<header>
 						<h3><a href="$Link">$Title</a></h3>
 					</header>
-					<p class="metaInfo"><time <% if $Date %>datetime="$Date">$Date.nice<% if $StartTime %> $StartTime.Nice<% if $EndTime %> - $EndTime.Nice<% end_if %><% end_if %><% end_if %></time><% if Author %> by $Author<% end_if %></p>
+					<p class="metaInfo">
+						<% if $Date %>
+							<time datetime="$Date">$Date.nice <% if $StartTime %>$StartTime.Nice <% end_if %>
+							</time>
+						<% end_if %>
+						<% if Author %>by $Author<% end_if %>
+					</p>
 					<p>
 						<% if Abstract %>
 							$Abstract
