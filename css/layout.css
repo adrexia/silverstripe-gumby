@@ -1222,7 +1222,7 @@ li .icon-large:before {
 ul.icons {
   list-style-type: none;
   margin-left: 2em;
-  text-indent: -0.8em;
+  text-indent: -.8em;
 }
 ul.icons li [class^="icon-"],
 ul.icons li [class*=" icon-"] {
@@ -5216,12 +5216,20 @@ form div.field:after {
 *:first-child form div.field {
   zoom: 1;
 }
-form#Form_Form:before {
+form#Form_Form .req-indicator-message {
   color: #b94a48;
-  content: "Required fields *";
+  position: relative;
   font-weight: normal;
   padding-top: 5px;
   line-height: 30px;
+  padding-right: 10px;
+  display: inline-block;
+}
+form#Form_Form .req-indicator-message:after {
+  content: "*";
+  position: absolute;
+  right: 0px;
+  text-indent: 0%;
 }
 
 input,
@@ -5346,12 +5354,23 @@ label.required {
   max-width: 100%;
 }
 
-.requiredField label.left:after, .requiredField legend.left:after {
+.requiredField label .req-indicator, .requiredField legend .req-indicator {
+  position: relative;
   color: #b94a48;
-  content: "*";
+  overflow: hidden;
+  text-indent: -100%;
   font-size: 14px;
   font-weight: normal;
   padding-left: 3px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.requiredField label .req-indicator:after, .requiredField legend .req-indicator:after {
+  content: "*";
+  position: absolute;
+  left: 0;
+  text-indent: 0%;
 }
 
 legend {

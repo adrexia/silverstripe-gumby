@@ -47,7 +47,7 @@
 	<% end_if %>
 </head>
 
-<body data-spy="scroll">
+<body data-spy="scroll" class="$ClassName">
 	
 	<% include Header %>
 	<% include MainNav %>

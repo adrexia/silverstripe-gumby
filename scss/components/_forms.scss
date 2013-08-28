@@ -12,12 +12,20 @@ form {
 		margin-bottom: $baseLineHeight / 2;
 		@include clearAfter;
 	}
-	&#Form_Form:before {
+	&#Form_Form .req-indicator-message{
 		color: $errorText;
-    	content: "Required fields *";
-    	font-weight: normal;
-    	padding-top: 5px;
-    	line-height: $baseLineHeight*1.5;
+		position: relative;
+		font-weight: normal;
+		padding-top: 5px;
+		line-height: $baseLineHeight*1.5;
+		padding-right:10px;
+		display: inline-block;
+		&:after{
+			content: "*";
+			position:absolute;
+			right:0px;
+			text-indent:0%;
+		}
 	}
 }
 
@@ -70,12 +78,24 @@ label {
 		}
 	}
 }
-.requiredField label.left:after, .requiredField legend.left:after {
-    color: $errorText;
-    content: "*";
-    font-size: 14px;
-    font-weight: normal;
-    padding-left: 3px;
+
+.requiredField label .req-indicator, .requiredField legend .req-indicator{
+	position:relative;
+	color: $errorText;
+	overflow:hidden;
+	text-indent:-100%;
+	font-size: 14px;
+	font-weight: normal;
+	padding-left: 3px;
+	display:inline-block;
+	width:16px;
+	height:16px;
+	&:after{
+		content: "*";
+		position:absolute;
+		left:0;
+		text-indent:0%;
+	}
 }
 // Optionset, Checkbox groups
 legend { 		// Override bootstrap legend styles so they look like label.left

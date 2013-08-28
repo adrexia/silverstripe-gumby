@@ -121,7 +121,7 @@ jQuery(function($) {
 	$('.maori').attr('lang', 'mi');
 
 	// Customize validation for user forms. Accessibility fixes
-	var siteForm = $('#Form_Form');
+	var siteForm = $('.UserDefinedForm #Form_Form');
 	if (siteForm.length > 0) {
 		
 		// Set up validation.
@@ -138,7 +138,10 @@ jQuery(function($) {
 			},
 			errorElement: 'span'
 		});
-	}
 
+		if(siteForm.find('.requiredField').length > 0){
+			siteForm.prepend('<p class="req-indicator-message">Required fields are marked</p>');
+		}
+	}
 });
 
