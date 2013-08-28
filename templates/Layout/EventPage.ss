@@ -5,8 +5,10 @@
 			<div class="well update-information">
 				<h2 class="nonvisual-indicator">Event information</h2>
 				<dl>
-					<dt>Date &amp; time</dt>
-					<dd><time <% if $Date %>datetime="$Date">$Date.Format(d/m/Y)<% if $StartTime %> $StartTime.Nice<% if $EndTime %> - $EndTime.Nice<% end_if %><% end_if %><% end_if %></time></dd>
+					<% if $Date %>
+						<dt>Date &amp; time:</dt>
+						<dd><time datetime="$Date">$Date.Format(d/m/Y) <% if $StartTime %>$StartTime.Nice <% if $EndTime %>- $EndTime.Nice <% end_if %><% end_if %></time></dd>
+					<% end_if %>
 					<% if Location %>
 						<dt>Location:</dt>
 						<dd>$NiceLocation</dd>
@@ -39,4 +41,3 @@
 		</div>
 	</div>
 </div>
-
