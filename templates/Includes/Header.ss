@@ -16,12 +16,13 @@
 			</a>
 		<% end_if %>
 	</<% if ClassName=="HomePage" %>h1<% else %>div<% end_if %>>
-
-	<% if Translations %>
-		<ul id="lang">
-			<% loop Translations %>
+	<% if $AvailableTranslations %>
+		<ul id="lang" class="translations">
+			<% loop $AvailableTranslations %>
 				<li>
-					<a href="$Link" lang="$Locale.RFC1766" hreflang="$Locale.RFC1766" title="Read this page in $Locale.Nice">$Locale.Nice</a>
+					<a href="$Link" lang="$LangName" hreflang="$LangName" class="<% if Current %>current<% end_if %>">
+						$LangName
+					</a>
 				</li>
 			<% end_loop %>
 		</ul>
