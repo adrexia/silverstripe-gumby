@@ -1222,7 +1222,7 @@ li .icon-large:before {
 ul.icons {
   list-style-type: none;
   margin-left: 2em;
-  text-indent: -.8em;
+  text-indent: -0.8em;
 }
 ul.icons li [class^="icon-"],
 ul.icons li [class*=" icon-"] {
@@ -5358,12 +5358,9 @@ label.required {
   position: relative;
   color: #b94a48;
   overflow: hidden;
-  text-indent: -100%;
-  font-size: 14px;
-  font-weight: normal;
-  padding-left: 3px;
+  text-indent: -999px;
   display: inline-block;
-  width: 16px;
+  width: 6px;
   height: 16px;
 }
 .requiredField label .req-indicator:after, .requiredField legend .req-indicator:after {
