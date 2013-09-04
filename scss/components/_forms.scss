@@ -78,6 +78,11 @@ label {
 		}
 	}
 }
+span.extra {
+	font-style: italic;	
+    display: block;
+    margin-bottom: $baseLineHeight/2;
+}
 
 .requiredField label .req-indicator, .requiredField legend .req-indicator{
 	position:relative;
@@ -103,11 +108,7 @@ legend { 		// Override bootstrap legend styles so they look like label.left
 	border-bottom: 0;
 	margin-bottom: 5px;
 }
-span.extra { // replicates label.extra for optionset 
-	font-style: italic;	
-    display: block;
-    margin-bottom: 5px;
-}
+
 
 
 /* Form fields formatting */
