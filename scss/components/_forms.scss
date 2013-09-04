@@ -78,18 +78,20 @@ label {
 		}
 	}
 }
+span.extra {
+	font-style: italic;	
+    display: block;
+    margin-bottom: $baseLineHeight/2;
+}
 
 .requiredField label .req-indicator, .requiredField legend .req-indicator{
 	position:relative;
 	color: $errorText;
-	overflow:hidden;
-	text-indent:-100%;
-	font-size: 14px;
-	font-weight: normal;
-	padding-left: 3px;
-	display:inline-block;
-	width:16px;
-	height:16px;
+	overflow: hidden;
+	text-indent: -999px;
+	display: inline-block;
+	width: 6px;
+	height: 16px;
 	&:after{
 		content: "*";
 		position:absolute;
@@ -97,6 +99,8 @@ label {
 		text-indent:0%;
 	}
 }
+
+
 // Optionset, Checkbox groups
 legend { 		// Override bootstrap legend styles so they look like label.left
 	@include font-shorthand($baseFontSize,normal,$baseLineHeight); // Set size, weight, line-height here
@@ -104,11 +108,7 @@ legend { 		// Override bootstrap legend styles so they look like label.left
 	border-bottom: 0;
 	margin-bottom: 5px;
 }
-span.extra { // replicates label.extra for optionset 
-	font-style: italic;	
-    display: block;
-    margin-bottom: 5px;
-}
+
 
 
 /* Form fields formatting */

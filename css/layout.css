@@ -1222,7 +1222,7 @@ li .icon-large:before {
 ul.icons {
   list-style-type: none;
   margin-left: 2em;
-  text-indent: -.8em;
+  text-indent: -0.8em;
 }
 ul.icons li [class^="icon-"],
 ul.icons li [class*=" icon-"] {
@@ -5242,7 +5242,6 @@ select,
 /* Styling for messages */
 .message {
   padding: 5px;
-  margin-top: -5px;
   margin-right: 5px;
   font-weight: normal;
   font-size: 14px;
@@ -5258,7 +5257,6 @@ select,
 }
 .message.error, label.required, .message.bad, .message.required {
   padding: 5px;
-  margin-top: -5px;
   margin-right: 5px;
   font-weight: normal;
   font-size: 14px;
@@ -5274,7 +5272,6 @@ select,
 }
 .message.good, .message.success {
   padding: 5px;
-  margin-top: -5px;
   margin-right: 5px;
   font-weight: normal;
   font-size: 14px;
@@ -5290,7 +5287,6 @@ select,
 }
 .message.warning {
   padding: 5px;
-  margin-top: -5px;
   margin-right: 5px;
   font-weight: normal;
   font-size: 14px;
@@ -5306,7 +5302,6 @@ select,
 }
 .message.info {
   padding: 5px;
-  margin-top: -5px;
   margin-right: 5px;
   font-weight: normal;
   font-size: 14px;
@@ -5354,16 +5349,19 @@ label.required {
   max-width: 100%;
 }
 
+span.extra {
+  font-style: italic;
+  display: block;
+  margin-bottom: 10px;
+}
+
 .requiredField label .req-indicator, .requiredField legend .req-indicator {
   position: relative;
   color: #b94a48;
   overflow: hidden;
-  text-indent: -100%;
-  font-size: 14px;
-  font-weight: normal;
-  padding-left: 3px;
+  text-indent: -999px;
   display: inline-block;
-  width: 16px;
+  width: 6px;
   height: 16px;
 }
 .requiredField label .req-indicator:after, .requiredField legend .req-indicator:after {
@@ -5379,12 +5377,6 @@ legend {
   line-height: 20px;
   font-weight: bold;
   border-bottom: 0;
-  margin-bottom: 5px;
-}
-
-span.extra {
-  font-style: italic;
-  display: block;
   margin-bottom: 5px;
 }
 
