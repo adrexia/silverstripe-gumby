@@ -15,19 +15,24 @@
   }
 }
 
-.carousel-inner {
-  overflow: hidden;
-  width: 100%;
-  position: relative;
+.typography .carousel .carousel-inner p {
+	margin-bottom: $baseLineHeight;
+	font-size: $baseFontSize;
+	line-height: $baseLineHeight;
 }
 
 .carousel {
-
-  .item {
-    display: none;
-    position: relative;
-    @include transition(.6s ease-in-out left);
-  }
+	.carousel-inner {
+		overflow: hidden;
+		width: 100%;
+		position: relative;
+		
+	}
+	.item {
+		display: none;
+		position: relative;
+		@include transition(.6s ease-in-out left);
+	}
 
   // Account for jankitude on images
   .item > img {
