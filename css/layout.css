@@ -5079,12 +5079,17 @@ a.label:hover, a.badge:hover {
   border: none;
 }
 
-.carousel-inner {
+.typography .carousel .carousel-inner p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.carousel .carousel-inner {
   overflow: hidden;
   width: 100%;
   position: relative;
 }
-
 .carousel .item {
   display: none;
   position: relative;

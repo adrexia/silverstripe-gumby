@@ -944,11 +944,22 @@
     width: 724px;
   }
 }
-/*
 @media (max-width: 767px) {
+  .pagination {
+    height: auto;
+  }
 
+  footer .nav {
+    float: none;
+  }
+  footer .socialLinks {
+    float: none;
+  }
+  footer .socialLinks a {
+    display: block;
+    margin-left: 0;
+  }
 }
-*/
 /*
 @media (max-width: 480px) {
 

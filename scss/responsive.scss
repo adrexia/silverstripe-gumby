@@ -34,11 +34,23 @@
 // LANDSCAPE PHONE TO SMALL DESKTOP & PORTRAIT TABLET
 // --------------------------------------------------
 
-/*
 @media (max-width: 767px) {
-
+	.pagination {
+		height: auto;
+	}
+	footer {
+		.nav {
+			float: none;
+		}
+		.socialLinks {
+			float: none;
+			a {
+				display: block;
+				margin-left: 0;
+			}
+		}
+	}
 }
-*/
 
 
 // UP TO LANDSCAPE PHONE
