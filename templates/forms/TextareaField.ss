@@ -1,1 +1,1 @@
-<textarea $AttributesHTML>$Value</textarea>
+<textarea <% if RightTitle %>aria-describedby="$ID-extra"<% end_if %> $AttributesHTML>$Value</textarea>

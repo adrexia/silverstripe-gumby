@@ -84,21 +84,30 @@ span.extra {
     margin-bottom: $baseLineHeight/2;
 }
 
-.requiredField label .req-indicator, .requiredField legend .req-indicator{
-	position:relative;
-	color: $errorText;
-	overflow: hidden;
-	text-indent: -999px;
-	display: inline-block;
-	width: 6px;
-	height: 16px;
-	&:after{
+.requiredField {
+	label span.req-indicator, legend span.req-indicator {
+		position:relative;
+		color: $errorText;
+		overflow: hidden;
+		text-indent: -999px;
+		display: inline-block;
+		width: 6px;
+		height: 16px;
+		&:after{
+			content: "*";
+			position:absolute;
+			left:0;
+			text-indent:0%;
+		}
+	}
+	&.checkbox label.checkbox:after { // Single required checkbox
 		content: "*";
-		position:absolute;
-		left:0;
-		text-indent:0%;
+		color: $errorText;
+		display: inline-block;
+		font-weight: bold;
 	}
 }
+
 
 
 // Optionset, Checkbox groups

@@ -5243,6 +5243,8 @@ select,
 .message {
   padding: 5px;
   margin-right: 5px;
+  margin-bottom: 10px;
+  margin-top: 15px;
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
@@ -5258,6 +5260,8 @@ select,
 .message.error, label.required, .message.bad, .message.required {
   padding: 5px;
   margin-right: 5px;
+  margin-bottom: 10px;
+  margin-top: 15px;
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
@@ -5273,6 +5277,8 @@ select,
 .message.good, .message.success {
   padding: 5px;
   margin-right: 5px;
+  margin-bottom: 10px;
+  margin-top: 15px;
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
@@ -5288,6 +5294,8 @@ select,
 .message.warning {
   padding: 5px;
   margin-right: 5px;
+  margin-bottom: 10px;
+  margin-top: 15px;
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
@@ -5303,6 +5311,8 @@ select,
 .message.info {
   padding: 5px;
   margin-right: 5px;
+  margin-bottom: 10px;
+  margin-top: 15px;
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
@@ -5355,7 +5365,7 @@ span.extra {
   margin-bottom: 10px;
 }
 
-.requiredField label .req-indicator, .requiredField legend .req-indicator {
+.requiredField label span.req-indicator, .requiredField legend span.req-indicator {
   position: relative;
   color: #b94a48;
   overflow: hidden;
@@ -5364,11 +5374,17 @@ span.extra {
   width: 6px;
   height: 16px;
 }
-.requiredField label .req-indicator:after, .requiredField legend .req-indicator:after {
+.requiredField label span.req-indicator:after, .requiredField legend span.req-indicator:after {
   content: "*";
   position: absolute;
   left: 0;
   text-indent: 0%;
+}
+.requiredField.checkbox label.checkbox:after {
+  content: "*";
+  color: #b94a48;
+  display: inline-block;
+  font-weight: bold;
 }
 
 legend {
