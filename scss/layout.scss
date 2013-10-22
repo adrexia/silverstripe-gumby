@@ -92,6 +92,10 @@ body {
 			text-shadow: none;
 			padding-top: 4px;
 			padding-bottom: 3px;
+			
+			#IE6 & {
+				width: 40px;
+			}
 		}
 	}
 }
@@ -208,7 +212,6 @@ header {
 .typography { 				/* Needed to override typography styles */
 
 	// Breadcrumbs
-	@include bootstrapBreadcrumb;
 	.breadcrumb .divider {
 	    color: $gray; 		/* adjust color to meet accessibility standards */
 	}
@@ -291,6 +294,9 @@ header {
 // Carousel adjustments
 .carousel-container {
 	float: right;
+	#IE6 & {
+		width: 580px;
+	}
 }
 
 .carousel {
@@ -302,6 +308,9 @@ header {
 		.item > a { // If image is missing leave enough room for title/caption and alt text to show
 			display: block;
 			min-height: 100px;		
+		}
+		#IE6 & {
+			width: 100%;
 		}
 	}
 	#layout.typography & a img {
@@ -483,6 +492,11 @@ footer {
 		background: transparent;
 	}
 
+	nav,
+	#top-navigation .nav {
+		width: 90%;
+	}
+
 	.nav-list
 	{
 		li {
@@ -616,6 +630,12 @@ footer {
 
 .sidebar-form {
 	padding: 9px 14px;
+	fieldset {
+		#IE6 & {
+			display: block;
+			width: 160px;
+		}
+	}
 	.field-note {
 		font-style: italic;
 		font-size: 0.9em;
@@ -628,10 +648,15 @@ footer {
 			height: 20px;
 		}
 	}
-
 	.Actions {
 		#IE8 & {
 			filter: none;
+		}
+		input {
+			#IE6 & {
+				margin-right: 0;
+				width: 180px;
+			}
 		}
 	}
 	.message {
