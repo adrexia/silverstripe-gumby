@@ -1,4 +1,9 @@
-<form $FormAttributes class="navbar-search pull-right" role="search">
-	<input id="SearchForm_SearchForm_Search" class="search-query span2" type="search" name="Search" placeholder="Search" value="$SearchQuery" title="Enter search terms" />
-	<input type="submit" value="Go" class="btn btn-navbar" />
+<form $FormAttributes role="search" class="valign">
+	<fieldset class="center">
+	<input id="SearchForm_SearchForm_Search" class="search-query text" type="search" name="Search" placeholder="Search" value="$SearchQuery" title="Enter search terms"  autosave="search-query"  />
+
+	<% loop $Actions %>
+		$Field
+	<% end_loop %>
+	</fieldset>
 </form>

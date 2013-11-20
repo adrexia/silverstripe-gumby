@@ -1,19 +1,21 @@
-<div class="row">
+<div class="row layout">
 	<% include Breadcrumbs %>
-	<% if Menu(2) %>
-		<div class="span3">
-			<% include SidebarNav %>
+	<div class="row">
+		<% if Menu(2) %>
+			<% include SecondaryMenu %>
+		<% end_if %>
+		<div class="columns <% if Menu(2) %>nine<% else %>twelve<% end_if %>">
+			<div class="main typography" role="main" id="main">
+				<h1 class="page-header">$Title</h1>
+				$Content.RichLinks
+				$Form
+				<% include RelatedPages %>
+				$PageComments
+			</div>
+			<footer class="content-footer columns twelve">
+				<% include PrintShare %>
+				<% include LastEdited %>
+			</footer>
 		</div>
-	<% end_if %>
-	<div class="<% if Menu(2) %>span9<% else %>span12<% end_if %>">
-		<div id="main" role="main">
-			<h1 class="page-header">$Title</h1>
-			$Content.RichLinks
-			$Form
-			<% include RelatedPages %>
-			$PageComments
-			<% include PrintShare %>
-		</div>
-		<% include LastEdited %>
 	</div>
 </div>

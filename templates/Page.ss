@@ -1,12 +1,11 @@
 <!doctype html>
-<!--[if lt IE 7]><html id="IE6" class="no-js" lang="$ContentLocale"><![endif]-->
-<!--[if IE 7]><html id="IE7" class="no-js" lang="$ContentLocale"><![endif]-->
-<!--[if IE 8]><html id="IE8" class="no-js" lang="$ContentLocale"><![endif]-->
-<!--[if IE 9]><html id="IE9" class="no-js" lang="$ContentLocale"><![endif]-->
-<!--[if gt IE 9]><!--><html class="no-js" lang="$ContentLocale"><!--<![endif]-->
+<!--[if IE 6 ]><html class="no-js ie6 oldie gumby-no-touch" lang="$ContentLocale" id="ie6"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7 oldie gumby-no-touch" lang="$ContentLocale" id="ie7"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8 oldie gumby-no-touch" lang="$ContentLocale" id="ie8"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9 gumby-no-touch" id="ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js gumby-no-touch" lang="$ContentLocale"><!--<![endif]-->
 <head>
 	<% base_tag %>
-	
 	<%-- $FilterDescription adds additional information from the news and events areas --%>
 	<title>$Title <% if FilterDescription %>- $FilterDescription<% end_if %> | $SiteConfig.Title</title>
 	
@@ -15,50 +14,24 @@
 
 	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements. It must be included _before_ the body element -->
 	<!--[if lt IE 9]>
-		<script src="$ThemeDir/js/lib/html5shiv-printshiv.js"></script>
+		<script src="$ThemeDir/js/libs/html5shiv-printshiv.js"></script>
 	<![endif]-->
+	<!--[if lte IE 7]><script src="lte-ie7.js"></script><![endif]-->
 
-	<% if SiteConfig.FavIcon %>
-		<link rel="shortcut icon" href="$SiteConfig.FavIcon.AbsoluteURL" />
-	<% else %>
-		<link rel="shortcut icon" href="{$BaseHref}{$ThemeDir}/ico/favicon.ico" />
-	<% end_if %>
-	<% if SiteConfig.AppleTouchIcon144 %>
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="$SiteConfig.AppleTouchIcon144.AbsoluteURL">
-		<meta name="msapplication-TileImage" content="$SiteConfig.AppleTouchIcon144.AbsoluteURL" />
-	<% else %>
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{$BaseHref}{$ThemeDir}/ico/apple-touch-icon-144-precomposed.png">
-		<meta name="msapplication-TileImage" content="{$BaseHref}{$ThemeDir}/ico/apple-touch-icon-144-precomposed.png" />
-	<% end_if %>
-	<% if SiteConfig.AppleTouchIcon114 %>
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="$SiteConfig.AppleTouchIcon114.AbsoluteURL">
-	<% else %>
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{$BaseHref}{$ThemeDir}/ico/apple-touch-icon-144-precomposed.png">
-	<% end_if %>
-	<% if SiteConfig.AppleTouchIcon72 %>
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="$SiteConfig.AppleTouchIcon72.AbsoluteURL">
-	<% else %>
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{$BaseHref}{$ThemeDir}/ico/apple-touch-icon-72-precomposed.png">
-	<% end_if %>
-	<% if SiteConfig.AppleTouchIcon57 %>
-		<link rel="apple-touch-icon-precomposed" href="$SiteConfig.AppleTouchIcon57.AbsoluteURL">
-	<% else %>
-		<link rel="apple-touch-icon-precomposed" href="{$BaseHref}{$ThemeDir}/ico/apple-touch-icon-57-precomposed.png">
-	<% end_if %>
+	<% include MetaIcons %>
 </head>
 
 <body data-spy="scroll" class="$ClassName">
-	
-	<% include Header %>
-	<% include MainNav %>
-
-	<div class="container typography layout" id="layout">
-		$Layout
-		<hr />
+	<% include SkipLinks %>
+	<div class="row">
+		<div class="twelve columns">
+			<% include Header %>
+			<div class="layout" id="layout">
+				$Layout
+			</div>
+			<% include Footer %>
+		</div>
 	</div>
-
-	<% include Footer %>
-
 	<% if SiteConfig.GACode %>
 		<script type="text/javascript">
 			var _gaq = _gaq || [];
@@ -75,5 +48,7 @@
 	<% if SiteConfig.AddThisProfileID %>
 		<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=$SiteConfig.AddThisProfileID"></script>
 	<% end_if %>
+	<script type="text/javascript" src="{$BaseHref}{$ThemeDir}/js/libs/gumby.min.js"></script>
+	<script type="text/javascript" src="{$BaseHref}{$ThemeDir}/js/libs/jquery.flexslider.js"></script>
 </body>
 </html>

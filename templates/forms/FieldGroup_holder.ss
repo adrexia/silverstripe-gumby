@@ -8,5 +8,5 @@
 			</div>
 		<% end_loop %>
 	</div>	
-	<% if Message %><span class="message $MessageType" id="$ID-message">$Message</span><% end_if %>
+	<% if Message %><span class="message $MessageType">$Message</span><% end_if %>
 </div>

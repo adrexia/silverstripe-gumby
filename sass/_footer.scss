@@ -1,0 +1,20 @@
+/*
+ * Styles for the main page footer
+ */
+
+.footer{
+	border-top:1px solid $default-color;
+	padding-top:20px;
+	margin-top:30px;
+}
+
+.footer-logo{
+	margin-top:20px;
+	img{
+		margin-bottom:0;
+	}
+}
+
+.footer-copyright{
+	padding-left:10px;
+}

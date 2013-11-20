@@ -1,0 +1,213 @@
+/*
+ * CWP styled elements
+ */
+.nonvisual-indicator { // Content often used by people using screenreaders 
+	clip: rect(0 0 0 0);
+	height: 1px; width: 1px;
+	margin: -1px; padding: 0; border: 0;
+	overflow: hidden;
+	position: absolute;
+}
+
+// Add bootstraps pull-directions
+.pull-right{
+	float:right;
+}
+
+.pull-left{
+	float:left;
+}
+
+.clearfix{
+	clear:both;
+}
+
+figure.featured-image {
+	float: right;
+}
+
+iframe {
+	border: 0;
+}
+
+
+// Generic style for meta data
+.meta-data{
+	font-size: $base-font-size - 3;
+}
+
+// Helper classes to customise icons
+.icon-dark{
+	color: $body-font-color;
+	&:visited{
+		color: $body-font-color;
+	}
+	&:hover{
+		color: $body-link-hover-color;
+		text-decoration: none;
+	}
+} 
+.icon-small{
+	font-size:1em;
+}
+
+
+/* Styles for navigation pills */
+ul.nav-pills {
+	li {
+		display: inline;
+		margin-right: 10px;
+		list-style: none;
+		a.badge{
+			line-height:19px;
+			&.light{
+				border:none;
+			}
+			&:hover{
+				background-color:$default-color;
+			}
+		}
+	}
+}
+
+
+/**
+ * EventPage and NewsPage - update information
+ */
+.update-information {
+	dl {
+		margin-top: 0;
+	}
+	dd {
+		margin-top: 0.2em;
+		margin-bottom: 0.2em;
+	}
+	.update-tags {
+		margin: 8px 0;
+		overflow: auto;
+		.label {
+			float: left;
+			margin: 0 3px 3px 0;
+		}
+	}
+}
+
+/**
+ * EventHolder and NewsHolder + Registry Page.
+ */
+.month-filter {
+	ol {
+		margin: 0;
+	}
+}
+
+.filter{
+	margin-top:30px;
+	fieldset{
+		padding-left:0;
+		margin:0;
+		border:0;
+	}
+}
+
+.results-header{
+	@extend .breadcrumb;
+	@include clearfix;
+	p {
+		line-height:34px;
+	}
+}
+
+/*
+ * Hide the out of the box divider - gumby has its own
+ */
+ol.breadcrumb{
+	margin:0;
+	.divider{
+		display:none;
+	}
+}
+
+/**
+ * Registry page
+ */
+.result-actions {
+	clear: both;
+	a {
+		display: inline-block;
+	}
+}
+
+/* Styles for translation links */
+.translations {
+	float: right;
+	padding-top: 10px;
+	li {
+		display: inline;
+		margin-left: 10px;
+		margin-right:0;
+	}
+}
+
+
+/**
+ * Accessibility Skiplinks for screen readers, allow users to bypass 
+ * content recurring on every page to access the menu 
+ * or the content directly additionally for regular users by using tab
+ */
+.skip-links a { 
+	height:1px;
+	top:-110%;
+	overflow:hidden;
+	padding: 5px 10px;
+	position:absolute;
+	width:1px;
+
+	&:focus, &:active {
+		display: inline-block;
+		height:auto;
+		position:static;
+		width:auto;
+	}
+}
+
+/*
+ * General styling for the footer at the bootom of content
+ */
+.content-footer{
+	margin-top:50px;
+	float:right;
+	.print-share{
+		text-align:right;
+		a{
+			padding-left:20px;
+			font-size:0.9em;
+		}
+	}
+	.last-edited{
+		text-align:right;
+	}
+}
+
+.social-links{
+	text-align:right;
+}
+
+/*
+ * Styling for the hero content
+ */
+.hero-unit .content{
+	@include border-radius($button-radius);
+	background:$default-color;
+	margin-bottom:30px;
+	width:100%;
+	.layout &{
+		padding:10px 30px;
+	}
+	p{
+		font-size:$med;
+		@media screen and (max-width: 860px) {
+			font-size:$norm;
+		}
+	}
+}

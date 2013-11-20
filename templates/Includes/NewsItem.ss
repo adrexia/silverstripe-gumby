@@ -1,14 +1,16 @@
 <header>
-	<h3><a href="$Link">$Title</a></h3>
+	<h4><a href="$Link">$Title</a></h4>
 </header>
-<p class="metaInfo">
+<p class="meta-data">
 	<% if Category %>
 		<a class="label label-inverse" href="$Category.Link">$Category.Title</a>
 	<% end_if %> 
 	<time datetime="$Date">$Date.nice</time>
 </p>
+<p>
 <% if Abstract %>
-	<p>$Abstract</p>
+	$Abstract
 <% else %>
-	<p>$Content.LimitWordCount</p>
+	$Content.LimitWordCount
 <% end_if %>
+</p>

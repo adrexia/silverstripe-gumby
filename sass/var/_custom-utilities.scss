@@ -1,0 +1,11 @@
+/*
+ * A file for Custom mixins and placeholders
+ */
+
+// Placeholder text
+@mixin placeholder-text($color: $form-text-input-placeholder-color) {
+	&:-moz-placeholder            { color: $color; opacity: 1; } // Firefox 4-18
+	&::-moz-placeholder           { color: $color; opacity: 1; } // Firefox 19+
+	&:-ms-input-placeholder       { color: $color; } // Internet Explorer 10+
+	&::-webkit-input-placeholder  { color: $color; } // Safari and Chrome
+}

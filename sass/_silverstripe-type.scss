@@ -1,0 +1,161 @@
+/*
+* Typography specific to how silverstripe outputs CMS editable fields
+* to be imported into the CMS
+*/
+
+
+.captionImage, .media{
+	@extend .image;
+	.caption{
+		font-style:italic;
+	}
+}
+
+img{
+	@extend .image;
+	&.right {
+		float:right;
+		clear:right;
+		margin: 18px 0 18px 80px;
+	}
+	&.left {
+		float:left;
+		clear:left;
+		margin: 18px 80px 18px 0px;
+	}
+	&.leftAlone {
+		margin: 18px 80px 18px 0;
+		float: none;
+		display: block;
+		clear: both;
+	}
+	&.center {
+		display:block;
+		margin: 18px auto 18px auto;
+		clear: both;
+	}
+}
+
+/* Media insert formatting  (Youtube embed) */
+.media.center{
+	margin:0 auto;
+	text-align:center;
+}
+.media.left{
+	float:left;
+	clear:left;
+	margin: 0 18px 18px 0px;
+}
+.media.leftAlone{
+	margin: 0 18px 18px 0;
+	float: none;
+	display: block;
+	clear: both;
+}
+.media.right{
+	float:right;
+	clear:right;
+	margin: 0 0 18px 18px;
+}
+
+.captionImage {
+	width: 100%;
+	max-width: 100%;
+
+	&.left {
+		float: left;
+		margin: 0 80px 40px 20px;
+	}
+	&.right{
+		float:right;
+		margin: 0 0 40px 80px;
+		p{
+			margin: 0px 60px 40px 20px;
+		}
+	}
+	&.leftAlone{
+		float:none;
+		margin: 0 80px 40px 20px;
+	}
+	&.center{
+		margin: 0 auto 40px;
+		p{
+			margin: 0px 20px 40px 20px;
+			
+		}
+	}
+	&.left, &.right, &.leftAlone, &.center{
+		@include respond(all-phones){
+			margin-bottom:40px;
+			margin-top:10px;
+			p{
+				text-align: center;
+				margin: 0px 0 40px 20px;
+			}
+		}
+	}
+	p {
+		clear: both;
+		margin: 0px 0 40px 60px;
+		color:#ccc;
+		padding-top:15px;
+		font-weight:normal;
+		font-family:$font-family;
+		font-size:16px;
+		line-height:22px;
+		padding-bottom:2px;
+		@include respond(all-phones){
+			text-align: center;
+			margin: 0px 20px 40px 20px;
+		}
+	}
+	img {
+		margin: 0 0 5px 0;
+		border:0;
+	}
+}
+
+a[href$=".doc"],
+a[href$=".DOC"],
+a[href$=".docx"],
+a[href$=".DOCX"],
+.doc {
+	padding-left: 22px;
+	background: url(../images/page_word.png) no-repeat left 0;
+	padding-right: 0; /* override external link */
+}
+a[href$=".xls"],
+a[href$=".XLS"],
+a[href$=".xlsx"],
+a[href$=".XLSX"],
+.xls {
+	padding-left: 22px;
+	background: url(../images/page_excel.png) no-repeat left 0;
+	padding-right: 0; /* override external link */
+}
+a[href$=".gz"],
+a[href$=".GZ"],
+a[href$=".gzip"],
+a[href$=".GZIP"],
+a[href$=".zip"],
+a[href$=".ZIP"],
+.archive {
+	padding-left: 22px;
+	background: url(../images/page_white_zip.png) no-repeat left 0;
+	padding-right: 0; /* override external link */
+}
+a[href$=".exe"],
+a[href$=".EXE"],
+.application {
+	padding-left: 22px;
+	background: url(../images/application.png) no-repeat left 0;
+	padding-right: 0; /* override external link */
+}
+a[href$=".pdf"],
+a[href$=".PDF"],
+.pdf {
+	padding-left: 22px;
+	background: url(../images/page_white_acrobat.png) no-repeat left 0;	
+	padding-right: 0; /* override external link */
+}
+

@@ -3,5 +3,7 @@
 		<% if ButtonContent %>$ButtonContent<% else %>$Title<% end_if %>
 	</button>
 <% else %>
-	<input $AttributesHTML>
+	<div class="btn medium primary metro">
+		<input $AttributesHTML>
+	</div>
 <% end_if %>

@@ -1,3 +1,5 @@
+<% include Slider %>
+
 <!-- Main hero unit for a primary marketing message or call to action -->
 <% include HeroUnit %>
 
@@ -5,10 +7,12 @@ $Form
 $PageComments
 
 <!-- Example row of columns -->
+<h2 class="nonvisual-indicator">Features</h2>
 <div class="row">
+	
 	<% if Quicklinks %>
-	<div class="span3 linkSet">
-		<h2><i class="icon-link" aria-hidden="true"></i> Quicklinks</h2>
+	<div class="columns link-set three">
+		<h3><i class="icon-link" aria-hidden="true"></i> Quicklinks</h3>
 		<ul>
 			<% loop Quicklinks %>
 				<li class="$EvenOdd $FirstLast"><a href="$Link" class="$FirstLast">$Name</a></li>
@@ -17,35 +21,9 @@ $PageComments
 	</div>
 	<% end_if %>
 
-	<div class="span4 feature">
-		<% if $FeatureOneTitle %>
-			<h2><% if $FeatureOneCategory %><i class="icon-$FeatureOneCategory" aria-hidden="true"></i> <% end_if %>$FeatureOneTitle</h2>
-		<% end_if %>
-		<% if FeatureOneContent %>
-			$FeatureOneContent
-		<% end_if %>
-		<% if $FeatureOneLink && $FeatureOneButtonText %>
-			<% if FeatureOneLink %>
-				<p><a class="btn" href="$FeatureOneLink.Link">$FeatureOneButtonText</a></p>
-			<% end_if %>
-		<% end_if %>
-
-		<% if $FeatureTwoTitle %>
-			<h2><% if $FeatureTwoCategory %><i class="icon-$FeatureTwoCategory" aria-hidden="true"></i> <% end_if %>$FeatureTwoTitle</h2>
-		<% end_if %>
-		<% if FeatureTwoContent %>
-			$FeatureTwoContent
-		<% end_if %>
-		<% if $FeatureTwoLink && $FeatureTwoButtonText %>
-			<% if FeatureTwoLink %>
-				<p><a class="btn" href="$FeatureTwoLink.Link">$FeatureTwoButtonText</a></p>
-			<% end_if %>
-		<% end_if %>
-	</div>
-
 	<% if NewsItems %>
-	<div class="span5 resultsList">
-		<h2><i class="icon-th-list" aria-hidden="true"></i> <a href="$NewsPage.Link">$NewsPage.Title</a></h2>
+	<div class="columns <% if not Quicklinks %>six<% else %>five<% end_if %> results-list">
+		<h3><i class="icon-layout" aria-hidden="true"></i> <a href="$NewsPage.Link">$NewsPage.Title</a></h3>
 		<% loop NewsItems %>
 			<article class="$EvenOdd $FirstLast">
 				<% include NewsItem %>
@@ -53,8 +31,33 @@ $PageComments
 		<% end_loop %>
 	</div>
 	<% end_if %>
-</div>
 
-<div class="row">
-	<% include LastEdited %>
+	<div class="columns <% if not Quicklinks %>six<% else %>four<% end_if %> feature">
+		<% if $FeatureOneTitle %>
+			<h3><% if $FeatureOneCategory %><i class="icon-$FeatureOneCategory" aria-hidden="true"></i> <% end_if %>$FeatureOneTitle</h3>
+		<% end_if %>
+		<% if FeatureOneContent %>
+			$FeatureOneContent
+		<% end_if %>
+		<% if $FeatureOneLink && $FeatureOneButtonText %>
+			<% if FeatureOneLink %>
+				<p class="btn default metro medium"><a href="$FeatureOneLink.Link">$FeatureOneButtonText</a></p>
+			<% end_if %>
+		<% end_if %>
+
+		<% if $FeatureTwoTitle %>
+			<h3><% if $FeatureTwoCategory %><i class="icon-$FeatureTwoCategory" aria-hidden="true"></i> <% end_if %>$FeatureTwoTitle</h3>
+		<% end_if %>
+		<% if FeatureTwoContent %>
+			$FeatureTwoContent
+		<% end_if %>
+		<% if $FeatureTwoLink && $FeatureTwoButtonText %>
+			<% if FeatureTwoLink %>
+				<p class="btn default metro medium"><a href="$FeatureTwoLink.Link">$FeatureTwoButtonText</a></p>
+			<% end_if %>
+		<% end_if %>
+	</div>
+	<footer class="content-footer columns twelve">
+			<% include LastEdited %>
+	</footer>
 </div>

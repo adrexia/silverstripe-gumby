@@ -1,4 +1,4 @@
-<ul id="$ID" class="$extraClass"<% if Description %> title="$Description"<% end_if %> <% if $RightTitle %>aria-describedby="$ID-extra"<% end_if %>>
+<ul id="$ID" class="$extraClass"<% if Description %> title="$Description"<% end_if %>>
 	<% loop Options %>
 		<li class="$Class">
 			<label for="$ID" class="radio">

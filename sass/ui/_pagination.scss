@@ -1,0 +1,79 @@
+/*
+* Styles for pagination buttons
+*/
+
+$pagination-border-radius: 0;
+$pagination-color: transparent;
+$pagination-border-color: rgba(#fff, 0.5);
+$text-color: #fff;
+$active-color:#333;
+$active-text-color: #fff;
+$active-border-color: rgba(#fff, 0.5);
+$disabled-color: transparent;
+$disabled-text-color: #888;
+$disabled-border-color: rgba(#888, 0.5);
+
+.pagination{
+  text-align:center;
+}
+.pagination ol {
+  display: inline-block;
+  @include border-radius($pagination-border-radius);
+
+  li {
+    display: inline-block;
+    margin:0;
+    padding:0;
+    a, span {
+      background-color:$pagination-color;
+      border: 1px solid #ccc;
+
+      border: 1px solid $pagination-border-color;
+      font-size: 15px;
+      color:$text-color;
+      float: left;
+      line-height: $base-line-height * .8;
+      padding: 10px 20px;
+      text-decoration: none;
+    }
+    span{
+      background-color:$disabled-color;
+      border: 1px solid #ccc;
+      border: 1px solid $disabled-border-color;
+      color:$disabled-text-color;
+    }
+    a:hover, a:focus {
+     background-color:$active-color;
+     border: 1px solid $active-border-color;
+     color:$active-text-color;
+    }
+    &:first-child {
+      a, span {
+        @include border-left-radius($pagination-border-radius);
+        border-left-width: 1px;
+      }
+    }
+    &:last-child {
+      a, span {
+        @include border-right-radius($pagination-border-radius);
+      }
+    }
+  }
+  .active {
+    a, span {
+      background-color: $active-color;
+      cursor: default;
+    }
+  }
+  span.disabled {
+      cursor: default;
+  }
+}
+
+.pagination-center {
+    text-align: center;
+}
+
+.pagination-right {
+    text-align: right;
+}

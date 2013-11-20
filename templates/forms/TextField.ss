@@ -1,1 +1,1 @@
-<input <% if RightTitle %>aria-describedby="$ID-extra"<% end_if %> $AttributesHTML />
+<input $AttributesHTML />

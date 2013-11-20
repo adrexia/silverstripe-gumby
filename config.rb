@@ -1,24 +1,33 @@
-# Config file for compass. 
-# Run "compass watch" on the dir this file is in, to compile you scss 
-# i.e On a mac: 
-# Open terminal, 
-# cd to your projects themes folder (cd sites/mynewsite/themes/default)
-# type: compass watch
-# For more info: http://compass-style.org/help/tutorials/command-line/
+# Require any additional compass plugins here.
 
-project_type = :stand_alone
+# Tell compass where to find local extensions
+# If you followed directions and ran 'gem install modular-scale' comment the next two lines out:
+extensions_dir = "sass/extensions"
+
+Compass::Frameworks.register('modular-scale', :path => File.expand_path("#{extensions_dir}/modular-scale"))
+
+# Uncomment these to use regular Ruby gems.
+# require 'modular-scale'
+# require 'sassy-math'
+
 # Set this to the root of your project when deployed:
 http_path = "/"
 css_dir = "css"
-sass_dir = "scss"
-images_dir = "images"
-javascripts_dir = "js"
+sass_dir = "sass"
+images_dir = "img"
 
-#To compile css in less readable format, change this to :compact
-output_style = :expanded
+# You can select your preferred output style here (can be overridden via the command line) :nested or :expanded or :compact or :compressed:
+output_style = :compact
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
-relative_assets = true
+# relative_assets = true
 
-# disable comments in the output
+# To disable debugging comments that display the original location of your selectors. Uncomment:
 line_comments = false
+
+
+# If you prefer the indented syntax, you might want to regenerate this
+# project again passing --syntax sass, or you can uncomment this:
+# preferred_syntax = :sass
+# and then run:
+# sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass

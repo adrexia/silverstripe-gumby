@@ -1,0 +1,34 @@
+/*
+ * Styles for the secondary (sidebar) menu
+ */
+
+.secondary-menu{
+	margin-top:30px;
+	> .nav{
+		li{
+			padding-bottom:0;
+		}
+		a{
+			padding: 10px;
+			display:block;
+		}
+		.current{
+			> a{
+				background-color:$body-link-color;
+				color:#fff;
+			}
+		}
+
+		.nav{
+			margin:0;
+			a{
+				padding-left:25px;
+			}
+			.nav{
+				a{
+					padding-left:35px;
+				}
+			}
+		}
+	}
+}

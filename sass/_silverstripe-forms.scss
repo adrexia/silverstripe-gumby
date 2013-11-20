@@ -1,0 +1,74 @@
+/*
+* For Silverstripe specific gumby styling (e.g. to get forms to work as intended)
+*/
+
+
+/*
+ * Forms
+ */
+input.text {
+	@extend .input; //Make Silverstripe form inputs match gumby's
+	@include placeholder-text();
+	@include font-size($norm);
+	line-height:36px;
+	height:36px;
+	background-color:$default-color;
+	border:1px solid #ccc;
+	&:focus {
+		background-color: #FFF;
+		outline: none;
+	}
+}
+
+.btn{
+	@extend .metro;
+	@extend .medium;
+	border:0;
+
+	.btn-content{
+		padding: 0 15px 0 10px;
+	}
+	// Some form inputs have been given a btn class by cwp
+	.btn{
+		padding:0 20px;
+	}
+}
+
+.btn.btn-primary{
+	@extend .primary;
+}
+
+.Actions .btn {
+	float: left;
+	margin-right:20px;
+}
+
+form {
+	@include clearfix;
+}
+
+.fieldset{ //Silverstripe uses fieldsets wrongly, so don't style with gumby default
+	border:none;
+}
+
+#ForgotPassword { //ID only used because silverstripe does not provide a class
+	@include clearfix;
+	float: left;
+	font-size: 0.8em;
+	line-height: 35px;
+	padding-left: 20px;
+}
+
+/*
+ * Breadcrumbs
+ */
+.breadcrumbs {
+	font-size: 0.8em;
+	margin-top: 10px;
+	a {
+		font-weight: bold;
+	}
+	@include respond(all-phones) {
+		display: none; //Hide on mobile phones
+	}
+}

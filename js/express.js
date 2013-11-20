@@ -94,26 +94,19 @@ jQuery(function($) {
 		return false;
 	});
 
-	$('#print-placeholder').replaceWith('<button type="button" onclick="window.print(); return false;">Print</button>');
+	$('#print-placeholder').replaceWith('<a role="button" onclick="window.print(); return false;"><i class="icon-print icon-dark" aria-hidden="true"></i>Print</a>');
 
-	// Carousel on the homepage.
-	$('.carousel').carousel({
-		interval: 8000,
-		pause: ""
+
+	// Homepage Carousel
+	$('.flexslider').flexslider({
+		useCSS: true,
+		pauseOnHover: true,
+		controlNav: true,
+		directionNav: true,
+		slideshowSpeed: 7000,
+		smoothHeight: true
 	});
 
-	$('.carousel').on('click','button.pause',function(){
-		if($(this).closest('.carousel').hasClass('play')){
-			$(this).closest('.carousel').carousel('cycle').removeClass('play');
-			$(this).find('.icon').removeClass('icon-play-js').html('&#xf04c;');
-			$(this).find('.nonvisual-indicator').html('Pause');
-		}else{
-			$(this).closest('.carousel').carousel('pause').addClass('play');
-			$(this).find('.icon').addClass('icon-play-js').html('&#xf04b;');
-			$(this).find('.nonvisual-indicator').html('Play');
-		}
-	});
-	
 	// Add additional title information to external links which open in an external window
 	$('.content a[target="_blank"]').attr("title", $('a[target="_blank"]').attr("title")+" - This link will open in a new window");
 	

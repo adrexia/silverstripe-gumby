@@ -1,5 +1,5 @@
 <!-- SKIP LINKS for accessibility -->
-<div class="skipLinks">
+<div class="skip-links">
 	<a href="#main">Skip to main content</a>
 	<% if Menu(2) %>
 		<a href="#pageNav">Skip to page navigation</a>

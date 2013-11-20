@@ -1,0 +1,302 @@
+/*
+ * Slider styles 
+ */
+
+
+/* Browser Resets
+*********************************/
+.flex-container a:active, .flexslider a:active, .flex-container a:focus, .flexslider a:focus {
+	outline: none;
+}
+
+.slides, .flex-control-nav, .flex-direction-nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+ul.slides{
+	padding:0;
+	margin:0;
+	list-style:none;
+	li {
+		padding-bottom:0;
+	}
+	img{
+		padding:0;
+		border:0;
+	}
+}
+
+
+/* FlexSlider Necessary Styles
+*********************************/
+
+.flexslider {
+	margin: 0;
+	padding: 0;
+	overflow:hidden;
+	.slides {
+		> li {
+			display: none;
+			-webkit-backface-visibility: hidden;
+		}
+	}
+}
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+
+.flex-pauseplay span {
+	text-transform: capitalize;
+}
+
+/* Clearfix for the .slides element */
+
+.slides:after {
+	content: "\0020";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+html[xmlns] .slides {
+	display: block;
+}
+
+* html .slides {
+	height: 1%;
+}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+
+.no-js .slides > li:first-child {
+  display: block;
+}
+
+/* 
+ * FlexSlider Theme (based on default theme)
+ */
+.flexslider {
+	@include box-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+	@include border-radius($button-radius);
+	background: #fff;
+	margin: 30px 0;
+	overflow:hidden;
+	position: relative;
+	zoom: 1;
+	.slides{
+		img {
+			@include border-radius($button-radius $button-radius 0 0);
+			border: 0;
+			display: block;
+			display: inline-block;
+			float: left;
+			margin: 0;
+			max-width: 100%;
+		}
+		.image-wrap{
+			max-height:300px;
+			overflow:hidden;
+		}
+		.text{
+			@include border-radius(0 0 $button-radius $button-radius);
+			background:$default-color; 
+			color:$body-font-color;
+			padding:10px 30px 30px;
+			width:100%;
+			p{
+				font-size:$med;
+				@media screen and (max-width: 860px) {
+					font-size:$norm;
+				}
+			}
+		}
+	}
+}
+
+.flex-viewport {
+	@include transition(all 1s ease);
+	max-height: 2000px;
+}
+
+.loading .flex-viewport {
+	max-height: 300px;
+}
+
+.flexslider .slides {
+	zoom: 1;
+}
+
+.carousel li {
+	margin-right: 5px;
+}
+
+/* Direction Nav */
+
+.flex-direction-nav {
+	*height: 0;
+	a {
+		@include transition(all 1s ease);
+		color: rgba(0, 0, 0, 0.8);
+		cursor: pointer;
+		display: block;
+		height: 30px;
+		margin: -20px 0 0;
+		opacity: 0;
+		overflow: hidden;
+		position: absolute;
+		text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+		top: 50%;
+		width: 40px;
+		z-index: 10;
+	}
+	.flex-prev {
+		left: -50px;
+	}
+	.flex-next {
+		right: -50px;
+		text-align: right;
+	}
+}
+
+.flexslider:hover {
+	.flex-prev {
+		opacity: 0.7;
+		left: 10px;
+	}
+	.flex-next {
+		opacity: 0.7;
+		right: 10px;
+		&:hover {
+			opacity: 1;
+		}
+	}
+	.flex-prev:hover {
+		opacity: 1;
+	}
+}
+
+.flex-direction-nav {
+	.flex-disabled {
+		opacity: 0!important;
+		filter: alpha(opacity = 0);
+		cursor: default;
+	}
+	a {
+		&:before {
+			font-family: "entypo";
+			font-size: 30px;
+			display: inline-block;
+			content: '\e765';
+		}
+		&.flex-next:before {
+			content: '\e766';
+		}
+	}
+}
+
+/* Pause/Play */
+
+.flex-pauseplay a {
+	display: block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	bottom: 5px;
+	left: 10px;
+	opacity: 0.8;
+	z-index: 10;
+	overflow: hidden;
+	cursor: pointer;
+	color: #000;
+	&:before {
+		font-family: "entypo";
+		font-size: 20px;
+		display: inline-block;
+		content: '\2389';
+	}
+	&:hover {
+		opacity: 1;
+	}
+	&.flex-play:before {
+		content: '\25b6';
+	}
+}
+
+/* Control Nav */
+
+.flex-control-nav {
+	width: 100%;
+	position: absolute;
+	bottom: 3px;
+	text-align: center;
+	@media screen and (max-width: 959px) {
+		bottom: 0px;
+	}
+	li {
+		margin: 0 6px;
+		display: inline-block;
+		zoom: 1;
+		*display: inline;
+	}
+}
+
+.flex-control-paging li a {
+	@include border-radius(60px);
+	width: 12px;
+	height: 12px;
+	display: block;
+	background: #D7D7D7;
+	cursor: pointer;
+	text-indent: -9999px;
+	position:relative;
+	z-index:6;
+	&:hover {
+		background: $body-link-hover-color;
+	}
+	&.flex-active {
+		background: #000;
+		background: $body-link-color;
+		cursor: default;
+	}
+}
+
+.flex-control-thumbs {
+	margin: 5px 0 0;
+	position: static;
+	overflow: hidden;
+	li {
+		width: 25%;
+		float: left;
+		margin: 0;
+	}
+	img {
+		width: 100%;
+		display: block;
+		opacity: .7;
+		cursor: pointer;
+	&:hover {
+		opacity: 1;
+	}
+	}
+	.flex-active {
+		opacity: 1;
+		cursor: default;
+	}
+}
+
+@media screen and (max-width: 860px) {
+	.flex-direction-nav {
+		.flex-prev {
+			opacity: 1;
+			left: 10px;
+		}
+		.flex-next {
+			opacity: 1;
+			right: 10px;
+		}
+	}
+}
