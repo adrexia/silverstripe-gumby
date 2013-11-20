@@ -11,7 +11,7 @@ like the CWP default theme, and design modifications have been kept to a minimum
 ## Browser support
 * IE8 and above
 
-##Progress
+## Progress
 
 ### Done
 * Generic Page
