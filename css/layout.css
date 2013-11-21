@@ -2792,6 +2792,7 @@ ul.sitemap li div.collapse a, ul.sitemap li div.collapse .page-toggle a.button {
 .results-list .abstract { float: left; }
 .results-list .abstract.has-image { width: 80%; }
 .results-list figure.featured-image { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; float: left; padding-left: 30px; width: 20%; }
+.results-list .results { list-style: none; }
 
 /*  Styles for header elements */
 .header { *zoom: 1; }

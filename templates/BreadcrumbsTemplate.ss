@@ -1,6 +1,6 @@
 <% if Pages %>
 	<ol class="breadcrumb">
-		<li><a href="$Baseref">Home</a> <span class="divider">/</span></li>
+		<li><a href="$Baseref">Home</a></li>
 		<% loop Pages %>
 			<% if Last %>
 				<li class="active">$Title.XML</li>

@@ -1,38 +1,38 @@
 <div class="row">
-	<div id="main" class="span12 resultsList" role="main">
-		<h1 class="searchQuery page-header">Search results</h1>
+	<div id="main" class="columns twelve results-list" role="main">
+		<h1 class="search-query page-header">Search results</h1>
+
+		
+		<% include ResultsHeader %>
 
 		<% if Results %>
-			<div class="resultsHeader">
-				<h2 class="pull-left">Results for &quot;{$Query}&quot;</h2>
-				<p class="pull-right">Displaying Page $Results.CurrentPage of $Results.TotalPages</p>
-			</div>
-		<% end_if %>
-
-		<% if Results %>
-			<ol id="SearchResults">
+			<ol id="search-results" class="search-results results">
 				<% loop Results %>
 					<li>
-						<article class="$EvenOdd">
+						<article class="$EvenOdd item $FirstLast <% if $First %>clearfix<% end_if %>">
 							<header>
-								<h3>
-									<a class="searchResultHeader" href="$Link">
-										$Title
-									</a>
-								</h3>
+								<h4><a href="$Link">$Title</a></h4>
 							</header>
-							<p><% if Abstract %>$Abstract.XML<% else %>$Content.ContextSummary<% end_if %></p>
+							<p>
+								<% if Abstract %>$Abstract.XML<% else %>$Content.ContextSummary<% end_if %>
+							</p>
 						</article>
 					</li>
 				<% end_loop %>
 			</ol>
+
+			<% with Results %>
+				<% include Pagination %>
+			<% end_with %>
+
 		<% else %>
+		<article class="odd first clearfix">
 			<p>Sorry, your search query did not return any results.</p>
+		</article>
 		<% end_if %>
-		
-		<% with Results %>
-			<% include Pagination %>
-		<% end_with %>
-		<% include PrintShare %>
 	</div>
+	<footer class="content-footer columns twelve">
+		<% include PrintShare %>
+		<% include LastEdited %>
+	</footer>
 </div>

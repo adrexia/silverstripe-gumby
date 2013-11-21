@@ -7,6 +7,8 @@
 				Upcoming events
 			<% else_if Top.ClassName == NewsHolder %>
 				News
+			<% else_if $Query %>
+				Results for &quot;{$Query}&quot;
 			<% else %>
 				Items
 			<% end_if %>
@@ -14,10 +16,12 @@
 	</p>
 	<p class="pull-right">
 		<% if FilteredUpdates %>
-		<% with FilteredUpdates %>$FirstItem - $LastItem of $count
-		<% end_with %>
+			<% with FilteredUpdates %>$FirstItem - $LastItem of $count
+			<% end_with %>
+		<% else_if Results %>
+			Displaying Page $Results.CurrentPage of $Results.TotalPages
 		<% else %>
-		none
+			none
 		<% end_if %>
 	</p>
 </div>
