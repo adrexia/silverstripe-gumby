@@ -1,6 +1,11 @@
+// Environment variables. Note cwp puts all css into assets, 
+// so the path needs to be able to find the css from there
+$theme-name: 'cwp-gumby-theme';
+$file-path: "../../../themes/"+$theme-name;
+
+
 // Welcome to Gumby 2.0 Settings.
 // Happy Tinkering!
-
 
 // Grid Settings
 $row-max-width: 1170px !default;

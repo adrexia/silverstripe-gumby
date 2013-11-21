@@ -1,0 +1,12 @@
+/*
+ * Styling for results
+ */
+
+.results-list{
+	.item.even{
+		border-top:1px solid $default-color;
+		border-bottom:1px solid $default-color;
+		padding-top:10px;
+		margin-bottom:10px;
+	}
+}

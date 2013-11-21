@@ -24,8 +24,8 @@ $PageComments
 	<% if NewsItems %>
 	<div class="columns <% if not Quicklinks %>six<% else %>five<% end_if %> results-list">
 		<h3><i class="icon-layout" aria-hidden="true"></i> <a href="$NewsPage.Link">$NewsPage.Title</a></h3>
-		<% loop NewsItems %>
-			<article class="$EvenOdd $FirstLast">
+		<% loop getNewsItems(3) %>
+			<article class="$EvenOdd $FirstLast item">
 				<% include NewsItem %>
 			</article>
 		<% end_loop %>

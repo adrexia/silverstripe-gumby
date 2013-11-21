@@ -12,12 +12,12 @@
 		margin-top: 18px;
 		overflow:visible;
 		padding-bottom: 18px;
-
 		a {
 			position: relative;
 			display: block;
 			.logo-placeholder{
-				font-size:2em;
+				//Can be removed when a logo is supplied
+				@include font-size($reallybig);
 				margin-top:30px;
 			}
 			img, .logo-placeholder {

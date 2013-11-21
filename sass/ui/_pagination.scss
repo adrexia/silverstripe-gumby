@@ -3,16 +3,22 @@
 */
 
 $pagination-border-radius: 0;
-$pagination-color: transparent;
-$pagination-border-color: rgba(#fff, 0.5);
-$text-color: #fff;
-$active-color:#333;
+$pagination-color: darken($default-color, 5%);
+$pagination-border-color:  darken($default-color, 10%);
+$text-color: darken($default-color, 60%);
+$active-color: $body-link-color;
 $active-text-color: #fff;
-$active-border-color: rgba(#fff, 0.5);
-$disabled-color: transparent;
-$disabled-text-color: #888;
-$disabled-border-color: rgba(#888, 0.5);
+$active-border-color: darken($body-link-color, 10%);
+$disabled-color: lighten($default-color, 1%);
+$disabled-text-color: darken($default-color, 25%);
+$disabled-border-color: darken($default-color, 5%);
 
+
+%active{
+  background-color: $active-color;
+  border: 1px solid $active-border-color;
+  color:$active-text-color;
+}
 .pagination{
   text-align:center;
 }
@@ -27,25 +33,32 @@ $disabled-border-color: rgba(#888, 0.5);
     a, span {
       background-color:$pagination-color;
       border: 1px solid #ccc;
-
       border: 1px solid $pagination-border-color;
       font-size: 15px;
       color:$text-color;
       float: left;
       line-height: $base-line-height * .8;
-      padding: 10px 20px;
+      padding: 5px 10px;
       text-decoration: none;
+      &.active {
+        @extend %active;
+        cursor: default;
+      }
     }
+
     span{
       background-color:$disabled-color;
       border: 1px solid #ccc;
       border: 1px solid $disabled-border-color;
       color:$disabled-text-color;
+      &.active {
+          @extend %active;
+          cursor: default;
+      }
     }
+    
     a:hover, a:focus {
-     background-color:$active-color;
-     border: 1px solid $active-border-color;
-     color:$active-text-color;
+     @extend %active;
     }
     &:first-child {
       a, span {
@@ -57,12 +70,6 @@ $disabled-border-color: rgba(#888, 0.5);
       a, span {
         @include border-right-radius($pagination-border-radius);
       }
-    }
-  }
-  .active {
-    a, span {
-      background-color: $active-color;
-      cursor: default;
     }
   }
   span.disabled {

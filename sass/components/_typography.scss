@@ -37,10 +37,19 @@ h2 {
     @include font-size($norm);
     text-transform: uppercase;
     font-weight:bold;
+    line-height:1.5em;
   }
 
 }
-h3 { @include font-size($larger);}
+h3 { 
+  @include font-size($larger);
+  &.small{
+    @include font-size($norm - 2);
+    text-transform: uppercase;
+    font-weight:bold;
+    line-height:1.5em;
+  }
+}
 h4 { @include font-size($med);}
 h5 { @include font-size($med);}
 h6 { @include font-size($norm);}

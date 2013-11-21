@@ -95,18 +95,30 @@ ul.nav-pills {
 /**
  * EventHolder and NewsHolder + Registry Page.
  */
-.month-filter {
+.filter{
+	margin-top:30px;
+	padding-bottom:30px;
+	border-bottom:1px solid $default-color;
+	fieldset{
+		padding:0;
+		margin:0;
+		border:0;
+	}
+	
+}
+
+.month-filter{
+	margin-top:10px;
+	padding-bottom:30px;
 	ol {
 		margin: 0;
 	}
-}
-
-.filter{
-	margin-top:30px;
-	fieldset{
-		padding-left:0;
-		margin:0;
-		border:0;
+	.year {
+		float:left;
+		padding-right:10px;
+	}
+	.months{
+		@include clearfix;
 	}
 }
 

@@ -59,9 +59,10 @@
 }
 
 .alert {
-  padding: 0 10px;
+  padding: 5px 10px;
   font-family: $font-family;
   font-weight: $font-weight-semibold;
+  line-height:1.5em;
   list-style-type: none;
   word-wrap: break-word;
   margin-bottom: $norm / 2;
@@ -69,8 +70,8 @@
   @include border-radius($button-radius);
   @each $shade in $ui-coloring {
     &.#{nth($shade, 1)} {
-      background: lighten(nth($shade, 2), 20%);
-      border: 1px solid nth($shade, 2);
+      background: contrast-color(nth($shade, 2), lighten(nth($shade, 2), 45%), darken(nth($shade, 2), 10%), 40%);
+      border: 1px solid contrast-color(nth($shade, 2), lighten(nth($shade, 2), 30%), darken(nth($shade, 2), 20%), 40%);
       color: darken(nth($shade, 2), 20%);
       @if nth($shade, 1) == info {
         color: $default-color;

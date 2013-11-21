@@ -34,7 +34,7 @@
 
 				<% if FilteredUpdates %>
 					<% loop FilteredUpdates %>
-						<article class="$EvenOdd $FirstLast <% if $First %>clearfix<% end_if %>">
+						<article class="item $EvenOdd $FirstLast <% if $First %>clearfix<% end_if %>">
 							<% include EventItem %>
 						</article>
 					<% end_loop %>

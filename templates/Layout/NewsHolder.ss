@@ -82,7 +82,7 @@
 			</div>
 		
 			<% loop FilteredUpdates %>
-				<article class="$EvenOdd">
+				<article class="$EvenOdd item">
 					<% if FeaturedImage %>
 						<figure>
 							$FeaturedImage.SetHeight(150)
