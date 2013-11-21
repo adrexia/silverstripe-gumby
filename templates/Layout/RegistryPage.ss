@@ -50,8 +50,8 @@
 				<footer class="content-footer columns twelve">
 					<% if RegistryEntries %>
 						<p class="pull-left result-actions">
-							<a class="export" href="$Link(export)?$AllQueryVars" title="Export all results to a CSV spreadsheet file"><i class="icon-export"></i>Export results to CSV</a>
-							<a class="history-feed-link" href="registry-feed/latest/{$DataClass}" title="View imported data history"><i class="icon-back-in-time"></i>View imported data history</a>
+							<a class="export" href="$Link(export)?$AllQueryVars" title="Export all results to a CSV spreadsheet file"><i class="icon-export" aria-hidden="true"></i>Export results to CSV</a>
+							<a class="history-feed-link" href="registry-feed/latest/{$DataClass}" title="View imported data history"><i class="icon-back-in-time" aria-hidden="true"></i>View imported data history</a>
 						</p>
 					<% end_if %>
 					<% include PrintShare %>
