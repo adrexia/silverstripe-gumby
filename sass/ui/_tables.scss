@@ -34,7 +34,15 @@ table {
 	thead {
 		background-color: $table-thead-bgcolor;
 		color: #fff;
-
+		a{
+			color: #fff;
+			&:visited{
+				color:#fff;
+			}
+			&:hover, &:focus{
+				color: rgba(#fff,0.8);
+			}
+		}
 		tr th {
 			font-size: $norm;
 			font-weight: bold;

@@ -1,77 +1,62 @@
 <div class="row">
 	<% include Breadcrumbs %>
-	<div class="span3">
-		<div class="sidebar-form well">
-			<div id="{$DataClass}_searchform" class="searchForm">
-				<h2 class="h6-style">Search Filter</h2>
-				$RegistryFilterForm
+	<div class="row">
+		<div class="columns three">
+			<div class="sidebar-form filter">
+				<div id="{$DataClass}_searchform" class="searchForm">
+					<h2 class="small">Search Filter</h2>
+					<% if RegistryEntries %>
+					$RegistryFilterForm
+					<% end_if %>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="span9">
-		<div id="main" role="main">
-			<h1 class="page-header">$Title</h1>
 
-			<div class="clearfix">
+		<div class="columns nine">
+			<div id="main" class="main" role="main">
+				<h1 class="page-header">$Title</h1>
+
 				$Content.RichLinks
-			</div>
 
-			<div id="{$DataClass}_results" class="resultsContainer">
-				<% if RegistryEntries %>
-					<table class="results" summary="Search results for $DataClass">
-						<thead>
-							<tr>
-								<% loop Columns %>
-									<th><a href="$Top.QueryLink&amp;Sort={$Name}&amp;Dir={$Top.OppositeDirection}#results">$Title</a></th>
-								<% end_loop %>
-							</tr>
-						</thead>
-						<tbody>
-							<% loop RegistryEntries %>
-								<tr class="<% if FirstLast %>$FirstLast <% end_if %>$EvenOdd">
+				<div id="{$DataClass}_results" class="results-container">
+					<% if RegistryEntries %>
+						<table class="results" summary="Search results for $DataClass">
+							<thead>
+								<tr>
 									<% loop Columns %>
-										<td><% if Link %><a href="$Link">$Value</a><% else %>$Value<% end_if %></td>
+										<th><a href="$Top.QueryLink&amp;Sort={$Name}&amp;Dir={$Top.OppositeDirection}#results"><i class="icon-arrow-combo"></i> $Title</a></th>
 									<% end_loop %>
 								</tr>
-							<% end_loop %>
-						</tbody>
-					</table>
-
-					<% if RegistryEntries.MoreThanOnePage %>
-						<div class="pagination pagination-centered">
-							<h3 class="nonvisual-indicator">Pages</h3>
-							<ul id="PageNumbers">
-								<% if RegistryEntries.NotFirstPage %>
-									<li class="prev"><a href="$RegistryEntries.PrevLink" title="View the previous page of results">&laquo; Prev</a></li>
-								<% end_if %>
-								<% loop RegistryEntries.PaginationSummary(5) %>
-									<% if CurrentBool %>
-										<li class="active"><a href="$Link" title="Viewing page $PageNum of results">$PageNum</a></li>
-									<% else_if PageNum %>
-										<li><a href="$Link" title="View page $PageNum of results">$PageNum</a></li>
-									<% else %>
-										<li class="disabled"><a><span class="disabled">...</span></a></li>
-									<% end_if %>
+							</thead>
+							<tbody>
+								<% loop RegistryEntries %>
+									<tr class="<% if FirstLast %>$FirstLast <% end_if %>$EvenOdd">
+										<% loop Columns %>
+											<td><% if Link %><a href="$Link">$Value</a><% else %>$Value<% end_if %></td>
+										<% end_loop %>
+									</tr>
 								<% end_loop %>
-								<% if RegistryEntries.NotLastPage %>
-									<li class="next"><a href="$RegistryEntries.NextLink" title="View next page of results">Next &raquo;</a></li>
-								<% end_if %>
-							</ul>
-						</div>
+							</tbody>
+						</table>
+
+						<% with RegistryEntries %>
+							<% include Pagination %>
+						<% end_with %>
+					<% else %>
+						<p class="no-results">No results to show.</p>
 					<% end_if %>
 					
-				<% else %>
-					<p class="noResults">No results to show.</p>
-				<% end_if %>
-				<div class="resultActions">
-					<p>
-					<% if RegistryEntries %>
-						<a class="export" href="$Link(export)?$AllQueryVars" title="Export all results to a CSV spreadsheet file">Export results to CSV</a> | 
-					<% end_if %>
-					<a class="historyFeedLink" href="registry-feed/latest/{$DataClass}" title="View imported data history">View imported data history</a>
-					</p>
 				</div>
-				<% include PrintShare %>
+				<footer class="content-footer columns twelve">
+					<% if RegistryEntries %>
+						<p class="pull-left result-actions">
+							<a class="export" href="$Link(export)?$AllQueryVars" title="Export all results to a CSV spreadsheet file"><i class="icon-export"></i>Export results to CSV</a>
+							<a class="history-feed-link" href="registry-feed/latest/{$DataClass}" title="View imported data history"><i class="icon-back-in-time"></i>View imported data history</a>
+						</p>
+					<% end_if %>
+					<% include PrintShare %>
+					<% include LastEdited %>
+				</footer>
 			</div>
 		</div>
 	</div>

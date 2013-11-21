@@ -185,11 +185,18 @@ ol.breadcrumb{
 .content-footer{
 	margin-top:50px;
 	float:right;
+	a{
+		font-size:0.9em;
+	}
+	.pull-left{
+		a{
+			padding-right:20px;
+		}
+	}
 	.print-share{
 		text-align:right;
 		a{
 			padding-left:20px;
-			font-size:0.9em;
 		}
 	}
 	.last-edited{
