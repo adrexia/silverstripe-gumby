@@ -1,4 +1,4 @@
-<nav class="filter" role="navigation">
+<nav class="filter" role="navigation" id="page-nav">
 	<h2 class="small">Filter by tag</h2>
 	<ul class="nav nav-list">
 		<li class="label <% if $Top.CurrentTag.ID==$ID %>active primary<% else %> default<% end_if %>"><a href="$AllTagsLink" title="View all tags">View all tags</a></li>

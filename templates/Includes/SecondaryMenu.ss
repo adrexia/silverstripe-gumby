@@ -1,6 +1,6 @@
 <% if Menu(2) %>
 	<% cached 'menu2', ID, List(Page).max(LastEdited) %>
-	<nav class="secondary-menu vertical-nav columns three" role="navigation">
+	<nav class="secondary-menu vertical-nav columns three" id="page-nav" role="navigation">
 		<h2 class="nonvisual-indicator">Secondary Navigation</h2>
 		<ul class="nav nav-list">
 			<% loop Menu(2) %>
