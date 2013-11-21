@@ -20,10 +20,5 @@
 		float:left;
 		padding-left:30px;
 		width:20%;
-		img {
-			@extend .image;
-			@extend .photo;
-			margin-bottom:0;
-		}
 	}
 }

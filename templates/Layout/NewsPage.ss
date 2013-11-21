@@ -1,8 +1,8 @@
 <div class="row">
 	<% include Breadcrumbs %>
-	<div id="main" role="main">
-		<div class="span3">
-			<div class="well update-information">
+	<div class="row">
+		<div class="columns three">
+			<div class="update-information filter">
 				<h2 class="nonvisual-indicator">News item information</h2>
 				<dl>
 					<% if $Date %>
@@ -18,7 +18,7 @@
 						<dd>
 							<ul class="unstyled update-tags">
 								<% loop Terms %>
-									<li class="label">$Name</li>
+									<li class="label default">$Name</li>
 								<% end_loop %>
 							</ul>
 						</dd>
@@ -26,23 +26,25 @@
 				</dl>
 			</div>
 		</div>
-		<div class="span9">
-			<h1 class="page-header">$Title</h1>
-
-			<div class="clearfix">
+		<div class="columns nine">
+			<div id="main" role="main">
+				<h1 class="page-header">$Title</h1>	
 				<% if FeaturedImage %>
-					<figure class="featured-image">
+					<figure class="featured-image right">
 						$FeaturedImage.SetWidth(300)
 					</figure>
 				<% end_if %>
 				$Content.RichLinks
+				$Form
+				
+				<% include RelatedPages %>
+				$PageComments
 			</div>
-			$Form
-			<p><a href="$Parent.Link">←  Back to the news</a></p>
-			<% include RelatedPages %>
-			$PageComments
-			<% include PrintShare %>
-			<% include LastEdited %>
+			<footer class="content-footer columns twelve">
+				<p class="pull-left"><a href="$Parent.Link">←  Back to the news</a></p>
+				<% include PrintShare %>
+				<% include LastEdited %>
+			</footer>
 		</div>
 	</div>
 </div>

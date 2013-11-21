@@ -58,8 +58,15 @@ img{
 	margin: 0 0 18px 18px;
 }
 
-.captionImage {
-	width: 100%;
+figure.featured-image {
+	img {
+		@extend .image;
+		@extend .photo;
+		margin-bottom:0;
+	}
+}
+
+.captionImage, figure.featured-image {
 	max-width: 100%;
 
 	&.left {

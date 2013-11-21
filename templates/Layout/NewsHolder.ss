@@ -1,4 +1,4 @@
-<div class="row layout">
+<div class="row">
 	<% include Breadcrumbs %>
 	<div class="row">
 		<div class="columns columns three">

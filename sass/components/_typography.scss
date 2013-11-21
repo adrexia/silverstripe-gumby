@@ -20,7 +20,8 @@ h1,h2,h3,h4,h5,h6 {
 
 h1 {
   @include font-size($xxlarge);
-  line-height:1.9em;
+  line-height:1.2em;
+  margin-top:20px;
   &.xlarge {
     @include font-size($reallybig);
   }
@@ -29,6 +30,9 @@ h1 {
   }
   &.absurd {
     @include font-size($absurd);
+  }
+  &.page-header{
+    margin-bottom:30px;
   }
 }
 h2 { 
