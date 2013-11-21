@@ -26,6 +26,12 @@ iframe {
 	border: 0;
 }
 
+// limit size of parent element to size of icon
+.show-icon-only{
+	display:block;
+	overflow:hidden;
+	width:20px;
+}
 
 // Generic style for meta data
 .meta-data{
