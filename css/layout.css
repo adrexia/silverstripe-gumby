@@ -1225,12 +1225,12 @@ h1, .header .brand { font-size: 48px; font-size: 3rem; line-height: 1.2em; margi
 h1.xlarge, .header .xlarge.brand { font-size: 110px; font-size: 6.875rem; }
 h1.xxlarge, .header .xxlarge.brand { font-size: 126px; font-size: 7.875rem; }
 h1.absurd, .header .absurd.brand { font-size: 177px; font-size: 11.0625rem; }
-h1.page-header, .header .page-header.brand { margin-bottom: 20px; }
+h1.page-header, .header .page-header.brand { margin-bottom: 30px; }
 
-h2 { font-size: 42px; font-size: 2.625rem; }
+h2 { font-size: 30px; font-size: 1.875rem; }
 h2.small { font-size: 16px; font-size: 1rem; text-transform: uppercase; font-weight: bold; line-height: 1.5em; }
 
-h3 { font-size: 30px; font-size: 1.875rem; }
+h3 { font-size: 26px; font-size: 1.625rem; }
 h3.small { font-size: 14px; font-size: 0.875rem; text-transform: uppercase; font-weight: bold; line-height: 1.5em; }
 
 h4 { font-size: 18px; font-size: 1.125rem; }

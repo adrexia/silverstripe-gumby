@@ -36,17 +36,16 @@ h1 {
   }
 }
 h2 { 
-  @include font-size($xlarge); 
+  @include font-size($larger); 
   &.small{
     @include font-size($norm);
     text-transform: uppercase;
     font-weight:bold;
     line-height:1.5em;
   }
-
 }
 h3 { 
-  @include font-size($larger);
+  @include font-size($large);
   &.small{
     @include font-size($norm - 2);
     text-transform: uppercase;
