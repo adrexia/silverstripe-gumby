@@ -22,6 +22,16 @@ This theme is intended as a starting point for development, rather than a theme 
 * NewsHolderPage
 * EventsPage
 * NewsPage
+* Registry Page
+
+### Started
+* SitemapPage
+
+### TODO
+* Finish SitemapPage
+* Search Results Page
+* UserForms
+* Browser testing
 
 ## How to use
 Either grab the git url, and clone into your themes directory or add it to your composer file [more info to come]
