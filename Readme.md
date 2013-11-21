@@ -50,5 +50,4 @@ At the moment all extra javascript and css required is included in the templates
 ## Screenshot
 _HomePage_
 
-![Home page screen shot](images/demo-screenshot.png "Home page screen shot")
-
+![Home page screen shot](https://gitlab.cwp.govt.nz/nguyer/cwp-gumby-theme/raw/master/images/demo-screenshot.png "Home page screen shot")
