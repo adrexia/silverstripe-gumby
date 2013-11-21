@@ -1,43 +1,25 @@
 <div class="row">
 	<% include Breadcrumbs %>
-	<div id="main" role="main">
-		<div class="span3">
-			<div class="well update-information">
+	<div class="row">
+		<div class="columns three">
+			<div class="filter update-information">
 				<h2 class="nonvisual-indicator">Event information</h2>
-				<dl>
-					<% if $Date %>
-						<dt>Date &amp; time:</dt>
-						<dd><time datetime="$Date">$Date.Format(d/m/Y) <% if $StartTime %>$StartTime.Nice <% if $EndTime %>- $EndTime.Nice <% end_if %><% end_if %></time></dd>
-					<% end_if %>
-					<% if Location %>
-						<dt>Location:</dt>
-						<dd>$NiceLocation</dd>
-					<% end_if %>
-					<% if Terms %>
-						<dt>Tags</dt>
-						<dd>
-							<ul class="unstyled update-tags">
-								<% loop Terms %>
-									<li class="label">$Name</li>
-								<% end_loop %>
-							</ul>
-						</dd>
-					<% end_if %>
-				</dl>
+				<% include UpdateInfo %>
 			</div>
 		</div>
-		<div class="span9">
-			<h1 class="page-header">$Title</h1>
-
-			<div class="clearfix">
+		<div class="columns nine">
+			<div id="main" class="main" role="main">
+				<h1 class="page-header">$Title</h1>
 				$Content.RichLinks
+				
+				<% include RelatedPages %>
+				$PageComments
 			</div>
-			$Form
-			<p><a href="$Parent.Link">←  Back to the event listing</a></p>
-			<% include RelatedPages %>
-			$PageComments
-			<% include PrintShare %>
-			<% include LastEdited %>
+			<footer class="content-footer columns twelve">
+				<p class="pull-left"><a href="$Parent.Link">←  Back to the event listing</a></p>
+				<% include PrintShare %>
+				<% include LastEdited %>
+			</footer>
 		</div>
 	</div>
 </div>

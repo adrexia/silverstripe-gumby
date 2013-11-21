@@ -4,30 +4,11 @@
 		<div class="columns three">
 			<div class="update-information filter">
 				<h2 class="nonvisual-indicator">News item information</h2>
-				<dl>
-					<% if $Date %>
-						<dt>Date</dt>
-						<dd><time datetime="$Date">$Date.Nice</time></dd>
-					<% end_if %>
-					<% if Author %>
-						<dt>Author:</dt>
-						<dd>$Author</dd>
-					<% end_if %>
-					<% if Terms %>
-						<dt>Tags</dt>
-						<dd>
-							<ul class="unstyled update-tags">
-								<% loop Terms %>
-									<li class="label default">$Name</li>
-								<% end_loop %>
-							</ul>
-						</dd>
-					<% end_if %>
-				</dl>
+				<% include UpdateInfo %>
 			</div>
 		</div>
 		<div class="columns nine">
-			<div id="main" role="main">
+			<div id="main" class="main" role="main">
 				<h1 class="page-header">$Title</h1>	
 				<% if FeaturedImage %>
 					<figure class="featured-image right">
