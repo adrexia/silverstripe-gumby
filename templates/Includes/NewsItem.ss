@@ -1,4 +1,4 @@
-<div class="abstract">
+<div class="abstract<% if FeaturedImage %> has-image<% end_if %>">
 	<header>
 		<h4><a href="$Link">$Title</a></h4>
 	</header>

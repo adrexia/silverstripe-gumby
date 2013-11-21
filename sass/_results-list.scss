@@ -12,8 +12,10 @@
 		padding-top:10px;
 	}
 	.abstract{
-		width:80%;
 		float:left;
+		&.has-image{
+			width:80%;
+		}
 	}
 	figure.featured-image {
 		@include box-sizing(border-box);

@@ -2736,7 +2736,8 @@ ol.breadcrumb .divider, ol.results-header .divider { display: none; }
 .results-list .item.even { *zoom: 1; border-bottom: 1px solid #f2f2f2; border-top: 1px solid #f2f2f2; clear: both; margin-bottom: 10px; padding-top: 10px; }
 .results-list .item.even:before, .results-list .item.even:after { content: ""; display: table; }
 .results-list .item.even:after { clear: both; }
-.results-list .abstract { width: 80%; float: left; }
+.results-list .abstract { float: left; }
+.results-list .abstract.has-image { width: 80%; }
 .results-list figure.featured-image { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; float: left; padding-left: 30px; width: 20%; }
 
 /*  Styles for header elements */
