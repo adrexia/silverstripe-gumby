@@ -4,9 +4,26 @@
 
 .results-list{
 	.item.even{
-		border-top:1px solid $default-color;
+		@include clearfix;
 		border-bottom:1px solid $default-color;
-		padding-top:10px;
+		border-top:1px solid $default-color;
+		clear:both;
 		margin-bottom:10px;
+		padding-top:10px;
+	}
+	.abstract{
+		width:80%;
+		float:left;
+	}
+	figure.featured-image {
+		@include box-sizing(border-box);
+		float:left;
+		padding-left:30px;
+		width:20%;
+		img {
+			@extend .image;
+			@extend .photo;
+			margin-bottom:0;
+		}
 	}
 }

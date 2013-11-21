@@ -94,6 +94,9 @@ a {
   text-decoration: none;
   outline: 0;
   line-height: inherit;
+  &:visited{
+    color: mix($body-link-color, $body-link-hover-color, 50%);
+  }
   &:hover {
     color: $body-link-hover-color;
   }

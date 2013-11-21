@@ -1243,6 +1243,7 @@ p.lead { font-size: 20px; font-size: 1.25rem; margin-bottom: 18px; }
 @media only screen and (max-width: 768px) { p { font-size: 17.6px; font-size: 1.1rem; line-height: 1.625em; } }
 
 a { color: #187cc4; text-decoration: none; outline: 0; line-height: inherit; }
+a:visited { color: #7b3e87; }
 a:hover { color: #de004b; }
 
 /*=====================================================

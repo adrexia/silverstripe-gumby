@@ -8,29 +8,12 @@
 			<div id="main" class="results-list typography" role="main">
 				<h1 class="page-header">$Title</h1>
 
-				<div class="clearfix">
+				<div class="content">
 					$Content.RichLinks
 				</div>
 
 				<% include MonthFilter %>
-
-				<div class="results-header">
-					<p class="subtitle pull-left">
-						<% if FilterDescription %>
-						$FilterDescription
-						<% else %>
-						Upcoming events
-						<% end_if %>
-					</p>
-					<p class="pull-right">
-						<% if FilteredUpdates %>
-						<% with FilteredUpdates %>$FirstItem - $LastItem of $count
-						<% end_with %>
-						<% else %>
-						none
-						<% end_if %>
-					</p>
-				</div>
+				<% include ResultsHeader %>
 
 				<% if FilteredUpdates %>
 					<% loop FilteredUpdates %>

@@ -5,7 +5,15 @@
 			<% if FilterDescription %>
 				<p>
 					<span class="btn metro rounded small default">
-						<a href="$Link"><i class="icon-calendar"></i>Show all upcoming events</a>
+						<a href="$Link"><i class="icon-calendar"></i>
+							<% if Top.ClassName == EventHolder %>
+								Show all upcoming events
+							<% else_if Top.ClassName == NewsHolder %>
+								Show all news
+							<% else %>
+								Show all
+							<% end_if %>
+						</a>
 					</span>
 				</p>
 			<% end_if %>

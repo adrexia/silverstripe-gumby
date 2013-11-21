@@ -5,7 +5,7 @@
 $pagination-border-radius: 0;
 $pagination-color: darken($default-color, 5%);
 $pagination-border-color:  darken($default-color, 10%);
-$text-color: darken($default-color, 60%);
+$text-color: $body-font-color;
 $active-color: $body-link-color;
 $active-text-color: #fff;
 $active-border-color: darken($body-link-color, 10%);
@@ -38,7 +38,7 @@ $disabled-border-color: darken($default-color, 5%);
       color:$text-color;
       float: left;
       line-height: $base-line-height * .8;
-      padding: 5px 10px;
+      padding: 3px 10px;
       text-decoration: none;
       &.active {
         @extend %active;
