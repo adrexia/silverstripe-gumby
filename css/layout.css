@@ -2809,9 +2809,10 @@ ul.sitemap li div.collapse a, ul.sitemap li div.collapse .page-toggle a.button {
 .search-group { *zoom: 1; }
 .search-group:before, .search-group:after { content: ""; display: table; }
 .search-group:after { clear: both; }
-.search-group .search-query { padding-top: 1px; padding-right: 5px; width: 200px; margin-top: -1px; color: #333333; -webkit-appearance: textfield; }
+.search-group .search-query { padding-top: 2px; padding-right: 5px; width: 200px; margin-top: -1px; color: #333333; -webkit-appearance: textfield; }
 .search-group form { height: 60px; line-height: 58px; font-size: 16px; font-size: 1rem; padding-right: none; }
 .search-group form .btn { margin-left: -5px; }
+.search-group form .btn input { display: inline; }
 .search-group fieldset { text-align: right; padding-left: 0; padding-right: 0; border: 0; }
 
 /* Styles for the main page footer */

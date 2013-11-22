@@ -1,5 +1,6 @@
 <header class="header row" role="banner">
 	<% if $AvailableTranslations %>
+		<h2 class="nonvisual-indicator">Language Selector</h2>
 		<ul id="lang" class="translations nav-pills">
 			<% loop $AvailableTranslations %>
 				<li>

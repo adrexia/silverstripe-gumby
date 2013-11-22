@@ -43,7 +43,7 @@
 .search-group{
 	@include clearfix;
 	.search-query {
-		padding-top:1px; // pulls the input up rather than pushing it down
+		padding-top:2px; // pulls the input up rather than pushing it down
 		padding-right:5px;
 		width:200px;
 		margin-top:-1px;
@@ -56,6 +56,9 @@
 		padding-right:none;
 		.btn{
 			margin-left:-5px;
+			input{
+				display:inline;
+			}
 		}
 	}
 	fieldset{
