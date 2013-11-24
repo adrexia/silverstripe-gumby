@@ -18,7 +18,7 @@
 		<% if FilteredUpdates %>
 			<% with FilteredUpdates %>$FirstItem - $LastItem of $count
 			<% end_with %>
-		<% else_if Results %>
+		<% else_if $Query && $Results %>
 			Displaying Page $Results.CurrentPage of $Results.TotalPages
 		<% else %>
 			none
