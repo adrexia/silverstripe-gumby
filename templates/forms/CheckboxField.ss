@@ -1,2 +1,2 @@
 <input $AttributesHTML>
-<span></span>
+<span aria-hidden="true"></span>

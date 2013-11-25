@@ -30,8 +30,11 @@ form {
     @include rhythm-borders(1px,1,$norm,solid);
     border-color: darken($default-color, 10%);
     margin: 18px 0;
-    legend {
-      padding: 5px 10px;
+
+    fieldset{
+      border:none;
+      padding-left:0;
+      padding-bottom:1em;
     }
   }
 }
@@ -333,7 +336,11 @@ form {
       background: #fefefe;
     }
     input[type="radio"], input[type="checkbox"] {
-      display: none;
+      height:0;
+      line-height:0;
+      opacity:0;
+      position:absolute;
+      visibility:hidden;
     }
   }
   .radio span {
@@ -355,7 +362,7 @@ form {
   position: relative;
   width: auto;
   display: inline-block;
-  margin: 0 0 2px 1.2%;
+  margin: 0;
   overflow: hidden;
   border: 1px solid darken($default-color, 5%);
   @include border-radius(4px);

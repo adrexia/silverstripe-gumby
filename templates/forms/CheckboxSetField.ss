@@ -4,6 +4,7 @@
 			<li class="$Class">
 				<label class="checkbox" for="$ID">
 					<input id="$ID" name="$Name" type="checkbox" value="$Value"<% if isChecked %> checked="checked"<% end_if %><% if isDisabled %> disabled="disabled"<% end_if %>>
+					<span aria-hidden="true"></span>
 					$Title
 				</label>
 			</li> 

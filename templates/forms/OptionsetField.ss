@@ -3,6 +3,7 @@
 		<li class="$Class">
 			<label for="$ID" class="radio">
 				<input id="$ID" class="radio" name="$Name" type="radio" value="$Value"<% if isChecked %> checked<% end_if %><% if isDisabled %> disabled<% end_if %>>
+				<span aria-hidden="true"></span>
 				$Title
 			</label>
 		</li>
