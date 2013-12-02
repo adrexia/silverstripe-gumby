@@ -5,17 +5,19 @@
 
 form {
   margin: 0 0 18px;
-  label {
+  label, legend {
     display: block;
     @include font-size($norm);
     @include adjust-leading-to(1);
     cursor: pointer;
     margin-bottom: 9px;
+    font-weight:bold;
     &.inline {
       display: inline-block;
       padding-right: 20px;
     }
   }
+
   dt {
     margin: 0;
   }
@@ -27,10 +29,7 @@ form {
     list-style-type: none;
   }
   fieldset {
-    @include rhythm-borders(1px,1,$norm,solid);
-    border-color: darken($default-color, 10%);
     margin: 18px 0;
-
     fieldset{
       border:none;
       padding-left:0;
@@ -42,7 +41,6 @@ form {
 .field {
   position: relative;
   max-width: 100%;
-  margin-bottom: 10px;
   vertical-align: middle;
   // Font-size 16px for weird form style error
   font-size: 16px;

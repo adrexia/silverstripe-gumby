@@ -232,3 +232,19 @@ ol.breadcrumb{
 		}
 	}
 }
+
+
+/*
+ * Breadcrumbs
+ */
+.breadcrumbs {
+	font-size: 0.8em;
+	margin-top: 10px;
+	a {
+		font-weight: bold;
+	}
+	@include respond(all-phones) {
+		display: none; //Hide on mobile phones
+	}
+}
+
