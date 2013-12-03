@@ -2776,9 +2776,9 @@ ul.sitemap .page-toggle { text-indent: 0; left: 0px; top: 0px; z-index: 5; posit
 ul.sitemap .page-toggle .button { padding-left: 8px; display: block; height: 40px; /* for early i.e. */ }
 ul.sitemap .page-toggle .button:hover, ul.sitemap .page-toggle .button:focus { text-decoration: none; }
 ul.sitemap .page-toggle .button .link-text { height: 0; overflow: hidden; padding-top: 20px; display: block; position: absolute; width: 20px; }
-ul.sitemap li { background: #f2f2f2; border-top: 1px solid #e5e5e5; z-index: 0; position: relative; line-height: 40px; margin-bottom: 0; }
+ul.sitemap li { background: #f2f2f2; border-top: 1px solid #dedede; z-index: 0; position: relative; line-height: 40px; margin: 0; padding: 0; }
 ul.sitemap li a.sitemap-link { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; display: block; height: 100%; padding-left: 30px; z-index: 1; }
-ul.sitemap li a.sitemap-link:hover { text-decoration: none; background-color: #e5e5e5; }
+ul.sitemap li a.sitemap-link:hover { text-decoration: none; background-color: #ededed; }
 ul.sitemap li a.sitemap-link img { border: none; margin: 0; }
 ul.sitemap li a.sitemap-link .sitetree-icon { margin: 0 10px 0 15px; }
 ul.sitemap li ul { margin: 0; padding: 0; list-style: none; height: auto; }

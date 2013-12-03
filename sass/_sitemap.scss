@@ -50,11 +50,12 @@ ul.sitemap {
 	
 	li {
 		background: $default-color;
-		border-top: 1px solid $table-border-color;
+		border-top: 1px solid darken($default-color, 8%);
 		z-index: 0;
 		position: relative;
 		line-height: 40px;
-		margin-bottom: 0;
+		margin: 0;
+		padding: 0;
 
 		a.sitemap-link {
 			@include box-sizing(border-box);
@@ -64,7 +65,7 @@ ul.sitemap {
 			z-index: 1;
 			&:hover {
 				text-decoration: none;
-				background-color: $table-border-color;
+				background-color: darken($default-color, 2%);
 			}
 			img {
 				border:none;
