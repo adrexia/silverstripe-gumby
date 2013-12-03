@@ -2873,7 +2873,7 @@ ul.sitemap li div.collapse a, ul.sitemap li div.collapse .page-toggle a.button {
 
 ul.slides { padding: 0; margin: 0; list-style: none; }
 ul.slides li { padding-bottom: 0; }
-ul.slides img { padding: 0; border: 0; }
+ul.slides img { padding: 0; border: 0; float: left; display: block; width: 100%; }
 
 /* FlexSlider Necessary Styles
 *********************************/
