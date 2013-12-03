@@ -53,7 +53,7 @@ It should help you get started. If you need more try:
 
 When you have the theme and have renamed it to suit your project, open _settings.scss (sass/var/_setting.scss) and edit the theme name variable to match. This will update all scss links to point to your theme. Remember to run compass watch on the folder to compile your scss.
 
-At the moment all extra javascript and css required is included in the templates. You should override the cwp BasePage.php function that includes scripts and css to prevent it trying to include unwanted bootstrap files. You can also move the extra js/css into your new function if you want to use the power of combine_files.
+At the moment all extra javascript and css required is included in the templates. You should override the cwp BasePage.php function that includes scripts and css to prevent it trying to include unwanted bootstrap files (and to prevent some timing bugs from occuring). You can also move the extra js/css into your new function if you want to use the power of combine_files.
 
 ## Screenshot
 _HomePage_
