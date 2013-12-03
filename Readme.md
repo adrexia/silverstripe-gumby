@@ -9,8 +9,8 @@ This theme is intended as a starting point for development, rather than a theme 
 
 
 ## Browser support
-* Firefox, Chrome, IE10
-* IE8 and above (intended - but not yet tested)
+* Firefox, Chrome
+* IE8 and above
 * Android, iPhone, iPad (intended - but not yet tested)
 
 ## Progress
@@ -29,7 +29,7 @@ This theme is intended as a starting point for development, rather than a theme 
 
 
 ### TODO
-* Browser testing
+* Device testing
 
 ## How to use
 Either grab the git url, and clone into your themes directory or add it to your composer file [more info to come]
