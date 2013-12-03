@@ -2658,13 +2658,15 @@ input.text:focus { background-color: #FFF; outline: none; }
 .btn .btn-content { padding: 0 15px 0 10px; }
 .btn .btn { padding: 0 20px; }
 
-.Actions .btn { float: left; margin-right: 20px; }
+.Actions { margin-top: 10px; }
+.Actions .btn { margin-right: 8%; display: block; float: left; }
+.Actions .btn input { display: block; }
+.Actions .btn:last-child { margin-right: 0; }
 
 form { *zoom: 1; }
 form:before, form:after { content: ""; display: table; }
 form:after { clear: both; }
-form .field { clear: both; border-bottom: 1px solid #efefef; padding: 20px; }
-form .field:nth-child(odd) { background-color: #f6f6f6; }
+form .field { clear: both; padding: 20px 0; }
 form .FormHeading { padding: 20px; clear: both; }
 form .optionset { clear: both; }
 form .optionset label { font-weight: normal; }
@@ -2682,6 +2684,9 @@ form fieldset fieldset { border: none; padding: 0; margin: 0; }
 #ForgotPassword:before, #ForgotPassword:after { content: ""; display: table; }
 #ForgotPassword:after { clear: both; }
 
+#Form_Form .field { padding: 20px; border-bottom: 1px solid #efefef; }
+#Form_Form .field:nth-child(odd) { background-color: #f6f6f6; }
+
 /* CWP styled elements */
 .nonvisual-indicator { clip: rect(0 0 0 0); height: 1px; width: 1px; margin: -1px; padding: 0; border: 0; overflow: hidden; position: absolute; }
 
@@ -2695,7 +2700,7 @@ iframe { border: 0; }
 
 .show-icon-only { display: block; overflow: hidden; width: 20px; }
 
-.meta-data { font-size: 13px; }
+.meta-data { font-size: 13px; font-weight: normal; }
 
 .icon-dark { color: #333333; }
 .icon-dark:visited { color: #333333; }
@@ -2835,7 +2840,7 @@ ul.sitemap li div.collapse a, ul.sitemap li div.collapse .page-toggle a.button {
 .search-group { *zoom: 1; }
 .search-group:before, .search-group:after { content: ""; display: table; }
 .search-group:after { clear: both; }
-.search-group .search-query { -webkit-appearance: textfield; color: #333333; display: block; float: left; padding-right: 5px; padding-top: 2px; width: 200px; }
+.search-group .search-query { -webkit-appearance: textfield; color: #333333; display: block; float: left; padding: 5px; width: 200px; }
 .search-group form { height: 60px; line-height: 58px; font-size: 16px; font-size: 1rem; padding-right: none; }
 .search-group form .btn { float: left; margin-left: -5px; }
 .search-group form .btn input { display: block; }

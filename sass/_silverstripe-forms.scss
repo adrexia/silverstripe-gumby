@@ -38,20 +38,26 @@ input.text {
 	@extend .primary;
 }
 
-.Actions .btn {
-	float: left;
-	margin-right:20px;
+.Actions{ 
+	margin-top:10px;
+	.btn {
+		margin-right:8%;
+		display:block;
+		float:left;
+		input{
+			display:block;
+		}
+		&:last-child{
+			margin-right:0;
+		}
+	}
 }
 
 form {
 	@include clearfix;
 	.field{
 		clear:both;
-		border-bottom:1px solid #efefef;
-		padding:20px;
-		&:nth-child(odd){
-			background-color:#f6f6f6;
-		}
+		padding:20px 0;
 	}
 	.FormHeading{
 		padding:20px;
@@ -95,4 +101,15 @@ form fieldset{ //Silverstripe uses fieldsets wrongly, so don't style with gumby 
 	font-size: 0.8em;
 	line-height: 35px;
 	padding-left: 20px;
+}
+
+//For user forms
+#Form_Form{
+	.field{
+		padding:20px;
+		border-bottom:1px solid #efefef;
+		&:nth-child(odd){
+			background-color:#f6f6f6;
+		}
+	}
 }
