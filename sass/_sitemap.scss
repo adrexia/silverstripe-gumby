@@ -24,13 +24,13 @@ ul.sitemap {
 		height: 40px;
 
 		.button {
-			padding-left: 15px;
+			padding-left: 8px;
 			display: block;
 			height: 40px; /* for early i.e. */
 			&:hover, &:focus {
 				text-decoration: none;
 			}
-			.linkText {
+			.link-text {
 				height: 0;
 				overflow: hidden;
 				padding-top: 20px;
@@ -38,22 +38,12 @@ ul.sitemap {
 				position: absolute;
 				width: 20px;
 			}
-			.toggleIco {
-				font-size: 12px;
-			}
-			&.open .toggleIco {
+			&.open .icon-plus {
 				@extend .icon-minus;
 			}
-			&.loading {
-				.toggleIco {
-					background: url(#{$file-path}/images/ajax-loader.gif) center bottom no-repeat;
-					display: block;
-					height: 27px;
-					width: 15px;
-					&:before {
-						display: none;
-					}
-				}
+			&.loading .icon-plus {
+				@extend .icon-arrows-ccw;
+				@extend .element-spinning;
 			}
 		}
 	}

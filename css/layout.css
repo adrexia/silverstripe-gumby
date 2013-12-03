@@ -18,6 +18,23 @@
 * http://www.opensource.org/licenses/mit-license.php
 */
 /* A file for Custom mixins and placeholders */
+.element-spinning, ul.sitemap .page-toggle .button.loading .icon-plus { -webkit-animation: spin 2s infinite linear; -moz-animation: spin 2s infinite linear; -o-animation: spin 2s infinite linear; animation: spin 2s infinite linear; }
+
+@-moz-keyframes spin { 0% { -moz-transform: rotate(0deg); }
+  100% { -moz-transform: rotate(-359deg); } }
+
+@-webkit-keyframes spin { 0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(-359deg); } }
+
+@-o-keyframes spin { 0% { -o-transform: rotate(0deg); }
+  100% { -o-transform: rotate(-359deg); } }
+
+@-ms-keyframes spin { 0% { -ms-transform: rotate(0deg); }
+  100% { -ms-transform: rotate(-359deg); } }
+
+@keyframes spin { 0% { transform: rotate(0deg); }
+  100% { transform: rotate(-359deg); } }
+
 html, body, div, span, applet, object, iframe, h1, .header .brand, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
 html { line-height: 1; }
@@ -162,9 +179,9 @@ i.icon-plus-circled:before { content: "\2795"; height: inherit; }
 
 i.icon-plus-squared:before { content: "\229e"; height: inherit; }
 
-.icon-minus.icon-left a:before, ul.sitemap .page-toggle .button.open .icon-left.toggleIco a:before, .icon-minus.icon-right a:after, ul.sitemap .page-toggle .button.open .icon-right.toggleIco a:after { content: "\2d"; height: inherit; }
+.icon-minus.icon-left a:before, ul.sitemap .page-toggle .button.open .icon-left.icon-plus a:before, .icon-minus.icon-right a:after, ul.sitemap .page-toggle .button.open .icon-right.icon-plus a:after { content: "\2d"; height: inherit; }
 
-i.icon-minus:before, ul.sitemap .page-toggle .button.open i.toggleIco:before { content: "\2d"; height: inherit; }
+i.icon-minus:before, ul.sitemap .page-toggle .button.open i.icon-plus:before { content: "\2d"; height: inherit; }
 
 .icon-minus-circled.icon-left a:before, .icon-minus-circled.icon-right a:after { content: "\2796"; height: inherit; }
 
@@ -646,9 +663,9 @@ i.icon-ccw:before { content: "\27f2"; height: inherit; }
 
 i.icon-cw:before { content: "\27f3"; height: inherit; }
 
-.icon-arrows-ccw.icon-left a:before, .icon-arrows-ccw.icon-right a:after { content: "🔄"; height: inherit; }
+.icon-arrows-ccw.icon-left a:before, ul.sitemap .page-toggle .button.loading .icon-left.icon-plus a:before, .icon-arrows-ccw.icon-right a:after, ul.sitemap .page-toggle .button.loading .icon-right.icon-plus a:after { content: "🔄"; height: inherit; }
 
-i.icon-arrows-ccw:before { content: "🔄"; height: inherit; }
+i.icon-arrows-ccw:before, ul.sitemap .page-toggle .button.loading i.icon-plus:before { content: "🔄"; height: inherit; }
 
 .icon-level-down.icon-left a:before, .icon-level-down.icon-right a:after { content: "\21b3"; height: inherit; }
 
@@ -2756,12 +2773,9 @@ ul.sitemap { border-bottom: 1px solid #e5e5e5; list-style-type: none; margin-lef
 .IE9 ul.sitemap .open .collapse { height: auto; }
 .IE9 ul.sitemap .open .collapse .page-toggle { display: none; }
 ul.sitemap .page-toggle { text-indent: 0; left: 0px; top: 0px; z-index: 5; position: absolute; display: inline-block; width: 40px; height: 40px; }
-ul.sitemap .page-toggle .button { padding-left: 15px; display: block; height: 40px; /* for early i.e. */ }
+ul.sitemap .page-toggle .button { padding-left: 8px; display: block; height: 40px; /* for early i.e. */ }
 ul.sitemap .page-toggle .button:hover, ul.sitemap .page-toggle .button:focus { text-decoration: none; }
-ul.sitemap .page-toggle .button .linkText { height: 0; overflow: hidden; padding-top: 20px; display: block; position: absolute; width: 20px; }
-ul.sitemap .page-toggle .button .toggleIco { font-size: 12px; }
-ul.sitemap .page-toggle .button.loading .toggleIco { background: url(../../../themes/cwp-gumby-theme/images/ajax-loader.gif) center bottom no-repeat; display: block; height: 27px; width: 15px; }
-ul.sitemap .page-toggle .button.loading .toggleIco:before { display: none; }
+ul.sitemap .page-toggle .button .link-text { height: 0; overflow: hidden; padding-top: 20px; display: block; position: absolute; width: 20px; }
 ul.sitemap li { background: #f2f2f2; border-top: 1px solid #e5e5e5; z-index: 0; position: relative; line-height: 40px; margin-bottom: 0; }
 ul.sitemap li a.sitemap-link { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; display: block; height: 100%; padding-left: 30px; z-index: 1; }
 ul.sitemap li a.sitemap-link:hover { text-decoration: none; background-color: #e5e5e5; }

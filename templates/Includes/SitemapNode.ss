@@ -1,8 +1,8 @@
 <% if Children %>
 	<div class="page-toggle">
-		<a href="{$CurrentPage.Link}page/$ID<% loop Parents %>$ID<% end_loop %>" role="button" class="show-icon-only" data-toggle="collapse" data-target="#children-$ID" aria-controls="children-$ID" aria-expanded="false" tabindex="0">
-			<i class="icon-plus" aria-hidden="true"></i>
+		<a href="{$CurrentPage.Link}page/$ID<% loop Parents %>$ID<% end_loop %>" role="button" class="button" data-toggle="collapse" data-target="#children-$ID" aria-controls="children-$ID" aria-expanded="false" tabindex="0">
 			<span class="link-text">Expand section</span>
+			<i class="icon-plus" aria-hidden="true"></i>
 		</a>
 	</div>
 <% end_if %>
