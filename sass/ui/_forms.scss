@@ -61,6 +61,9 @@ form {
     font-weight: $font-weight-light;
     @include font-size($norm);
     @include box-shadow(none);
+    &[type="file"]{
+      width:40%;
+    }
   }
   .input {
     position: relative;
@@ -385,7 +388,7 @@ form {
     position: relative;
     display: block;
     min-width: 100%;
-    width: 135%;
+    width: 150%;
     height: 34px;
     padding: 6px 45px 6px 15px;
     color: $body-font-color;

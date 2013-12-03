@@ -18,6 +18,7 @@
 	<![endif]-->
 	<!--[if lte IE 7]><script src="lte-ie7.js"></script><![endif]-->
 
+
 	<% include MetaIcons %>
 </head>
 
@@ -32,6 +33,11 @@
 			<% include Footer %>
 		</div>
 	</div>
+
+	<!-- js included here. Put these into php when building a site, and update the version of jquery to use js/libs/jquery-1.10.1.min.js -->
+	<script type="text/javascript" src="{$BaseHref}{$ThemeDir}/js/libs/modernizr.min.js"></script>
+	<script type="text/javascript" src="{$BaseHref}{$ThemeDir}/js/libs/gumby.min.js"></script>
+	<script type="text/javascript" src="{$BaseHref}{$ThemeDir}/js/libs/jquery.flexslider.js"></script>
 	<% if SiteConfig.GACode %>
 		<script type="text/javascript">
 			var _gaq = _gaq || [];
@@ -48,8 +54,7 @@
 	<% if SiteConfig.AddThisProfileID %>
 		<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=$SiteConfig.AddThisProfileID"></script>
 	<% end_if %>
-	<script type="text/javascript" src="{$BaseHref}{$ThemeDir}/js/libs/modernizr.min.js"></script>
-	<script type="text/javascript" src="{$BaseHref}{$ThemeDir}/js/libs/gumby.min.js"></script>
-	<script type="text/javascript" src="{$BaseHref}{$ThemeDir}/js/libs/jquery.flexslider.js"></script>
+
+
 </body>
 </html>

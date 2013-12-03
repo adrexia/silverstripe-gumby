@@ -1332,18 +1332,18 @@ img.center { display: block; margin: 18px auto 18px auto; clear: both; }
 
 figure.featured-image img { margin-bottom: 0; }
 
-.captionImage, figure.featured-image { max-width: 100%; }
-.captionImage.left, figure.featured-image.left { float: left; margin: 0 80px 40px 20px; }
-.captionImage.right, figure.featured-image.right { float: right; margin: 0 0 40px 80px; }
-.captionImage.right p, figure.featured-image.right p { margin: 0px 60px 40px 20px; }
-.captionImage.leftAlone, figure.featured-image.leftAlone { float: none; margin: 0 80px 40px 20px; }
-.captionImage.center, figure.featured-image.center { margin: 0 auto 40px; }
-.captionImage.center p, figure.featured-image.center p { margin: 0px 20px 40px 20px; }
-@media only screen and (max-width: 767px) { .captionImage.left, .captionImage.right, .captionImage.leftAlone, .captionImage.center, figure.featured-image.left, figure.featured-image.right, figure.featured-image.leftAlone, figure.featured-image.center { margin-bottom: 40px; margin-top: 10px; }
-  .captionImage.left p, .captionImage.right p, .captionImage.leftAlone p, .captionImage.center p, figure.featured-image.left p, figure.featured-image.right p, figure.featured-image.leftAlone p, figure.featured-image.center p { text-align: center; margin: 0px 0 40px 20px; } }
-.captionImage p, figure.featured-image p { clear: both; margin: 0px 0 40px 60px; color: #ccc; padding-top: 15px; font-weight: normal; font-family: "Open Sans"; font-size: 16px; line-height: 22px; padding-bottom: 2px; }
-@media only screen and (max-width: 767px) { .captionImage p, figure.featured-image p { text-align: center; margin: 0px 20px 40px 20px; } }
-.captionImage img, figure.featured-image img { margin: 0 0 5px 0; border: 0; }
+.captionImage, .featured-image { max-width: 100%; }
+.captionImage.left, .featured-image.left { float: left; margin: 0 80px 40px 20px; }
+.captionImage.right, .featured-image.right { float: right; margin: 0 0 40px 80px; }
+.captionImage.right p, .featured-image.right p { margin: 0px 60px 40px 20px; }
+.captionImage.leftAlone, .featured-image.leftAlone { float: none; margin: 0 80px 40px 20px; }
+.captionImage.center, .featured-image.center { margin: 0 auto 40px; }
+.captionImage.center p, .featured-image.center p { margin: 0px 20px 40px 20px; }
+@media only screen and (max-width: 767px) { .captionImage.left, .captionImage.right, .captionImage.leftAlone, .captionImage.center, .featured-image.left, .featured-image.right, .featured-image.leftAlone, .featured-image.center { margin-bottom: 40px; margin-top: 10px; }
+  .captionImage.left p, .captionImage.right p, .captionImage.leftAlone p, .captionImage.center p, .featured-image.left p, .featured-image.right p, .featured-image.leftAlone p, .featured-image.center p { text-align: center; margin: 0px 0 40px 20px; } }
+.captionImage p, .featured-image p { clear: both; margin: 0px 0 40px 60px; color: #ccc; padding-top: 15px; font-weight: normal; font-family: "Open Sans"; font-size: 16px; line-height: 22px; padding-bottom: 2px; }
+@media only screen and (max-width: 767px) { .captionImage p, .featured-image p { text-align: center; margin: 0px 20px 40px 20px; } }
+.captionImage img, .featured-image img { margin: 0 0 5px 0; border: 0; }
 
 a[href$=".doc"], a[href$=".DOC"], a[href$=".docx"], a[href$=".DOCX"], .doc { padding-left: 22px; background: url(../../../themes/cwp-gumby-theme/images/page_word.png) no-repeat left 0; padding-right: 0; /* override external link */ }
 

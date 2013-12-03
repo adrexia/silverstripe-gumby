@@ -39,6 +39,9 @@ ul.slides{
 		> li {
 			display: none;
 			-webkit-backface-visibility: hidden;
+			&.flex-active-slide{
+				display:block;
+			}
 		}
 	}
 }

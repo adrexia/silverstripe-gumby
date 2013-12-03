@@ -24,7 +24,7 @@ jQuery(function($) {
 	 * Fix for IE8 when using webfonts. See:
 	 * http://stackoverflow.com/questions/9809351/ie8-css-font-face-fonts-only-working-for-before-content-on-over-and-sometimes
 	 */
-	if ($.browser.msie && 8 === parseInt($.browser.version, 10)) {
+	if ($('html').hasClass('ie8')) {
 		$(window).on('load', function() {
 			getFontFixStyleElement().removeAttr('disabled');
 			setTimeout(function(){ getFontFixStyleElement().attr('disabled', 'disabled'); }, 0);
@@ -53,9 +53,9 @@ jQuery(function($) {
 
 	// Don't let the Go! button submit the search form if it's empty.
 	$('#SearchGroup input[type="submit"]').click(function(){
-		var searchInput = $(this).siblings('input[type="search"]');
-		var searchValue = $.trim(searchInput.val());
-		if (searchValue.length == 0) {
+		var searchInput = $(this).siblings('input[type="search"]'),
+			searchValue = $.trim(searchInput.val());
+		if (searchValue.length === 0) {
 			searchInput.focus();
 			return false;
 		}
@@ -63,11 +63,11 @@ jQuery(function($) {
 
 	// SITEMAP
 	$('.sitemap').on('click', '.button', function() {
-		var self = $(this);
-		var target = $(self.attr('data-target'));
+		var self = $(this),
+			target = $(self.attr('data-target'));
 
 		// only do an ajax request if the content isn't loaded
-		if(target.html().length == 0) {
+		if(target.html().length === 0) {
 			self.addClass('loading');
 
 			$.ajax({
