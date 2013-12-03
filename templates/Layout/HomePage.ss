@@ -34,7 +34,7 @@ $PageComments
 
 	<div class="columns <% if not Quicklinks %>six<% else %>four<% end_if %> feature">
 		<% if $FeatureOneTitle %>
-			<h3><% if $FeatureOneCategory %><i class="icon-$FeatureOneCategory" aria-hidden="true"></i> <% end_if %>$FeatureOneTitle</h3>
+			<h3><% if $FeatureOneCategory %><i class="icon-$FeatureOneCategory" aria-hidden="true"></i> <% end_if %><% if $FeatureOneLink %><a href="$FeatureOneLink.Link"><% end_if %>$FeatureOneTitle<% if $FeatureOneLink %></a><% end_if %></h3>
 		<% end_if %>
 		<% if FeatureOneContent %>
 			$FeatureOneContent
@@ -46,7 +46,7 @@ $PageComments
 		<% end_if %>
 
 		<% if $FeatureTwoTitle %>
-			<h3><% if $FeatureTwoCategory %><i class="icon-$FeatureTwoCategory" aria-hidden="true"></i> <% end_if %>$FeatureTwoTitle</h3>
+			<h3><% if $FeatureTwoCategory %><i class="icon-$FeatureTwoCategory" aria-hidden="true"></i> <% end_if %><% if $FeatureTwoLink %><a href="$FeatureTwoLink.Link"><% end_if %>$FeatureTwoTitle<% if $FeatureTwoLink %></a><% end_if %></h3>
 		<% end_if %>
 		<% if FeatureTwoContent %>
 			$FeatureTwoContent
