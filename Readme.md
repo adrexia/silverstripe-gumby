@@ -25,10 +25,10 @@ This theme is intended as a starting point for development, rather than a theme 
 * Registry Page
 * SitemapPage
 * UserForms
+* Search Results Page
 
 
 ### TODO
-* Search Results Page
 * Browser testing
 
 ## How to use
