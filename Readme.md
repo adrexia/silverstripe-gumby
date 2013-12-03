@@ -9,7 +9,7 @@ This theme is intended as a starting point for development, rather than a theme 
 
 
 ## Browser support
-* Firefox, Chrome
+* Firefox, Chrome, IE10
 * IE8 and above (intended - but not yet tested)
 * Android, iPhone, iPad (intended - but not yet tested)
 
@@ -23,14 +23,12 @@ This theme is intended as a starting point for development, rather than a theme 
 * EventsPage
 * NewsPage
 * Registry Page
-
-### Started
 * SitemapPage
+* UserForms
+
 
 ### TODO
-* Finish SitemapPage
 * Search Results Page
-* UserForms
 * Browser testing
 
 ## How to use
