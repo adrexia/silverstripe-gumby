@@ -21,19 +21,31 @@
 @import "var/settings";
 @import "var/lists";
 @import "var/icons/entypo";
-@import "var/custom-utilities";
-@import "spinning";
 @import "compass";
 @import "compass/reset";
 @import "functions/all";
 @import "components/base";
 @import "fonts";
-@import "components/typography";
 @import "components/grid";
-@import "ui/all";
+@import "var/custom-utilities"; //custom 
+
+
+// UI components currently used
+@import "ui/navbar";
+@import "ui/buttons";
+@import "ui/icons";
+@import "ui/forms";
+@import "ui/labels";
+@import "ui/images";
+@import "ui/tables";
+
+//Gumby plugins for cwp features
 @import "ui/alert-with-close";
 @import "ui/pagination";
 @import "ui/breadcrumbs";
+
+// Custom
+@import "spinning"; //spin icons
 @import "silverstripe-forms";
 @import "cwp-elements";
 @import "sitemap";

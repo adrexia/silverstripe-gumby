@@ -1,10 +1,6 @@
-/*
- * Slider styles 
- */
+// Slider styles 
 
-
-/* Browser Resets
-*********************************/
+// Browser Resets
 .flex-container a:active, .flexslider a:active, .flex-container a:focus, .flexslider a:focus {
 	outline: none;
 }
@@ -31,9 +27,7 @@ ul.slides{
 }
 
 
-/* FlexSlider Necessary Styles
-*********************************/
-
+//FlexSlider Necessary Styles
 .flexslider {
 	margin: 0;
 	padding: 0;
@@ -49,13 +43,13 @@ ul.slides{
 	}
 }
 
-/* Hide the slides before the JS is loaded. Avoids image jumping */
+// Hide the slides before the JS is loaded. Avoids image jumping
 
 .flex-pauseplay span {
 	text-transform: capitalize;
 }
 
-/* Clearfix for the .slides element */
+// Clearfix for the .slides element 
 
 .slides:after {
 	content: "\0020";

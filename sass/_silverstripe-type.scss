@@ -1,8 +1,5 @@
-/*
-* Typography specific to how silverstripe outputs CMS editable fields
-* to be imported into the CMS
-*/
-
+// Typography specific to how silverstripe outputs CMS editable fields
+// to be imported into the CMS
 
 .captionImage, .media{
 	@extend .image;
@@ -36,7 +33,7 @@ img{
 	}
 }
 
-/* Media insert formatting  (Youtube embed) */
+// Media insert formatting  (Youtube embed) 
 .media.center{
 	margin:0 auto;
 	text-align:center;

@@ -83,15 +83,14 @@ form {
 		color:lighten($body-font-color, 5%);
 		float:left;
 	}
-}
-
-form fieldset{ //Silverstripe uses fieldsets wrongly, so don't style with gumby default
-	border:none;
-	border-top:1px solid #efefef;
-	fieldset{
+	fieldset{ //Silverstripe uses fieldsets wrongly, so don't style with gumby default
 		border:none;
-		padding:0;
-		margin:0;
+		border-top:1px solid #efefef;
+		fieldset{
+			border:none;
+			padding:0;
+			margin:0;
+		}
 	}
 }
 

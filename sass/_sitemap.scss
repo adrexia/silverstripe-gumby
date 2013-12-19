@@ -22,60 +22,57 @@ ul.sitemap {
 		display: inline-block;
 		width: 40px;
 		height: 40px;
-
-		.button {
-			padding-left: 8px;
+	}
+	.button {
+		padding-left: 8px;
+		display: block;
+		height: 40px; /* for early i.e. */
+		&:hover, &:focus {
+			text-decoration: none;
+		}
+		.link-text {
+			height: 0;
+			overflow: hidden;
+			padding-top: 20px;
 			display: block;
-			height: 40px; /* for early i.e. */
-			&:hover, &:focus {
-				text-decoration: none;
-			}
-			.link-text {
-				height: 0;
-				overflow: hidden;
-				padding-top: 20px;
-				display: block;
-				position: absolute;
-				width: 20px;
-			}
-			&.open .icon-plus {
-				@extend .icon-minus;
-			}
-			&.loading .icon-plus {
-				@extend .icon-arrows-ccw;
-				@extend .element-spinning;
-			}
+			position: absolute;
+			width: 20px;
+		}
+		&.open .icon-plus {
+			@extend .icon-minus;
+		}
+		&.loading .icon-plus {
+			@extend .icon-arrows-ccw;
+			@extend .element-spinning;
+		}
+	}
+	a.sitemap-link {
+		@include box-sizing(border-box);
+		display: block;
+		height: 100%;
+		padding-left: 30px;
+		z-index: 1;
+		&:hover {
+			text-decoration: none;
+			background-color: darken($default-color, 2%);
+		}
+		img {
+			border:none;
+			margin:0;
+		}
+		.sitetree-icon {
+			margin: 0 10px 0 15px;
 		}
 	}
 	
 	li {
 		background: $default-color;
 		border-top: 1px solid darken($default-color, 8%);
-		z-index: 0;
-		position: relative;
 		line-height: 40px;
 		margin: 0;
 		padding: 0;
-
-		a.sitemap-link {
-			@include box-sizing(border-box);
-			display: block;
-			height: 100%;
-			padding-left: 30px;
-			z-index: 1;
-			&:hover {
-				text-decoration: none;
-				background-color: darken($default-color, 2%);
-			}
-			img {
-				border:none;
-				margin:0;
-			}
-			.sitetree-icon {
-				margin: 0 10px 0 15px;
-			}
-			
-		}
+		position: relative;
+		z-index: 0;
 		ul{
 			margin: 0;
 			padding: 0;
@@ -87,7 +84,7 @@ ul.sitemap {
 					padding-left: 20px;
 				}
 				li {
-				 	background:none;
+					background:none;
 					border:none;
 					text-indent:25px;
 					&.first,&.last{
@@ -96,55 +93,50 @@ ul.sitemap {
 					.page-toggle {
 						padding-left: 30px;
 					}
-				 	li {
+					li {
 						text-indent: 45px;
 						.page-toggle {
 							padding-left: 40px;
 						}
-					 	li {
-					 		text-indent: 60px;
-					 		.page-toggle {
+						li {
+							text-indent: 60px;
+							.page-toggle {
 								padding-left: 50px;
 							}
-						 	li {
-						 		text-indent: 75px;
-						 		.page-toggle {
+							li {
+								text-indent: 75px;
+								.page-toggle {
 									padding-left: 60px;
 								}
-							 	li {
-							 		text-indent: 90px;
-							 		.page-toggle {
+								li {
+									text-indent: 90px;
+									.page-toggle {
 										padding-left: 70px;
 									}
-								 	li {
-								 		text-indent: 105px;
-								 		.page-toggle {
+									li {
+										text-indent: 105px;
+										.page-toggle {
 											padding-left: 80px;
 										}
-								 		li {
-								 			text-indent: 120px;
-								 			.page-toggle {
+										li {
+											text-indent: 120px;
+											.page-toggle {
 												padding-left: 90px;
 											}
-								 			background-color: rgba($default-color,0.2);
-								 			#IE9 &{
-								 				background:none;
-								 				&.first,&.last{
-								 					border:none;
-								 				}
-								 			}
-								 			&.first{
+											background-color: rgba($default-color,0.2);
+											.IE9 &{
+												background:none;
+												&.first,&.last{
+													border:none;
+												}
+											}
+											&.first{
 												border-top:$default-color;
 												border-top:2px solid rgba($default-color,0.5);
 											}
 											&.last{
 											 	border-bottom:2px solid rgba($default-color,0.5);
 											}
-											.in{
-								 				li{
-								 					border:none;
-								 				}
-								 			}	
 											li{
 												#IE9 &{
 													padding-left:10px;
