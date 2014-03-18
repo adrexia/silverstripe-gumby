@@ -125,7 +125,7 @@ a[href$=".docx"],
 a[href$=".DOCX"],
 .doc {
 	padding-left: 22px;
-	background: url(#{$file-path}/images/page_word.png) no-repeat left 0;
+	background: url(#{$file-path}/images/icons/page_word.png) no-repeat left 0;
 	padding-right: 0; /* override external link */
 }
 a[href$=".xls"],
@@ -134,7 +134,7 @@ a[href$=".xlsx"],
 a[href$=".XLSX"],
 .xls {
 	padding-left: 22px;
-	background: url(#{$file-path}/images/page_excel.png) no-repeat left 0;
+	background: url(#{$file-path}/images/icons/page_excel.png) no-repeat left 0;
 	padding-right: 0; /* override external link */
 }
 a[href$=".gz"],
@@ -145,21 +145,21 @@ a[href$=".zip"],
 a[href$=".ZIP"],
 .archive {
 	padding-left: 22px;
-	background: url(#{$file-path}/images/page_white_zip.png) no-repeat left 0;
+	background: url(#{$file-path}/images/icons/page_white_zip.png) no-repeat left 0;
 	padding-right: 0; /* override external link */
 }
 a[href$=".exe"],
 a[href$=".EXE"],
 .application {
 	padding-left: 22px;
-	background: url(#{$file-path}/images/application.png) no-repeat left 0;
+	background: url(#{$file-path}/images/icons/application.png) no-repeat left 0;
 	padding-right: 0; /* override external link */
 }
 a[href$=".pdf"],
 a[href$=".PDF"],
 .pdf {
 	padding-left: 22px;
-	background: url(#{$file-path}/images/page_white_acrobat.png) no-repeat left 0;	
+	background: url(#{$file-path}/images/icons/page_white_acrobat.png) no-repeat left 0;	
 	padding-right: 0; /* override external link */
 }
 
