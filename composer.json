@@ -5,8 +5,7 @@
     "require": {
         "composer/installers": "*",
         "silverstripe/cms": ">=3.0",
-        "silverstripe/framework": ">=3.0",
-        "cwp/cwp": "dev-master"
+        "silverstripe/framework": ">=3.0"
     },
     "extra": {
         "branch-alias": {

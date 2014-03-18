@@ -1,61 +1,37 @@
-# CWP Gumby Theme
-_(Note: Still in active development)_
-This is intended to be a straight substitution of bootstrap for gumby (http://gumbyframework.com/), using up to date frontend coding standards. CWP base templates have been, or will be, updated to use the gumby scss framework with scss written to fill in the gaps for all CWP features. 
+Gumby Framework [![Build Status](https://travis-ci.org/GumbyFramework/Gumby.png?branch=master)](https://travis-ci.org/GumbyFramework/Gumby)
+=====================
 
-Accessibility is being taken into account, but otherwise the theme uses the gumby defaults with minor tweaking to fit into the cwp template environment.
+Gumby Framework is a flexible, responsive CSS Framework, Powered by SASS. Create rapid and logical page layout and app
+prototypes with a flexible and responsive grid system and UI kit.
 
-## Purpose
-This theme is intended as a starting point for development, rather than a theme to be used out of the box. For this reason, it has not been styled to *look* like the CWP default theme, and design modifications have been kept to a minimum. Hopefully this should mean you spend less time taking out design features you don't want, and have more time to spend on adding your own themes.
+Full documentation can be found at [http://gumbyframework.com](http://gumbyframework.com/docs).
 
+More information, including our changelog, can be found in the [Wiki](https://github.com/GumbyFramework/Gumby/wiki).
 
-## Browser support
-* Firefox, Chrome
-* IE8 and above
-* Android, iPhone, iPad (intended - but not yet tested)
+Our [Google Plus Community](https://plus.google.com/u/0/communities/108760896951473344451) is rapidly growing, we recommend heading over there with any questions you may have or to geek out and discuss the framework and rwd in general.
 
-## Progress
+Gumby is developed with love by your friends at [Digital Surgeons](http://www.digitalsurgeons.com).
 
-### Done
-* Generic Page
-* Homepage
-* EventsHolderPage
-* NewsHolderPage
-* EventsPage
-* NewsPage
-* Registry Page
-* SitemapPage
-* UserForms
-* Search Results Page
+Gumby has a few dependencies. Big thank you to the innovative geniuses behind these awesome technologies.
 
+- [Sass](https://github.com/nex3/sass) - Nathan Weizenbaum
+- [Compass](https://github.com/chriseppstein/compass) - Chris Eppstein
+- [Modular Scale](https://github.com/Team-Sass/modular-scale) - Scott Kellum  *Note: Please use modular scale 1.0.6, 2.x has not been integrated yet*
+- [FitText](http://fittextjs.com/) - Paravel
+- [jQuery](http://jquery.com/)
+- [Modernizr](http://modernizr.com/)
 
-### TODO
-* Device testing
+**MIT Open Source License**
 
-## How to use
-Either grab the git url, and clone into your themes directory or add it to your composer file [more info to come]
-``` git clone https://gitlab.cwp.govt.nz/nguyer/cwp-gumby-theme.git ```
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+documentation files (the "Software"), to deal in the Software without restriction, including without limitation the
+rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit
+persons to whom the Software is furnished to do so, subject to the following conditions:
 
-    
-Be sure to remove the cwp/default-theme from your composer file if you are using the basic recipe.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the
+Software.
 
-It is intended that development be done on the Sass files, rather than editing the CSS directly. Being a native to Sass is one of Gumby's selling points.
-Each component has been split out into it's own file where possible. CSS that related directly to CWP features, but isn't big enough to justify having an individual file, 
-and in _cwp-elements.scss. Use layout.scss, or typography.scss as indexes to component files.
-
-I recommend you read this page if you have never used Gumby, Sass, or Compass before: 
-
-* http://gumbyframework.com/docs/#!/ 
-
-It should help you get started. If you need more try:
-
-* http://sass-lang.com/
-* http://compass-style.org/
-
-When you have the theme and have renamed it to suit your project, open _settings.scss (sass/var/_setting.scss) and edit the theme name variable to match. This will update all scss links to point to your theme. Remember to run compass watch on the folder to compile your scss.
-
-At the moment all extra javascript and css required is included in the templates. You should override the cwp BasePage.php function that includes scripts and css to prevent it trying to include unwanted bootstrap files. You can also move the extra js/css into your new function if you want to use the power of combine_files (Note: you should do this for the js to prevent some timing bugs from occuring).
-
-## Screenshot
-_HomePage_
-
-![Home page screen shot](https://gitlab.cwp.govt.nz/nguyer/cwp-gumby-theme/raw/master/images/demo-screenshot.png "Home page screen shot")
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

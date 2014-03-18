@@ -1,11 +1,5 @@
-/*
-* For Silverstripe specific gumby styling (e.g. to get forms to work as intended)
-*/
+//  Silverstripe specific gumby form styling (to get forms to work as intended)
 
-
-/*
- * Forms
- */
 input.text {
 	@extend .input; //Make Silverstripe form inputs match gumby's
 	@include placeholder-text();

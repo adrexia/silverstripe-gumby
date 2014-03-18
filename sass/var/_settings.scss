@@ -50,6 +50,7 @@ $rhythm-height:  .711;
 // Modular Scale Settings
 // http://www.modularscale.com by Tim Brown
 // https://github.com/scottkellum/modular-scale
+
 $ratio: golden();
 $base-font-size: 16px !default;
 $importantNum: 78px !default;
@@ -82,6 +83,7 @@ $body-link-hover-color:  #de004b !default;
 $global-bg-color: #ffffff;
 $navbar-color: #595959;
 $navbar-link-color: #ffffff;
+
 $primary-color: $body-link-color;
 $secondary-color: #42a35a;
 $default-color: #f2f2f2;
@@ -89,6 +91,7 @@ $info-color: #4a4d50;
 $danger-color: #ca3838;
 $warning-color: #f6b83f;
 $success-color: #58c026;
+
 $primary-hover-color: darken($body-link-color, 5%);
 $secondary-hover-color: #6dbb80;
 $default-hover-color: #ffffff;
@@ -96,6 +99,7 @@ $info-hover-color: #868d92;
 $danger-hover-color: #f14f4f;
 $warning-hover-color: #fdd27f;
 $success-hover-color: #66d92f;
+
 $horizontal-rule-color:  #ccc !default;
 $black:  #000;
 $white:  #fff;

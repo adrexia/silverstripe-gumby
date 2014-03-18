@@ -87,31 +87,29 @@ html[xmlns] .slides {
 	overflow:hidden;
 	position: relative;
 	zoom: 1;
-	.slides{
-		img {
-			@include border-radius($button-radius $button-radius 0 0);
-			border: 0;
-			display: block;
-			display: inline-block;
-			float: left;
-			margin: 0;
-			max-width: 100%;
-		}
-		.image-wrap{
-			max-height:300px;
-			overflow:hidden;
-		}
-		.text{
-			@include border-radius(0 0 $button-radius $button-radius);
-			background:$default-color; 
-			color:$body-font-color;
-			padding:10px 30px 30px;
-			width:100%;
-			p{
-				font-size:$med;
-				@media screen and (max-width: 860px) {
-					font-size:$norm;
-				}
+	img {
+		@include border-radius($button-radius $button-radius 0 0);
+		border: 0;
+		display: block;
+		display: inline-block;
+		float: left;
+		margin: 0;
+		max-width: 100%;
+	}
+	.image-wrap{
+		max-height:300px;
+		overflow:hidden;
+	}
+	.text{
+		@include border-radius(0 0 $button-radius $button-radius);
+		background:$default-color; 
+		color:$body-font-color;
+		padding:10px 30px 30px;
+		width:100%;
+		p{
+			font-size:$med;
+			@media screen and (max-width: 860px) {
+				font-size:$norm;
 			}
 		}
 	}
@@ -201,17 +199,16 @@ html[xmlns] .slides {
 /* Pause/Play */
 
 .flex-pauseplay a {
-	display: block;
-	width: 20px;
-	height: 20px;
-	position: absolute;
 	bottom: 5px;
+	color: #000;
+	display: block;
+	height: 20px;
 	left: 10px;
 	opacity: 0.8;
-	z-index: 10;
 	overflow: hidden;
-	cursor: pointer;
-	color: #000;
+	position: absolute;
+	width: 20px;
+	z-index: 10;
 	&:before {
 		font-family: "entypo";
 		font-size: 20px;
@@ -246,13 +243,13 @@ html[xmlns] .slides {
 
 .flex-control-paging li a {
 	@include border-radius(60px);
-	width: 12px;
-	height: 12px;
-	display: block;
 	background: #D7D7D7;
 	cursor: pointer;
-	text-indent: -9999px;
+	display: block;
+	height: 12px;
 	position:relative;
+	text-indent: -9999px;
+	width: 12px;
 	z-index:6;
 	&:hover {
 		background: $body-link-hover-color;
@@ -266,8 +263,8 @@ html[xmlns] .slides {
 
 .flex-control-thumbs {
 	margin: 5px 0 0;
-	position: static;
 	overflow: hidden;
+	position: static;
 	li {
 		width: 25%;
 		float: left;
