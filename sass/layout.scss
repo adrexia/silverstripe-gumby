@@ -18,17 +18,18 @@
 @charset "UTF-8";
 
 @import "modular-scale";
+@import "compass";
+@import "compass/reset";
+
 @import "var/settings";
 @import "var/lists";
 @import "var/icons/entypo";
-@import "compass";
-@import "compass/reset";
+
 @import "functions/all";
 @import "components/base";
-@import "fonts";
+@import "components/fonts";
 @import "components/grid";
 @import "var/custom-utilities"; //custom 
-
 
 // UI components currently used
 @import "ui/navbar";
@@ -44,15 +45,19 @@
 @import "ui/pagination";
 @import "ui/breadcrumbs";
 
+// Custom Typography before layout
+@import "components/_typography";
+@import "components/silverstripe-type";
+
 // Custom
-@import "spinning"; //spin icons
-@import "silverstripe-forms";
-@import "cwp-elements";
-@import "sitemap";
-@import "results-list";
-@import "header";
-@import "footer";
-@import "secondary-menu";
-@import "slider";
-@import "custom";
-@import "shame";
+@import "components/spinning"; //spin icons
+@import "components/silverstripe-forms";
+@import "components/cwp-elements";
+@import "components/sitemap";
+@import "components/results-list";
+@import "components/header";
+@import "components/footer";
+@import "components/secondary-menu";
+@import "components/slider";
+@import "components/custom";
+@import "components/shame";

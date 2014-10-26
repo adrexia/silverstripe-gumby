@@ -70,8 +70,8 @@
   @include border-radius($button-radius);
   @each $shade in $ui-coloring {
     &.#{nth($shade, 1)} {
-      background: contrast-color(nth($shade, 2), lighten(nth($shade, 2), 45%), darken(nth($shade, 2), 10%), 40%);
-      border: 1px solid contrast-color(nth($shade, 2), lighten(nth($shade, 2), 30%), darken(nth($shade, 2), 20%), 40%);
+      background: contrast-color(nth($shade, 2), lighten(nth($shade, 2), 45%), darken(nth($shade, 2), 10%));
+      border: 1px solid contrast-color(nth($shade, 2), lighten(nth($shade, 2), 30%), darken(nth($shade, 2), 20%));
       color: darken(nth($shade, 2), 20%);
       @if nth($shade, 1) == info {
         color: $default-color;

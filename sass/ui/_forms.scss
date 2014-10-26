@@ -260,14 +260,13 @@ label + {
         @include transition-duration(.2s);
       }
 
+      input, .input, textarea, .textarea,
+      .radio span, .checkbox span, .picker,
+      input::-webkit-input-placeholder,
+      textarea::-webkit-input-placeholder,
+      input:-moz-placeholder,
+      textarea:-moz-placeholder
       textarea { color: nth($error, 2); }
-
-      input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-        color: nth($error, 2);
-      }
-      input:-moz-placeholder, textarea:-moz-placeholder {
-        color: nth($error, 2);
-      }
     }
   }
 

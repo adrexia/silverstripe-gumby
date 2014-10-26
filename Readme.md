@@ -6,29 +6,10 @@ Accessibility is being taken into account, but otherwise the theme uses the gumb
 ## Purpose
 This theme is intended as a starting point for development, rather than a theme to be used out of the box. For this reason, it has not been styled to *look* like the CWP default theme, and design modifications have been kept to a minimum. Hopefully this should mean you spend less time taking out design features you don't want, and have more time to spend on adding your own themes.
 
-
 ## Browser support
 * Firefox, Chrome
 * IE8 and above
-* Android, iPhone, iPad (intended - but not yet tested)
-
-## Progress
-
-### Done
-* Generic Page
-* Homepage
-* EventsHolderPage
-* NewsHolderPage
-* EventsPage
-* NewsPage
-* Registry Page
-* SitemapPage
-* UserForms
-* Search Results Page
-
-
-### TODO
-* Device testing
+* Android, iPhone, iPad
 
 ## How to use
 Either grab the git url, and clone into your themes directory or add it to your composer file [more info to come]

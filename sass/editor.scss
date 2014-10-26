@@ -9,5 +9,26 @@
 	}
 }
 
-@import "typography.scss";
+@charset "UTF-8";
+
+@import "modular-scale";
+
+@import "compass";
+@import "compass/reset";
+
+@import "var/settings";
+@import "var/lists";
+@import "var/icons/entypo";
+
+@import "ui/icons";
+@import "ui/images";
+@import "ui/tables";
+
+@import "functions/all";
+
+@import "components/base";
+@import "components/fonts";
+@import "components/_typography";
+@import "components/silverstripe-type";
+
 

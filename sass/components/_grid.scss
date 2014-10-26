@@ -1,4 +1,6 @@
-
+%zero-margin-left {
+  margin-left: 0;
+}
 
 
 /*=================================================
@@ -80,11 +82,16 @@
     .pull_#{number-as-word($i)} {
       // pull classes need to know the width of the container being pulled
       @for $j from 1 through $cols - 1 {
-        @if $j == 1 {
+        @if $i + $j == $cols {
+          &.#{number-as-word($j)}.columns {
+            @extend %pull-100-percent;
+          }
+        }
+        @elseif $j == 1 {
           &.one.column {
             margin-left: pull_x($i, $j);
             &:first-child {
-              margin-left: 0;
+              @extend %zero-margin-left;
             }
           }
         }
@@ -92,7 +99,7 @@
           &.#{number-as-word($j)}.columns {
             margin-left: pull_x($i, $j);
             &:first-child {
-              margin-left: 0;
+              @extend %zero-margin-left;
             }
           }
         }
@@ -142,11 +149,16 @@
     .pull_#{number-as-word($i)} {
       // pull classes need to know the width of the container being pulled
       @for $j from 1 through $hybrid - 1 {
-        @if $j == 1 {
+        @if $i + $j == $hybrid {
+          &.#{number-as-word($j)}.columns {
+            @extend %pull-100-percent;
+          }
+        }
+        @elseif $j == 1 {
           &.one.column {
             margin-left: pull_x($i, $j, true);
             &:first-child {
-              margin-left: 0;
+              @extend %zero-margin-left;
             }
           }
         }
@@ -154,13 +166,23 @@
           &.#{number-as-word($j)}.columns {
             margin-left: pull_x($i, $j, true);
             &:first-child {
-              margin-left: 0;
+              @extend %zero-margin-left;
             }
           }
         }
       }
     }
   }
+}
+
+// helper placeholder to condense the repeated
+// need for resetting first-child margins to zero
+%zero-margin-left {
+  margin-left: 0;
+}
+
+%pull-100-percent {
+  margin-left: -100%;
 }
 
 /* Hybrid Centered Classes */
@@ -196,7 +218,7 @@ img {
 .tiles {
   display: block;
   overflow: hidden;
-  > li {
+  > li, > .tile {
     display: block;
     height: auto;
     float: left;
@@ -204,7 +226,7 @@ img {
   }
   &.two_up {
     margin-left: -4%;
-    > li {
+    > li, > .tile {
       margin-left: 4%;
       width: 46%;
     }
@@ -212,17 +234,17 @@ img {
   &.three_up, &.four_up {
     margin-left: -2%;
   }
-  &.three_up > li {
+  &.three_up > li, &.three_up > .tile {
     margin-left: 2%;
     width: 31.3%;
   }
-  &.four_up > li {
+  &.four_up > li, &.four_up > .tile {
     margin-left: 2%;
     width: 23%;
   }
   &.five_up {
     margin-left: -1.5%;
-    > li {
+    > li, > .tile {
       margin-left: 1.5%;
       width: 18.5%;
     }
@@ -243,14 +265,16 @@ img {
 // vertically align stuff
 
 .valign {
-  display: table;
-  width: 100%;
-  > div, > article, > section, > figure, .center {
-    display: table-cell;
+  &:before {
+    content:' ';
+    display: inline-block;
+    height: 400px;
     vertical-align: middle;
-  }​
-  > article {
-
+    margin-right: -0.25em;
+  }
+  > div, > article, > section, > figure {
+    display: inline-block;
+    vertical-align: middle;
   }
 }
 

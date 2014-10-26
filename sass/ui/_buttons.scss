@@ -121,6 +121,20 @@
   }
 }
 
+.btn.metro,
+.skiplink.metro,
+.btn.pretty.squared,
+.pretty .btn.squared {
+  @include border-radius(0);
+}
+
+.btn.pretty,
+.skiplink.pretty,
+.btn.metro.rounded,
+.metro .btn.rounded {
+  @include border-radius($button-radius);
+}
+
 // Buttons with Gradients
 .btn, .skiplink {
   &.pretty {
