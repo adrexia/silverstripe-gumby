@@ -1,11 +1,11 @@
 {
-    "name": "nguyer/cwp-gumby-theme",
-    "description": "CWP Gumby Theme",
+    "name": "adrexia/silverstripe-gumby-theme",
+    "description": "Silverstripe Gumby Theme",
     "type": "silverstripe-theme",
     "require": {
         "composer/installers": "*",
-        "silverstripe/cms": ">=3.0",
-        "silverstripe/framework": ">=3.0"
+        "silverstripe/cms": ">=3.1",
+        "silverstripe/framework": ">=3.1"
     },
     "extra": {
         "branch-alias": {
