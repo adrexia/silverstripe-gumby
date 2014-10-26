@@ -1,0 +1,17 @@
+{
+  "name": "silverstripe-gumby",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adrexia/silverstripe-gumby.git"
+  },
+  "devDependencies": {
+    "bower": "~1.2.5",
+    "grunt": "~0.4.5",
+    "grunt-cli": "~0.1.9",
+    "grunt-contrib-compass": "^0.9.0",
+    "grunt-contrib-concat": "^0.4.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "^0.5.0",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

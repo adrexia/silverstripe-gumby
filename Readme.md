@@ -27,7 +27,21 @@ If you need more try:
 
 When you have the theme and have renamed it to suit your project, open _settings.scss (sass/var/_setting.scss) and edit the theme name variable to match. This will update all scss links to point to your theme. Remember to run compass watch in the theme folder to compile your scss.
 
-At the moment all extra javascript and css required is included in the templates. If you are using  [CWP](https://gitlab.cwp.govt.nz/cwp/cwp/tree/master), you should override the CWP BasePage.php function that includes scripts and css to prevent it trying to include unwanted bootstrap files. You can also move the extra js/css into your new function if you want to use the power of combine_files (Note: you will need to do this for the js to prevent some timing bugs from occuring).
+### Building
+This theme now use grunt to compile css and javascript. You can remove this dependency, and link to the prebuilt css and js requirements directly. There is no magic, but tools such as grunt save a bit of time once set up. If you have not used grunt before, [start here] (http://mattbailey.io/a-beginners-guide-to-grunt/)
+
+Once you have npm installed, run:
+
+	npm install
+
+from within your theme directory (themes/your_theme) to install all dependencies. Then run
+
+	grunt watch
+
+This will watch for changes in both your Sass and Javascript files, and compile them for you.
+
+If you are using  [CWP](https://gitlab.cwp.govt.nz/cwp/cwp/tree/master), you should override the CWP BasePage.php function that includes scripts and css to prevent it trying to include unwanted files (or including them in the wrong order). To add extra dependencies, open Gruntfile.js and add them under concat : dist : src.
+
 
 ## Browser support
 * Firefox, Chrome
