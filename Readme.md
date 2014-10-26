@@ -25,7 +25,7 @@ If you need more try:
 * http://sass-lang.com/
 * http://compass-style.org/
 
-When you have the theme and have renamed it to suit your project, open _settings.scss (sass/var/_setting.scss) and edit the theme name variable to match. This will update all scss links to point to your theme. Remember to run compass watch in the theme folder to compile your scss.
+When you have the theme and have renamed it to suit your project, open _settings.scss (sass/var/_setting.scss) and edit the theme name variable to match. This will update all scss links to point to your theme. Remember to run grunt watch in the theme folder to compile your scss.
 
 ### Building
 This theme now use grunt to compile css and javascript. You can remove this dependency, and link to the prebuilt css and js requirements directly. There is no magic, but tools such as grunt save a bit of time once set up. If you have not used grunt before, [start here] (http://mattbailey.io/a-beginners-guide-to-grunt/)
