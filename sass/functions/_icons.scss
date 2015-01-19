@@ -13,7 +13,11 @@
   .#{$icon}.icon-left a:before,
   .#{$icon}.icon-right a:after,
   i.#{$icon}:before {
-    content: "#{match($entypo-icons, $icon)}";
+    @if function-exists("selector-append") {
+      content: unquote("\"\\#{match($entypo-icons, $icon)}\"");
+    } @else {
+      content: str-slice("\x", 1, 1) + match($entypo-icons, $icon);
+    }
     height: inherit;
   }
 }
